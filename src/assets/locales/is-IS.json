@@ -1,20 +1,20 @@
 {
   "about": {
-    "description": "movie-web er vefforrit sem leitar á netinu að streymum. Markmið liðsins er naumhyggju nálgun á að horfa á efni.",
+    "description": "Vid Binge er vefforrit sem leitar á netinu að streymum. Markmið liðsins er naumhyggju nálgun á að horfa á efni.",
     "faqTitle": "Algengar spurningar",
     "q1": {
-      "body": "movie-web hýsir ekki neitt efni. Þegar þú ýtir á eitthvað til að horfa á, er leitað á netinu fyrir það efni (Þú getur séð hvaða heimild við erum að nota á hleðslu skjánum og í 'myndbands heimildir' flipanum). Skrár eru aldrei settar inn af movie-web, allt er í gegnum leitarvél.",
+      "body": "Vid Binge hýsir ekki neitt efni. Þegar þú ýtir á eitthvað til að horfa á, er leitað á netinu fyrir það efni (Þú getur séð hvaða heimild við erum að nota á hleðslu skjánum og í 'myndbands heimildir' flipanum). Skrár eru aldrei settar inn af Vid Binge, allt er í gegnum leitarvél.",
       "title": "Hvaðan kemur efnið?"
     },
     "q2": {
-      "body": "Þú getur ekki beðið um þætti eða myndir, movie-web stýrir ekki neinu efni. Allt efni er skoðað í gegnum heimildir á netinu.",
+      "body": "Þú getur ekki beðið um þætti eða myndir, Vid Binge stýrir ekki neinu efni. Allt efni er skoðað í gegnum heimildir á netinu.",
       "title": "Hvar get ég beðið um þætti eða myndir?"
     },
     "q3": {
       "body": "Leitarniðurstöður okkar eru knúnar af The Movie Database (TMDB) og eru sýndar þótt að heimildir okkar hafa ekki efnið.",
       "title": "Leitarniðurstöðurnar sýna þættina eða myndina, af hverju get ég ekki spilað það?"
     },
-    "title": "Um movie-web"
+    "title": "Um Vid Binge"
   },
   "actions": {
     "copied": "Afritað",
@@ -82,7 +82,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Fyrirvari",
-      "disclaimerText": "movie-web hýsir engar skrár, það tengist eingöngu þjónustu þriðja aðila. Lagleg atriði ættu að vera rædd við skráarhýsinga og veitanda. movie-web er ekki ábyrg fyrir neinum skrám sýndar af myndbands veitöndum."
+      "disclaimerText": "Vid Binge hýsir engar skrár, það tengist eingöngu þjónustu þriðja aðila. Lagleg atriði ættu að vera rædd við skráarhýsinga og veitanda. Vid Binge er ekki ábyrg fyrir neinum skrám sýndar af myndbands veitöndum."
     },
     "links": {
       "discord": "Discord",
@@ -92,13 +92,13 @@
     "tagline": "Horfðu á uppáhalds þætti og myndirnar þínar með þessu opna hugbúnaða forriti."
   },
   "global": {
-    "name": "movie-web",
+    "name": "Vid Binge",
     "pages": {
       "about": "Um",
       "dmca": "DMCA",
       "login": "Skrá inn",
       "onboarding": "Setja upp",
-      "pagetitle": "{{title}} - movie-web",
+      "pagetitle": "{{title}} - Vid Binge",
       "register": "Skrá",
       "settings": "Stillingar"
     }
@@ -236,7 +236,7 @@
           "title": "Sérsniðið umboð"
         }
       },
-      "title": "Komum þér í uppsetningu með movie-web"
+      "title": "Komum þér í uppsetningu með Vid Binge"
     }
   },
   "overlays": {
@@ -253,10 +253,10 @@
     "menus": {
       "downloads": {
         "copyHlsPlaylist": "Afrita HLS spilalista hlekk",
-        "disclaimer": "Niðurhalningar eru teknar beint frá heimildini. movie-web hefur engan kraft yfir hvernig niðurhalningarnar eru gefnar.",
+        "disclaimer": "Niðurhalningar eru teknar beint frá heimildini. Vid Binge hefur engan kraft yfir hvernig niðurhalningarnar eru gefnar.",
         "downloadSubtitle": "Hlaða niður nú verandi texta",
         "downloadVideo": "Hlaða niður myndbandi",
-        "hlsDisclaimer": "Niðurhalningar eru teknar beint frá heimildini. movie-web hefur engan kraft yfir hvernig niðurhalningarnar eru gefnar.<br /><br />Vinsamlegast fattaðu að þú ert að niðurhala HLS spilunarlista, <bold>það er ekki mælt með að niðurhala ef þú kannt ekki mikið á háþróað streymis sniði.</bold>. Reyndu aðrar heimildir fyrir önnur sniði.",
+        "hlsDisclaimer": "Niðurhalningar eru teknar beint frá heimildini. Vid Binge hefur engan kraft yfir hvernig niðurhalningarnar eru gefnar.<br /><br />Vinsamlegast fattaðu að þú ert að niðurhala HLS spilunarlista, <bold>það er ekki mælt með að niðurhala ef þú kannt ekki mikið á háþróað streymis sniði.</bold>. Reyndu aðrar heimildir fyrir önnur sniði.",
         "onAndroid": {
           "1": "Til þess að niðurhala á Android, ýttu á niðurhalningar takkan síðan, á nýju síðunni, <bold>smelltu og haltu niðri</bold> á myndbandinu, veldu síðan <bold>vista</bold>.",
           "shortTitle": "Hlaða niður / Android",
@@ -399,7 +399,7 @@
       "shortRemaining": "-{{timeLeft}}"
     },
     "turnstile": {
-      "description": "Vinsamlegast sannreyndu að þú sért manneskja með því að klára Captcha-ið til hægri. Þetta er til þess að halda movie-web öruggu!",
+      "description": "Vinsamlegast sannreyndu að þú sért manneskja með því að klára Captcha-ið til hægri. Þetta er til þess að halda Vid Binge öruggu!",
       "error": "Mistókst að sannreyna að þú sért manneskja. Vinsamlegast reyndu aftur.",
       "title": "Við þurfum að sannræna að þú ert manneskja.",
       "verifyingHumanity": "Að sannræna að þú sért manneskja..."
@@ -407,7 +407,7 @@
   },
   "screens": {
     "dmca": {
-      "text": "Velkomin á sambands síðu movie-web! Við virðum hugverkarétt og viljum ræða einhver höfundarréttar áhyggjur fljótt. Ef að þú trúir að höfundarréttur þíns verks hefur verið misnotaður á okkar síðu, vinsamlegast sentu ítarlega DMCA tilkynningu til netfangsing fyrir neðan þennan texta. Vinsamlegast láttu fylgja með lýsingu af höfundaréttavarna efninu, tengiliða upplýsingat þínar, og yfirlýsingu um góða trú. Við erum staðráðin í að leysa þessi mál tafarlaust og þökkum samstarf þitt við að halda movie-web stað sem virðir sköpunargáfu og höfundarrétt.",
+      "text": "Velkomin á sambands síðu Vid Binge! Við virðum hugverkarétt og viljum ræða einhver höfundarréttar áhyggjur fljótt. Ef að þú trúir að höfundarréttur þíns verks hefur verið misnotaður á okkar síðu, vinsamlegast sentu ítarlega DMCA tilkynningu til netfangsing fyrir neðan þennan texta. Vinsamlegast láttu fylgja með lýsingu af höfundaréttavarna efninu, tengiliða upplýsingat þínar, og yfirlýsingu um góða trú. Við erum staðráðin í að leysa þessi mál tafarlaust og þökkum samstarf þitt við að halda Vid Binge stað sem virðir sköpunargáfu og höfundarrétt.",
       "title": "DMCA"
     },
     "loadingApp": "Hlaðandi forriti",

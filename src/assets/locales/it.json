@@ -1,20 +1,20 @@
 {
   "about": {
-    "description": "movie-web è un'applicazione web che ricerca dei stream sull'internet. Il team cerca di usare un approccio prevalentemente minimalista per usufruire del contenuto.",
+    "description": "Vid Binge è un'applicazione web che ricerca dei stream sull'internet. Il team cerca di usare un approccio prevalentemente minimalista per usufruire del contenuto.",
     "faqTitle": "Domande comuni",
     "q1": {
-      "body": "movie-web non ospita alcun contento. Quando clicci su qualcosa da guardare, movie-web cerca l'internet per media di vostra scelta (Sull schermata di caricamento e nell tab 'sorgenti video' si può vedere quale sorgente si sta utilizzando). I media non sono mai caricati da movie-web, tutto è attraverso questo meccanismo di ricerca.",
+      "body": "Vid Binge non ospita alcun contento. Quando clicci su qualcosa da guardare, Vid Binge cerca l'internet per media di vostra scelta (Sull schermata di caricamento e nell tab 'sorgenti video' si può vedere quale sorgente si sta utilizzando). I media non sono mai caricati da Vid Binge, tutto è attraverso questo meccanismo di ricerca.",
       "title": "Da dove arriva il contenuto?"
     },
     "q2": {
-      "body": "Non è possibile richiedere uno show o un film, movie-web non gestisce alcun contenuto. Tutti i contenuti sono visualizzati da sorgenti online.",
+      "body": "Non è possibile richiedere uno show o un film, Vid Binge non gestisce alcun contenuto. Tutti i contenuti sono visualizzati da sorgenti online.",
       "title": "Dove posso richiedere una serie o un film?"
     },
     "q3": {
       "body": "Nostri risultati sono alimentati da «The Movie Database (TMDB)» e visualizzare indipendentemente dal fatto che nostri sorgenti hanno effettivamente il contenuto.",
       "title": "I risultati di ricerca mostrano la serie o il film, perché non posso riprodurlo?"
     },
-    "title": "Su di movie-web"
+    "title": "Su di Vid Binge"
   },
   "actions": {
     "copied": "Copiato",
@@ -82,7 +82,7 @@
   "footer": {
     "legal": {
       "disclaimer": "Disclaimer",
-      "disclaimerText": "movie-web non ospita qualsiasi file, si collega solo a fonti di terze parti. Se avete problemi legali, rivolgetevi ai file host e ai provider. movie-web non è responsabile per i file multimediali mostrati dai video provider."
+      "disclaimerText": "Vid Binge non ospita qualsiasi file, si collega solo a fonti di terze parti. Se avete problemi legali, rivolgetevi ai file host e ai provider. Vid Binge non è responsabile per i file multimediali mostrati dai video provider."
     },
     "links": {
       "discord": "Discord",
@@ -92,13 +92,13 @@
     "tagline": "Guardate i vostri preferiti programmi televisivi e film con questo app di streaming open source."
   },
   "global": {
-    "name": "movie-web",
+    "name": "Vid Binge",
     "pages": {
-      "about": "Su di movie-web",
+      "about": "Su di Vid Binge",
       "dmca": "DMCA",
       "login": "Accedi",
       "onboarding": "Setup",
-      "pagetitle": "{{title}} - movie-web",
+      "pagetitle": "{{title}} - Vid Binge",
       "register": "Registrarsi",
       "settings": "Impostazioni"
     }
@@ -163,7 +163,7 @@
       "offline": "Controlla la tua connessione internet"
     },
     "menu": {
-      "about": "Su di movie-web",
+      "about": "Su di Vid Binge",
       "donation": "Donare",
       "logout": "Esci",
       "register": "Sincronizzare con il cloud",
@@ -237,7 +237,7 @@
           "title": "Proxy personalizzato"
         }
       },
-      "title": "Configuriamo movie-web"
+      "title": "Configuriamo Vid Binge"
     }
   },
   "overlays": {
@@ -254,10 +254,10 @@
     "menus": {
       "downloads": {
         "copyHlsPlaylist": "Copia link HLS playlist",
-        "disclaimer": "I download vengono effettuati direttamente dal provider. movie-web non ha il controllo sulle modalità di fornitura dei download.",
+        "disclaimer": "I download vengono effettuati direttamente dal provider. Vid Binge non ha il controllo sulle modalità di fornitura dei download.",
         "downloadSubtitle": "Scarica sottotitolo attuale",
         "downloadVideo": "Scarica video",
-        "hlsDisclaimer": "I download vengono effettuati direttamente dal provider. movie-web non ha il controllo sul modo in cui i download vengono forniti.<br /><br />Nota che se state scaricando un playlist HLS, <bold>non è raccomandato di scaricare se non si ha familiarità con i formati di streaming avanzati</bold>. Prova altri sorgenti per diversi formati.",
+        "hlsDisclaimer": "I download vengono effettuati direttamente dal provider. Vid Binge non ha il controllo sul modo in cui i download vengono forniti.<br /><br />Nota che se state scaricando un playlist HLS, <bold>non è raccomandato di scaricare se non si ha familiarità con i formati di streaming avanzati</bold>. Prova altri sorgenti per diversi formati.",
         "onAndroid": {
           "1": "Per scaricare su Android, fai clic sul pulsante di scaricare, e poi nella nuova paggina, <bold>toccare e tenere premuto</bold> sul video, e selezionare <bold>salva</bold>.",
           "shortTitle": "Scarica / Android",
@@ -386,7 +386,7 @@
         "badge": "L'estensione è disabilitata",
         "enableExtension": "Abilita l'estensione",
         "homeButton": "Torna alla pagina iniziale",
-        "text": "Avete installato l'estensione movie-web. Per iniziare a usarla, è necessario abilitare l'estensione per questo sito.",
+        "text": "Avete installato l'estensione Vid Binge. Per iniziare a usarla, è necessario abilitare l'estensione per questo sito.",
         "title": "Abilita l'estensione"
       },
       "items": {
@@ -409,7 +409,7 @@
       "shortRemaining": "-{{timeLeft}}"
     },
     "turnstile": {
-      "description": "Verifica che siate umani completando il Captcha sulla destra. Questo serve a mantenere movie-web sicuro!",
+      "description": "Verifica che siate umani completando il Captcha sulla destra. Questo serve a mantenere Vid Binge sicuro!",
       "error": "Impossibile verificare la vostra umanità. Riprova.",
       "title": "Dobbiamo verificare che lei sia umano.",
       "verifyingHumanity": "Verificare la vostra umanità..."
@@ -417,7 +417,7 @@
   },
   "screens": {
     "dmca": {
-      "text": "Benvenuti nella pagina di contatto DMCA di movie-web! Rispettiamo i diritti di proprietà intellettuale e vogliamo risolvere rapidamente qualsiasi problema di copyright. Se ritenete che il vostro lavoro protetto da copyright sia stato utilizzato in modo improprio sulla nostra piattaforma, inviate una notizia DMCA all'indirizzo e-mail indicato di seguito. Dovresti includere una descrizione del materiale protetto da copyright, i propri dati di contatto e una dichiarazione di buona fede. Ci impegniamo a risolvere tempestivamente questi problemi e apprezziamo la vostra collaborazione per mantenere movie-web un luogo che rispetta la creatività e i diritti d'autore.",
+      "text": "Benvenuti nella pagina di contatto DMCA di Vid Binge! Rispettiamo i diritti di proprietà intellettuale e vogliamo risolvere rapidamente qualsiasi problema di copyright. Se ritenete che il vostro lavoro protetto da copyright sia stato utilizzato in modo improprio sulla nostra piattaforma, inviate una notizia DMCA all'indirizzo e-mail indicato di seguito. Dovresti includere una descrizione del materiale protetto da copyright, i propri dati di contatto e una dichiarazione di buona fede. Ci impegniamo a risolvere tempestivamente questi problemi e apprezziamo la vostra collaborazione per mantenere Vid Binge un luogo che rispetta la creatività e i diritti d'autore.",
       "title": "DMCA"
     },
     "loadingApp": "Caricamento dell'applicazione",
