@@ -58,11 +58,6 @@ export function SidebarPart() {
       id: "settings-captions",
       icon: Icons.CAPTIONS,
     },
-    {
-      textKey: "settings.connections.title",
-      id: "settings-connection",
-      icon: Icons.LINK,
-    },
   ];
 
   const backendUrl = useBackendUrl();

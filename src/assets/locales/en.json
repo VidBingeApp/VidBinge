@@ -59,7 +59,7 @@
       "noHost": "The server has not been configured, therefore you cannot create an account",
       "host": "You are connecting to <0>{{hostname}}</0> - please confirm you trust it before making an account",
       "no": "Go back",
-      "title": "Do you trust this server?",
+      "title": "Create an account on this server?",
       "yes": "I trust this server"
     },
     "verify": {
@@ -82,14 +82,14 @@
   "footer": {
     "legal": {
       "disclaimer": "Disclaimer",
-      "disclaimerText": "Vid Binge does not host any files, it merely links to 3rd party services. Legal issues should be taken up with the file hosts and providers. Vid Binge is not responsible for any media files shown by the video providers."
+      "disclaimerText": "Vid Binge does not host any files, it merely pulls streams from 3rd party services. Legal issues should be taken up with the file hosts and providers. Vid Binge is not responsible for any media files shown by the video providers."
     },
     "links": {
       "discord": "Discord",
       "dmca": "DMCA",
       "github": "GitHub"
     },
-    "tagline": "Watch your favourite shows and movies with this open source streaming app."
+    "tagline": "Dive into endless hours of free streaming entertainment with Vid Binge! Join the binge-watching revolution and explore a world of movies and TV shows—all without a subscription."
   },
   "global": {
     "name": "Vid Binge",

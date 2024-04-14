@@ -67,9 +67,9 @@ export default defineConfig(({ mode }) => {
           "safari-pinned-tab.svg",
         ],
         manifest: {
-          name: "VidBinge",
+          name: "Vid Binge",
           short_name: "VidBinge",
-          description: "The place for your favourite movies & shows",
+          description: "Stream a wide array of movies and TV shows on Vid Binge, completely free. Enjoy unlimited, ad-free viewing with no subscriptions required.",
           theme_color: "#120f1d",
           background_color: "#120f1d",
           display: "standalone",

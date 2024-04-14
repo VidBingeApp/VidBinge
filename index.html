@@ -6,9 +6,8 @@
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="Explore VidBinge.com, your ultimate destination for unlimited streaming of movies and TV shows. Dive into a vast library of classics and new releases on any device. Start your free trial today and join the binge!" />
-  <meta property="og:title" content="Vid Binge: Stream Your Favorite Movies & TV Shows" />
-  <meta property="og:description" content="Join Vid Binge and get unlimited access to a vast library of movies and TV shows! Stream anywhere, anytime. Start your free trial now and be part of the streaming revolution!" />
+  <meta property="og:description" content="Dive into endless hours of free streaming entertainment with Vid Binge! Join the binge-watching revolution and explore a world of movies and TV shows—all without a subscription." />
+  <meta property="og:title" content="Vid Binge - Stream Your Favorite Movies & TV Shows" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.vidbinge.com" />
   <meta property="og:image" content="https://www.vidbinge.com/splash_screens/iPhone_15_Pro_Max__iPhone_15_Plus__iPhone_14_Pro_Max_landscape.png" />
@@ -127,20 +126,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <script src="/config.js"></script>
-
   <!-- prevent darkreader extension from messing with our already dark site -->
   <meta name="darkreader-lock" />
 
   <!-- disabling referrer can fix some provider problems -->
   <meta name="referrer" content="no-referrer" />
 
-  <title>Vid Binge: Unlimited Movies & TV Shows Streaming</title>
+  <title>Vid Binge | Stream Your Favorite Movies & TV Shows</title>
 
   {{#if opensearchEnabled }}
   <!-- OpenSearch -->
-  <link rel="search" type="application/opensearchdescription+xml" title="movie-web" href="/opensearch.xml">
+  <link rel="search" type="application/opensearchdescription+xml" title="movie-web" href="https://www.vidbinge.com/opensearch.xml">
 
   <!-- Google Sitelinks -->
   <script type="application/ld+json">
@@ -152,7 +148,7 @@
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "{{ routeDomain }}/browse/?q={search_term_string}"
+            "urlTemplate": "{{ routeDomain }}/browse/{search_term_string}"
           },
           "query-input": "required name=search_term_string"
           }
