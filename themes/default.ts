@@ -49,8 +49,7 @@ const tokens = {
   }
 };
 
-export default createTheme({
-  name: "blue",
+export const defaultTheme = {
   extend: {
     colors: {
       themePreview: {
@@ -254,4 +253,4 @@ export default createTheme({
       }
     }
   }
-});
+};
