@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/opensearch.xml",
+      "destination": "/opensearch.xml"
+    },
+    {
       "source": "/(.*)",
       "destination": "/"
     }
