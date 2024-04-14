@@ -42,6 +42,7 @@ export function HomePage() {
     <HomeLayout showBg={showBg}>
       <div className="mb-16 sm:mb-24">
         <Helmet>
+          {/* prettier-ignore */}
           <title> {t("global.name")} | Stream Your Favorite Movies & TV Shows{" "}</title>
         </Helmet>
         <HeroPart searchParams={searchParams} setIsSticky={setShowBg} />
