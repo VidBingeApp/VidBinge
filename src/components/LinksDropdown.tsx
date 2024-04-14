@@ -154,18 +154,6 @@ export function LinksDropdown(props: { children: React.ReactNode }) {
               {t("navigation.menu.logout")}
             </DropdownLink>
           ) : null}
-          <Divider />
-          <div className="my-4 flex justify-center items-center gap-4">
-            <CircleDropdownLink
-              href={conf().DISCORD_LINK}
-              icon={Icons.DISCORD}
-            />
-            <CircleDropdownLink href={conf().GITHUB_LINK} icon={Icons.GITHUB} />
-            <CircleDropdownLink
-              href={conf().DONATION_LINK}
-              icon={Icons.DONATION}
-            />
-          </div>
         </div>
       </Transition>
     </div>
