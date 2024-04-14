@@ -42,7 +42,7 @@ export function HomePage() {
     <HomeLayout showBg={showBg}>
       <div className="mb-16 sm:mb-24">
         <Helmet>
-          <title>{t("global.name")} | Stream Your Favorite Movies & TV Shows </title>
+          <title>{t("global.name")}</title>
         </Helmet>
         <HeroPart searchParams={searchParams} setIsSticky={setShowBg} />
       </div>
