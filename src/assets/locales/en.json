@@ -1,6 +1,6 @@
 {
   "about": {
-    "description": "Explore VidBinge.com, your ultimate destination for unlimited streaming of movies and TV shows. Dive into a vast library of classics and new releases on any device. Start your free trial today and join the binge!",
+    "description": "Welcome to VidBinge.com, your ultimate destination for unlimited streaming of movies and TV shows. Explore our extensive library of classics and new releases, available on any device. Enjoy our service 100% subscription-free and 100% ad-free. Dive in and join the binge today!",
     "faqTitle": "Frequently Asked Questions",
     "q1": {
       "body": "Vid Binge does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by Vid Binge, everything is through this searching mechanism.",
@@ -11,8 +11,24 @@
       "title": "Where can I request a show or movie?"
     },
     "q3": {
-      "body": "Our search results are powered by The Movie Database (TMDB) and display regardless of whether our sources actually have the content.",
+      "body": "Our search results are powered by The Movie Database (TMDB) and is displied regardless of whether our sources actually have the content.",
       "title": "The search results display the show or movie, why can't I play it?"
+    },
+    "q4": {
+      "body":"There is no limit to how much you can watch on VidBinge. Stream as much as you want, anytime, without any restrictions or additional costs.",
+      "title": "Is there a limit to how much I can watch?"
+    },
+    "q5":{
+      "title": "How often is new content added to Vid Binge?",
+      "body": "New content availability is based on the sources connected to our platform. As these sources update their libraries, new movies and TV shows will become accessible through VidBinge."
+    },
+    "q6":{
+      "title": "What should I do if a video doesn't play?",
+      "body": "If a video doesn’t play, it could be due to issues with the source. Try clicking the Play button again or selecting a different source from the 'video sources' tab. If problems persist, please check your internet connection or try again later."  
+    },
+    "q7":{
+      "title": "Does Vid Binge offer subtitles or dubbed content?",
+      "body": "Availability of subtitles or dubbed versions depends on the source. Some sources may provide options for subtitles in various languages or dubbed content, which can be selected directly within the video player if available."
     },
     "title": "About Vid Binge"
   },
