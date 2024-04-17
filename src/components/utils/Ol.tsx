@@ -1,36 +1,56 @@
-import classNames from "classnames";
+import { useTranslation } from "react-i18next";
 
-export function Ol(props: { items: React.ReactNode[] }) {
+import { ThinContainer } from "@/components/layout/ThinContainer";
+import { Ol } from "@/components/utils/Ol";
+import { Heading1, Heading2, Paragraph } from "@/components/utils/Text";
+import { PageTitle } from "@/pages/parts/util/PageTitle";
+
+import { SubPageLayout } from "./layouts/SubPageLayout";
+
+function Question(props: { title: string; children: React.ReactNode }) {
   return (
-    <ol>
-      {props.items.map((child, i) => {
-        return (
-          <li
-            className={classNames(
-              "grid grid-cols-[auto,1fr] gap-6",
-              i !== props.items.length - 1 ? "pb-12" : undefined,
-            )}
-          >
-            <div className="relative z-0">
-              <div className="w-7 h-7 rounded-full bg-about-circle text-about-circleText font-medium flex justify-center items-center relative z-10">
-                {i + 1}
-              </div>
-              {i !== props.items.length - 1 ? (
-                <div
-                  className="h-[calc(100%+1.5rem)] w-px absolute top-6 left-1/2 transform -translate-x-1/2"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(to bottom, transparent 5px, #1F1F29 5px, #1F1F29 10px)",
-                    backgroundSize: "10px 10px",
-                    backgroundRepeat: "Repeat",
-                  }}
-                />
-              ) : null}
-            </div>
-            <div>{child}</div>
-          </li>
-        );
-      })}
-    </ol>
+    <>
+      <p className="text-white mb-2 font-medium">{props.title}</p>
+      <div className="text-type-text">{props.children}</div>
+    </>
+  );
+}
+
+export function AboutPage() {
+  const { t } = useTranslation();
+  return (
+    <SubPageLayout>
+      <PageTitle subpage k="global.pages.about" />
+      <ThinContainer>
+        <Heading1>{t("about.title")}</Heading1>
+        <Paragraph>{t("about.description")}</Paragraph>
+        <Heading2>{t("about.faqTitle")}</Heading2>
+        <Ol
+          items={[
+            <Question title={t("about.q1.title")}>
+              {t("about.q1.body")}
+            </Question>,
+            <Question title={t("about.q2.title")}>
+              {t("about.q2.body")}
+            </Question>,
+            <Question title={t("about.q3.title")}>
+              {t("about.q3.body")}
+            </Question>,
+            <Question title={t("about.q4.title")}>
+              {t("about.q4.body")}
+            </Question>,
+            <Question title={t("about.q5.title")}>
+              {t("about.q5.body")}
+            </Question>,
+            <Question title={t("about.q6.title")}>
+              {t("about.q6.body")}
+            </Question>,
+            <Question title={t("about.q7.title")}>
+              {t("about.q7.body")}
+            </Question>,
+          ]}
+        />
+      </ThinContainer>
+    </SubPageLayout>
   );
 }
