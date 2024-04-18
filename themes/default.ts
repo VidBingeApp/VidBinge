@@ -1,4 +1,6 @@
 const tokens = {
+  black: "#000000",
+  white: "#FFFFFF",
   purple: {
     c50: "#aac5ff",
     c100: "#82a9ff",
