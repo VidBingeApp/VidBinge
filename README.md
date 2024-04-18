@@ -4,13 +4,12 @@
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,vite,ts" />
   <br/>
-  <a href="https://movie-web.github.io/links/discord"><kbd>🔵 discord</kbd></a> <a href="https://movie-web.github.io/docs"><kbd>🟢 docs</kbd></a>
 </p>
 <br/><br/>
 
-# ⚡What is movie-web?
+# ⚡What is VidBinge?
 
-movie-web is a web app for watching movies easily.
+VidBinge is a custom fork by Josh Holly based on @movie-web/movie-web (original. It is a web app for watching movies easily.
 
 This service works by displaying video files from third-party providers inside an intuitive and aesthetic user interface.
 
@@ -53,15 +52,10 @@ pnpm build
 > [!TIP]
 > You must use pnpm (`npm i -g pnpm`) and run NodeJS 20
 
-# 🥔 Selfhosting
-
-A simple guide has been written to assist in hosting your own instance of movie-web. Check it out below
-
-|[Selfhosting guide](https://movie-web.github.io/docs)|
 |---|
 
 ## 🤝 Thanks to all Contributors
 This project would not be possible without our amazing contributors and the community. Thanks a lot! Keep rocking 🍻.
 
-[![Contributors](https://contrib.rocks/image?repo=movie-web/movie-web)](https://github.com/movie-web/movie-web/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=VidBinge/VidBinge)](https://github.com/VidBinge/VidBinge/graphs/contributors)
 
