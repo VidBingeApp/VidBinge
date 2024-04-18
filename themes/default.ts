@@ -77,7 +77,8 @@ export const defaultTheme = {
       buttons: {
         toggle: tokens.purple.c300,
         toggleDisabled: tokens.ash.c500,
-
+        primary: tokens.ash.c700,
+        primaryText: tokens.white,
         secondary: tokens.ash.c700,
         secondaryHover: tokens.ash.c700,
         purple: tokens.purple.c500,
