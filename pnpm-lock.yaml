@@ -23,7 +23,7 @@ dependencies:
     version: 1.0.3
   '@movie-web/providers':
     specifier: github:joshholly/providers
-    version: github.com/joshholly/providers/0ea7be991657f1e97fc053c52d563dbecba3435c
+    version: github.com/joshholly/providers/9847cd4416159bebd43614541d7052e88b118baa
   '@noble/hashes':
     specifier: ^1.3.3
     version: 1.4.0
@@ -7355,11 +7355,10 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
-  github.com/joshholly/providers/0ea7be991657f1e97fc053c52d563dbecba3435c:
-    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/0ea7be991657f1e97fc053c52d563dbecba3435c}
+  github.com/joshholly/providers/9847cd4416159bebd43614541d7052e88b118baa:
+    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/9847cd4416159bebd43614541d7052e88b118baa}
     name: '@movie-web/providers'
     version: 2.3.0
-    prepare: true
     requiresBuild: true
     dependencies:
       cheerio: 1.0.0-rc.12
