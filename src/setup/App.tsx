@@ -39,7 +39,7 @@ function useUmamiTracking() {
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
-    script.src = "http://stats.vidbinge.com/script.js";
+    script.src = "https://stats.vidbinge.com/script.js";
     script.dataset.websiteId = "ad7e6777-63d4-4b15-b1ef-a8e9792c6fc4";
     document.head.appendChild(script);
 
