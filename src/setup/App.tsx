@@ -39,8 +39,8 @@ function useUmamiTracking() {
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
-    script.src = "https://analytics.us.umami.is/script.js";
-    script.dataset.websiteId = "a8fff6f8-8e8f-4138-97af-1364271208f4";
+    script.src = "https://main--shiny-toffee-a883df.netlify.app/script.js";
+    script.dataset.websiteId = "ad7e6777-63d4-4b15-b1ef-a8e9792c6fc4";
     document.head.appendChild(script);
 
     return () => {
