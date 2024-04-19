@@ -35,6 +35,20 @@ const SettingsPage = lazyWithPreload(() => import("@/pages/Settings"));
 PlayerView.preload();
 SettingsPage.preload();
 
+function useUmamiTracking() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://analytics.us.umami.is/script.js";
+    script.dataset.websiteId = "a8fff6f8-8e8f-4138-97af-1364271208f4";
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+}
+
 function LegacyUrlView({ children }: { children: ReactElement }) {
   const location = useLocation();
   const navigate = useNavigate();
@@ -86,6 +100,7 @@ function QueryView() {
 function App() {
   useHistoryListener();
   useOnlineListener();
+  useUmamiTracking();
 
   return (
     <Layout>
