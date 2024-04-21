@@ -22,6 +22,7 @@ import { LoginPage } from "@/pages/Login";
 import { OnboardingPage } from "@/pages/onboarding/Onboarding";
 import { OnboardingExtensionPage } from "@/pages/onboarding/OnboardingExtension";
 import { OnboardingProxyPage } from "@/pages/onboarding/OnboardingProxy";
+import { PrivacyPage } from "@/pages/PrivacyPolicy";
 import { RegisterPage } from "@/pages/Register";
 import { Layout } from "@/setup/Layout";
 import { useHistoryListener } from "@/stores/history";
@@ -137,6 +138,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/onboarding" element={<OnboardingPage />} />
         <Route
           path="/onboarding/extension"
@@ -159,7 +161,7 @@ function App() {
         />
 
         {/* admin routes */}
-        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/admininfo" element={<AdminPage />} />
 
         {/* other */}
         <Route path="/dev" element={<DeveloperPage />} />

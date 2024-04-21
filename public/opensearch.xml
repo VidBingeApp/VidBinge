@@ -1,7 +1,7 @@
 
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>VidBinge</ShortName>
-  <Description>Explore VidBinge.com, your ultimate destination for unlimited streaming of movies and TV shows. Dive into a vast library of classics and new releases on any device. Start your free trial today and join the binge!</Description>
+  <Description>Dive into endless hours of free streaming entertainment with Vid Binge! Join the binge-watching revolution and explore a world of movies and TV shows—all without a subscription.</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Url type="text/html" template="https://www.vidbinge.com/browse/{searchTerms}" />
 </OpenSearchDescription>

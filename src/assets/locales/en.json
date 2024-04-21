@@ -32,6 +32,35 @@
     },
     "title": "About Vid Binge"
   },
+  "privacy": {
+    "description": "Welcome to VidBinge! Your privacy is important to us. VidBinge (vidbinge.com) is committed to protecting your privacy while you enjoy your favorite movies and shows on our platform. This Privacy Policy explains how we handle and protect your data.",
+    "lastUpdated": "April 21, 2024",
+    "p1": {
+      "body": "Vid Binge does not host any content. When you click on something to watch, the internet is searched for the selected media (On the loading screen and in the 'video sources' tab you can see which source you're using). Media never gets uploaded by Vid Binge, everything is through this searching mechanism.",
+      "title": "Information We Do Not Collect"
+    },
+    "p2": {
+      "body": "We use third-party analytics tools, such as Google Analytics, to collect and process basic demographic information which includes general location, device type, and browsing activities on our site. This information is anonymized and used solely to improve the functionality and content of VidBinge, ensuring you have a better streaming experience.",
+      "title": "Information We Collect"
+    },
+    "p3": {
+      "body": "VidBinge uses cookies to enhance your viewing experience. Cookies help us understand user behavior within our site (such as most watched movies), which enables us to improve our services. You can choose to disable cookies through your browser settings, but this may affect the functionality of the site.",
+      "title": "Use of Cookies"
+    },
+    "p4": {
+      "body":"Our use of Google Analytics means we share anonymized demographic data with Google. This information is processed under Google's privacy policy. We do not share or sell any data to other third parties.",
+      "title": "Third-Party Services"
+    },
+    "p5":{
+      "title": "Changes to This Privacy Policy",
+      "body": "We may update this Privacy Policy from time to time. The most recent version of the policy will always be posted on our site. We encourage you to review this Privacy Policy regularly for any changes."
+    },
+    "p6":{
+      "title": "Contact Us",
+      "body": "If you have any questions about this Privacy Policy, please contact via email at: contact@vidbinge.com"  
+    },
+    "title": "Privacy Policy for VidBinge"
+  },
   "actions": {
     "copied": "Copied",
     "copy": "Copy"
@@ -113,6 +142,7 @@
       "about": "About",
       "dmca": "DMCA",
       "login": "Login",
+      "privacy": "Privacy Policy",
       "onboarding": "Setup",
       "pagetitle": "{{title}} - Vid Binge",
       "register": "Register",
