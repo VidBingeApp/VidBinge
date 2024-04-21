@@ -10,7 +10,7 @@ function PrivacyParagraph(props: { title: string; children: React.ReactNode }) {
   return (
     <>
       <p className="text-white mb-2 font-medium">{props.title}</p>
-      <div className="text-type-text">{props.children}</div>
+      <div className="text-type-text mb-8">{props.children}</div>
     </>
   );
 }
