@@ -108,7 +108,7 @@ export function Discover() {
         }
 
         // Fetch only the first 5 TV show genres
-        setTVGenres(data.genres.slice(0, 5));
+        setTVGenres(data.genres.slice(0, 7));
       } catch (error) {
         console.error("Error fetching TV show genres:", error);
       }
@@ -384,7 +384,7 @@ export function Discover() {
         }
 
         // Fetch only the first 4 genres
-        setGenres(data.genres.slice(0, 4));
+        setGenres(data.genres.slice(0, 6));
       } catch (error) {
         console.error("Error fetching genres:", error);
       }
