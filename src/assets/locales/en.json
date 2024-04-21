@@ -141,6 +141,7 @@
     "pages": {
       "about": "About",
       "dmca": "DMCA",
+      "discover": "Discover",
       "login": "Login",
       "privacy": "Privacy Policy",
       "onboarding": "Setup",
@@ -207,6 +208,7 @@
     "menu": {
       "about": "About us",
       "donation": "Donate",
+      "discover": "Discover",
       "logout": "Log out",
       "register": "Sync to cloud",
       "settings": "Settings",

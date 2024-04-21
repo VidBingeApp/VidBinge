@@ -159,7 +159,7 @@ function abortOnTimeout(timeout: number): AbortSignal {
   return controller.signal;
 }
 
-async function get<T>(url: string, params?: object): Promise<T> {
+export async function get<T>(url: string, params?: object): Promise<T> {
   if (!apiKey) throw new Error("TMDB API key not set");
   try {
     return await mwFetch<T>(encodeURI(url), {

@@ -1,6 +1,8 @@
+import classNames from "classnames";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 
 import { WideContainer } from "@/components/layout/WideContainer";
 import { useDebounce } from "@/hooks/useDebounce";
@@ -31,16 +33,38 @@ function useSearch(search: string) {
   };
 }
 
+export function Button(props: {
+  className: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+  disabled?: boolean;
+}) {
+  return (
+    <button
+      className={classNames(
+        "font-bold rounded h-10 w-40 scale-90 hover:scale-95 transition-all duration-200",
+        props.className,
+      )}
+      type="button"
+      onClick={props.onClick}
+      disabled={props.disabled}
+    >
+      {props.children}
+    </button>
+  );
+}
+
 export function HomePage() {
   const { t } = useTranslation();
   const [showBg, setShowBg] = useState<boolean>(false);
   const searchParams = useSearchQuery();
   const [search] = searchParams;
   const s = useSearch(search);
+  const navigate = useNavigate();
 
   return (
     <HomeLayout showBg={showBg}>
-      <div className="mb-16 sm:mb-24">
+      <div>
         <Helmet>
           {/* prettier-ignore */}
           <title> {t("global.name")} | Stream Your Favorite Movies & TV Shows{" "}</title>
@@ -54,6 +78,14 @@ export function HomePage() {
           <SearchListPart searchQuery={search} />
         ) : (
           <>
+            <div className="flex justify-center mt-8 mb-16 sm:mb-24">
+              <Button
+                className="py-px box-content bg-buttons-secondary hover:bg-buttons-secondaryHover bg-opacity-90 text-buttons-secondaryText justify-center items-center"
+                onClick={() => navigate("/discover")}
+              >
+                Browse
+              </Button>
+            </div>
             <BookmarksPart />
             <WatchingPart />
           </>

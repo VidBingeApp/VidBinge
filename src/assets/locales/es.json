@@ -141,6 +141,7 @@
     "pages": {
       "about": "Acerca de",
       "dmca": "DMCA",
+      "discover": "Descubrir",
       "login": "Iniciar sesión",
       "onboarding": "Configurar",
       "pagetitle": "{{title}} - Vid Binge",
@@ -209,6 +210,7 @@
     "menu": {
       "about": "Acerca de nosotros",
       "donation": "Donar",
+      "discover": "Descubrir",
       "logout": "Cerrar sesión",
       "register": "Sincronizar con la nube",
       "settings": "Configuración",
