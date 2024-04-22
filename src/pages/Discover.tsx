@@ -30,6 +30,32 @@ export function Discover() {
   const [genreMovies, setGenreMovies] = useState<{
     [genreId: number]: Movie[];
   }>({});
+  const [providerMovies, setProviderMovies] = useState<{
+    [providerId: string]: Movie[];
+  }>({});
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [selectedProvider, setSelectedProvider] = useState({
+    name: "",
+    id: "",
+  });
+  const [providerTVShows, setProviderTVShows] = useState<{
+    [providerId: string]: Movie[];
+  }>({});
+  const [selectedTVProvider, setSelectedTVProvider] = useState({
+    name: "",
+    id: "",
+  });
+  const providers = [
+    { name: "Netflix", id: "8" },
+    { name: "Apple TV", id: "2" },
+    { name: "Amazon Prime Video", id: "10" },
+    { name: "Paramount Plus", id: "531" },
+    { name: "Hulu", id: "15" },
+    { name: "HBO Max", id: "1899" },
+    { name: "Netflix", id: "8" },
+    { name: "Disney Plus", id: "337" },
+    // More providers can be added here
+  ];
   const [countdown, setCountdown] = useState<number | null>(null);
   const navigate = useNavigate();
   const [categoryShows, setCategoryShows] = useState<{
@@ -138,6 +164,77 @@ export function Discover() {
     tvGenres.forEach((genre) => fetchTVShowsForGenre(genre.id));
   }, [tvGenres]);
 
+  // Fetch Movies By Provider
+  const fetchMoviesByProvider = async (providerId: string) => {
+    try {
+      const movies: any[] = [];
+      // eslint-disable-next-line no-plusplus
+      for (let page = 1; page <= 3; page++) {
+        const data = await get<any>("/discover/movie", {
+          api_key: conf().TMDB_READ_API_KEY,
+          language: "en-US",
+          page: page.toString(),
+          with_watch_providers: providerId,
+          watch_region: "US", // You can set a specific region if required
+        });
+
+        movies.push(...data.results);
+      }
+      setProviderMovies((prev) => ({
+        ...prev,
+        [providerId]: movies,
+      }));
+    } catch (error) {
+      console.error(`Error fetching movies for provider ${providerId}:`, error);
+    }
+  };
+
+  useEffect(() => {
+    const randomProvider =
+      providers[Math.floor(Math.random() * providers.length)];
+    setSelectedProvider(randomProvider); // Store the selected provider
+
+    fetchMoviesByProvider(randomProvider.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Fetch TV Shows By Provider
+  const fetchTVByProvider = async (providerId: string) => {
+    try {
+      const series: any[] = [];
+      // eslint-disable-next-line no-plusplus
+      for (let page = 1; page <= 3; page++) {
+        const data = await get<any>("/discover/tv", {
+          api_key: conf().TMDB_READ_API_KEY,
+          language: "en-US",
+          page: page.toString(),
+          with_watch_providers: providerId,
+          watch_region: "US", // You can set a specific region if required
+        });
+
+        series.push(...data.results);
+      }
+      setProviderTVShows((prev) => ({
+        ...prev,
+        [providerId]: series,
+      }));
+    } catch (error) {
+      console.error(
+        `Error fetching tv shows for provider ${providerId}:`,
+        error,
+      );
+    }
+  };
+
+  useEffect(() => {
+    const randomProvider =
+      providers[Math.floor(Math.random() * providers.length)];
+    setSelectedTVProvider(randomProvider); // Store the selected provider
+
+    fetchTVByProvider(randomProvider.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Update the scrollCarousel function to use the new ref map
   function scrollCarousel(categorySlug: string, direction: string) {
     const carousel = carouselRefs.current[categorySlug];
@@ -223,31 +320,29 @@ export function Discover() {
     }, 345); // Disable scrolling every 3 milliseconds after interaction (only for mouse wheel doe)
   }
 
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    document.body.style.overflow = "hidden";
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    document.body.style.overflow = "auto";
-    setIsHovered(false);
-  };
-
   function renderMovies(medias: Media[], category: string, isTVShow = false) {
     const categorySlug = `${category.toLowerCase().replace(/ /g, "-")}${Math.random()}`; // Convert the category to a slug
-    const displayCategory =
-      category === "Now Playing"
-        ? "In Cinemas"
-        : category.includes("Movie")
-          ? `${category}s`
-          : isTVShow
-            ? `${category} Shows`
-            : `${category} Movies`;
+    const categoryLower = category.toLowerCase();
+
+    let displayCategory;
+    if (category === "Now Playing") {
+      displayCategory = "In Cinemas";
+    } else if (
+      categoryLower.includes("popular movies on") ||
+      categoryLower.includes("popular shows on")
+    ) {
+      displayCategory = category;
+    } else if (categoryLower.includes("movie")) {
+      displayCategory = `${category}s`;
+    } else if (isTVShow) {
+      displayCategory = `${category} Shows`;
+    } else {
+      displayCategory = `${category} Movies`;
+    }
+
     return (
       <div className="relative overflow-hidden mt-2">
-        <h2 className="text-2xl cursor-default font-bold text-white sm:text-3xl md:text-2xl mx-auto pl-6">
+        <h2 className="text-2xl cursor-default font-bold text-white sm:text-3xl md:text-2xl mx-auto pl-6 text-pretty">
           {displayCategory}
         </h2>
         <div
@@ -261,8 +356,6 @@ export function Discover() {
           ref={(el) => {
             carouselRefs.current[categorySlug] = el;
           }}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           onWheel={(e) => handleWheel(e, categorySlug)}
         >
           {medias.slice(0, 20).map((media) => (
@@ -506,6 +599,18 @@ export function Discover() {
                 )}
               </div>
             ))}
+            <div
+              key={`carousel-providers-${selectedProvider.id}`}
+              id="carousel-providers"
+              className="mt-8"
+            >
+              {selectedProvider.id &&
+                providerMovies[selectedProvider.id] &&
+                renderMovies(
+                  providerMovies[selectedProvider.id],
+                  `Popular Movies on ${selectedProvider.name}`,
+                )}
+            </div>
             {genres.map((genre) => (
               <div
                 key={genre.id}
@@ -535,6 +640,19 @@ export function Discover() {
                 )}
               </div>
             ))}
+            <div
+              key={`carousel-tv-providers-${selectedTVProvider.id}`}
+              id="carousel-tv-providers"
+              className="mt-8"
+            >
+              {selectedTVProvider.id &&
+                providerTVShows[selectedTVProvider.id] &&
+                renderMovies(
+                  providerTVShows[selectedTVProvider.id],
+                  `Popular Shows on ${selectedTVProvider.name}`,
+                  true,
+                )}
+            </div>
             {tvGenres.map((genre) => (
               <div
                 key={genre.id}
