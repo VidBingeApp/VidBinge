@@ -23,7 +23,7 @@ dependencies:
     version: 1.0.3
   '@movie-web/providers':
     specifier: github:joshholly/providers
-    version: github.com/joshholly/providers/546957225a3cd3a75df601a2007e1b7efe7c7575
+    version: github.com/joshholly/providers/fac099df9955a769cbd941303e9b31200b2e1a39
   '@noble/hashes':
     specifier: ^1.3.3
     version: 1.4.0
@@ -7422,8 +7422,8 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
-  github.com/joshholly/providers/546957225a3cd3a75df601a2007e1b7efe7c7575:
-    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/546957225a3cd3a75df601a2007e1b7efe7c7575}
+  github.com/joshholly/providers/fac099df9955a769cbd941303e9b31200b2e1a39:
+    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/fac099df9955a769cbd941303e9b31200b2e1a39}
     name: '@movie-web/providers'
     version: 2.3.0
     requiresBuild: true
