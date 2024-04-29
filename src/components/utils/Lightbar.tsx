@@ -159,6 +159,28 @@ function ParticlesCanvas() {
       ];
     }
 
+    if (month === 9 && day >= 29 && day <= 31) {
+      imageOverride = [
+        {
+          image: "/lightbar-images/ghost.png",
+          sizeRange: [20, 33] as [number, number],
+        },
+        {
+          image: "/lightbar-images/pumpkin.png",
+          sizeRange: [25, 35] as [number, number],
+        },
+      ];
+    }
+
+    if (month === 3 && day === 20) {
+      imageOverride = [
+        {
+          image: "/lightbar-images/weed.png",
+          sizeRange: [32, 40] as [number, number],
+        },
+      ];
+    }
+
     // Fish easter egg
     const shouldShowFishie = Math.floor(Math.random() * 600) === 69;
     if (shouldShowFishie) {

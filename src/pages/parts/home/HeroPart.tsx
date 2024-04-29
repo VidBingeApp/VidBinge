@@ -15,7 +15,14 @@ export interface HeroPartProps {
   searchParams: ReturnType<typeof useSearchQuery>;
 }
 
-function getTimeOfDay(date: Date): "night" | "morning" | "day" {
+function getTimeOfDay(
+  date: Date,
+): "night" | "morning" | "day" | "420" | "halloween" {
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  if (month === 4 && day === 20) return "420"; // Adding the check for 4/20
+  if (month === 10 && day === 31) return "halloween"; // Adding the check for Halloween
+
   const hour = date.getHours();
   if (hour < 5) return "night";
   if (hour < 12) return "morning";

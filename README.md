@@ -1,15 +1,12 @@
-
-<p align="center"><img align="center" width="280" src="./.github/logo-dark.svg#gh-dark-mode-only"/></p>
-<p align="center"><img align="center" width="280" src="./.github/logo-light.svg#gh-light-mode-only"/></p>
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,vite,ts" />
   <br/>
 </p>
 <br/><br/>
 
-# ⚡What is VidBinge?
+This is the source code to VidBinge, allegedly. I do not codone piracy of any kind. I just simply like coding stuff. 
 
-VidBinge is a custom fork by Josh Holly based on @movie-web/movie-web (original. It is a web app for watching movies easily.
+# ⚡What is VidBinge?
 
 This service works by displaying video files from third-party providers inside an intuitive and aesthetic user interface.
 
@@ -56,6 +53,3 @@ pnpm build
 
 ## 🤝 Thanks to all Contributors
 This project would not be possible without our amazing contributors and the community. Thanks a lot! Keep rocking 🍻.
-
-[![Contributors](https://contrib.rocks/image?repo=VidBinge/VidBinge)](https://github.com/VidBinge/VidBinge/graphs/contributors)
-
