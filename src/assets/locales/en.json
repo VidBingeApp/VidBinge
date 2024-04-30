@@ -179,23 +179,29 @@
     "titles": {
       "day": {
         "default": "What would you like to watch this afternoon?",
-        "extra": ["Viva la Vid Binge!"],
-        "extra": ["Welcome to Vid Binge!"],
-        "extra": ["Can't go wrong with The Big Lebowski!"]
+        "extra": [
+          "Viva la Vid Binge!",
+          "Welcome to Vid Binge!",
+          "Can't go wrong with The Big Lebowski!"
+          ]
       },
       "morning": {
         "default": "What would you like to watch this morning?",
-        "extra": ["Good morning! How about some \"Always Sunny\"?"],
-        "extra": ["I hear The Expanse is popular"],
-        "extra": ["Viva la Vid Binge!"]
+        "extra": [
+          "Good morning! How about some \"Always Sunny\"?",
+          "I hear The Expanse is popular",
+          "Viva la Vid Binge!"
+        ]
       },
       "night": {
         "default": "What would you like to watch tonight?",
-        "extra": ["Rick & Morty is great with friends!"],
-        "extra": ["The Godfather is a classic!"],
-        "extra": ["Go smoke and watch The Simpsons!"],
-        "extra": ["The Office is always a good choice!"],
-        "extra": ["Viva la Vid Binge!"]
+        "extra": [
+          "Rick & Morty is great with friends!",
+          "The Godfather is a classic!",
+          "Go smoke and watch The Simpsons!",
+          "The Office is always a good choice!",
+          "Viva la Vid Binge!"
+        ]
       },
       "420": {
         "default": "What would you like to watch this 4/20?",
