@@ -67,7 +67,9 @@ export function HeroPart({ setIsSticky, searchParams }: HeroPartProps) {
     <ThinContainer>
       <div className="mt-44 space-y-16 text-center">
         <div className="relative z-10 mb-16">
-          <HeroTitle className="mx-auto max-w-md">{title}</HeroTitle>
+          <HeroTitle className="mx-auto text-pretty max-w-md">
+            {title}
+          </HeroTitle>
         </div>
         <div className="relative h-20 z-30">
           <Sticky
