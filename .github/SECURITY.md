@@ -7,4 +7,6 @@ The latest version of VidBinge is the only version that is supported, as it is t
 ## Reporting a Vulnerability
 
 You can contact the developer of VidBinge to report a vulnerability:
- - Report the vulnerability by emailing &#106;&#111;&#115;&#104;&#64;&#118;&#105;&#100;&#98;&#105;&#110;&#103;&#101;&#46;&#99;&#111;&#109;
+ - Using Our GitHub's [Security Advisory Page](https://github.com/joshholly/VidBinge/security/advisories/new)
+ - Reaching out in our [Telegram Group](https://t.me/vidbinge)
+ - Emailing us, you can find our email address on our [About Page](https://www.vidbinge.com/about)
