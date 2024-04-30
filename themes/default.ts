@@ -1,6 +1,38 @@
 const tokens = {
   black: "#000000",
   white: "#FFFFFF",
+  semantic: {
+    red: {
+      c100: "#F46E6E",
+      c200: "#E44F4F",
+      c300: "#D74747",
+      c400: "#B43434",
+    },
+    green: {
+      c100: "#60D26A",
+      c200: "#40B44B",
+      c300: "#31A33C",
+      c400: "#237A2B",
+    },
+    silver: {
+      c100: "#DEDEDE",
+      c200: "#B6CAD7",
+      c300: "#8EA3B0",
+      c400: "#617A8A",
+    },
+    yellow: {
+      c100: "#FFF599",
+      c200: "#FCEC61",
+      c300: "#D8C947",
+      c400: "#AFA349",
+    },
+    rose: {
+      c100: "#DB3D61",
+      c200: "#8A293B",
+      c300: "#812435",
+      c400: "#701B2B",
+    },
+  },
   purple: {
     c50: "#aac5ff",
     c100: "#82a9ff",
@@ -139,6 +171,8 @@ export const defaultTheme = {
         background: tokens.shade.c600,
         altBackground: tokens.shade.c700,
         hoverBackground: tokens.shade.c500,
+        highlight: tokens.semantic.yellow.c400,
+        highlightHover: tokens.semantic.yellow.c200,
         text: tokens.shade.c50,
         secondary: tokens.shade.c100,
         border: tokens.shade.c400,
@@ -151,7 +185,8 @@ export const defaultTheme = {
         inputBgHover: tokens.shade.c500,
         wordBackground: tokens.shade.c500,
         copyText: tokens.shade.c100,
-        copyTextHover: tokens.ash.c50
+        copyTextHover: tokens.ash.c50,
+        errorText: tokens.semantic.rose.c100,
       },
 
       settings: {
@@ -219,6 +254,8 @@ export const defaultTheme = {
 
         scraping: {
           card: tokens.shade.c700,
+          error: tokens.semantic.red.c200,
+          success: tokens.semantic.green.c200,
           loading: tokens.purple.c200,
           noresult: tokens.ash.c100
         },
@@ -240,6 +277,7 @@ export const defaultTheme = {
           cardBorder: tokens.ash.c700,
           slider: tokens.ash.c50,
           sliderFilled: tokens.purple.c200,
+          error: tokens.semantic.red.c200,
 
           buttons: {
             list: tokens.ash.c700,
@@ -249,6 +287,7 @@ export const defaultTheme = {
           closeHover: tokens.ash.c800,
 
           type: {
+            main: tokens.semantic.silver.c400,
             secondary: tokens.ash.c200,
             accent: tokens.purple.c200
           }
