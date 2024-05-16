@@ -23,7 +23,7 @@ dependencies:
     version: 1.0.3
   '@movie-web/providers':
     specifier: github:joshholly/providers
-    version: github.com/joshholly/providers/5401f6f5b6ac0144a94f237ed3dbf4b628dd776d
+    version: github.com/joshholly/providers/59d59c807daccc8ef1b583834f05e7f75c6131fd
   '@noble/hashes':
     specifier: ^1.3.3
     version: 1.4.0
@@ -7401,7 +7401,7 @@ packages:
       '@formkit/auto-animate': 0.8.2
       '@headlessui/react': 1.7.19(react-dom@18.3.1)(react@18.3.1)
       '@ladjs/country-language': 1.0.3
-      '@movie-web/providers': github.com/joshholly/providers/5401f6f5b6ac0144a94f237ed3dbf4b628dd776d
+      '@movie-web/providers': github.com/joshholly/providers/59d59c807daccc8ef1b583834f05e7f75c6131fd
       '@noble/hashes': 1.4.0
       '@plasmohq/messaging': 0.6.2(react@18.3.1)
       '@react-spring/web': 9.7.3(react-dom@18.3.1)(react@18.3.1)
@@ -7450,8 +7450,8 @@ packages:
       - supports-color
     dev: false
 
-  github.com/joshholly/providers/5401f6f5b6ac0144a94f237ed3dbf4b628dd776d:
-    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/5401f6f5b6ac0144a94f237ed3dbf4b628dd776d}
+  github.com/joshholly/providers/59d59c807daccc8ef1b583834f05e7f75c6131fd:
+    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/59d59c807daccc8ef1b583834f05e7f75c6131fd}
     name: '@movie-web/providers'
     version: 2.3.0
     requiresBuild: true
