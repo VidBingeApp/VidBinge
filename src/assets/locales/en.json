@@ -321,7 +321,8 @@
         "copyHlsPlaylist": "Copy HLS playlist link",
         "downloadSubtitle": "Download current subtitle",
         "downloadVideo": "Download video",
-        "hlsDisclaimer": "Downloads are taken directly from the provider. Vid Binge does not have control over how the downloads are provided.<br /><br />Please note that you are downloading an HLS playlist, <bold>it is not recommended to download if you are not familiar with advanced streaming formats</bold>. Try different sources for different formats.",
+        "downloadHlsAsVideo": "Download HLS as video",
+        "hlsDisclaimer": "Downloads are direct from the provider; Vid Binge cannot control them. <br> <br> You're downloading an HLS playlist, which is for advanced users. Try different sources for other formats.<br /><br />You may also try our HLS to Video downloader tool, but it may not work for some sources.",
         "onAndroid": {
           "1": "To download on Android, click the download button then, on the new page, <bold>tap and hold</bold> on the video, then select <bold>save</bold>.",
           "shortTitle": "Download / Android",
