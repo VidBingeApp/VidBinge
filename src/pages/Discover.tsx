@@ -358,7 +358,7 @@ export function Discover() {
           }}
           onWheel={(e) => handleWheel(e, categorySlug)}
         >
-          {medias.slice(0, 20).map((media) => (
+          {medias.slice(0, 35).map((media) => (
             <a
               key={media.id}
               onClick={() =>
