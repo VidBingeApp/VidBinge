@@ -71,7 +71,6 @@ export function DownloadView({ id }: { id: string }) {
               <Menu.Paragraph marginClass="mb-6">
                 <StyleTrans k="player.menus.downloads.hlsDisclaimer" />
               </Menu.Paragraph>
-
               <Button className="w-full" theme="purple" href={hlsDownload}>
                 {t("player.menus.downloads.downloadHlsAsVideo")}
               </Button>
