@@ -23,7 +23,7 @@ dependencies:
     version: 1.0.3
   '@movie-web/providers':
     specifier: github:joshholly/providers
-    version: github.com/joshholly/providers/b3b3bcd5aa19a01295375896cd5a5ef0d65f3535
+    version: github.com/joshholly/providers/92025d13a95a428d8747e8acf6705f770d1affcb
   '@noble/hashes':
     specifier: ^1.3.3
     version: 1.4.0
@@ -307,7 +307,7 @@ devDependencies:
     version: 1.1.0(vite@5.2.11)
   vite-plugin-pwa:
     specifier: ^0.17.4
-    version: 0.17.5(vite@5.2.11)(workbox-build@7.1.0)(workbox-window@7.1.0)
+    version: 0.17.5(vite@5.2.11)(workbox-build@7.1.1)(workbox-window@7.1.0)
   vite-plugin-static-copy:
     specifier: ^1.0.0
     version: 1.0.4(vite@5.2.11)
@@ -8075,7 +8075,7 @@ packages:
       vite: 5.2.11(@types/node@20.12.11)
     dev: true
 
-  /vite-plugin-pwa@0.17.5(vite@5.2.11)(workbox-build@7.1.0)(workbox-window@7.1.0):
+  /vite-plugin-pwa@0.17.5(vite@5.2.11)(workbox-build@7.1.1)(workbox-window@7.1.0):
     resolution: {integrity: sha512-UxRNPiJBzh4tqU/vc8G2TxmrUTzT6BqvSzhszLk62uKsf+npXdvLxGDz9C675f4BJi6MbD2tPnJhi5txlMzxbQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
@@ -8087,7 +8087,7 @@ packages:
       fast-glob: 3.3.2
       pretty-bytes: 6.1.1
       vite: 5.2.11(@types/node@20.12.11)
-      workbox-build: 7.1.0
+      workbox-build: 7.1.1
       workbox-window: 7.1.0
     transitivePeerDependencies:
       - supports-color
@@ -8390,8 +8390,8 @@ packages:
       workbox-core: 7.1.0
     dev: true
 
-  /workbox-build@7.1.0:
-    resolution: {integrity: sha512-F6R94XAxjB2j4ETMkP1EXKfjECOtDmyvt0vz3BzgWJMI68TNSXIVNkgatwUKBlPGOfy9n2F/4voYRNAhEvPJNg==}
+  /workbox-build@7.1.1:
+    resolution: {integrity: sha512-WdkVdC70VMpf5NBCtNbiwdSZeKVuhTEd5PV3mAwpTQCGAB5XbOny1P9egEgNdetv4srAMmMKjvBk4RD58LpooA==}
     engines: {node: '>=16.0.0'}
     dependencies:
       '@apideck/better-ajv-errors': 0.3.6(ajv@8.14.0)
@@ -8639,7 +8639,7 @@ packages:
       '@formkit/auto-animate': 0.8.2
       '@headlessui/react': 1.7.19(react-dom@18.3.1)(react@18.3.1)
       '@ladjs/country-language': 1.0.3
-      '@movie-web/providers': github.com/joshholly/providers/b3b3bcd5aa19a01295375896cd5a5ef0d65f3535
+      '@movie-web/providers': github.com/joshholly/providers/92025d13a95a428d8747e8acf6705f770d1affcb
       '@noble/hashes': 1.4.0
       '@plasmohq/messaging': 0.6.2(react@18.3.1)
       '@react-spring/web': 9.7.3(react-dom@18.3.1)(react@18.3.1)
@@ -8688,8 +8688,8 @@ packages:
       - supports-color
     dev: false
 
-  github.com/joshholly/providers/b3b3bcd5aa19a01295375896cd5a5ef0d65f3535:
-    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/b3b3bcd5aa19a01295375896cd5a5ef0d65f3535}
+  github.com/joshholly/providers/92025d13a95a428d8747e8acf6705f770d1affcb:
+    resolution: {tarball: https://codeload.github.com/joshholly/providers/tar.gz/92025d13a95a428d8747e8acf6705f770d1affcb}
     name: '@movie-web/providers'
     version: 2.3.0
     requiresBuild: true
