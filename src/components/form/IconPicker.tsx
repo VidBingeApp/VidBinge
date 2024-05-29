@@ -7,7 +7,7 @@ const icons = [
   UserIcons.COUCH,
   UserIcons.MOBILE,
   UserIcons.TICKET,
-  UserIcons.HANDCUFFS,
+  UserIcons.FILM,
 ];
 export const initialIcon = icons[0];
 
