@@ -82,6 +82,15 @@ export function Discover() {
           language: "en-US",
         });
 
+        // Shuffle the movies
+        for (let i = data.results.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [data.results[i], data.results[j]] = [
+            data.results[j],
+            data.results[i],
+          ];
+        }
+
         setCategoryMovies((prevCategoryMovies) => ({
           ...prevCategoryMovies,
           [category.name]: data.results,
@@ -103,6 +112,15 @@ export function Discover() {
           api_key: conf().TMDB_READ_API_KEY,
           language: "en-US",
         });
+
+        // Shuffle the TV shows
+        for (let i = data.results.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [data.results[i], data.results[j]] = [
+            data.results[j],
+            data.results[i],
+          ];
+        }
 
         setCategoryShows((prevCategoryShows) => ({
           ...prevCategoryShows,
@@ -133,7 +151,7 @@ export function Discover() {
           [data.genres[i], data.genres[j]] = [data.genres[j], data.genres[i]];
         }
 
-        // Fetch only the first 5 TV show genres
+        // Fetch only the first 6 TV show genres
         setTVGenres(data.genres.slice(0, 7));
       } catch (error) {
         console.error("Error fetching TV show genres:", error);
@@ -152,6 +170,16 @@ export function Discover() {
           with_genres: genreId.toString(),
           language: "en-US",
         });
+
+        // Shuffle the TV shows
+        for (let i = data.results.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [data.results[i], data.results[j]] = [
+            data.results[j],
+            data.results[i],
+          ];
+        }
+
         setTVShowGenres((prevTVShowGenres) => ({
           ...prevTVShowGenres,
           [genreId]: data.results,
@@ -358,46 +386,56 @@ export function Discover() {
           }}
           onWheel={(e) => handleWheel(e, categorySlug)}
         >
-          {medias.slice(0, 35).map((media) => (
-            <a
-              key={media.id}
-              onClick={() =>
-                navigate(
-                  `/media/tmdb-${isTVShow ? "tv" : "movie"}-${media.id}-${
-                    isTVShow ? media.name : media.title
-                  }`,
+          {medias
+            .filter((media, index, self) => {
+              return (
+                index ===
+                self.findIndex(
+                  (m) => m.id === media.id && m.title === media.title,
                 )
-              }
-              className="text-center relative mt-3 ml-[0.285em] mb-3 mr-[0.2em]"
-              style={{ flex: `0 0 ${movieWidth}` }} // Set a fixed width for each movie
-            >
-              <div className="relative transition-transform hover:scale-105 duration-[0.45s]">
-                <Flare.Base className="group cursor-pointer rounded-xl relative p-[0.65em] bg-background-main transition-colors duration-300">
-                  <Flare.Light
-                    flareSize={300}
-                    cssColorVar="--colors-mediaCard-hoverAccent"
-                    backgroundClass="bg-mediaCard-hoverBackground duration-200"
-                    className="rounded-xl bg-background-main group-hover:opacity-100"
-                  />
-                  <img
-                    src={`https://image.tmdb.org/t/p/w500${media.poster_path}`}
-                    alt="failed to fetch :("
-                    loading="lazy"
-                    className="rounded-xl relative"
-                  />
-                  <h1 className="group relative pt-2 text-[13.5px] whitespace-normal duration-[0.35s] break-words font-semibold text-white opacity-0 group-hover:opacity-100">
-                    {isTVShow
-                      ? (media.name?.length ?? 0) > 36
-                        ? `${media.name?.slice(0, 36)}...`
-                        : media.name
-                      : (media.title?.length ?? 0) > 36
-                        ? `${media.title?.slice(0, 36)}...`
-                        : media.title}
-                  </h1>
-                </Flare.Base>
-              </div>
-            </a>
-          ))}
+              );
+            })
+            .slice(0, 35)
+            .map((media) => (
+              <a
+                key={media.id}
+                onClick={() =>
+                  navigate(
+                    `/media/tmdb-${isTVShow ? "tv" : "movie"}-${media.id}-${
+                      isTVShow ? media.name : media.title
+                    }`,
+                  )
+                }
+                className="text-center relative mt-3 mx-[0.285em] mb-3 transition-transform hover:scale-105 duration-[0.45s]"
+                style={{ flex: `0 0 ${movieWidth}` }} // Set a fixed width for each movie
+              >
+                <div className="relative transition-transform hover:scale-105 duration-[0.45s]">
+                  <Flare.Base className="group cursor-pointer rounded-xl relative p-[0.65em] bg-background-main transition-colors duration-300">
+                    <Flare.Light
+                      flareSize={300}
+                      cssColorVar="--colors-mediaCard-hoverAccent"
+                      backgroundClass="bg-mediaCard-hoverBackground duration-200"
+                      className="rounded-xl bg-background-main group-hover:opacity-100"
+                    />
+                    <img
+                      src={`https://image.tmdb.org/t/p/w500${media.poster_path}`}
+                      alt="failed to fetch :("
+                      loading="lazy"
+                      className="rounded-xl relative"
+                    />
+                    <h1 className="group relative pt-2 text-[13.5px] whitespace-normal duration-[0.35s] break-words font-semibold text-white opacity-0 group-hover:opacity-100">
+                      {isTVShow
+                        ? (media.name?.length ?? 0) > 36
+                          ? `${media.name?.slice(0, 36)}...`
+                          : media.name
+                        : (media.title?.length ?? 0) > 36
+                          ? `${media.title?.slice(0, 36)}...`
+                          : media.title}
+                    </h1>
+                  </Flare.Base>
+                </div>
+              </a>
+            ))}
         </div>
 
         <div className="flex items-center justify-center">
@@ -502,6 +540,13 @@ export function Discover() {
 
           movies.push(...data.results);
         }
+
+        // Shuffle the movies
+        for (let i = movies.length - 1; i > 0; i -= 1) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [movies[i], movies[j]] = [movies[j], movies[i]];
+        }
+
         setGenreMovies((prevGenreMovies) => ({
           ...prevGenreMovies,
           [genreId]: movies,
