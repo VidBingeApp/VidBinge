@@ -81,7 +81,7 @@
           "value": "facebookexternalhit"
         }
       ],
-      "destination": "https://www.vidbinge.app/:match*",
+      "destination": "https://vidbinge.app/$1",
       "permanent": false
     },
     {
@@ -93,7 +93,7 @@
           "value": "Twitterbot"
         }
       ],
-      "destination": "https://www.vidbinge.app/:match*",
+      "destination": "https://vidbinge.app/$1",
       "permanent": false
     },
     {
@@ -105,7 +105,7 @@
           "value": "LinkedInBot"
         }
       ],
-      "destination": "https://www.vidbinge.app/:match*",
+      "destination": "https://vidbinge.app/$1",
       "permanent": false
     },
     {
@@ -117,7 +117,7 @@
           "value": "Slackbot"
         }
       ],
-      "destination": "https://www.vidbinge.app/:match*",
+      "destination": "https://vidbinge.app/$1",
       "permanent": false
     },
     {
@@ -129,7 +129,7 @@
           "value": "TelegramBot"
         }
       ],
-      "destination": "https://www.vidbinge.app/:match*",
+      "destination": "https://vidbinge.app/$1",
       "permanent": false
     },
     {
@@ -141,7 +141,7 @@
           "value": "Applebot"
         }
       ],
-      "destination": "https://www.vidbinge.app/:match*",
+      "destination": "https://vidbinge.app/$1",
       "permanent": false
     }
   ]
