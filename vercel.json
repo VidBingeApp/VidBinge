@@ -73,7 +73,7 @@
   ],
   "redirects": [
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
@@ -81,35 +81,11 @@
           "value": "facebookexternalhit"
         }
       ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
+      "destination": "https://www.vidbinge.app/:match*",
       "permanent": false
     },
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "facebookexternalhit"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-movie-:movieId-:movieName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "facebookexternalhit"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
@@ -117,35 +93,11 @@
           "value": "Twitterbot"
         }
       ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
+      "destination": "https://www.vidbinge.app/:match*",
       "permanent": false
     },
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Twitterbot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-movie-:movieId-:movieName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Twitterbot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
@@ -153,35 +105,11 @@
           "value": "LinkedInBot"
         }
       ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
+      "destination": "https://www.vidbinge.app/:match*",
       "permanent": false
     },
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "LinkedInBot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-movie-:movieId-:movieName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "LinkedInBot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
@@ -189,35 +117,11 @@
           "value": "Slackbot"
         }
       ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
+      "destination": "https://www.vidbinge.app/:match*",
       "permanent": false
     },
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Slackbot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-movie-:movieId-:movieName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Slackbot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
@@ -225,35 +129,11 @@
           "value": "TelegramBot"
         }
       ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
+      "destination": "https://www.vidbinge.app/:match*",
       "permanent": false
     },
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "TelegramBot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-movie-:movieId-:movieName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "TelegramBot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/",
+      "source": "/(.*)",
       "has": [
         {
           "type": "header",
@@ -261,31 +141,7 @@
           "value": "Applebot"
         }
       ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-tv-:tvId-:tvName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Applebot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "permanent": false
-    },
-    {
-      "source": "/media/tmdb-movie-:movieId-:movieName(/?)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Applebot"
-        }
-      ],
-      "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
+      "destination": "https://www.vidbinge.app/:match*",
       "permanent": false
     }
   ]
