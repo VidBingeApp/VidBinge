@@ -73,7 +73,7 @@
   ],
   "redirects": [
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/?",
+      "source": "/media/tmdb-tv-:tvId-:tvName/:season?/:episode?/?",
       "has": [
         {
           "type": "header",
