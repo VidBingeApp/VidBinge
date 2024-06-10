@@ -77,68 +77,8 @@
       "has": [
         {
           "type": "header",
-          "key": "user-agent",
-          "value": "facebookexternalhit"
-        }
-      ],
-      "destination": "https://vidbinge.app/$1",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Twitterbot"
-        }
-      ],
-      "destination": "https://vidbinge.app/$1",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "LinkedInBot"
-        }
-      ],
-      "destination": "https://vidbinge.app/$1",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Slackbot"
-        }
-      ],
-      "destination": "https://vidbinge.app/$1",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "TelegramBot"
-        }
-      ],
-      "destination": "https://vidbinge.app/$1",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "header",
-          "key": "user-agent",
-          "value": "Applebot"
+          "key": "x-redirect",
+          "value": "true"
         }
       ],
       "destination": "https://vidbinge.app/$1",
