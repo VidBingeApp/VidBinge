@@ -73,7 +73,7 @@
   ],
   "redirects": [
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName/:season?/:episode?/?",
+      "source": "/media/tmdb-tv-:tvId-:tvName/:season/:episode?/",
       "has": [
         {
           "type": "header",
@@ -85,7 +85,7 @@
       "permanent": false
     },
     {
-      "source": "/media/tmdb-tv-:tvId-:tvName/?",
+      "source": "/media/tmdb-tv-:tvId-:tvName(/?)",
       "has": [
         {
           "type": "header",
@@ -97,7 +97,7 @@
       "permanent": false
     },
     {
-      "source": "/media/tmdb-movie-:movieId-:movieName/?",
+      "source": "/media/tmdb-movie-:movieId-:movieName(/?)",
       "has": [
         {
           "type": "header",
