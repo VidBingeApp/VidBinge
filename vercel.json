@@ -69,34 +69,44 @@
           "value": "public, max-age=31536000, s-maxage=31536000, immutable"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/media/tmdb-tv-:tvId-:tvName/:season?/:episode?/?",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|Applebot)"
+        }
+      ],
+      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
+      "statusCode": 301
     },
     {
-      "redirects": [
+      "source": "/media/tmdb-tv-:tvId-:tvName/?",
+      "has": [
         {
-          "source": "/media/tmdb-tv-:tvId-:tvName/:season?/:episode?",
-          "has": [
-            {
-              "type": "header",
-              "key": "user-agent",
-              "value": "(facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|Applebot)"
-            }
-          ],
-          "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-          "statusCode": 302
-        },
-        {
-          "source": "/media/tmdb-movie-:movieId-:movieName/",
-          "has": [
-            {
-              "type": "header",
-              "key": "user-agent",
-              "value": "(facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|Applebot)"
-            }
-          ],
-          "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName/",
-          "statusCode": 302
+          "type": "header",
+          "key": "user-agent",
+          "value": "(facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|Applebot)"
         }
-      ]
-    }    
+      ],
+      "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
+      "statusCode": 301
+    },
+    {
+      "source": "/media/tmdb-movie-:movieId-:movieName/?",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|TelegramBot|Applebot)"
+        }
+      ],
+      "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
+      "statusCode": 301
+    }
   ]
 }
