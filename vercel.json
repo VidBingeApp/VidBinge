@@ -82,7 +82,7 @@
         }
       ],
       "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "statusCode": 301
+      "permanent": false
     },
     {
       "source": "/media/tmdb-tv-:tvId-:tvName/?",
@@ -94,7 +94,7 @@
         }
       ],
       "destination": "https://www.vidbinge.app/media/tmdb-tv-:tvId-:tvName",
-      "statusCode": 301
+      "permanent": false
     },
     {
       "source": "/media/tmdb-movie-:movieId-:movieName/?",
@@ -106,7 +106,7 @@
         }
       ],
       "destination": "https://www.vidbinge.app/media/tmdb-movie-:movieId-:movieName",
-      "statusCode": 301
+      "permanent": false
     }
   ]
 }
