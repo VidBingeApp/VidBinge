@@ -1,8 +1,8 @@
 {
-  "name": "movie-web",
-  "version": "4.7.0",
-  "private": true,
-  "homepage": "https://github.com/movie-web/movie-web",
+  "name": "vidbinge",
+  "version": "4.9.0",
+  "private": false,
+  "homepage": "https://github.com/joshholly/vidbinge",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
