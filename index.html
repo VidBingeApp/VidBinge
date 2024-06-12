@@ -161,22 +161,20 @@
         }
       </script>
     {{/if}}
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+      defer></script>
     <script>
-      (function(w, d) {
-        w.PushEngage = w.PushEngage || [];
-        w._peq = w._peq || [];
-        PushEngage.push(['init', {
-            appId: '0005ef14-03a3-4169-a176-29b13d495b82'
-        }]);
-      
-        var e = d.createElement('script');
-      
-        e.src = 'https://clientcdn.pushengage.com/sdks/pushengage-web-sdk.js';
-        e.async = true;
-        e.type = 'text/javascript';
-        d.head.appendChild(e);
-      })(window, document);
-      </script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "743e8647-7c01-498b-9fdf-6ca790260829",
+      safari_web_id: "web.onesignal.auto.27841aa0-90c9-472e-b116-e68b5f82c9c6",
+      notifyButton: {
+        enable: true,
+        },
+      });
+    });
+    </script>
 
   </head>
 
