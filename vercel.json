@@ -5,6 +5,10 @@
       "destination": "/opensearch.xml"
     },
     {
+      "source": "/OneSignalSDKWorker.js",
+      "destination": "/OneSignalSDKWorker.js"
+    },
+    {
       "source": "/media/(.*)",
       "has": [
         {

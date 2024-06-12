@@ -62,6 +62,7 @@ export default defineConfig(({ mode }) => {
           globIgnores: ["**ping.txt**"],
         },
         includeAssets: [
+          "OneSignalSDKWorker.js",
           "favicon.ico",
           "apple-touch-icon.png",
           "safari-pinned-tab.svg",
