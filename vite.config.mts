@@ -142,6 +142,8 @@ export default defineConfig(({ mode }) => {
             },
           ],
         },
+        srcDir: 'src', // Directory where the service worker file is located
+        filename: 'custom-sw.js', // Service worker file name
       }),
       loadVersion(),
       checker({
