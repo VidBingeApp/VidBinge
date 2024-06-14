@@ -74,9 +74,6 @@ export function Footer() {
           <p className="mt-3">{t("footer.legal.disclaimerText")}</p>
         </div>
         <div className="flex flex-wrap gap-[0.5rem] -ml-3">
-          <FooterLink icon={Icons.GITHUB} href={conf().GITHUB_LINK}>
-            {t("footer.links.github")}
-          </FooterLink>
           <FooterLink icon={Icons.TELEGRAM} href={conf().DISCORD_LINK}>
             {t("footer.links.telegram")}
           </FooterLink>
