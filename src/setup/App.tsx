@@ -42,7 +42,7 @@ function useUmamiTracking() {
     const script = document.createElement("script");
     script.async = true;
     script.src = "https://stats.vidbinge.com/script.js";
-    script.dataset.websiteId = "ad7e6777-63d4-4b15-b1ef-a8e9792c6fc4";
+    script.dataset.websiteId = "c296af3c-7c9e-4677-ad12-57c5c0b6c0f9";
     document.head.appendChild(script);
 
     return () => {
