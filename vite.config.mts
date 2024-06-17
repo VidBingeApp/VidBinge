@@ -109,6 +109,7 @@ export default defineConfig(({ mode }) => {
 
         ],
         manifest: {
+          id: "https://www.vidbinge.com/",
           name: "Vid Binge",
           short_name: "VidBinge",
           description: "Stream a wide array of movies and TV shows on Vid Binge, completely free. Enjoy unlimited, ad-free viewing with no subscriptions required.",
@@ -116,6 +117,7 @@ export default defineConfig(({ mode }) => {
           background_color: "#120f1d",
           display: "standalone",
           start_url: "/",
+          orientation: "any",
           icons: [
             {
               src: "android-chrome-192x192.png",
