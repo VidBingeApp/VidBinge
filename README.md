@@ -49,7 +49,12 @@ pnpm build
 > [!TIP]
 > You must use pnpm (`npm i -g pnpm`) and run NodeJS 20
 
-|---|
+# ✉️ Contact
+
+[Discord Server](https://discord.gg/4jzBvV8E5r)
+
+[Email](mailto:josh@vidbinge.com)
+
 
 ## 🤝 Thanks to all Contributors
 This project would not be possible without our amazing contributors and the community. Thanks a lot! Keep rocking 🍻.
