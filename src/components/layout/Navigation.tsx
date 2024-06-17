@@ -92,7 +92,7 @@ export function Navigation(props: NavigationProps) {
                 rel="noreferrer"
                 className="text-xl text-white tabbable rounded-full"
               >
-                <IconPatch icon={Icons.TELEGRAM} clickable downsized />
+                <IconPatch icon={Icons.DISCORD} clickable downsized />
               </a>
               <a
                 href={conf().GITHUB_LINK}
