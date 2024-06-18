@@ -146,9 +146,19 @@
 
     <!-- Frame Breaking -->
     <script>
-    if (window.top !== window.self) {
-      window.top.location = window.self.location;
-    }
+      if (window.top !== window.self) {
+          // Hide the site content
+          document.getElementById('root').style.display = 'none';
+
+          // Show the iframe message
+          const iframeMessage = document.getElementById('iframe-message');
+          iframeMessage.classList.remove('hidden');
+          iframeMessage.classList.add('flex');
+
+          // Set the link to the current URL
+          const iframeLink = document.getElementById('iframe-link');
+          iframeLink.href = window.self.location.href;
+      }
     </script>
 
     {{#if opensearchEnabled }}
@@ -178,6 +188,12 @@
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="iframe-message"
+      class="hidden fixed inset-0 items-center justify-center bg-black text-white text-center">
+      <a id="iframe-link" href="#" target="_blank"
+        class="text-2xl sm:text-4xl font-bold underline">Click Here to Watch
+        This Directly On Vid Binge</a>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
   </body>
