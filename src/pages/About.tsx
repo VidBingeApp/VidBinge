@@ -24,6 +24,7 @@ export function AboutPage() {
       <ThinContainer>
         <Heading1>{t("about.title")}</Heading1>
         <Paragraph>{t("about.description")}</Paragraph>
+        <Paragraph>{t("about.contact")}</Paragraph>
         <Heading2>{t("about.faqTitle")}</Heading2>
         <Ol
           items={[
