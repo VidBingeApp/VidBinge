@@ -45,16 +45,28 @@ export function Discover() {
     name: "",
     id: "",
   });
-  const providers = [
+  const movieProviders = [
     { name: "Netflix", id: "8" },
     { name: "Apple TV", id: "2" },
     { name: "Amazon Prime Video", id: "10" },
+    { name: "Hulu", id: "15" },
+    { name: "Max", id: "1899" },
+    { name: "Paramount Plus", id: "531" },
+    { name: "Disney Plus", id: "337" },
+    { name: "Shudder", id: "99" },
+    // More movie providers can be added here
+  ];
+
+  const tvProviders = [
+    { name: "Netflix", id: "8" },
+    { name: "Apple TV+", id: "350" },
+    { name: "Amazon Prime Video", id: "119" },
     { name: "Paramount Plus", id: "531" },
     { name: "Hulu", id: "15" },
-    { name: "HBO Max", id: "1899" },
-    { name: "Netflix", id: "8" },
+    { name: "Max", id: "1899" },
     { name: "Disney Plus", id: "337" },
-    // More providers can be added here
+    { name: "fubuTV", id: "257" },
+    // More TV providers can be added here
   ];
   const [countdown, setCountdown] = useState<number | null>(null);
   const navigate = useNavigate();
@@ -80,6 +92,7 @@ export function Discover() {
         const data = await get<any>(category.endpoint, {
           api_key: conf().TMDB_READ_API_KEY,
           language: "en-US",
+          region: "US",
         });
 
         // Shuffle the movies
@@ -218,11 +231,11 @@ export function Discover() {
   };
 
   useEffect(() => {
-    const randomProvider =
-      providers[Math.floor(Math.random() * providers.length)];
-    setSelectedProvider(randomProvider); // Store the selected provider
+    const randomMovieProvider =
+      movieProviders[Math.floor(Math.random() * movieProviders.length)];
+    setSelectedProvider(randomMovieProvider); // Store the selected provider
 
-    fetchMoviesByProvider(randomProvider.id);
+    fetchMoviesByProvider(randomMovieProvider.id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -255,11 +268,11 @@ export function Discover() {
   };
 
   useEffect(() => {
-    const randomProvider =
-      providers[Math.floor(Math.random() * providers.length)];
-    setSelectedTVProvider(randomProvider); // Store the selected provider
+    const randomTVProvider =
+      tvProviders[Math.floor(Math.random() * tvProviders.length)];
+    setSelectedTVProvider(randomTVProvider); // Store the selected provider
 
-    fetchTVByProvider(randomProvider.id);
+    fetchTVByProvider(randomTVProvider.id);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -320,7 +333,9 @@ export function Discover() {
     }
   }, [movieWidth]);
 
+  const browser = !!window.chrome; // detect chromium browser
   let isScrolling = false;
+
   function handleWheel(e: React.WheelEvent, categorySlug: string) {
     if (isScrolling) {
       return;
@@ -329,7 +344,7 @@ export function Discover() {
     isScrolling = true;
 
     const carousel = carouselRefs.current[categorySlug];
-    if (carousel) {
+    if (carousel && !e.deltaX) {
       const movieElements = carousel.getElementsByTagName("a");
       if (movieElements.length > 0) {
         const posterWidth = movieElements[0].offsetWidth;
@@ -343,9 +358,14 @@ export function Discover() {
       }
     }
 
-    setTimeout(() => {
+    if (browser) {
+      setTimeout(() => {
+        isScrolling = false;
+      }, 345); // disable scrolling after 345 milliseconds for chromium-based browsers
+    } else {
+      // immediately reset isScrolling for non-chromium browsers
       isScrolling = false;
-    }, 345); // Disable scrolling every 3 milliseconds after interaction (only for mouse wheel doe)
+    }
   }
 
   function renderMovies(medias: Media[], category: string, isTVShow = false) {
