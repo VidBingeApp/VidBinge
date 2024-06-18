@@ -144,6 +144,13 @@
       data-website-id="c296af3c-7c9e-4677-ad12-57c5c0b6c0f9">
     </script>
 
+    <!-- Frame Breaking -->
+    <script>
+    if (window.top !== window.self) {
+      window.top.location = window.self.location;
+    }
+    </script>
+
     {{#if opensearchEnabled }}
     <!-- OpenSearch -->
     <link rel="search" type="application/opensearchdescription+xml"
