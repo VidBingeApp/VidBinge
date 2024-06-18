@@ -163,7 +163,7 @@
 
               // After 5 seconds, revert changes
               setTimeout(function () {
-                  root.style.display = 'block';
+                  root.style.removeProperty('display');
                   iframeMessage.classList.add('hidden');
                   iframeMessage.classList.remove('flex');
               }, 5000);
