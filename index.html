@@ -146,19 +146,20 @@
 
     <!-- Frame Breaking -->
     <script>
-      if (window.top !== window.self) {
-          // Hide the site content
-          document.getElementById('root').style.display = 'none';
+      document.addEventListener('DOMContentLoaded', function () {
+          if (window.top !== window.self) {
+              // Hide the site content
+              document.getElementById('root').style.display = 'none';
 
-          // Show the iframe message
-          const iframeMessage = document.getElementById('iframe-message');
-          iframeMessage.classList.remove('hidden');
-          iframeMessage.classList.add('flex');
+              // Show the iframe message
+              const iframeMessage = document.getElementById('iframe-message');
+              iframeMessage.classList.remove('hidden');
 
-          // Set the link to the current URL
-          const iframeLink = document.getElementById('iframe-link');
-          iframeLink.href = window.self.location.href;
-      }
+              // Set the link to the current URL
+              const iframeLink = document.getElementById('iframe-link');
+              iframeLink.href = window.self.location.href;
+          }
+      });
     </script>
 
     {{#if opensearchEnabled }}
