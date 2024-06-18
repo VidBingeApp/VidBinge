@@ -39,14 +39,25 @@ SettingsPage.preload();
 
 function useUmamiTracking() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://stats.vidbinge.com/script.js";
-    script.dataset.websiteId = "c296af3c-7c9e-4677-ad12-57c5c0b6c0f9";
-    document.head.appendChild(script);
+    if (
+      !document.querySelector(
+        "script[src='https://stats.vidbinge.com/script.js']",
+      )
+    ) {
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = "https://stats.vidbinge.com/script.js";
+      script.dataset.websiteId = "c296af3c-7c9e-4677-ad12-57c5c0b6c0f9";
+      document.head.appendChild(script);
+    }
 
     return () => {
-      document.head.removeChild(script);
+      const script = document.querySelector(
+        "script[src='https://stats.vidbinge.com/script.js']",
+      );
+      if (script) {
+        document.head.removeChild(script);
+      }
     };
   }, []);
 }
