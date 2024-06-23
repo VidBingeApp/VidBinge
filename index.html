@@ -167,6 +167,11 @@
                   iframeMessage.classList.add('hidden');
                   iframeMessage.classList.remove('flex');
               }, 5000);
+              //Remove VPN alert after 5 seconds
+              setTimeout(function () {
+                  const notification = document.getElementById('notification');
+                  notification.classList.add('hidden');
+              }, 5000);
           }
       });
     </script>
