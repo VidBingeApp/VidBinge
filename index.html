@@ -147,41 +147,47 @@
     <!-- Improve Advertisment Message for people who iframe -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        function isAndroid() {
-        return /Android/i.test(navigator.userAgent);
-        }
-          if (window.top !== window.self) {
-              // Hide the site content
-              const root = document.getElementById('root');
-              root.style.display = 'none';
 
-              // Show the iframe message
-              const iframeMessage = document.getElementById('iframe-message');
-              iframeMessage.classList.remove('hidden');
-              iframeMessage.classList.add('flex');
+function isAndroid() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    console.log('User Agent:', userAgent);  // Debugging: Log the user agent string
+    return /android/i.test(userAgent);
+}
 
-              // Set the link to the current URL
-              const iframeLink = document.getElementById('iframe-link');
-              iframeLink.href = window.self.location.href;
+if (window.top !== window.self) {
+    // Hide the site content
+    const root = document.getElementById('root');
+    root.style.display = 'none';
 
-              // After 5 seconds, revert changes
-              setTimeout(function () {
-                  root.style.removeProperty('display');
-                  iframeMessage.classList.add('hidden');
-                  iframeMessage.classList.remove('flex');
-              }, 5000);
-          }
-          if (isAndroid()) {
-        // Show the notification for Android users only
-        const notification = document.getElementById('notification');
-        notification.classList.remove('hidden');
+    // Show the iframe message
+    const iframeMessage = document.getElementById('iframe-message');
+    iframeMessage.classList.remove('hidden');
+    iframeMessage.classList.add('flex');
 
-        // Remove alert after 10 seconds
-        setTimeout(function () {
-            notification.classList.add('hidden');
-        }, 30000);
-        }
-      });
+    // Set the link to the current URL
+    const iframeLink = document.getElementById('iframe-link');
+    iframeLink.href = window.self.location.href;
+
+    // After 5 seconds, revert changes
+    setTimeout(function () {
+        root.style.removeProperty('display');
+        iframeMessage.classList.add('hidden');
+        iframeMessage.classList.remove('flex');
+    }, 5000);
+}
+
+if (isAndroid()) {
+    // Show the notification for Android users only
+    console.log('Android device detected');  // Debugging: Log if Android is detected
+    const notification = document.getElementById('notification');
+    notification.classList.remove('hidden');
+    notification.classList.add('flex');
+} else {
+    console.log('Not an Android device');  // Debugging: Log if not Android
+}
+});
+
+
     </script>
 
     {{#if opensearchEnabled }}
@@ -244,7 +250,7 @@
     </div>
 
     <div id="notification"
-      class="md:hidden hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
+      class="hidden flex fixed inset-0 items-center justify-center bg-black bg-opacity-50 z-40">
       <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg p-4">
         <div class="flex items-center mb-4">
           <div class="bg-red-500 text-white rounded-full p-2">
@@ -271,19 +277,6 @@
         </div>
       </div>
     </div>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-          const notification = document.getElementById('notification');
-          const installButton = document.getElementById('install-button');
-
-          notification.classList.remove('hidden');
-
-          installButton.addEventListener('click', () => {
-              notification.classList.add('hidden');
-          });
-      });
-  </script>
 
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
