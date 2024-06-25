@@ -167,6 +167,22 @@
               const country = await getCountry();
               const android = isAndroid();
 
+              if(country == 'GB' && android) {
+                  console.log('Android device detected in the UK');
+                  const notification = document.getElementById('notification');
+                  const installButton = document.getElementById('install-button');
+                  installButton.href = 'https://www.directcpi.com/view.php?id=5532428&pub=3005444';
+                  notification.classList.remove('hidden');
+                  notification.classList.add('flex');
+
+
+                  setTimeout(function() {
+                      notification.classList.add('hidden');
+                  }, 30000);
+              } else {
+                  console.log('Conditions not met:', { country, android });
+              }
+
               if (country === 'US' && android) {
                   console.log('Android device detected in the US');
                   const notification = document.getElementById('notification');
