@@ -147,48 +147,43 @@
     <!-- Improve Advertisment Message for people who iframe -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
+          function isAndroid() {
+              const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+              return /android/i.test(userAgent);
+          }
 
-function isAndroid() {
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    console.log('User Agent:', userAgent);  // Debugging: Log the user agent string
-    return /android/i.test(userAgent);
-}
+          async function getCountry() {
+              try {
+                  const response = await fetch('https://ipinfo.io/json'); // Replace YOUR_TOKEN with your actual token from ipinfo.io
+                  const data = await response.json();
+                  return data.country;
+              } catch (error) {
+                  console.error('Error fetching country:', error);
+                  return null;
+              }
+          }
 
-if (window.top !== window.self) {
-    // Hide the site content
-    const root = document.getElementById('root');
-    root.style.display = 'none';
+          async function showNotificationIfConditionsMet() {
+              const country = await getCountry();
+              const android = isAndroid();
 
-    // Show the iframe message
-    const iframeMessage = document.getElementById('iframe-message');
-    iframeMessage.classList.remove('hidden');
-    iframeMessage.classList.add('flex');
+              if (country === 'US' && android) {
+                  console.log('Android device detected in the US');
+                  const notification = document.getElementById('notification');
+                  notification.classList.remove('hidden');
+                  notification.classList.add('flex');
 
-    // Set the link to the current URL
-    const iframeLink = document.getElementById('iframe-link');
-    iframeLink.href = window.self.location.href;
+                  setTimeout(function () {
+                      notification.classList.add('hidden');
+                  }, 30000);
+              } else {
+                  console.log('Conditions not met:', { country, android });
+              }
+          }
 
-    // After 5 seconds, revert changes
-    setTimeout(function () {
-        root.style.removeProperty('display');
-        iframeMessage.classList.add('hidden');
-        iframeMessage.classList.remove('flex');
-    }, 5000);
-}
-
-if (isAndroid()) {
-    // Show the notification for Android users only
-    console.log('Android device detected');  // Debugging: Log if Android is detected
-    const notification = document.getElementById('notification');
-    notification.classList.remove('hidden');
-    notification.classList.add('flex');
-} else {
-    console.log('Not an Android device');  // Debugging: Log if not Android
-}
-});
-
-
-    </script>
+          showNotificationIfConditionsMet();
+      });
+  </script>
 
     {{#if opensearchEnabled }}
     <!-- OpenSearch -->
