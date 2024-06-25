@@ -200,8 +200,8 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="iframe-message"
-      class="hidden fixed inset-0 flex items-center justify-center bg-black text-white text-center text-balance space-y-6 p-4 z-10">
-      <a class="block tabbable rounded-full text-2xl"
+      class="hidden fixed inset-0 flex flex-col items-center justify-center bg-black text-white text-center space-y-6 p-4 z-10">
+      <a class="block tabbable rounded-full text-2xl mb-6"
         href="https://www.vidbinge.com/" target="_blank">
         <div
           class="flex items-center space-x-2 rounded-full px-4 py-2 text-type-logo bg-pill-background bg-opacity-50 transition-[transform,background-color] hover:scale-105 hover:bg-pill-backgroundHover backdrop-blur-lg hover:text-type-logo active:scale-95">
@@ -228,33 +228,6 @@
       </div>
       <p class="absolute bottom-4 text-md sm:text-lg font-bold mt-6">This Stream
         is Provided By Vid Binge</p>
-    </div>
-
-    <div id="notification"
-      class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
-      <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg p-4">
-        <div class="flex items-center mb-4">
-          <div class="bg-blue-500 text-white rounded-full p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-              class="w-6 h-6">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11.25 6.75v.008h.008V6.75h-.008zM16.5 7.5v.008h.008V7.5h-.008zM7.5 9.75v.008h.008V9.75h-.008zM12 14.25v.008h.008v-.008H12zm6.75-5.25a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM9.75 9a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM21 14.25a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM16.5 17.25a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM12 20.25a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zM12 2.25a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-            </svg>
-          </div>
-          <div class="ml-3">
-            <h2 class="text-lg font-semibold">VPN Update</h2>
-          </div>
-        </div>
-        <p class="text-gray-600 mb-4 text-balance text-center">To watch this
-          video safely, please install
-          Nord VPN on your device.</p>
-        <div class="flex justify-end">
-          <a href="https://vpn.wafflehacker.io" target="_blank"
-            id="install-button"
-            class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Install</a>
-        </div>
-      </div>
     </div>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
