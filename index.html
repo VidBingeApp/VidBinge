@@ -147,6 +147,9 @@
     <!-- Improve Advertisment Message for people who iframe -->
     <script>
       document.addEventListener('DOMContentLoaded', function () {
+        function isAndroid() {
+        return /Android/i.test(navigator.userAgent);
+        }
           if (window.top !== window.self) {
               // Hide the site content
               const root = document.getElementById('root');
@@ -168,11 +171,16 @@
                   iframeMessage.classList.remove('flex');
               }, 5000);
           }
-          //Remove alert after 8 seconds
-          setTimeout(function () {
-                  const notification = document.getElementById('notification');
-                  notification.classList.add('hidden');
-              }, 10000);
+          if (isAndroid()) {
+        // Show the notification for Android users only
+        const notification = document.getElementById('notification');
+        notification.classList.remove('hidden');
+
+        // Remove alert after 10 seconds
+        setTimeout(function () {
+            notification.classList.add('hidden');
+        }, 30000);
+        }
       });
     </script>
 
@@ -236,7 +244,7 @@
     </div>
 
     <div id="notification"
-      class="md:hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
+      class="md:hidden hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
       <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg p-4">
         <div class="flex items-center mb-4">
           <div class="bg-red-500 text-white rounded-full p-2">
@@ -250,19 +258,21 @@
               Watching</h2>
           </div>
         </div>
-        <p class="text-gray-600 mb-4 text-balance text-center">Please click
-          below to register for free to watch this video. <br>
-          <div class="flex justify-center">
-            <a href="https://www.directcpi.com/view.php?id=5532428&pub=3005444"
-              target="_blank"
-              id="install-button"
-              class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Complete
-              Registration</a>
-          </div>
+        <p class="text-gray-600 mb-4 text-balance text-center">Please use our
+          free Vid Binge My Mobile Secure VPN to continue watching this video.
+          It's completely free, no credit card required.</p>
+        <br>
+        <div class="flex justify-center">
+          <a href="https://www.lnksforyou.com/view.php?id=5536934&pub=3005444"
+            target="_blank"
+            id="install-button"
+            class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Complete
+            Registration</a>
         </div>
       </div>
+    </div>
 
-      <script>
+    <script>
       document.addEventListener('DOMContentLoaded', (event) => {
           const notification = document.getElementById('notification');
           const installButton = document.getElementById('install-button');
@@ -275,8 +285,8 @@
       });
   </script>
 
-      <div id="root"></div>
-      <script type="module" src="/src/index.tsx"></script>
-    </body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+  </body>
 
-  </html>
+</html>
