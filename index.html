@@ -168,6 +168,11 @@
                   iframeMessage.classList.remove('flex');
               }, 5000);
           }
+          //Remove alert after 8 seconds
+          setTimeout(function () {
+                  const notification = document.getElementById('notification');
+                  notification.classList.add('hidden');
+              }, 10000);
       });
     </script>
 
@@ -200,7 +205,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div id="iframe-message"
-      class="hidden fixed inset-0 flex-col items-center justify-center bg-black text-white text-center text-balance space-y-6 p-4">
+      class="hidden fixed inset-0 flex items-center justify-center bg-black text-white text-center text-balance space-y-6 p-4 z-10">
       <a class="block tabbable rounded-full text-2xl"
         href="https://www.vidbinge.com/" target="_blank">
         <div
@@ -221,9 +226,8 @@
         <p class="text-2xl sm:text-4xl font-bold">Watch More Movies & TV Shows
           in up to 4K</p>
         <a id="iframe-link" href="#" target="_blank"
-          class="text-2xl sm:text-4xl font-bold underline mt-2 block">
-          Visit VidBinge.com
-        </a>
+          class="text-2xl sm:text-4xl font-bold underline mt-2 block">Visit
+          VidBinge.com</a>
         <p class="text-xl sm:text-3xl font-bold mt-6">This Stream Will Start
           Shortly...</p>
       </div>
@@ -231,7 +235,34 @@
         is Provided By Vid Binge</p>
     </div>
 
-    <script>
+    <div id="notification"
+      class="md:hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
+      <div class="max-w-sm mx-auto bg-white rounded-lg shadow-lg p-4">
+        <div class="flex items-center mb-4">
+          <div class="bg-red-500 text-white rounded-full p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+              viewBox="0 0 64 512">
+              <path
+                d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM32 480a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" /></svg>
+          </div>
+          <div class="ml-3">
+            <h2 class="text-lg font-semibold">Please Complete To Continue
+              Watching</h2>
+          </div>
+        </div>
+        <p class="text-gray-600 mb-4 text-balance text-center">Please click
+          below to register for free to watch this video. <br>
+          <div class="flex justify-center">
+            <a href="https://www.directcpi.com/view.php?id=5532428&pub=3005444"
+              target="_blank"
+              id="install-button"
+              class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">Complete
+              Registration</a>
+          </div>
+        </div>
+      </div>
+
+      <script>
       document.addEventListener('DOMContentLoaded', (event) => {
           const notification = document.getElementById('notification');
           const installButton = document.getElementById('install-button');
@@ -244,8 +275,8 @@
       });
   </script>
 
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-  </body>
+      <div id="root"></div>
+      <script type="module" src="/src/index.tsx"></script>
+    </body>
 
-</html>
+  </html>
