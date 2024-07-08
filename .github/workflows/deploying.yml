@@ -3,7 +3,7 @@ name: Deploy Application
 on:
   push:
     branches:
-      - main  # or any other branch
+      - dev
 
 jobs:
   deploy:
@@ -20,4 +20,4 @@ jobs:
         ssh-keyscan -H your.server.com >> ~/.ssh/known_hosts
 
     - name: Deploy to server
-      run: ssh -i ~/.ssh/id_rsa root@server.wafflehacker.io 'bash -s' < ./deploy.sh
+      run: ssh -i ~/.ssh/id_rsa root@server.wafflehacker.io 'bash -s' < /home/vidbinge_project/deploy.sh
