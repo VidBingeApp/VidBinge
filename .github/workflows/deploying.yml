@@ -3,7 +3,8 @@ name: Deploy Application
 on:
   push:
     branches:
-      - dev  # Triggers the workflow on pushes to the "main" branch
+      - dev  # Triggers the workflow on pushes to the "dev" branch
+  workflow_dispatch: {}
 
 jobs:
   deploy:
