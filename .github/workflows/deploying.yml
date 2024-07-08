@@ -3,21 +3,21 @@ name: Deploy Application
 on:
   push:
     branches:
-      - dev
+      - dev  # Triggers the workflow on pushes to the "main" branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up SSH key
       run: |
         mkdir -p ~/.ssh
         echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 --decode > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -H your.server.com >> ~/.ssh/known_hosts
+        ssh-keyscan -H server.wafflehacker.io >> ~/.ssh/known_hosts
 
     - name: Deploy to server
-      run: ssh -i ~/.ssh/id_rsa root@server.wafflehacker.io 'bash -s' < /home/vidbinge_project/deploy.sh
+      run: ssh -i ~/.ssh/id_rsa root@server.wafflehacker.io "bash /home/vidbinge_project/deploy.sh ${{ github.sha }}"
