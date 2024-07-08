@@ -62,7 +62,7 @@ const tokens = {
 }
 
 export default createTheme({
-  name: "amoled",
+  name: "blck",
   extend: {
     colors: {
       themePreview: {
