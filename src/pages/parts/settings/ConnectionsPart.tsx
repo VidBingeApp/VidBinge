@@ -9,7 +9,6 @@ import { MwLink } from "@/components/text/Link";
 import { AuthInputBox } from "@/components/text-inputs/AuthInputBox";
 import { Divider } from "@/components/utils/Divider";
 import { Heading1 } from "@/components/utils/Text";
-import { SetupPart } from "@/pages/parts/settings/SetupPart";
 
 interface ProxyEditProps {
   proxyUrls: string[] | null;
@@ -55,7 +54,7 @@ function ProxyEdit({ proxyUrls, setProxyUrls }: ProxyEditProps) {
           </p>
           <p className="max-w-[20rem] font-medium">
             <Trans i18nKey="settings.connections.workers.description">
-              <MwLink to="https://movie-web.github.io/docs/proxy/deploy">
+              <MwLink to="https://docs.sudo-flix.lol/proxy/deploy">
                 Proxy documentation
               </MwLink>
             </Trans>
@@ -125,7 +124,7 @@ function BackendEdit({ backendUrl, setBackendUrl }: BackendEditProps) {
           </p>
           <p className="max-w-[20rem] font-medium">
             <Trans i18nKey="settings.connections.server.description">
-              <MwLink to="https://movie-web.github.io/docs/backend/deploy">
+              <MwLink to="https://docs.sudo-flix.lol/backend/deploy">
                 Backend documentation
               </MwLink>
             </Trans>
@@ -157,7 +156,6 @@ export function ConnectionsPart(props: BackendEditProps & ProxyEditProps) {
     <div>
       <Heading1 border>{t("settings.connections.title")}</Heading1>
       <div className="space-y-6">
-        <SetupPart />
         <ProxyEdit
           proxyUrls={props.proxyUrls}
           setProxyUrls={props.setProxyUrls}

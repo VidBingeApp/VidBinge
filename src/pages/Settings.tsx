@@ -314,6 +314,14 @@ export function SettingsPage() {
             setStyling={state.subtitleStyling.set}
           />
         </div>
+        <div id="settings-connection" className="mt-48">
+          <ConnectionsPart
+            backendUrl={state.backendUrl.state}
+            setBackendUrl={state.backendUrl.set}
+            proxyUrls={state.proxyUrls.state}
+            setProxyUrls={state.proxyUrls.set}
+          />
+        </div>
       </SettingsLayout>
       <Transition
         animation="fade"
