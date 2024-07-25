@@ -30,7 +30,7 @@ export function useCaptions() {
 
   const captions = useMemo(
     () =>
-      captionList.length !== 0 ? captionList : getHlsCaptionList?.() ?? [],
+      captionList.length !== 0 ? captionList : (getHlsCaptionList?.() ?? []),
     [captionList, getHlsCaptionList],
   );
 
