@@ -2,13 +2,10 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 
 import { NoUserAvatar, UserAvatar } from "@/components/Avatar";
-import { IconPatch } from "@/components/buttons/IconPatch";
-import { Icons } from "@/components/Icon";
 import { LinksDropdown } from "@/components/LinksDropdown";
 import { Lightbar } from "@/components/utils/Lightbar";
 import { useAuth } from "@/hooks/auth/useAuth";
 import { BlurEllipsis } from "@/pages/layouts/SubPageLayout";
-import { conf } from "@/setup/config";
 import { useBannerSize } from "@/stores/banner";
 
 import { BrandPill } from "./BrandPill";
