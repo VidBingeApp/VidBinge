@@ -15,6 +15,7 @@ import { useAsync, useAsyncFn } from "react-use";
 import { Button } from "@/components/buttons/Button";
 import { Icon, Icons } from "@/components/Icon";
 import { Loading } from "@/components/layout/Loading";
+import { RedirectionWrapper } from "@/components/RedirectionWrapper";
 import { useAuth } from "@/hooks/auth/useAuth";
 import { useAuthRestore } from "@/hooks/auth/useAuthRestore";
 import { useBackendUrl } from "@/hooks/auth/useBackendUrl";
@@ -185,7 +186,9 @@ root.render(
             <BookmarkSyncer />
             <SettingsSyncer />
             <TheRouter>
-              <MigrationRunner />
+              <RedirectionWrapper>
+                <MigrationRunner />
+              </RedirectionWrapper>
             </TheRouter>
           </ThemeProvider>
         </Suspense>
