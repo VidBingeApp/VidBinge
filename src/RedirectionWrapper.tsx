@@ -9,24 +9,31 @@ export function RedirectionWrapper({ children }: RedirectionWrapperProps) {
 
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
-    if (searchParams.get("redir") === "sudoflix") {
+    const hasSeenPopup = localStorage.getItem("hasSeenRedirPopup");
+    if (searchParams.get("redir") === "sudoflix" && !hasSeenPopup) {
       setShowPopup(true);
     }
   }, []);
 
+  const closePopup = () => {
+    setShowPopup(false);
+    localStorage.setItem("hasSeenRedirPopup", "true");
+  };
+
   return (
     <>
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
-          <div className="bg-purple-950 p-8 rounded-xl shadow-2xl text-center text-white max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <h2 className="text-3xl font-bold mb-6 text-purple-300">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50 p-4">
+          <div className="bg-purple-950 p-4 sm:p-8 rounded-xl shadow-2xl text-center text-white w-full max-w-lg max-h-[90vh] overflow-y-auto">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-purple-300">
               Welcome to Vidbinge.com!
             </h2>
-            <div className="space-y-4 text-gray-300 text-sm leading-relaxed">
+            <div className="space-y-3 sm:space-y-4 text-gray-300 text-xs sm:text-sm leading-relaxed">
               <p>
                 Hello there, On July 25th 2024 Sudo-Flix.lol announced its
                 closure due to a Cease and Desist Letter. You can discover more
-                about this at their respective discord server!
+                about this at their respective discord server at
+                discord.gg/SudoFlix!
               </p>
               <p>
                 In lieu of that, we have been entrusted as the Official
@@ -62,8 +69,8 @@ export function RedirectionWrapper({ children }: RedirectionWrapperProps) {
             </div>
             <button
               type="button"
-              className="mt-6 px-6 py-2 bg-purple-700 text-white rounded-full hover:bg-purple-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
-              onClick={() => setShowPopup(false)}
+              className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 bg-purple-700 text-white text-sm sm:text-base rounded-full hover:bg-purple-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
+              onClick={closePopup}
             >
               Close
             </button>
