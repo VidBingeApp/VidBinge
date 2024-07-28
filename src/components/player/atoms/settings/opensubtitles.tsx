@@ -83,7 +83,6 @@ export function OpenSubtitlesCaptionView({ id }: { id: string }) {
   const { selectCaptionById } = useCaptions();
   const captionList = usePlayerStore((s) => s.captionList);
   const getHlsCaptionList = usePlayerStore((s) => s.display?.getCaptionList);
-  const [dragging] = useState(false);
 
   const captions = useMemo(
     () =>
