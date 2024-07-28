@@ -36,6 +36,7 @@ import {
   extensionInfo,
   isExtensionActiveCached,
 } from "./backend/extension/messaging";
+import { RedirectionWrapper } from "./RedirectionWrapper";
 import { initializeChromecast } from "./setup/chromecast";
 import { initializeOldStores } from "./stores/__old/migrations";
 
@@ -171,6 +172,7 @@ function ExtensionStatus() {
   }
   return null;
 }
+
 const container = document.getElementById("root");
 const root = createRoot(container!);
 
