@@ -14,11 +14,35 @@ export function RedirectionWrapper({ children }: RedirectionWrapperProps) {
     }
   }, []);
 
+  const handleClose = () => {
+    setShowPopup(false);
+  };
+
   return (
     <>
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
-          <div className="bg-purple-950 p-4 md:p-8 rounded-xl shadow-2xl text-center text-white w-11/12 md:w-3/4 lg:w-1/2 xl:w-2/5 2xl:max-w-2xl max-h-[90vh] overflow-y-auto">
+          <div className="relative bg-purple-950 p-4 md:p-8 rounded-xl shadow-2xl text-center text-white w-11/12 md:w-3/4 lg:w-1/2 xl:w-2/5 2xl:max-w-2xl max-h-[90vh] overflow-y-auto">
+            <button
+              type="button"
+              onClick={handleClose}
+              className="absolute top-0 right-0 mt-2 mr-2 text-white bg-transparent hover:bg-purple-700 p-1 rounded-full focus:outline-none"
+              aria-label="Close modal"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
             <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-6 text-purple-300">
               Welcome to VidBinge.com!
             </h2>
@@ -63,7 +87,7 @@ export function RedirectionWrapper({ children }: RedirectionWrapperProps) {
             <button
               type="button"
               className="mt-4 md:mt-6 px-5 md:px-6 py-2 text-sm md:text-base bg-purple-700 text-white rounded-full hover:bg-purple-600 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50"
-              onClick={() => setShowPopup(false)}
+              onClick={handleClose}
             >
               Close
             </button>

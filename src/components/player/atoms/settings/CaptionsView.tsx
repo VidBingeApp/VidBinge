@@ -29,6 +29,7 @@ export function CaptionOption(props: {
   loading?: boolean;
   onClick?: () => void;
   error?: React.ReactNode;
+  chevron?: boolean;
 }) {
   return (
     <SelectableLink
@@ -36,6 +37,7 @@ export function CaptionOption(props: {
       loading={props.loading}
       error={props.error}
       onClick={props.onClick}
+      chevron={props.chevron}
     >
       <span
         data-active-link={props.selected ? true : undefined}
@@ -93,11 +95,13 @@ function useSubtitleList(subs: CaptionListItem[], searchQuery: string) {
   const { t: translate } = useTranslation();
   const unknownChoice = translate("player.menus.subtitles.unknownLanguage");
   return useMemo(() => {
-    const input = subs.map((t) => ({
-      ...t,
-      languageName:
-        getPrettyLanguageNameFromLocale(t.language) ?? unknownChoice,
-    }));
+    const input = subs
+      .map((t) => ({
+        ...t,
+        languageName:
+          getPrettyLanguageNameFromLocale(t.language) ?? unknownChoice,
+      }))
+      .filter((x) => !x.opensubtitles);
     const sorted = sortLangCodes(input.map((t) => t.language));
     let results = input.sort((a, b) => {
       return sorted.indexOf(a.language) - sorted.indexOf(b.language);
@@ -215,7 +219,7 @@ export function CaptionsView({ id }: { id: string }) {
             <button
               type="button"
               onClick={() => router.navigate("/captions/settings")}
-              className="py-1 -my-1 px-3 -mx-3 rounded tabbable"
+              className="-mr-2 -my-1 px-2 p-[0.4em] rounded tabbable hover:bg-video-context-light hover:bg-opacity-10"
             >
               {t("player.menus.subtitles.customizeLabel")}
             </button>
@@ -242,6 +246,13 @@ export function CaptionsView({ id }: { id: string }) {
             {t("player.menus.subtitles.offChoice")}
           </CaptionOption>
           <CustomCaptionOption />
+          <CaptionOption
+            onClick={() => router.navigate("/captions/opensubtitles")}
+            selected={useSubtitleStore((s) => s.isOpenSubtitles)}
+            chevron
+          >
+            {t("player.menus.subtitles.OpenSubtitlesChoice")}
+          </CaptionOption>
           {content}
         </Menu.ScrollToActiveSection>
       </FileDropHandler>
