@@ -15,7 +15,6 @@ import { useAsync, useAsyncFn } from "react-use";
 import { Button } from "@/components/buttons/Button";
 import { Icon, Icons } from "@/components/Icon";
 import { Loading } from "@/components/layout/Loading";
-import { RedirectionWrapper } from "@/components/RedirectionWrapper";
 import { useAuth } from "@/hooks/auth/useAuth";
 import { useAuthRestore } from "@/hooks/auth/useAuthRestore";
 import { useBackendUrl } from "@/hooks/auth/useBackendUrl";
@@ -36,8 +35,13 @@ import {
   extensionInfo,
   isExtensionActiveCached,
 } from "./backend/extension/messaging";
+import IframeMessage from "./components/utils/iframe";
+import { RedirectionWrapper } from "./RedirectionWrapper";
 import { initializeChromecast } from "./setup/chromecast";
+// eslint-disable-next-line import/order
 import { initializeOldStores } from "./stores/__old/migrations";
+
+// Import the IframeMessage component
 
 // initialize
 initializeChromecast();
@@ -191,6 +195,7 @@ root.render(
                 <MigrationRunner />
               </RedirectionWrapper>
             </TheRouter>
+            <IframeMessage />
           </ThemeProvider>
         </Suspense>
       </HelmetProvider>
