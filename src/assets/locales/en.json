@@ -366,6 +366,7 @@
       },
       "settings": {
         "downloadItem": "Download",
+        "watchParty": "Watch Party",
         "enableSubtitles": "Enable Subtitles",
         "experienceSection": "Viewing experience",
         "playbackItem": "Playback settings",
