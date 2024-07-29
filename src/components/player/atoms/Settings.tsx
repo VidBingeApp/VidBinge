@@ -18,6 +18,7 @@ import { AudioView } from "./settings/AudioView";
 import { CaptionSettingsView } from "./settings/CaptionSettingsView";
 import { CaptionsView } from "./settings/CaptionsView";
 import { DownloadRoutes } from "./settings/Downloads";
+import { OpenSubtitlesCaptionView } from "./settings/opensubtitles";
 import { PlaybackSettingsView } from "./settings/PlaybackSettingsView";
 import { QualityView } from "./settings/QualityView";
 import { SettingsMenu } from "./settings/SettingsMenu";
@@ -39,7 +40,7 @@ function SettingsOverlay({ id }: { id: string }) {
   return (
     <Overlay id={id}>
       <OverlayRouter id={id}>
-        <OverlayPage id={id} path="/" width={343} height={431}>
+        <OverlayPage id={id} path="/" width={343} height={450}>
           <SettingsMenu id={id} />
         </OverlayPage>
         <OverlayPage id={id} path="/quality" width={343} height={400}>
@@ -56,6 +57,16 @@ function SettingsOverlay({ id }: { id: string }) {
           <Menu.CardWithScrollable>
             <CaptionsView id={id} />
           </Menu.CardWithScrollable>
+        </OverlayPage>
+        <OverlayPage
+          id={id}
+          path="/captions/opensubtitles"
+          width={343}
+          height={431}
+        >
+          <Menu.Card>
+            <OpenSubtitlesCaptionView id={id} />
+          </Menu.Card>
         </OverlayPage>
         <OverlayPage id={id} path="/captions/settings" width={343} height={450}>
           <Menu.Card>

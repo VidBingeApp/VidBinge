@@ -23,6 +23,11 @@ export interface SubtitleStyling {
    * background blur, ranges between 0 and 1
    */
   backgroundBlur: number;
+
+  /**
+   * bold, boolean
+   */
+  bold: boolean;
 }
 
 export interface SubtitleStore {
@@ -31,11 +36,13 @@ export interface SubtitleStore {
   };
   enabled: boolean;
   lastSelectedLanguage: string | null;
+  isOpenSubtitles: boolean;
   styling: SubtitleStyling;
   overrideCasing: boolean;
   delay: number;
   updateStyling(newStyling: Partial<SubtitleStyling>): void;
   setLanguage(language: string | null): void;
+  setIsOpenSubtitles(isOpenSubtitles: boolean): void;
   setCustomSubs(): void;
   setOverrideCasing(enabled: boolean): void;
   setDelay(delay: number): void;
@@ -51,6 +58,7 @@ export const useSubtitleStore = create(
         lastSelectedLanguage: null,
       },
       lastSelectedLanguage: null,
+      isOpenSubtitles: false,
       overrideCasing: false,
       delay: 0,
       styling: {
@@ -58,6 +66,7 @@ export const useSubtitleStore = create(
         backgroundOpacity: 0.5,
         size: 1,
         backgroundBlur: 0.5,
+        bold: false,
       },
       resetSubtitleSpecificSettings() {
         set((s) => {
@@ -81,12 +90,18 @@ export const useSubtitleStore = create(
             s.styling.color = newStyling.color.toLowerCase();
           if (newStyling.size !== undefined)
             s.styling.size = Math.min(10, Math.max(0.01, newStyling.size));
+          if (newStyling.bold !== undefined) s.styling.bold = newStyling.bold;
         });
       },
       setLanguage(lang) {
         set((s) => {
           s.enabled = !!lang;
           if (lang) s.lastSelectedLanguage = lang;
+        });
+      },
+      setIsOpenSubtitles(isOpenSubtitles) {
+        set((s) => {
+          s.isOpenSubtitles = isOpenSubtitles;
         });
       },
       setCustomSubs() {
