@@ -40,7 +40,7 @@ function SettingsOverlay({ id }: { id: string }) {
   return (
     <Overlay id={id}>
       <OverlayRouter id={id}>
-        <OverlayPage id={id} path="/" width={343} height={450}>
+        <OverlayPage id={id} path="/" width={343} height={460}>
           <SettingsMenu id={id} />
         </OverlayPage>
         <OverlayPage id={id} path="/quality" width={343} height={400}>
