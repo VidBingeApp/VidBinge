@@ -44,7 +44,6 @@ export function DownloadView({ id }: { id: string }) {
   const router = useOverlayRouter(id);
   const { t } = useTranslation();
   const downloadUrl = useDownloadLink();
-  const hlsDownload = `https://hlsdownload.vidbinge.com/?url=${encodeURIComponent(downloadUrl || "")}`;
   const [, copyToClipboard] = useCopyToClipboard();
 
   const sourceType = usePlayerStore((s) => s.source?.type);
@@ -71,12 +70,10 @@ export function DownloadView({ id }: { id: string }) {
               <Menu.Paragraph marginClass="mb-6">
                 <StyleTrans k="player.menus.downloads.hlsDisclaimer" />
               </Menu.Paragraph>
-              <Button className="w-full" theme="purple" href={hlsDownload}>
-                {t("player.menus.downloads.downloadHlsAsVideo")}
-              </Button>
+
               <Button
-                className="w-full mt-2"
-                theme="secondary"
+                className="w-full"
+                theme="purple"
                 href={downloadUrl}
                 onClick={(event) => {
                   // Allow context menu & left click to copy
@@ -86,6 +83,14 @@ export function DownloadView({ id }: { id: string }) {
                 }}
               >
                 {t("player.menus.downloads.copyHlsPlaylist")}
+              </Button>
+              <Button
+                className="w-full mt-2"
+                onClick={openSubtitleDownload}
+                disabled={!selectedCaption}
+                theme="secondary"
+              >
+                {t("player.menus.downloads.downloadSubtitle")}
               </Button>
             </>
           ) : (
