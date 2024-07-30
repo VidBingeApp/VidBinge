@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
+import { Toggle } from "@/components/buttons/Toggle";
 import { Icon, Icons } from "@/components/Icon";
 import {
   CaptionSetting,
@@ -99,7 +100,7 @@ export function CaptionsPart(props: {
             onChange={(v) =>
               props.setStyling({ ...props.styling, backgroundBlur: v / 100 })
             }
-            value={props.styling.backgroundBlur * 100}
+            value={props.styling.backgroundBlur * 1}
             textTransformer={(s) => `${s}%`}
           />
           <CaptionSetting
@@ -112,6 +113,22 @@ export function CaptionsPart(props: {
             }
             value={props.styling.size * 100}
           />
+          <div className="flex justify-between items-center">
+            <Menu.FieldTitle>
+              {t("settings.subtitles.textBoldLabel")}
+            </Menu.FieldTitle>
+            <div className="flex justify-center items-center">
+              <Toggle
+                enabled={props.styling.bold}
+                onClick={() =>
+                  props.setStyling({
+                    ...props.styling,
+                    bold: !props.styling.bold,
+                  })
+                }
+              />
+            </div>
+          </div>
           <div className="flex justify-between items-center">
             <Menu.FieldTitle>
               {t("settings.subtitles.colorLabel")}

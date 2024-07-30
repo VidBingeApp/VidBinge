@@ -628,9 +628,10 @@
       "backgroundLabel": "Background opacity",
       "backgroundBlurLabel": "Background blur",
       "colorLabel": "Color",
-      "previewQuote": "I must not fear. Fear is the mind-killer.",
+      "previewQuote": "The quick brown fox jumps over the lazy dog.",
       "textSizeLabel": "Text size",
-      "title": "Subtitles"
+      "title": "Subtitles",
+      "textBoldLabel": "Bold text"
     },
     "unsaved": "You have unsaved changes"
   }
