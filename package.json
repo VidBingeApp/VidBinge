@@ -2,7 +2,7 @@
   "name": "vidbinge",
   "version": "4.9.5",
   "private": false,
-  "homepage": "https://github.com/joshholly/vidbinge",
+  "homepage": "https://github.com/vidbingeapp/vidbinge",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
