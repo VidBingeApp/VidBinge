@@ -132,6 +132,9 @@ export function CaptionsView({ id }: { id: string }) {
   const getHlsCaptionList = usePlayerStore((s) => s.display?.getCaptionList);
   const [dragging, setDragging] = useState(false);
   const setCaption = usePlayerStore((s) => s.setCaption);
+  const selectedCaptionLanguage = usePlayerStore(
+    (s) => s.caption.selected?.language,
+  );
 
   function onDrop(event: DragEvent<HTMLDivElement>) {
     const files = event.dataTransfer.files;
@@ -196,6 +199,11 @@ export function CaptionsView({ id }: { id: string }) {
     );
   });
 
+  const selectedLanguagePretty = selectedCaptionLanguage
+    ? (getPrettyLanguageNameFromLocale(selectedCaptionLanguage) ??
+      t("player.menus.subtitles.unknownLanguage"))
+    : undefined;
+
   return (
     <>
       <div>
@@ -246,13 +254,16 @@ export function CaptionsView({ id }: { id: string }) {
             {t("player.menus.subtitles.offChoice")}
           </CaptionOption>
           <CustomCaptionOption />
-          <CaptionOption
+          <Menu.ChevronLink
             onClick={() => router.navigate("/captions/opensubtitles")}
-            selected={useSubtitleStore((s) => s.isOpenSubtitles)}
-            chevron
+            rightText={
+              useSubtitleStore((s) => s.isOpenSubtitles)
+                ? selectedLanguagePretty
+                : ""
+            }
           >
             {t("player.menus.subtitles.OpenSubtitlesChoice")}
-          </CaptionOption>
+          </Menu.ChevronLink>
           {content}
         </Menu.ScrollToActiveSection>
       </FileDropHandler>

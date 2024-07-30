@@ -43,7 +43,7 @@ function SettingsOverlay({ id }: { id: string }) {
         <OverlayPage id={id} path="/" width={343} height={460}>
           <SettingsMenu id={id} />
         </OverlayPage>
-        <OverlayPage id={id} path="/quality" width={343} height={400}>
+        <OverlayPage id={id} path="/quality" width={343} height={438}>
           <Menu.Card>
             <QualityView id={id} />
           </Menu.Card>
