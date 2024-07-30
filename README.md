@@ -57,4 +57,4 @@ pnpm build
 
 ## 🤝 Thanks to all Contributors
 
-This project would not be possible without our amazing contributors and the community. Thanks a lot! Keep rocking 🍻.
+This project would not be possible without our amazing contributors and the community. Thanks a lot! Keep rocking 🍻!
