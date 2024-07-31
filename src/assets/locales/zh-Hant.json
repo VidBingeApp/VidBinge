@@ -14,7 +14,24 @@
             "body": "我們的搜尋結果由電影資料庫（TMDB）驅動，無論視訊來源是否有對應內容，都會顯示結果。",
             "title": "搜尋結果中已顯示了電視劇或其他節目，為何我無法播放？"
         },
-        "title": "關於 Vid Binge"
+        "title": "關於 Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "已複製",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "使用這個開源串流媒體應用程式觀看您最喜歡的節目和電影。"
     },
@@ -100,7 +120,9 @@
             "onboarding": "設定",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "註冊",
-            "settings": "設定"
+            "settings": "設定",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "您今天下午想看什麼？",
                 "extra": [
-                    "想要來場冒險嗎？《侏羅紀公園》可能是完美選擇。"
+                    "想要來場冒險嗎？《侏羅紀公園》可能是完美選擇。",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "您今天早上想看什麼？",
                 "extra": [
-                    "我聽說《情留半天》不錯"
+                    "我聽說《情留半天》不錯",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "您今晚想看什麼？",
                 "extra": [
-                    "你疲倦嗎？我聽說《驅魔人》不錯。"
+                    "你疲倦嗎？我聽說《驅魔人》不錯。",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "登出",
             "register": "同步到雲端",
             "settings": "設定",
-            "support": "支援"
+            "support": "支援",
+            "discover": ""
         }
     },
     "notFound": {
@@ -273,7 +316,8 @@
                     "shortTitle": "下載 / PC",
                     "title": "正在PC 上下载"
                 },
-                "title": "下載"
+                "title": "下載",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "集數",
@@ -282,7 +326,8 @@
                 "loadingError": "加載集數時出錯",
                 "loadingList": "載入中...",
                 "loadingTitle": "載入中...",
-                "unairedEpisodes": "本季中的一集或多集已因尚未播出而被禁用。"
+                "unairedEpisodes": "本季中的一集或多集已因尚未播出而被禁用。",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "播放速度",
@@ -303,7 +348,8 @@
                 "qualityItem": "品質",
                 "sourceItem": "影片來源",
                 "subtitleItem": "字幕設定",
-                "videoSection": "影片設定"
+                "videoSection": "影片設定",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -332,7 +378,8 @@
                     "fixCapitals": "修復大小寫"
                 },
                 "title": "字幕",
-                "unknownLanguage": "未知"
+                "unknownLanguage": "未知",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -366,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "取消",
-            "next": "下一集"
+            "next": "下一集",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "播放錯誤",
@@ -479,7 +527,8 @@
                 "default": "預設",
                 "gray": "灰色",
                 "red": "紅色",
-                "teal": "青色"
+                "teal": "青色",
+                "blck": ""
             },
             "title": "外觀"
         },
@@ -527,7 +576,15 @@
             "thumbnail": "生成縮圖",
             "thumbnailDescription": "大多數時候，視頻沒有縮圖。您可以啟用此設置以即時生成它們，但它們會使您的視頻變慢。",
             "thumbnailLabel": "生成縮圖",
-            "title": "偏好設定"
+            "title": "偏好設定",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "重置",
         "save": "保存",
@@ -551,8 +608,38 @@
             "colorLabel": "顏色",
             "previewQuote": "我絕不能害怕。 恐懼會扼殺思維能力。",
             "textSizeLabel": "字體大小",
-            "title": "字幕"
+            "title": "字幕",
+            "textBoldLabel": ""
         },
         "unsaved": "您有未儲存的變更"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
