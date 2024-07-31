@@ -348,7 +348,8 @@
                 "qualityItem": "Kalite",
                 "sourceItem": "Video kaynakları",
                 "subtitleItem": "Altyazı ayarları",
-                "videoSection": "Video ayarları"
+                "videoSection": "Video ayarları",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -377,7 +378,8 @@
                     "fixCapitals": "Büyük harf kullanımını düzelt"
                 },
                 "title": "Altyazılar",
-                "unknownLanguage": "Bilinmeyen"
+                "unknownLanguage": "Bilinmeyen",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -579,7 +581,10 @@
             "autoplay": "Otomatik Oynatma",
             "autoplayLabel": "Otomatik Oynatma",
             "sourceOrderDescription": "Kaynakları yeniden sıralamak için sürükleyip bırakın. Bu, izlemeye çalıştığınız medya için kaynakların kontrol edilme sırasını belirleyecektir. Bir kaynak gri renkteyse, cihazınızda mevcut olmadığı anlamına gelir.",
-            "sourceOrder": "Kaynakların yeniden düzenlenmesi"
+            "sourceOrder": "Kaynakların yeniden düzenlenmesi",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": ""
         },
         "reset": "Sıfırla",
         "save": "Kaydet",
@@ -603,7 +608,8 @@
             "colorLabel": "Renk",
             "previewQuote": "Korkmamalıyım. Korku aklın katilidir.",
             "textSizeLabel": "Yazı boyutu",
-            "title": "Altyazılar"
+            "title": "Altyazılar",
+            "textBoldLabel": ""
         },
         "unsaved": "Kaydedilmemiş değişiklikleriniz var"
     },
