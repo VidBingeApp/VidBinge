@@ -14,7 +14,24 @@
             "body": "Naše výsledky vyhledávání jsou založeny na The Movie Database (TMDB) a zobrazují se bez ohledu na to, zda naše zdroje skutečně obsah mají.",
             "title": "Ve výsledcích vyhledávání se zobrazuje pořad nebo film, proč jej nemůžu přehrát?"
         },
-        "title": "O Vid Bingeu"
+        "title": "O Vid Bingeu",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Zkopírováno",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Sledujte své oblíbené pořady a filmy s touto aplikací pro streamování s otevřeným zdrojovým kódem."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Nastavení",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Zaregistrovat se",
-            "settings": "Nastavení"
+            "settings": "Nastavení",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Na co byste se chtěli dnes odpoledne dívat?",
                 "extra": [
-                    "Chceš zažít dobrodružství? Jurský Park je pro tebe."
+                    "Chceš zažít dobrodružství? Jurský Park je pro tebe.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Na co byste se chtěli dnes ráno dívat?",
                 "extra": [
-                    "Slyšel jsem, že Před úsvitem je super"
+                    "Slyšel jsem, že Před úsvitem je super",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Na co byste se chtěli dnes večer dívat?",
                 "extra": [
-                    "Unaven? Slyšel jsem, že Vymítač ďábla je super."
+                    "Unaven? Slyšel jsem, že Vymítač ďábla je super.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -155,7 +197,8 @@
         "types": {
             "movie": "Film",
             "show": "Seriál"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -167,7 +210,8 @@
             "logout": "Odhlásit se",
             "register": "Synchronizovat do cloudu",
             "settings": "Nastavení",
-            "support": "Podpořte nás"
+            "support": "Podpořte nás",
+            "discover": ""
         }
     },
     "notFound": {
@@ -272,7 +316,8 @@
                     "shortTitle": "Stahování / počítač",
                     "title": "Stahování na počítači"
                 },
-                "title": "Stáhnout"
+                "title": "Stáhnout",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Epizody",
@@ -281,7 +326,8 @@
                 "loadingError": "Chyba při načítání sezóny",
                 "loadingList": "Načítání...",
                 "loadingTitle": "Načítání...",
-                "unairedEpisodes": "Jedna nebo více epizod v této sezóně nejsou dostupné, protože ještě nebyly odvysílány."
+                "unairedEpisodes": "Jedna nebo více epizod v této sezóně nejsou dostupné, protože ještě nebyly odvysílány.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Rychlost přehrávání",
@@ -301,7 +347,9 @@
                 "qualityItem": "Kvalita",
                 "sourceItem": "Zdroje videa",
                 "subtitleItem": "Nastavení titulků",
-                "videoSection": "Nastavení videa"
+                "videoSection": "Nastavení videa",
+                "audioItem": "",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -329,7 +377,9 @@
                     "fixCapitals": "Opravit velká písmena"
                 },
                 "title": "Titulky",
-                "unknownLanguage": "Neznámé"
+                "unknownLanguage": "Neznámé",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -363,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Zrušit",
-            "next": "Další epizoda"
+            "next": "Další epizoda",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Chyba přehrávání",
@@ -390,6 +441,13 @@
                 "homeButton": "Jít domů",
                 "text": "Prohledali jsme naše poskytovatele a nenašli jsme média, která hledáte! Nehostujeme žádné média a nemáme žádnou kontrolu nad tím, co je k dispozici. Pro více podrobností klikněte níže na 'Zobrazit podrobnosti'.",
                 "title": "Nedokázali jsme to najít"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -469,7 +527,8 @@
                 "default": "Výchozí",
                 "gray": "Šedá",
                 "red": "Červená",
-                "teal": "Modrozelená"
+                "teal": "Modrozelená",
+                "blck": ""
             },
             "title": "Vzhled"
         },
@@ -517,7 +576,15 @@
             "thumbnail": "Generovat miniatury",
             "thumbnailDescription": "Videa většinou nemají miniatury. Toto nastavení můžete povolit, ale mohou zpomalit vaše video.",
             "thumbnailLabel": "Generovat miniatury",
-            "title": "Preference"
+            "title": "Preference",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "autoplayDescription": "",
+            "autoplayLabel": ""
         },
         "reset": "Resetovat",
         "save": "Uložit",
@@ -541,8 +608,38 @@
             "colorLabel": "Barva",
             "previewQuote": "Nesmím se bát. Strach zabíjí myšlení.",
             "textSizeLabel": "Velikost textu",
-            "title": "Titulky"
+            "title": "Titulky",
+            "textBoldLabel": ""
         },
         "unsaved": "Máte neuložené změny"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
