@@ -14,7 +14,24 @@
             "body": "Leitarniðurstöður okkar eru knúnar af The Movie Database (TMDB) og eru sýndar þótt að heimildir okkar hafa ekki efnið.",
             "title": "Leitarniðurstöðurnar sýna þættina eða myndina, af hverju get ég ekki spilað það?"
         },
-        "title": "Um Vid Binge"
+        "title": "Um Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Afritað",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Horfðu á uppáhalds þætti og myndirnar þínar með þessu opna hugbúnaða forriti."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Setja upp",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Skrá",
-            "settings": "Stillingar"
+            "settings": "Stillingar",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Hvað myndirðu vilja horfa á þetta kvöldið?",
                 "extra": [
-                    "Fynnst þér þú vera ævintýralegur? Jurrasic Park gæti verið fullkomna valið."
+                    "Fynnst þér þú vera ævintýralegur? Jurrasic Park gæti verið fullkomna valið.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Hvað myndirðu vilja horfa á þessum morgni?",
                 "extra": [
-                    "Ég heyrði að Before Sunrise sé góð"
+                    "Ég heyrði að Before Sunrise sé góð",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Hvað myndirðu vilja horfa á í nótt?",
                 "extra": [
-                    "Þreytt? Ég heyrði að The Exorcist sé góð."
+                    "Þreytt? Ég heyrði að The Exorcist sé góð.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -155,7 +197,8 @@
         "types": {
             "movie": "Mynd",
             "show": "Þáttur"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -167,7 +210,8 @@
             "logout": "Skrá út",
             "register": "Samstilla við ský",
             "settings": "Stillingar",
-            "support": "Stuðningur"
+            "support": "Stuðningur",
+            "discover": ""
         }
     },
     "notFound": {
@@ -272,7 +316,8 @@
                     "shortTitle": "Hlaða niður / PC",
                     "title": "Að hlaða niður á PC"
                 },
-                "title": "Hlaða niður"
+                "title": "Hlaða niður",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Þættir",
@@ -281,7 +326,8 @@
                 "loadingError": "Villa að hlaða seríu",
                 "loadingList": "Hleðsla...",
                 "loadingTitle": "Hleðsla...",
-                "unairedEpisodes": "Einn eða fleiri þættir í þessari seríu eru ekki komnir, út að þeir hafa ekki komið út."
+                "unairedEpisodes": "Einn eða fleiri þættir í þessari seríu eru ekki komnir, út að þeir hafa ekki komið út.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Spilunarhraði",
@@ -301,7 +347,9 @@
                 "qualityItem": "Gæði",
                 "sourceItem": "Myndbands heimildir",
                 "subtitleItem": "Texta stillingar",
-                "videoSection": "Myndbands stillingar"
+                "videoSection": "Myndbands stillingar",
+                "watchParty": "",
+                "audioItem": ""
             },
             "sources": {
                 "failed": {
@@ -329,7 +377,9 @@
                     "fixCapitals": "Lagaðu hástafi"
                 },
                 "title": "Textar",
-                "unknownLanguage": "Óvitað"
+                "unknownLanguage": "Óvitað",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -363,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Hætta við",
-            "next": "Næsti þáttur"
+            "next": "Næsti þáttur",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Spilunar villa",
@@ -390,6 +441,13 @@
                 "homeButton": "Fara heim",
                 "text": "Við höfun leitað í heimildum okkar og getum ekki fundið miðilin sem þú ert að leita að! Við hýsum ekki miðlana og höfum enga stjórn yfir hvað er fáanlegt. Visnamlegast ýttu á 'Sýna smáatriði' fyrir neðan þennan texta fyrir fleiri smáatriði.",
                 "title": "Við gátum ekki fundið þetta"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -469,7 +527,8 @@
                 "default": "Venjulegt",
                 "gray": "Grár",
                 "red": "Rauður",
-                "teal": "Blágló"
+                "teal": "Blágló",
+                "blck": ""
             },
             "title": "Útlit"
         },
@@ -517,7 +576,15 @@
             "thumbnail": "Búa til smámyndir",
             "thumbnailDescription": "Oftast, hafa myndbönd ekki smámyndir. Þú getur látið þessa stillingu gera þær en það gæti gert myndbandið þitt hægara.",
             "thumbnailLabel": "Gera smámyndir",
-            "title": "Valstillingar"
+            "title": "Valstillingar",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "Endurstilla",
         "save": "Vista",
@@ -540,8 +607,39 @@
             "colorLabel": "Litur",
             "previewQuote": "Ég má ekki óttast. Ótti er hugardrepandi.",
             "textSizeLabel": "Texta stærð",
-            "title": "Textar"
+            "title": "Textar",
+            "textBoldLabel": "",
+            "backgroundBlurLabel": ""
         },
         "unsaved": "Þú hefur óvistaðar breytingar"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
