@@ -14,7 +14,24 @@
             "body": "Els resultats de cerca funcionen amb The Movie Database (TMDB) i es mostren independentment de si les nostres fonts realment tenen el contingut.",
             "title": "Els resultats de la cerca mostren el programa o la pel·lícula, per què no puc reproduir-lo?"
         },
-        "title": "Sobre Vid Binge"
+        "title": "Sobre Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "S'ha copiat",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Mireu els vostres programes i pel·lícules preferits amb aquesta aplicació de codi obert de reproducció en temps real."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Configura",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registra",
-            "settings": "Configuració"
+            "settings": "Configuració",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Què us agradaria mirar aquesta vesprada/tarda?",
                 "extra": [
-                    "Voleu aventura? Jurassic Park podria ser l'elecció perfecta."
+                    "Voleu aventura? Jurassic Park podria ser l'elecció perfecta.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Què us agradaria mirar aquest matí?",
                 "extra": [
-                    "He sentit que «Abans de l'alba» és bona"
+                    "He sentit que «Abans de l'alba» és bona",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Què us agradaria mirar aquesta nit?",
                 "extra": [
-                    "Esteu cansat? He sentit que «L'exorcista» és bona."
+                    "Esteu cansat? He sentit que «L'exorcista» és bona.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -155,7 +197,8 @@
         "types": {
             "movie": "Pel·lícula",
             "show": "Sèrie/Programa"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -167,7 +210,8 @@
             "logout": "Tanca la sessió",
             "register": "Sincronitza al núvol",
             "settings": "Configuració",
-            "support": "Ajuda"
+            "support": "Ajuda",
+            "discover": ""
         }
     },
     "notFound": {
@@ -272,7 +316,8 @@
                     "shortTitle": "Baixa / PC",
                     "title": "Baixada a un PC"
                 },
-                "title": "Baixa"
+                "title": "Baixa",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episodi",
@@ -281,7 +326,8 @@
                 "loadingError": "Error en carregar la temporada",
                 "loadingList": "S'està carregant…",
                 "loadingTitle": "S'està carregant…",
-                "unairedEpisodes": "Un o més episodis d'aquesta temporada s'han desactivat perquè encara no s'han emés."
+                "unairedEpisodes": "Un o més episodis d'aquesta temporada s'han desactivat perquè encara no s'han emés.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Velocitat de la reproducció",
@@ -301,7 +347,9 @@
                 "qualityItem": "Qualitat",
                 "sourceItem": "Fonts de vídeo",
                 "subtitleItem": "Configuració dels subtítols",
-                "videoSection": "Configuració de vídeo"
+                "videoSection": "Configuració de vídeo",
+                "audioItem": "",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -329,7 +377,9 @@
                     "fixCapitals": "Corregeix les majúscules/minúscules"
                 },
                 "title": "Subtítols",
-                "unknownLanguage": "Desconeguda"
+                "unknownLanguage": "Desconeguda",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -363,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Cancel·la",
-            "next": "Episodi següent"
+            "next": "Episodi següent",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Error en la reproducció",
@@ -390,6 +441,13 @@
                 "homeButton": "Torna a l'inici",
                 "text": "Hem buscat a través dels nostres proveïdors i no trobem el contingut que busqueu! No allotgem contingut i no tenim control sobre què hi ha disponible. Feu clic a «Mostra els detalls» a continuació per a més informació.",
                 "title": "No s'ha pogut trobar"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -469,7 +527,8 @@
                 "default": "Per defecte",
                 "gray": "Gris",
                 "red": "Vermell",
-                "teal": "Verd blavós"
+                "teal": "Verd blavós",
+                "blck": ""
             },
             "title": "Aparença"
         },
@@ -517,7 +576,15 @@
             "thumbnail": "Genera miniatures",
             "thumbnailDescription": "Majoritàriament, els vídeos no tenen miniatures. Podeu activar aquesta opció per a generar-les sobre la marxa, però poden alentir el vídeo.",
             "thumbnailLabel": "Genera miniatures",
-            "title": "Configuració"
+            "title": "Configuració",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "autoplayDescription": ""
         },
         "reset": "Restableix",
         "save": "Desa",
@@ -541,8 +608,38 @@
             "colorLabel": "Color",
             "previewQuote": "No he de tenir por. La por és l'assassina de la ment.",
             "textSizeLabel": "Grandària del text",
-            "title": "Subtítols"
+            "title": "Subtítols",
+            "textBoldLabel": ""
         },
         "unsaved": "Hi ha canvis sense desar"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
