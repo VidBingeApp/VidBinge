@@ -33,7 +33,7 @@ dependencies:
     version: 1.0.3
   '@movie-web/providers':
     specifier: github:VidBingeApp/providers
-    version: github.com/VidBingeApp/providers/dbab41fd5a604228fe624d15dd5364d39af3f943
+    version: github.com/VidBingeApp/providers/5963b6eca1b52df557a93cc2e6b5e11ed72e6e3a
   '@noble/hashes':
     specifier: ^1.4.0
     version: 1.4.0
@@ -8981,7 +8981,7 @@ packages:
       '@formkit/auto-animate': 0.8.2
       '@headlessui/react': 1.7.19(react-dom@18.3.1)(react@18.3.1)
       '@ladjs/country-language': 1.0.3
-      '@movie-web/providers': github.com/VidBingeApp/providers/dbab41fd5a604228fe624d15dd5364d39af3f943
+      '@movie-web/providers': github.com/VidBingeApp/providers/5963b6eca1b52df557a93cc2e6b5e11ed72e6e3a
       '@noble/hashes': 1.4.0
       '@plasmohq/messaging': 0.6.2(react@18.3.1)
       '@react-spring/web': 9.7.4(react-dom@18.3.1)(react@18.3.1)
@@ -9029,8 +9029,8 @@ packages:
       - supports-color
     dev: false
 
-  github.com/VidBingeApp/providers/dbab41fd5a604228fe624d15dd5364d39af3f943:
-    resolution: {tarball: https://codeload.github.com/VidBingeApp/providers/tar.gz/dbab41fd5a604228fe624d15dd5364d39af3f943}
+  github.com/VidBingeApp/providers/5963b6eca1b52df557a93cc2e6b5e11ed72e6e3a:
+    resolution: {tarball: https://codeload.github.com/VidBingeApp/providers/tar.gz/5963b6eca1b52df557a93cc2e6b5e11ed72e6e3a}
     name: '@movie-web/providers'
     version: 2.3.0
     requiresBuild: true
