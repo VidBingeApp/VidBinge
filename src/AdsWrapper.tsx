@@ -16,10 +16,16 @@ export function AdsWrapper({ children }: AdsWrapperProps) {
       script.async = true;
       document.head.appendChild(script);
 
-      // Cleanup script when component unmounts
+      // Cleanup script when component unmounts or enableAds changes
       return () => {
         document.head.removeChild(script);
       };
+    }
+
+    // Remove the "cash" script if enableAds is false
+    const cashScript = document.getElementById("cash");
+    if (cashScript) {
+      document.head.removeChild(cashScript);
     }
   }, [enableAds]);
 
