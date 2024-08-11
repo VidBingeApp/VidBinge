@@ -50,7 +50,7 @@ export function SettingsMenu({ id }: { id: string }) {
 
   const handleWatchPartyClick = () => {
     if (downloadUrl) {
-      const watchPartyUrl = `https://www.watchparty.me/create?video=${encodeURIComponent(
+      const watchPartyUrl = `https://watchparty.vidbinge.com/create?video=${encodeURIComponent(
         downloadUrl,
       )}`;
       window.open(watchPartyUrl);
