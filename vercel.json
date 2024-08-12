@@ -5,21 +5,6 @@
       "destination": "/opensearch.xml"
     },
     {
-      "source": "/OneSignalSDKWorker.js",
-      "destination": "/OneSignalSDKWorker.js"
-    },
-    {
-      "source": "/media/(.*)",
-      "has": [
-        {
-          "type": "header",
-          "key": "x-redirect",
-          "value": "true"
-        }
-      ],
-      "destination": "https://vidbinge.app/media/$1"
-    },
-    {
       "source": "/(.*)",
       "destination": "/"
     }

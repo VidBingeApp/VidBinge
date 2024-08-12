@@ -117,7 +117,6 @@ export default defineConfig(({ mode }) => {
           background_color: "#120f1d",
           display: "standalone",
           start_url: "/",
-          orientation: "any",
           icons: [
             {
               src: "android-chrome-192x192.png",
