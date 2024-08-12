@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 
 import { BrandPill } from "@/components/layout/BrandPill";
 import { Player } from "@/components/player";
@@ -6,6 +6,7 @@ import { useShouldShowControls } from "@/components/player/hooks/useShouldShowCo
 import { useIsMobile } from "@/hooks/useIsMobile";
 import { PlayerMeta, playerStatus } from "@/stores/player/slices/source";
 import { usePlayerStore } from "@/stores/player/store";
+import { usePreferencesStore } from "@/stores/preferences";
 
 export interface PlayerPartProps {
   children?: ReactNode;
@@ -19,6 +20,27 @@ export function PlayerPart(props: PlayerPartProps) {
   const status = usePlayerStore((s) => s.status);
   const { isMobile } = useIsMobile();
   const isLoading = usePlayerStore((s) => s.mediaPlaying.isLoading);
+  const enableAds = usePreferencesStore((s) => s.enableAds);
+
+  useEffect(() => {
+    if (enableAds) {
+      const script = document.createElement("script");
+      script.src = "//ouvertrenewed.com/guUoY5dqkRt/92846";
+      script.async = true;
+      document.head.appendChild(script);
+
+      // Cleanup script when component unmounts or enableAds changes
+      return () => {
+        document.head.removeChild(script);
+      };
+    }
+
+    // Remove the "cash" script if enableAds is false
+    const cashScript = document.getElementById("cash");
+    if (cashScript) {
+      document.head.removeChild(cashScript);
+    }
+  }, [enableAds]);
 
   return (
     <Player.Container onLoad={props.onLoad} showingControls={showTargets}>
