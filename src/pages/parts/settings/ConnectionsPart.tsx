@@ -54,7 +54,7 @@ function ProxyEdit({ proxyUrls, setProxyUrls }: ProxyEditProps) {
           </p>
           <p className="max-w-[20rem] font-medium">
             <Trans i18nKey="settings.connections.workers.description">
-              <MwLink to="https://docs.sudo-flix.lol/proxy/deploy">
+              <MwLink to="https://docs.undi.rest/proxy/deploy">
                 Proxy documentation
               </MwLink>
             </Trans>
@@ -124,7 +124,7 @@ function BackendEdit({ backendUrl, setBackendUrl }: BackendEditProps) {
           </p>
           <p className="max-w-[20rem] font-medium">
             <Trans i18nKey="settings.connections.server.description">
-              <MwLink to="https://docs.sudo-flix.lol/backend/deploy">
+              <MwLink to="https://docs.undi.rest/backend/deploy">
                 Backend documentation
               </MwLink>
             </Trans>
