@@ -27,7 +27,7 @@
         },
         {
         "key": "Content-Security-Policy",
-        "value": "frame-ancestors 'self' https://nunflix.com https://www.nunflix.com"
+        "value": "frame-ancestors 'self' https://123movie.forum https://fmovie.forum"
         }
       ]
     },
