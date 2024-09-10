@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 import { BrandPill } from "@/components/layout/BrandPill";
 import { Player } from "@/components/player";
@@ -15,10 +15,15 @@ export interface PlayerPartProps {
 }
 
 export function PlayerPart(props: PlayerPartProps) {
+  const [isInIframe, setIsInIframe] = useState(false);
   const { showTargets, showTouchTargets } = useShouldShowControls();
   const status = usePlayerStore((s) => s.status);
   const { isMobile } = useIsMobile();
   const isLoading = usePlayerStore((s) => s.mediaPlaying.isLoading);
+
+  useEffect(() => {
+    setIsInIframe(window.parent !== window);
+  }, []);
 
   return (
     <Player.Container onLoad={props.onLoad} showingControls={showTargets}>
@@ -57,7 +62,7 @@ export function PlayerPart(props: PlayerPartProps) {
       <Player.TopControls show={showTargets}>
         <div className="grid grid-cols-[1fr,auto] xl:grid-cols-3 items-center">
           <div className="flex space-x-3 items-center">
-            <Player.BackLink url={props.backUrl} />
+            {!isInIframe && <Player.BackLink url={props.backUrl} />}
             <span className="text mx-3 text-type-secondary">/</span>
             <Player.Title />
             <Player.BookmarkButton />
