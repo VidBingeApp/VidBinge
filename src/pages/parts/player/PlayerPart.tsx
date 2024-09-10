@@ -92,7 +92,7 @@ export function PlayerPart(props: PlayerPartProps) {
               </>
             )}
             <Player.Title />
-            <Player.BookmarkButton />
+            {!isInIframe && <Player.BookmarkButton />}
           </div>
           <div className="text-center hidden xl:flex justify-center items-center">
             <Player.EpisodeTitle />
