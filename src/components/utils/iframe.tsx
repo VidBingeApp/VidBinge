@@ -2,16 +2,44 @@ import React, { useEffect, useState } from "react";
 
 function IframeMessage(): JSX.Element | null {
   const [visible, setVisible] = useState(false);
+  const [isPremiumSubscriber, setIsPremiumSubscriber] = useState(false);
 
   useEffect(() => {
+    async function fetchPremiumSites() {
+      try {
+        const response = await fetch(
+          "https://embed.vidbinge.com/premiumSites.php",
+        );
+        if (!response.ok) {
+          throw new Error("Failed to fetch premium sites");
+        }
+        const sites = await response.json();
+        const referrer = document.referrer
+          ? new URL(document.referrer).hostname
+          : "";
+        setIsPremiumSubscriber(sites.includes(referrer));
+      } catch (error) {
+        console.error("Error fetching premium sites:", error);
+        setIsPremiumSubscriber(false); // Assume not a subscriber if error occurs
+      }
+    }
+
+    // Fetch premium sites only if in an iframe
     if (window.top !== window.self) {
+      fetchPremiumSites();
+    }
+  }, []);
+
+  useEffect(() => {
+    // Show the message only if not a premium subscriber
+    if (window.top !== window.self && !isPremiumSubscriber) {
       setVisible(true);
       const timer = setTimeout(() => {
         setVisible(false);
       }, 2500);
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [isPremiumSubscriber]);
 
   if (!visible) {
     return null;
