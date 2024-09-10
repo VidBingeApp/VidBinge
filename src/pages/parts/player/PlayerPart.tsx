@@ -84,8 +84,13 @@ export function PlayerPart(props: PlayerPartProps) {
       <Player.TopControls show={showTargets}>
         <div className="grid grid-cols-[1fr,auto] xl:grid-cols-3 items-center">
           <div className="flex space-x-3 items-center">
-            {!isInIframe && <Player.BackLink url={props.backUrl} />}
-            <span className="text mx-3 text-type-secondary">/</span>
+            {/* Conditional rendering based on isInIframe state */}
+            {!isInIframe && (
+              <>
+                <Player.BackLink url={props.backUrl} />
+                <span className="text mx-3 text-type-secondary">/</span>
+              </>
+            )}
             <Player.Title />
             <Player.BookmarkButton />
           </div>
