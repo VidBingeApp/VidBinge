@@ -49,6 +49,13 @@ pnpm build
 > **Note**
 > You must use pnpm (`npm i -g pnpm`) and run NodeJS 20
 
+# ❗ Important Note
+
+The `vidbingedotcom` branch is specifically tailored for the official VidBinge website (vidbinge.com) and includes custom features such as exclusive advertisements and proprietary analytics code. These modifications are intended solely for VidBinge’s production environment.
+
+**We recommend using the `dev` branch as your source for general development.** This branch is fully functional for production use but does not include the site-specific modifications found in the `vidbingedotcom` branch. Deploying the `dev` branch will help avoid unintended incorporation of VidBinge-specific advertising and analytics into your projects.
+
+
 # ✉️ Contact
 
 [Discord Server](https://discord.gg/4jzBvV8E5r)
