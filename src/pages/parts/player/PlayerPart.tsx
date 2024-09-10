@@ -98,7 +98,20 @@ export function PlayerPart(props: PlayerPartProps) {
             <Player.EpisodeTitle />
           </div>
           <div className="hidden sm:flex items-center justify-end">
-            <BrandPill />
+            <div className="hidden sm:flex items-center justify-end">
+              {isInIframe ? (
+                <div
+                  onClick={() => {
+                    window.open("https://www.vidbinge.com", "_blank");
+                  }}
+                  style={{ cursor: "pointer" }} // Make the cursor a pointer if in iframe
+                >
+                  <BrandPill clickable />
+                </div>
+              ) : (
+                <BrandPill />
+              )}
+            </div>
           </div>
           <div className="flex sm:hidden items-center justify-end">
             {status === playerStatus.PLAYING ? (
