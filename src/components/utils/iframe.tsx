@@ -14,24 +14,41 @@ function IframeMessage(): JSX.Element | null {
           throw new Error("Failed to fetch premium sites");
         }
         const sites = await response.json();
+
+        // Extract the referrer hostname
         const referrer = document.referrer
           ? new URL(document.referrer).hostname
           : "";
-        setIsPremiumSubscriber(sites.includes(referrer));
+
+        // Debugging: log referrer and sites
+        // eslint-disable-next-line no-console
+        console.log("Extracted Referrer:", referrer);
+        // eslint-disable-next-line no-console
+        console.log("Premium Sites from API:", sites);
+
+        // Check if referrer is in the premium sites list
+        if (sites.includes(referrer)) {
+          // eslint-disable-next-line no-console
+          console.log("Referrer is a premium subscriber.");
+          setIsPremiumSubscriber(true);
+        } else {
+          // eslint-disable-next-line no-console
+          console.log("Referrer is NOT a premium subscriber.");
+          setIsPremiumSubscriber(false);
+        }
       } catch (error) {
         console.error("Error fetching premium sites:", error);
         setIsPremiumSubscriber(false); // Assume not a subscriber if error occurs
       }
     }
 
-    // Fetch premium sites only if in an iframe
+    // Only fetch premium sites if inside an iframe
     if (window.top !== window.self) {
       fetchPremiumSites();
     }
   }, []);
 
   useEffect(() => {
-    // Show the message only if not a premium subscriber
     if (window.top !== window.self && !isPremiumSubscriber) {
       setVisible(true);
       const timer = setTimeout(() => {
