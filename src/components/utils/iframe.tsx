@@ -2,61 +2,16 @@ import React, { useEffect, useState } from "react";
 
 function IframeMessage(): JSX.Element | null {
   const [visible, setVisible] = useState(false);
-  const [isPremiumSubscriber, setIsPremiumSubscriber] = useState(false);
 
   useEffect(() => {
-    async function fetchPremiumSites() {
-      try {
-        const response = await fetch(
-          "https://embed.vidbinge.com/premiumSites.php",
-        );
-        if (!response.ok) {
-          throw new Error("Failed to fetch premium sites");
-        }
-        const sites = await response.json();
-
-        // Extract the referrer hostname
-        const referrer = document.referrer
-          ? new URL(document.referrer).hostname
-          : "";
-
-        // Debugging: log referrer and sites
-        // eslint-disable-next-line no-console
-        console.log("Extracted Referrer:", referrer);
-        // eslint-disable-next-line no-console
-        console.log("Premium Sites from API:", sites);
-
-        // Check if referrer is in the premium sites list
-        if (sites.includes(referrer)) {
-          // eslint-disable-next-line no-console
-          console.log("Referrer is a premium subscriber.");
-          setIsPremiumSubscriber(true);
-        } else {
-          // eslint-disable-next-line no-console
-          console.log("Referrer is NOT a premium subscriber.");
-          setIsPremiumSubscriber(false);
-        }
-      } catch (error) {
-        console.error("Error fetching premium sites:", error);
-        setIsPremiumSubscriber(false); // Assume not a subscriber if error occurs
-      }
-    }
-
-    // Only fetch premium sites if inside an iframe
     if (window.top !== window.self) {
-      fetchPremiumSites();
-    }
-  }, []);
-
-  useEffect(() => {
-    if (window.top !== window.self && !isPremiumSubscriber) {
       setVisible(true);
       const timer = setTimeout(() => {
         setVisible(false);
       }, 2500);
       return () => clearTimeout(timer);
     }
-  }, [isPremiumSubscriber]);
+  }, []);
 
   if (!visible) {
     return null;
