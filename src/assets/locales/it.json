@@ -14,7 +14,24 @@
             "body": "Nostri risultati sono alimentati da «The Movie Database (TMDB)» e visualizzare indipendentemente dal fatto che nostri sorgenti hanno effettivamente il contenuto.",
             "title": "I risultati di ricerca mostrano la serie o il film, perché non posso riprodurlo?"
         },
-        "title": "Su di Vid Binge"
+        "title": "Su di Vid Binge",
+        "q6": {
+            "body": "Se un video non parte, potrebbe essere per problemi con la fonte. Prova a cliccare di nuovo Play o a scegliere una fonte alternativa dal tab 'video sources'.",
+            "title": "Cosa posso fare se un video non parte?"
+        },
+        "q7": {
+            "body": "La disponibilità dei sottotitoli e delle versioni doppiate dipende dalla fonte. Alcune fonti offrono opzioni per sottotitoli in diverse lingue o contenuti doppiati, che possono essere selezionati direttamente nel player se disponibili.",
+            "title": "Vid Binge offre sottotitoli o contenuti doppiati?"
+        },
+        "contact": "Domande? Contattaci su Discord o scrivici una mail a contact@vidbinge.com",
+        "q4": {
+            "body": "Non c'è un limite a quanto puoi guardare su VidBinge. Guarda quanto vuoi, sempre, senza restrizioni o costi aggiuntivi",
+            "title": "C'è un limite a quanto posso guardare?"
+        },
+        "q5": {
+            "title": "Ogni quanto vengono aggiunti nuovi contenuti su VidBinge?",
+            "body": "La disponibilità di nuovi contenuti si basa sulle fonti connesse alla nostra piattaforma. Appena queste fonti aggiornano le loro librerie, nuovi film e serie TV diventeranno accessibili tramite VidBinge."
+        }
     },
     "actions": {
         "copied": "Copiato",
@@ -554,5 +571,8 @@
             "title": "Sottotitoli"
         },
         "unsaved": "Le modifiche non sono state salvate"
+    },
+    "privacy": {
+        "description": "Benvenut* su VidBinge! La tua privacy è importante per noi. VidBinge (vidbinge.com) si impegna a proteggere la tua privacy mentre ti godi i tuoi film e le tue serie preferite sulla nostra piattaforma. Questa Privacy Policy spiega come gestiamo e proteggiamo i tuoi dati."
     }
 }
