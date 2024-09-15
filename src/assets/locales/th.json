@@ -14,7 +14,24 @@
             "body": "ผลการค้นหาของเราขับเคลื่อนโดย The Movie Database (TMDB) และจะแสดงไม่ว่าแหล่งข้อมูลของเราจะมีเนื้อหาจริงหรือไม่",
             "title": "ผลการค้นหาซีรี่ย์หรือภาพยนตร์ ทําไมฉันถึงเล่นไม่ได้?"
         },
-        "title": "เกี่ยวกับ Vid Binge"
+        "title": "เกี่ยวกับ Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "คัดลอกแล้ว",
@@ -58,7 +75,9 @@
             "host": "คุณกำลังเชื่อมต่อกับ <0>{{hostname}}</0> - โปรดกดตกลงเชื่อถือเครือข่ายนี้ก่อนสร้างบัญชี",
             "no": "ย้อนกลับ",
             "title": "คุณเชื่อเครือข่ายนี้หรือไม่?",
-            "yes": "ฉันเชื่อเครือข่ายนี้"
+            "yes": "ฉันเชื่อเครือข่ายนี้",
+            "noHostTitle": "",
+            "noHost": ""
         },
         "verify": {
             "description": "โปรดป้อนรหัสผ่านก่อนหน้านี้ของคุณ เพื่อยืนยันว่าคุณได้บันทึกและเพื่อสร้างบัญชีของคุณ",
@@ -85,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "ดูรายการซีรี่ย์และภาพยนตร์ที่คุณชื่นชอบด้วยแอปสตรีมนี้"
     },
@@ -97,7 +119,10 @@
             "login": "เข้าสู่ระบบ",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "ลงทะเบียน",
-            "settings": "ตั้งค่า"
+            "settings": "ตั้งค่า",
+            "discover": "",
+            "privacy": "",
+            "onboarding": ""
         }
     },
     "home": {
@@ -116,24 +141,53 @@
             "loading": "กำลังโหลด..",
             "noResults": "เราไม่พบอะไรเลย!",
             "placeholder": {
-                "default": "คุณอยากดูอะไรคะ?"
+                "default": "คุณอยากดูอะไรคะ?",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             "sectionTitle": "ผลการค้นหา"
         },
         "titles": {
             "day": {
-                "default": "คุณอยากดูเรื่องอะไรในช่วงบ่ายนี้?"
+                "default": "คุณอยากดูเรื่องอะไรในช่วงบ่ายนี้?",
+                "extra": [
+                    "",
+                    "",
+                    ""
+                ]
             },
             "morning": {
                 "default": "คุณอยากดูอะไรเช้านี้?",
                 "extra": [
-                    "ฉันได้ยินมาว่าเรื่อง Before Sunrise สนุก"
+                    "ฉันได้ยินมาว่าเรื่อง Before Sunrise สนุก",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "คุณอยากดูเรื่องอะไรในช่วงค่ำ?",
                 "extra": [
-                    "เหนื่อยมั้ย? ฉันได้ยินมาว่า The Exorcist นั้นดี"
+                    "เหนื่อยมั้ย? ฉันได้ยินมาว่า The Exorcist นั้นดี",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -143,7 +197,8 @@
         "types": {
             "movie": "ภาพยนตร์",
             "show": "ซีรี่ย์"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -155,7 +210,8 @@
             "logout": "ออกจากระบบ",
             "register": "เชื่อมต่อกับคลาวด์",
             "settings": "ตั้งค่า",
-            "support": "ช่วยเหลือ"
+            "support": "ช่วยเหลือ",
+            "discover": ""
         }
     },
     "notFound": {
@@ -196,7 +252,9 @@
                     "shortTitle": "ดาวน์โหลด / คอมพิวเตอร์",
                     "title": "กําลังดาวน์โหลดบนคอมพิวเตอร์"
                 },
-                "title": "ดาวน์โหลด"
+                "title": "ดาวน์โหลด",
+                "copyHlsPlaylist": "",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "ตอน",
@@ -204,7 +262,9 @@
                 "episodeBadge": "ตอนที่ {{episode}}",
                 "loadingError": "การโหลดภาคผิดพลาด",
                 "loadingList": "กำลังโหลด…",
-                "loadingTitle": "กำลังโหลด…"
+                "loadingTitle": "กำลังโหลด…",
+                "unairedEpisodes": "",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "ความเร็วในการเล่น",
@@ -224,7 +284,9 @@
                 "qualityItem": "คุณภาพ",
                 "sourceItem": "แหล่งที่มาของวิดีโอ",
                 "subtitleItem": "ตั้งค่าคำบรรยาย",
-                "videoSection": "ตั้งค่าวิดีโอ"
+                "videoSection": "ตั้งค่าวิดีโอ",
+                "watchParty": "",
+                "audioItem": ""
             },
             "sources": {
                 "failed": {
@@ -248,10 +310,13 @@
                 "offChoice": "ปิด",
                 "settings": {
                     "backlink": "คำบรรยายแบบกำหนดเอง",
-                    "delay": "เวลาดีเลย์คำบรรยาย"
+                    "delay": "เวลาดีเลย์คำบรรยาย",
+                    "fixCapitals": ""
                 },
                 "title": "คำบรรยาย",
-                "unknownLanguage": "ไม่ทราบ"
+                "unknownLanguage": "ไม่ทราบ",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -266,11 +331,27 @@
                 "homeButton": "กลับไปที่หน้าหลัก",
                 "text": "เราไม่พบสื่อที่คุณร้องขอ ไม่ว่าจะถูกลบออก หรือคุณดัดแปลงกับ URL",
                 "title": "ไม่พบสื่อ"
+            },
+            "api": {
+                "text": "",
+                "title": ""
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "badge": "",
+                "button": "",
+                "text": "",
+                "title": ""
             }
         },
         "nextEpisode": {
             "cancel": "ยกเลิก",
-            "next": "ตอนต่อไป"
+            "next": "ตอนต่อไป",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "เกิดข้อผิดพลาดในการเล่น",
@@ -297,6 +378,13 @@
                 "homeButton": "กลับหน้าหลัก",
                 "text": "เราได้ค้นหาผ่านผู้ให้บริการของเราและไม่พบสื่อที่คุณกําลังมองหา! เราไม่ได้เป็นเจ้าของสื่อและไม่สามารถควบคุมสิ่งที่ไม่มีอยู่ได้ โปรดคลิก “แสดงรายละเอียด” ด้านล่างสําหรับรายละเอียดเพิ่มเติม",
                 "title": "เราไม่พบสิ่งนั้น"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -304,6 +392,12 @@
             "remaining": "{{timeLeft}} หมดเวลา • สิ้นสุดใน {{timeFinished, datetime}}",
             "shortRegular": "{{timeWatched}}",
             "shortRemaining": "-{{timeLeft}}"
+        },
+        "turnstile": {
+            "error": "",
+            "description": "",
+            "title": "",
+            "verifyingHumanity": ""
         }
     },
     "screens": {
@@ -370,7 +464,8 @@
                 "default": "ค่าเริ่มต้น",
                 "gray": "เทา",
                 "red": "แดง",
-                "teal": "เขียวแกมน้ำเงิน"
+                "teal": "เขียวแกมน้ำเงิน",
+                "blck": ""
             },
             "title": "ธีม"
         },
@@ -388,6 +483,28 @@
                 "label": "ใช้พร็อกซี่แบบกําหนดเอง",
                 "urlLabel": "ลูกทีม URLs",
                 "urlPlaceholder": "https://"
+            },
+            "setup": {
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "unsetStatus": {
+                    "description": "",
+                    "title": ""
+                }
             }
         },
         "reset": "เริ่มใหม่",
@@ -411,8 +528,118 @@
             "colorLabel": "สี",
             "previewQuote": "คำบรรยายจะมีลักษณะแบบนี้",
             "textSizeLabel": "ขนาดข้อความ",
-            "title": "คำบรรยาย"
+            "title": "คำบรรยาย",
+            "backgroundBlurLabel": "",
+            "textBoldLabel": ""
         },
-        "unsaved": "คุณได้บันทึกการเปลี่ยนแปลงแล้ว"
+        "unsaved": "คุณได้บันทึกการเปลี่ยนแปลงแล้ว",
+        "preferences": {
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "title": "",
+            "thumbnailDescription": "",
+            "thumbnailLabel": "",
+            "language": "",
+            "languageDescription": "",
+            "thumbnail": ""
+        }
+    },
+    "privacy": {
+        "lastUpdated": "",
+        "description": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
+    },
+    "onboarding": {
+        "proxy": {
+            "input": {
+                "label": "",
+                "errorConnection": "",
+                "errorInvalidUrl": "",
+                "errorNotProxy": "",
+                "placeholder": ""
+            },
+            "back": "",
+            "explainer": "",
+            "link": "",
+            "submit": "",
+            "title": ""
+        },
+        "defaultConfirm": {
+            "cancel": "",
+            "confirm": "",
+            "description": "",
+            "title": ""
+        },
+        "extension": {
+            "back": "",
+            "explainer": "",
+            "explainerIos": "",
+            "extensionHelp": "",
+            "linkChrome": "",
+            "linkFirefox": "",
+            "notDetecting": "",
+            "notDetectingAction": "",
+            "status": {
+                "disallowed": "",
+                "disallowedAction": "",
+                "failed": "",
+                "loading": "",
+                "outdated": "",
+                "success": ""
+            },
+            "submit": "",
+            "title": ""
+        },
+        "start": {
+            "explainer": "",
+            "options": {
+                "default": {
+                    "text": ""
+                },
+                "extension": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                },
+                "proxy": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                }
+            },
+            "title": ""
+        }
     }
 }
