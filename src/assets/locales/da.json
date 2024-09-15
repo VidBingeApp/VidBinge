@@ -30,7 +30,8 @@
             "title": "Tilbyder Vid Binge undertekster eller dubbede indhold?",
             "body": "Tilgængeligheden af undertekster eller dubbede versioner afhænger af kilden. Nogle kilder kan tilbyde muligheder for undertekster på forskellige sprog eller dubbede indhold, som kan vælges direkte inden for videoafspilleren, hvis det er tilgængeligt."
         },
-        "title": "Om Vid Binge"
+        "title": "Om Vid Binge",
+        "contact": ""
     },
     "privacy": {
         "description": "Velkommen til VidBinge! Din privatliv er vigtig for os. VidBinge (vidbinge.com) er forpligtet til at beskytte dit privatliv, mens du nyder dine yndlingsfilm og shows på vores platform. Denne privatlivspolitik forklarer, hvordan vi håndterer og beskytter dine data.",
@@ -376,7 +377,8 @@
                 "qualityItem": "Kvalitet",
                 "sourceItem": "Videokilder",
                 "subtitleItem": "Undertekstindstillinger",
-                "videoSection": "Videoindstillinger"
+                "videoSection": "Videoindstillinger",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -405,7 +407,8 @@
                 },
                 "title": "Undertekster",
                 "unknownLanguage": "Ukendt",
-                "dropSubtitleFile": "Drop undertekstfil her"
+                "dropSubtitleFile": "Drop undertekstfil her",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -554,7 +557,8 @@
                 "gray": "Grå",
                 "red": "Rød",
                 "teal": "Teal",
-                "amoled": "AMOLED"
+                "amoled": "AMOLED",
+                "blck": ""
             },
             "title": "Udseende"
         },
@@ -605,7 +609,12 @@
             "autoplay": "Autoplay",
             "autoplayDescription": "Afspil automatisk den næste episode i en serie, efter du har nået slutningen. Kan aktiveres af brugere med browserudvidelsen, en brugerdefineret proxy eller med standardopsætningen, hvis værten tillader det.",
             "autoplayLabel": "Autoplay",
-            "title": "Præferencer"
+            "title": "Præferencer",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "Nulstil",
         "save": "Gem",
@@ -629,7 +638,8 @@
             "colorLabel": "Farve",
             "previewQuote": "Jeg må ikke frygte. Frygt er tankens dræber.",
             "textSizeLabel": "Tekststørrelse",
-            "title": "Undertekster"
+            "title": "Undertekster",
+            "textBoldLabel": ""
         },
         "unsaved": "Du har ikke-gemte ændringer"
     }
