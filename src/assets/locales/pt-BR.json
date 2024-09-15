@@ -14,7 +14,24 @@
             "body": "Nossos resultados de pesquisa são alimentados pelo The Movie Database (TMDB) e são exibidos independentemente de nossas fontes terem ou não o conteúdo.",
             "title": "Os resultados da pesquisa mostram o filme ou série, por que não consigo reproduzi-lo?"
         },
-        "title": "Sobre o Vid Binge"
+        "title": "Sobre o Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Copiado",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Assista seus programas e filmes favoritos com este aplicativo de streaming de código aberto."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Configuração",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registrar",
-            "settings": "Configurações"
+            "settings": "Configurações",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "O que você gostaria de assistir esta tarde?",
                 "extra": [
-                    "Se sentindo aventureiro? Jurassic Park pode ser a escolha perfeita."
+                    "Se sentindo aventureiro? Jurassic Park pode ser a escolha perfeita.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "O que você gostaria de assistir esta manhã?",
                 "extra": [
-                    "Ouvi dizer que Antes do Amanhecer é bom"
+                    "Ouvi dizer que Antes do Amanhecer é bom",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "O que você gostaria de assistir esta noite?",
                 "extra": [
-                    "Cansado? Ouvi dizer que O Exorcista é bom."
+                    "Cansado? Ouvi dizer que O Exorcista é bom.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "Sair",
             "register": "Sincronizar com a nuvem",
             "settings": "Configurações",
-            "support": "Suporte"
+            "support": "Suporte",
+            "discover": ""
         }
     },
     "notFound": {
@@ -273,7 +316,8 @@
                     "shortTitle": "Baixar / PC",
                     "title": "Baixando no PC"
                 },
-                "title": "Baixar"
+                "title": "Baixar",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episódios",
@@ -282,7 +326,8 @@
                 "loadingError": "Erro ao carregar temporada",
                 "loadingList": "Carregando...",
                 "loadingTitle": "Carregando...",
-                "unairedEpisodes": "Um ou mais episódios nesta temporada foram desabilitados porque ainda não foram ao ar."
+                "unairedEpisodes": "Um ou mais episódios nesta temporada foram desabilitados porque ainda não foram ao ar.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Velocidade de reprodução",
@@ -303,7 +348,8 @@
                 "qualityItem": "Qualidade",
                 "sourceItem": "Fontes de vídeo",
                 "subtitleItem": "Configurações de legenda",
-                "videoSection": "Configurações de vídeo"
+                "videoSection": "Configurações de vídeo",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -332,7 +378,8 @@
                     "fixCapitals": "Corrigir letras maiúsculas"
                 },
                 "title": "Legendas",
-                "unknownLanguage": "Desconhecido"
+                "unknownLanguage": "Desconhecido",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -366,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Cancelar",
-            "next": "Próximo episódio"
+            "next": "Próximo episódio",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Erro de reprodução",
@@ -479,7 +527,8 @@
                 "default": "Padrão",
                 "gray": "Cinza",
                 "red": "Vermelho",
-                "teal": "Verde-azulado"
+                "teal": "Verde-azulado",
+                "blck": ""
             },
             "title": "Aparência"
         },
@@ -527,7 +576,15 @@
             "thumbnail": "Gerar miniaturas",
             "thumbnailDescription": "Na maior parte do tempo, os vídeos não possuem miniaturas. Você pode ativar esta configuração para gerá-las dinamicamente, mas elas podem tornar seu vídeo mais lento.",
             "thumbnailLabel": "Gerar miniaturas",
-            "title": "Preferências"
+            "title": "Preferências",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "Redefinir",
         "save": "Salvar",
@@ -551,8 +608,38 @@
             "colorLabel": "Cor",
             "previewQuote": "Eu não devo ter medo. Medo é o assassino da mente.",
             "textSizeLabel": "Tamanho do texto",
-            "title": "Legendas"
+            "title": "Legendas",
+            "textBoldLabel": ""
         },
         "unsaved": "Você tem alterações não salvas"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
