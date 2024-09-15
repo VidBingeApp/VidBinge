@@ -14,7 +14,24 @@
             "body": "Hasil pencarian aplikasi ini menggunakan API milik The Movie Database (TMDB) dan menampilkan semua hasil pencarian terlepas dari apakah sumber media tersebut dapat ditemukan di penyedia pihak ketiga atau tidak.",
             "title": "Hasil pencarian menampilkan serial televisi atau film yang saya cari, tapi mengapa saya tidak bisa memutarnya?"
         },
-        "title": "Tentang Vid Binge"
+        "title": "Tentang Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Disalin",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Tonton serial televisi dan film favorit anda dengan aplikasi streaming sumber terbuka ini."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Penyiapan",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Daftar",
-            "settings": "Pengaturan"
+            "settings": "Pengaturan",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Apa yang ingin anda tonton sore ini?",
                 "extra": [
-                    "Merasa suka bertualang? Jurassic Park mungkin pilihan cocok untuk Anda."
+                    "Merasa suka bertualang? Jurassic Park mungkin pilihan cocok untuk Anda.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Apa yang ingin Anda tonton pagi ini?",
                 "extra": [
-                    "Saya dengar film Before Sunrise bagus"
+                    "Saya dengar film Before Sunrise bagus",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Apa yang ingin Anda tonton malam ini?",
                 "extra": [
-                    "Capek? Saya dengar The Exocist bagus."
+                    "Capek? Saya dengar The Exocist bagus.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "Keluar",
             "register": "Sinkronkan ke cloud",
             "settings": "Pengaturan",
-            "support": "Bantuan"
+            "support": "Bantuan",
+            "discover": ""
         }
     },
     "notFound": {
@@ -215,7 +258,8 @@
                 "placeholder": "https://"
             },
             "link": "Belajar cara membuat proxy",
-            "title": "Mari buat proxy baru"
+            "title": "Mari buat proxy baru",
+            "submit": ""
         },
         "start": {
             "explainer": "Untuk mendapatkan streaming terbaik, Anda perlu memilih metode streaming yang Anda ingin gunakan.",
@@ -232,9 +276,11 @@
                 "proxy": {
                     "action": "Atur proxy",
                     "description": "Atur proxy dalam hanya 5 menit dan dapatkan akses ke sumber terbaik.",
-                    "quality": "Kualitas baik"
+                    "quality": "Kualitas baik",
+                    "title": ""
                 }
-            }
+            },
+            "title": ""
         }
     },
     "overlays": {
@@ -270,7 +316,8 @@
                     "shortTitle": "Unduh / PC",
                     "title": "Unduh di PC"
                 },
-                "title": "Unduh"
+                "title": "Unduh",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episode",
@@ -279,7 +326,8 @@
                 "loadingError": "Gagal memuat season",
                 "loadingList": "Memuat...",
                 "loadingTitle": "Memuat...",
-                "unairedEpisodes": "Satu atau lebih episode dalam season ini telah dinonaktifkan karena mereka belum ditayangkan."
+                "unairedEpisodes": "Satu atau lebih episode dalam season ini telah dinonaktifkan karena mereka belum ditayangkan.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Kecepatan pemutar",
@@ -299,7 +347,9 @@
                 "qualityItem": "Kualitas",
                 "sourceItem": "Sumber media",
                 "subtitleItem": "Pengaturan subtitle",
-                "videoSection": "Pengaturan media"
+                "videoSection": "Pengaturan media",
+                "audioItem": "",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -327,7 +377,9 @@
                     "fixCapitals": "Perbaiki kapitalisasi"
                 },
                 "title": "Subtitle",
-                "unknownLanguage": "Tidak diketahui"
+                "unknownLanguage": "Tidak diketahui",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -342,11 +394,27 @@
                 "homeButton": "Kembali",
                 "text": "Kami tidak dapat menemukan media yang anda cari. Media mungkin sudah dihapus atau URL yang anda masukan salah.",
                 "title": "Tidak dapat menemukan media."
+            },
+            "api": {
+                "text": "",
+                "title": ""
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "badge": "",
+                "button": "",
+                "text": "",
+                "title": ""
             }
         },
         "nextEpisode": {
             "cancel": "Batal",
-            "next": "Episode selanjutnya"
+            "next": "Episode selanjutnya",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Galat pemutar",
@@ -373,6 +441,13 @@
                 "homeButton": "Kembali",
                 "text": "Kami sudah mencari ke semua penyedia yang kami miliki dan gagal menemukan media yang anda cari! Kami tidak menyimpan berkas media dan tidak memiliki kontrol atas apa yang tersedia. Periksa tombol 'Lihat detail' dibawah ini untuk informasi lebih lanjut.",
                 "title": "Kami tidak dapat menemukannya"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -380,6 +455,12 @@
             "remaining": "{{timeLeft}} tersisa • Selesai pada pukul {{timeFinished, datetime}}",
             "shortRegular": "{{timeWatched}}",
             "shortRemaining": "-{{timeLeft}}"
+        },
+        "turnstile": {
+            "description": "",
+            "error": "",
+            "title": "",
+            "verifyingHumanity": ""
         }
     },
     "screens": {
@@ -446,7 +527,8 @@
                 "default": "Default",
                 "gray": "Abu",
                 "red": "Merah",
-                "teal": "Hijau"
+                "teal": "Hijau",
+                "blck": ""
             },
             "title": "Tampilan"
         },
@@ -464,6 +546,28 @@
                 "label": "Gunakan proxy worker khusus",
                 "urlLabel": "URL worker",
                 "urlPlaceholder": "https://"
+            },
+            "setup": {
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "unsetStatus": {
+                    "description": "",
+                    "title": ""
+                }
             }
         },
         "reset": "Reset",
@@ -487,8 +591,55 @@
             "colorLabel": "Warna teks",
             "previewQuote": "Jangan takut. Ketakutan adalah pembunuh pikiran.",
             "textSizeLabel": "Ukuran teks",
-            "title": "Subtitle"
+            "title": "Subtitle",
+            "textBoldLabel": "",
+            "backgroundBlurLabel": ""
         },
-        "unsaved": "Anda memiliki perubahan yang belum disimpan"
+        "unsaved": "Anda memiliki perubahan yang belum disimpan",
+        "preferences": {
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "thumbnailLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "title": "",
+            "language": "",
+            "languageDescription": "",
+            "thumbnail": "",
+            "thumbnailDescription": ""
+        }
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
