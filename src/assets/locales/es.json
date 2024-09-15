@@ -30,7 +30,8 @@
             "title": "¿Vid Binge ofrece subtítulos o contenido doblado?",
             "body": "La disponibilidad de subtítulos o versiones dobladas depende de la fuente. Algunas fuentes pueden ofrecer opciones para subtítulos en varios idiomas o contenido doblado, que se pueden seleccionar directamente dentro del reproductor de video si están disponibles."
         },
-        "title": "Acerca de Vid Binge"
+        "title": "Acerca de Vid Binge",
+        "contact": ""
     },
     "privacy": {
         "description": "¡Bienvenido a VidBinge! Tu privacidad es importante para nosotros. VidBinge (vidbinge.com) está comprometido a proteger tu privacidad mientras disfrutas de tus películas y programas favoritos en nuestra plataforma. Esta Política de Privacidad explica cómo manejamos y protegemos tus datos.",
@@ -149,7 +150,8 @@
             "onboarding": "Configurar",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registrarse",
-            "settings": "Configuración"
+            "settings": "Configuración",
+            "privacy": ""
         }
     },
     "home": {
@@ -182,19 +184,39 @@
             "day": {
                 "default": "¿Qué te gustaría ver esta tarde?",
                 "extra": [
-                    "¿Te sientes aventurero? Jurassic Park podría ser la elección perfecta."
+                    "¿Te sientes aventurero? Jurassic Park podría ser la elección perfecta.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "¿Qué te gustaría ver esta mañana?",
                 "extra": [
-                    "Escuché que “Antes del amanecer” es buena"
+                    "Escuché que “Antes del amanecer” es buena",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "¿Qué te gustaría ver esta noche?",
                 "extra": [
-                    "¿Cansado? Escuché que “El Exorcista” es buena."
+                    "¿Cansado? Escuché que “El Exorcista” es buena.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -204,7 +226,8 @@
         "types": {
             "movie": "Película",
             "show": "Serie"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -322,7 +345,8 @@
                     "shortTitle": "Descargar / PC",
                     "title": "Descargando en PC"
                 },
-                "title": "Descargar"
+                "title": "Descargar",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episodios",
@@ -331,7 +355,8 @@
                 "loadingError": "Error al cargar la temporada",
                 "loadingList": "Cargando...",
                 "loadingTitle": "Cargando...",
-                "unairedEpisodes": "Uno o más episodios de esta temporada se han desactivado porque aún no se han emitido."
+                "unairedEpisodes": "Uno o más episodios de esta temporada se han desactivado porque aún no se han emitido.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Velocidad de reproducción",
@@ -352,7 +377,8 @@
                 "qualityItem": "Calidad",
                 "sourceItem": "Fuentes de vídeo",
                 "subtitleItem": "Configuración de subtítulos",
-                "videoSection": "Configuración de vídeo"
+                "videoSection": "Configuración de vídeo",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -381,7 +407,8 @@
                     "fixCapitals": "Arreglar capitalización"
                 },
                 "title": "Subtítulos",
-                "unknownLanguage": "Desconocido"
+                "unknownLanguage": "Desconocido",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -415,7 +442,8 @@
         },
         "nextEpisode": {
             "cancel": "Cancelar",
-            "next": "Siguiente episodio"
+            "next": "Siguiente episodio",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Error de reproducción",
@@ -442,6 +470,13 @@
                 "homeButton": "Ir al inicio",
                 "text": "Hemos buscado en nuestros proveedores y no podemos encontrar el contenido que estás buscando. No alojamos el contenido y no tenemos control sobre lo que está disponible. Haz clic en 'Mostrar detalles' a continuación para obtener más información.",
                 "title": "No pudimos encontrar eso"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -521,7 +556,8 @@
                 "default": "Predeterminado",
                 "gray": "Gris",
                 "red": "Rojo",
-                "teal": "Turquesa"
+                "teal": "Turquesa",
+                "blck": ""
             },
             "title": "Apariencia"
         },
@@ -569,7 +605,15 @@
             "thumbnail": "Generar miniaturas",
             "thumbnailDescription": "La mayor parte del tiempo, los videos no tienen miniaturas. Puedes activar esta configuración para generarlas sobre la marcha, pero pueden realentizar tu video.",
             "thumbnailLabel": "Generar miniaturas",
-            "title": "Preferencias"
+            "title": "Preferencias",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "autoplay": ""
         },
         "reset": "Restablecer",
         "save": "Guardar",
@@ -593,7 +637,8 @@
             "colorLabel": "Color",
             "previewQuote": "No debo temer. El miedo es el asesino de la mente.",
             "textSizeLabel": "Tamaño del texto",
-            "title": "Subtítulos"
+            "title": "Subtítulos",
+            "textBoldLabel": ""
         },
         "unsaved": "Tienes cambios sin guardar"
     }
