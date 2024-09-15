@@ -14,7 +14,24 @@
             "body": "Onze zoekresultaten worden aangestuurd door The Movie Database (TMDB) en worden weergegeven ongeacht of onze bronnen de inhoud daadwerkelijk hebben.",
             "title": "De zoekresultaten tonen de show of film, waarom kan ik hem niet afspelen?"
         },
-        "title": "Over Vid Binge"
+        "title": "Over Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Gekopieerd",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "Github"
+            "github": "Github",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Bekijk je favoriete shows en films met deze open source streaming app."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Instellen",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registreren",
-            "settings": "Instellingen"
+            "settings": "Instellingen",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Wat wil je vanmiddag kijken?",
                 "extra": [
-                    "Voel je je avontuurlijk? Dan is Jurassic Park misschien wel de perfecte keuze."
+                    "Voel je je avontuurlijk? Dan is Jurassic Park misschien wel de perfecte keuze.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Waar wil je deze ochtend naar kijken?",
                 "extra": [
-                    "Ik hoor dat Before Sunrise goed is"
+                    "Ik hoor dat Before Sunrise goed is",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Wat wil je vanavond bekijken?",
                 "extra": [
-                    "Moe? Ik hoor dat The Exorcist goed is."
+                    "Moe? Ik hoor dat The Exorcist goed is.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "Log uit",
             "register": "Synchroniseren met de cloud",
             "settings": "Instellingen",
-            "support": "Ondersteuning"
+            "support": "Ondersteuning",
+            "discover": ""
         }
     },
     "notFound": {
@@ -273,7 +316,8 @@
                     "shortTitle": "Download / PC",
                     "title": "Downloaden op PC"
                 },
-                "title": "Download"
+                "title": "Download",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Afleveringen",
@@ -282,7 +326,8 @@
                 "loadingError": "Er ging iets mis bij het laden van dit seizoen",
                 "loadingList": "Aan het laden...",
                 "loadingTitle": "Aan het zoeken...",
-                "unairedEpisodes": "Een of meer afleveringen van dit seizoen zijn uitgeschakeld omdat ze nog niet zijn uitgezonden."
+                "unairedEpisodes": "Een of meer afleveringen van dit seizoen zijn uitgeschakeld omdat ze nog niet zijn uitgezonden.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Afspeelsnelheid",
@@ -303,7 +348,8 @@
                 "qualityItem": "Kwaliteit",
                 "sourceItem": "Video-bron",
                 "subtitleItem": "Instellingen ondertiteling",
-                "videoSection": "Video instellingen"
+                "videoSection": "Video instellingen",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -332,7 +378,8 @@
                     "fixCapitals": "Hoofdlettergebruik corrigeren"
                 },
                 "title": "Ondertiteling",
-                "unknownLanguage": "Onbekend"
+                "unknownLanguage": "Onbekend",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -366,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Annuleren",
-            "next": "Volgende aflevering"
+            "next": "Volgende aflevering",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Afspeelfout",
@@ -479,7 +527,8 @@
                 "default": "Standaard",
                 "gray": "Grijs",
                 "red": "Rood",
-                "teal": "Groenblauw"
+                "teal": "Groenblauw",
+                "blck": ""
             },
             "title": "Uiterlijk"
         },
@@ -527,7 +576,15 @@
             "thumbnail": "Genereer miniaturen",
             "thumbnailDescription": "Meestal hebben video's geen miniaturen. Je kunt deze instelling inschakelen om ze dynamisch te genereren, maar dit kan je video vertragen.",
             "thumbnailLabel": "Genereer miniaturen",
-            "title": "Voorkeuren"
+            "title": "Voorkeuren",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplayDescription": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "autoplay": "",
+            "autoplayLabel": ""
         },
         "reset": "Resetten",
         "save": "Wijzigingen opslaan",
@@ -551,8 +608,38 @@
             "colorLabel": "Kleur",
             "previewQuote": "Ik mag niet bang zijn. Angst doodt de geest.",
             "textSizeLabel": "Tekengrootte",
-            "title": "Ondertiteling"
+            "title": "Ondertiteling",
+            "textBoldLabel": ""
         },
         "unsaved": "U heeft niet-opgeslagen wijzigingen"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
