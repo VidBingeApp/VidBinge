@@ -14,7 +14,24 @@
             "body": "نتائج البحث لدينا مدعومة بقاعدة بيانات الأفلام (TMDB) وتظهر بغض النظر عما إذا كانت مصادرنا تتضمن فعليًا المحتوى أم لا.",
             "title": "تعرِضُ نتائجُ البحثِ الخاصِّ بالعرض أو الفيلم اللذي أريد، لكن لماذا لا يمكنني تشغيله؟"
         },
-        "title": "حول Vid Binge"
+        "title": "حول Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "تم النسخ",
@@ -58,7 +75,9 @@
             "host": "أنت على وشك الاتصال بـ <0>{{hostname}}</0> - يرجى تأكيد أنك تثق فيه قبل إنشاء حساب",
             "no": "عودة",
             "title": "هل تثِقُ في هذا الخادم؟",
-            "yes": "أثِقُ في هذا الخادم"
+            "yes": "أثِقُ في هذا الخادم",
+            "noHostTitle": "",
+            "noHost": ""
         },
         "verify": {
             "description": "رجاءً أدخل جملة المرور السابقة لتأكيد أنك قد قمت بحفظها ولإنشاء حسابك",
@@ -85,7 +104,10 @@
         "links": {
             "discord": "ديسكورد",
             "dmca": "DMCA",
-            "github": "غيت هاب"
+            "github": "غيت هاب",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "شاهد عروضك وأفلامك المفضلة باستخدام تطبيق البث مفتوح المصدر هذا."
     },
@@ -98,7 +120,9 @@
             "onboarding": "إعداد",
             "pagetitle": "\"{{title}} - Vid Binge\"",
             "register": "إنشاء حساب",
-            "settings": "الإعدادات"
+            "settings": "الإعدادات",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -117,7 +141,13 @@
             "loading": "جار التحميل...",
             "noResults": "لم نتمكن من العثور على أي شيء!",
             "placeholder": {
-                "default": "ماذا تريد أن تشاهد؟"
+                "default": "ماذا تريد أن تشاهد؟",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             "sectionTitle": "نتائج البحث"
         },
@@ -125,19 +155,39 @@
             "day": {
                 "default": "ماذا تريد أن تشاهد في هذه الظهيرة؟",
                 "extra": [
-                    "متشوق للمغامرة؟ قد يكون Jurassic Park خيارًا مثاليًا لك."
+                    "متشوق للمغامرة؟ قد يكون Jurassic Park خيارًا مثاليًا لك.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "ماذا تريد أن تشاهد في هذا الصباح؟",
                 "extra": [
-                    "سمعت أن فلم \"Before Sunrise\" جيد"
+                    "سمعت أن فلم \"Before Sunrise\" جيد",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "ماذا تريد أن تشاهد في هذه الليلة؟",
                 "extra": [
-                    "مُرهَق؟ سمعت أن فيلم \"The Exorcist\" جيد."
+                    "مُرهَق؟ سمعت أن فيلم \"The Exorcist\" جيد.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -147,7 +197,8 @@
         "types": {
             "movie": "فِلم",
             "show": "مُسلسل"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -159,7 +210,8 @@
             "logout": "تسجيل الخروج",
             "register": "مزامنة إلى االتخزين لسحابي",
             "settings": "الإعدادات",
-            "support": "الدعم"
+            "support": "الدعم",
+            "discover": ""
         }
     },
     "notFound": {
@@ -263,7 +315,9 @@
                     "shortTitle": "تنزيل / حاسوب",
                     "title": "تنزيل على الحاسوب"
                 },
-                "title": "تنزيل"
+                "title": "تنزيل",
+                "copyHlsPlaylist": "",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "الحلقات",
@@ -272,7 +326,8 @@
                 "loadingError": "خطأ في تحميل الموسم",
                 "loadingList": "تحميل...",
                 "loadingTitle": "تحميل...",
-                "unairedEpisodes": "تم تعطيل حلقة واحدة أو أكثر من هذا الموسم لأنه لم يتم بثها بعد."
+                "unairedEpisodes": "تم تعطيل حلقة واحدة أو أكثر من هذا الموسم لأنه لم يتم بثها بعد.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "سرعة التشغيل",
@@ -292,7 +347,9 @@
                 "qualityItem": "جودة",
                 "sourceItem": "مصادر الفيديو",
                 "subtitleItem": "إعدادات الترجمة",
-                "videoSection": "إعدادات الفيديو"
+                "videoSection": "إعدادات الفيديو",
+                "audioItem": "",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -320,7 +377,9 @@
                     "fixCapitals": "تصحيح تهجئة الحروف"
                 },
                 "title": "مقاطع الترجمة",
-                "unknownLanguage": "مجهول"
+                "unknownLanguage": "مجهول",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -354,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "إلغاء",
-            "next": "الحلقة الموالية"
+            "next": "الحلقة الموالية",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "خطأ في التشغيل",
@@ -381,6 +441,13 @@
                 "homeButton": "عُدْ للصفحة الرئيسية",
                 "text": "بحثنا عن طريقِ مُزودينا ولم نعثر على ما كنتَ تبحثُ عنه! نحن لانستضيف الوسائط ولسنا المتحكمين فيما هو متاح. رجاءً انقر على 'عرض التفاصيل' أسفله لمزيد من المعلومات.",
                 "title": "لم نتمكن من العثور على ذلك"
+            },
+            "extensionFailure": {
+                "homeButton": "",
+                "badge": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -460,7 +527,8 @@
                 "default": "افتراضي",
                 "gray": "رمادي",
                 "red": "أحمر",
-                "teal": "تركواز"
+                "teal": "تركواز",
+                "blck": ""
             },
             "title": "المظهر"
         },
@@ -508,7 +576,15 @@
             "thumbnail": "إنشاء صور مصغرة",
             "thumbnailDescription": "في معظم الأوقات، لا تحتوي مقاطع الفيديو على صور مصغرة. يمكنك تمكين هذا الإعداد من توليدها بسرعة ولكن يمكنها جعل الفيديو الخاص بك أبطأ.",
             "thumbnailLabel": "إنشاء صور مصغرة",
-            "title": "تفضيلات"
+            "title": "تفضيلات",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "إعادة تعيين",
         "save": "حفظ",
@@ -531,8 +607,39 @@
             "colorLabel": "لون",
             "previewQuote": "يجب أن لا أخأف. الخوف هو قاتل العقل.",
             "textSizeLabel": "حجم النص",
-            "title": "مقاطع الترجمة"
+            "title": "مقاطع الترجمة",
+            "textBoldLabel": "",
+            "backgroundBlurLabel": ""
         },
         "unsaved": "لديك تغييرات غير محفوظة"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
