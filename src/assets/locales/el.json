@@ -14,7 +14,24 @@
             "body": "Τα αποτελέσματα των αναζητήσεων τροφοδοτούνται από το The Movie Database (TMDB) και προβάλλονται ανεξάρτητα με το αν οι πηγές διαθέτουν το εν λόγω πολυμέσο.",
             "title": "Τα αποτελέσματα της αναζήτησης εμφανίζουν την σειρά ή την ταινία, γιατί δεν μπορώ να την αναπαράγω;"
         },
-        "title": "Σχετικά με το Vid Binge"
+        "title": "Σχετικά με το Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Αντιγράφθηκε",
@@ -58,7 +75,9 @@
             "host": "Συνδέεστε στον διακομιστή <0>{{hostname}}</0> - παρακαλούμε επιβεβαιώστε ότι τον εμπιστεύεστε πριν δημιουργήσετε λογαριασμό",
             "no": "Επιστροφή",
             "title": "Εμπιστεύεστε αυτόν τον διακομιστή;",
-            "yes": "Εμπιστεύομαι αυτόν τον διακομιστή"
+            "yes": "Εμπιστεύομαι αυτόν τον διακομιστή",
+            "noHostTitle": "",
+            "noHost": ""
         },
         "verify": {
             "description": "Παρακαλώ εισάγετε τη συνθηματική σας φράση από τα προηγούμενα βήματα για να επιβεβαιώσετε ότι την έχετε αποθηκεύσει και να δημιουργήσετε τον λογαριασμό σας",
@@ -85,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA (νόμος περί πνευματικών δικαιωμάτων)",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Παρακολουθήστε τις αγαπημένες σας σειρές και ταινίες με αυτή την εφαρμογή streaming ανοιχτού κώδικα."
     },
@@ -97,7 +119,10 @@
             "login": "Σύνδεση",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Εγγραφή",
-            "settings": "Ρυθμίσεις"
+            "settings": "Ρυθμίσεις",
+            "discover": "",
+            "privacy": "",
+            "onboarding": ""
         }
     },
     "home": {
@@ -116,7 +141,13 @@
             "loading": "Φόρτωση...",
             "noResults": "Δεν μπορέσαμε να βρούμε τίποτα!",
             "placeholder": {
-                "default": "Τι θέλετε να παρακολουθήσετε;"
+                "default": "Τι θέλετε να παρακολουθήσετε;",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             "sectionTitle": "Αποτελέσματα αναζήτησης"
         },
@@ -124,19 +155,39 @@
             "day": {
                 "default": "Τι θα θέλατε να παρακολουθήσετε σήμερα το απόγευμα;",
                 "extra": [
-                    "Νιώθετε περιπετειώδης; Το Jurassic Park μπορεί να είναι η τέλεια επιλογή."
+                    "Νιώθετε περιπετειώδης; Το Jurassic Park μπορεί να είναι η τέλεια επιλογή.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Τι θα θέλατε να παρακολουθήσετε σήμερα το πρωί;",
                 "extra": [
-                    "Έχω ακούσει ότι το Before Sunrise είναι καλό"
+                    "Έχω ακούσει ότι το Before Sunrise είναι καλό",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Τι θα θέλατε να παρακολουθήσετε απόψε;",
                 "extra": [
-                    "Κούραση; Έχω ακούσει ότι ο Εξορκιστής είναι καλός."
+                    "Κούραση; Έχω ακούσει ότι ο Εξορκιστής είναι καλός.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -146,7 +197,8 @@
         "types": {
             "movie": "Ταινία",
             "show": "Σειρά"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -158,7 +210,8 @@
             "logout": "Αποσύνδεση",
             "register": "Συγχρονισμός με το cloud",
             "settings": "Ρυθμίσεις",
-            "support": "Υποστήριξη"
+            "support": "Υποστήριξη",
+            "discover": ""
         }
     },
     "notFound": {
@@ -199,7 +252,9 @@
                     "shortTitle": "Λήψη / PC",
                     "title": "Λήψη στο PC"
                 },
-                "title": "Λήψη"
+                "title": "Λήψη",
+                "copyHlsPlaylist": "",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Επεισόδια",
@@ -208,7 +263,8 @@
                 "loadingError": "Σφάλμα φόρτωσης της σεζόν",
                 "loadingList": "Φόρτωση...",
                 "loadingTitle": "Φόρτωση...",
-                "unairedEpisodes": "Ένα ή περισσότερα επεισόδια αυτής της σεζόν έχουν απενεργοποιηθεί επειδή δεν έχουν προβληθεί ακόμα."
+                "unairedEpisodes": "Ένα ή περισσότερα επεισόδια αυτής της σεζόν έχουν απενεργοποιηθεί επειδή δεν έχουν προβληθεί ακόμα.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Ταχύτητα αναπαραγωγής",
@@ -228,7 +284,9 @@
                 "qualityItem": "Ποιότητα",
                 "sourceItem": "Πηγές βίντεο",
                 "subtitleItem": "Ρυθμίσεις υποτίτλων",
-                "videoSection": "Ρυθμίσεις βίντεο"
+                "videoSection": "Ρυθμίσεις βίντεο",
+                "watchParty": "",
+                "audioItem": ""
             },
             "sources": {
                 "failed": {
@@ -256,7 +314,9 @@
                     "fixCapitals": "Επιδιόρθωση κεφαλαιοποίησης"
                 },
                 "title": "Υπότιτλοι",
-                "unknownLanguage": "Άγνωστο"
+                "unknownLanguage": "Άγνωστο",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -275,11 +335,23 @@
                 "homeButton": "Επιστροφή στην αρχική σελίδα",
                 "text": "Δεν μπορέσαμε να βρούμε το πολυμέσο που ζητήσατε. Είτε έχει αφαιρεθεί είτε παραποιήσατε τη διεύθυνση URL.",
                 "title": "Το συγκεκριμένο πολυμέσο δεν μπόρεσε να βρεθεί."
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "badge": "",
+                "button": "",
+                "text": "",
+                "title": ""
             }
         },
         "nextEpisode": {
             "cancel": "Ακύρωση",
-            "next": "Επόμενο επεισόδιο"
+            "next": "Επόμενο επεισόδιο",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Σφάλμα αναπαραγωγής",
@@ -306,6 +378,13 @@
                 "homeButton": "Επιστροφή στην αρχική",
                 "text": "Ψάξαμε στους παρόχους μας και δεν μπορέσαμε να βρούμε το πολυμέσο που αναζητάτε! Δεν φιλοξενούμε τα πολυμέσα και δεν έχουμε κανέναν έλεγχο για το τι είναι διαθέσιμο. Παρακαλούμε κάντε κλικ στο 'Εμφάνιση λεπτομερειών' παρακάτω για περισσότερες λεπτομέρειες.",
                 "title": "Δεν μπορέσαμε να το βρούμε αυτό"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -385,7 +464,8 @@
                 "default": "Προεπιλογή",
                 "gray": "Γκρι",
                 "red": "Κόκκινο",
-                "teal": "Πετρόλ"
+                "teal": "Πετρόλ",
+                "blck": ""
             },
             "title": "Εμφάνιση"
         },
@@ -403,6 +483,28 @@
                 "label": "Χρήση προσαρμοσμένων proxy workers",
                 "urlLabel": "Διευθύνσεις URL των worker",
                 "urlPlaceholder": "https://"
+            },
+            "setup": {
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "unsetStatus": {
+                    "description": "",
+                    "title": ""
+                }
             }
         },
         "reset": "Επαναφορά",
@@ -426,8 +528,118 @@
             "colorLabel": "Χρώμα",
             "previewQuote": "Δεν πρέπει να φοβάμαι. Ο φόβος είναι ο δολοφόνος του μυαλού.",
             "textSizeLabel": "Μέγεθος κειμένου",
-            "title": "Υπότιτλοι"
+            "title": "Υπότιτλοι",
+            "textBoldLabel": "",
+            "backgroundBlurLabel": ""
         },
-        "unsaved": "Έχετε μη αποθηκευμένες αλλαγές"
+        "unsaved": "Έχετε μη αποθηκευμένες αλλαγές",
+        "preferences": {
+            "title": "",
+            "autoplay": "",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplayDescription": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "language": "",
+            "languageDescription": "",
+            "thumbnail": "",
+            "thumbnailDescription": "",
+            "thumbnailLabel": "",
+            "autoplayLabel": ""
+        }
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
+    },
+    "onboarding": {
+        "defaultConfirm": {
+            "cancel": "",
+            "confirm": "",
+            "description": "",
+            "title": ""
+        },
+        "extension": {
+            "back": "",
+            "explainer": "",
+            "explainerIos": "",
+            "extensionHelp": "",
+            "linkChrome": "",
+            "linkFirefox": "",
+            "notDetecting": "",
+            "notDetectingAction": "",
+            "status": {
+                "disallowed": "",
+                "disallowedAction": "",
+                "failed": "",
+                "loading": "",
+                "outdated": "",
+                "success": ""
+            },
+            "submit": "",
+            "title": ""
+        },
+        "proxy": {
+            "back": "",
+            "explainer": "",
+            "input": {
+                "errorConnection": "",
+                "errorInvalidUrl": "",
+                "errorNotProxy": "",
+                "label": "",
+                "placeholder": ""
+            },
+            "link": "",
+            "submit": "",
+            "title": ""
+        },
+        "start": {
+            "explainer": "",
+            "options": {
+                "default": {
+                    "text": ""
+                },
+                "extension": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                },
+                "proxy": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                }
+            },
+            "title": ""
+        }
     }
 }
