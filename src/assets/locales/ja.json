@@ -1,137 +1,645 @@
 {
-  "about": {
-    "description": "Vid Bingeは、ウェブアプリケーションで、インターネットを検索してストリームを見つけます。チームは、コンテンツの消費において主にミニマリストなアプローチを目指しています。",
-    "faqTitle": "よくある質問",
-    "q1": {
-      "body": "Vid Bingeはいかなるコンテンツもホストしていません。視聴するために何かをクリックすると、選択したメディアがインターネットで検索されます（ローディング画面と「ビデオソース」タブでは、使用しているソースが表示されます）。メディアは決してVid Bingeにアップロードされず、すべてがこの検索メカニズムを通じて行われます。",
-      "title": "コンテンツはどこから来ていますか？"
+    "about": {
+        "description": "Vid Bingeは、ウェブアプリケーションで、インターネットを検索してストリームを見つけます。チームは、コンテンツの消費において主にミニマリストなアプローチを目指しています。",
+        "faqTitle": "よくある質問",
+        "q1": {
+            "body": "Vid Bingeはいかなるコンテンツもホストしていません。視聴するために何かをクリックすると、選択したメディアがインターネットで検索されます（ローディング画面と「ビデオソース」タブでは、使用しているソースが表示されます）。メディアは決してVid Bingeにアップロードされず、すべてがこの検索メカニズムを通じて行われます。",
+            "title": "コンテンツはどこから来ていますか？"
+        },
+        "q2": {
+            "body": "ショーまたは映画のリクエストはできません。Vid Bingeはどのコンテンツも管理していません。すべてのコンテンツはインターネット上のソースを通じて閲覧されます。",
+            "title": "ショーまたは映画のリクエストはどこでできますか？"
+        },
+        "q3": {
+            "body": "私たちの検索結果は、The Movie Database（TMDB）によって提供され、実際にはコンテンツを持っているかどうかに関係なく表示されます。",
+            "title": "検索結果には番組や映画が表示されますが、なぜ再生できないのでしょうか？"
+        },
+        "title": "Vid Bingeについて",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
-    "q2": {
-      "body": "ショーまたは映画のリクエストはできません。Vid Bingeはどのコンテンツも管理していません。すべてのコンテンツはインターネット上のソースを通じて閲覧されます。",
-      "title": "ショーまたは映画のリクエストはどこでできますか？"
+    "actions": {
+        "copied": "コピーしました",
+        "copy": "コピー"
     },
-    "q3": {
-      "body": "私たちの検索結果は、The Movie Database（TMDB）によって提供され、実際にはコンテンツを持っているかどうかに関係なく表示されます。",
-      "title": "検索結果には番組や映画が表示されますが、なぜ再生できないのでしょうか？"
+    "auth": {
+        "createAccount": "まだアカウントをお持ちでないですか？ <0>アカウントを作成</0> してください。",
+        "deviceNameLabel": "デバイス名",
+        "deviceNamePlaceholder": "個人用の電話",
+        "generate": {
+            "description": "パスフレーズはユーザー名とパスワードとして機能します。アカウントにログインする際には必ず入力する必要があるため、安全に保管してください。",
+            "next": "パスフレーズを保存しました",
+            "passphraseFrameLabel": "パスフレーズ",
+            "title": "あなたのパスフレーズ"
+        },
+        "hasAccount": "既にアカウントをお持ちですか？ <0>ログインはこちら</0>",
+        "login": {
+            "description": "ログインするにはパスフレーズを入力してください",
+            "deviceLengthError": "デバイス名を入力してください",
+            "passphraseLabel": "12単語のパスフレーズ",
+            "passphrasePlaceholder": "パスフレーズ",
+            "submit": "ログイン",
+            "title": "自分の口座にログインする",
+            "validationError": "パスワードが間違っています"
+        },
+        "register": {
+            "information": {
+                "color1": "プロフィールカラー1",
+                "color2": "プロフィールカラー2",
+                "header": "デバイス名を入力し、色とユーザーアイコンを選んでください",
+                "icon": "ユーザーアイコン",
+                "next": "次へ",
+                "title": "アカウント情報"
+            }
+        },
+        "trust": {
+            "failed": {
+                "text": "正しく設定しましたか？",
+                "title": "サーバーへの接続に失敗しました"
+            },
+            "noHostTitle": "",
+            "noHost": "",
+            "host": "",
+            "no": "",
+            "title": "",
+            "yes": ""
+        },
+        "verify": {
+            "description": "",
+            "invalidData": "",
+            "noMatch": "",
+            "passphraseLabel": "",
+            "recaptchaFailed": "",
+            "register": "",
+            "title": ""
+        }
     },
-    "title": "Vid Bingeについて"
-  },
-  "actions": {
-    "copied": "コピーしました",
-    "copy": "コピー"
-  },
-  "auth": {
-    "createAccount": "まだアカウントをお持ちでないですか？ <0>アカウントを作成</0> してください。",
-    "deviceNameLabel": "デバイス名",
-    "deviceNamePlaceholder": "個人用の電話",
-    "generate": {
-      "description": "パスフレーズはユーザー名とパスワードとして機能します。アカウントにログインする際には必ず入力する必要があるため、安全に保管してください。",
-      "next": "パスフレーズを保存しました",
-      "passphraseFrameLabel": "パスフレーズ",
-      "title": "あなたのパスフレーズ"
+    "footer": {
+        "tagline": "あなたのお気に入りの番組や映画を、このオープンソースのストリーミングアプリで視聴してください。",
+        "legal": {
+            "disclaimer": "",
+            "disclaimerText": ""
+        },
+        "links": {
+            "discord": "",
+            "telegram": "",
+            "facebook": "",
+            "instagram": "",
+            "dmca": "",
+            "github": ""
+        }
     },
-    "hasAccount": "既にアカウントをお持ちですか？ <0>ログインはこちら</0>",
-    "login": {
-      "description": "ログインするにはパスフレーズを入力してください",
-      "deviceLengthError": "デバイス名を入力してください",
-      "passphraseLabel": "12単語のパスフレーズ",
-      "passphrasePlaceholder": "パスフレーズ",
-      "submit": "ログイン",
-      "title": "自分の口座にログインする",
-      "validationError": "パスワードが間違っています"
+    "global": {
+        "name": "映画ウェブ",
+        "pages": {
+            "about": "概要",
+            "login": "ログイン",
+            "settings": "設定",
+            "dmca": "",
+            "discover": "",
+            "privacy": "",
+            "onboarding": "",
+            "pagetitle": "",
+            "register": ""
+        }
     },
-    "register": {
-      "information": {
-        "color1": "プロフィールカラー1",
-        "color2": "プロフィールカラー2",
-        "header": "デバイス名を入力し、色とユーザーアイコンを選んでください",
-        "icon": "ユーザーアイコン",
-        "next": "次へ",
-        "title": "アカウント情報"
-      }
+    "home": {
+        "continueWatching": {
+            "sectionTitle": "視聴を続ける"
+        },
+        "search": {
+            "allResults": "それがすべてです！",
+            "loading": "読み込み中...",
+            "noResults": "見つかりませんでした！",
+            "placeholder": {
+                "default": "どんな映画を見たい？",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "sectionTitle": "検索結果",
+            "failed": ""
+        },
+        "titles": {
+            "day": {
+                "default": "今日の午後はどんな映画を見たい？",
+                "extra": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "morning": {
+                "default": "今朝はどんな映画を見たい？",
+                "extra": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "night": {
+                "default": "今夜はどんな映画を見たい？",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            }
+        },
+        "bookmarks": {
+            "sectionTitle": ""
+        },
+        "mediaList": {
+            "stopEditing": ""
+        }
     },
-    "trust": {
-      "failed": {
-        "text": "正しく設定しましたか？",
-        "title": "サーバーへの接続に失敗しました"
-      }
-    }
-  },
-  "footer": {
-    "tagline": "あなたのお気に入りの番組や映画を、このオープンソースのストリーミングアプリで視聴してください。"
-  },
-  "global": {
-    "name": "映画ウェブ",
-    "pages": {
-      "about": "概要",
-      "login": "ログイン",
-      "settings": "設定"
-    }
-  },
-  "home": {
-    "continueWatching": {
-      "sectionTitle": "視聴を続ける"
+    "media": {
+        "types": {
+            "movie": "映画",
+            "show": "テレビ番組"
+        },
+        "episodeDisplay": "",
+        "unreleased": ""
     },
-    "search": {
-      "allResults": "それがすべてです！",
-      "loading": "読み込み中...",
-      "noResults": "見つかりませんでした！",
-      "placeholder": {
-        "default": "どんな映画を見たい？",
-        "extra": []
-      },
-      "sectionTitle": "検索結果"
+    "navigation": {
+        "menu": {
+            "about": "会社概要",
+            "donation": "寄付",
+            "logout": "退室",
+            "register": "クラウドに同期して",
+            "settings": "設定",
+            "discover": "",
+            "support": ""
+        },
+        "banner": {
+            "offline": ""
+        }
     },
-    "titles": {
-      "day": {
-        "default": "今日の午後はどんな映画を見たい？"
-      },
-      "morning": {
-        "default": "今朝はどんな映画を見たい？"
-      },
-      "night": {
-        "default": "今夜はどんな映画を見たい？"
-      }
+    "player": {
+        "menus": {
+            "episodes": {
+                "loadingList": "読み込み中...",
+                "loadingTitle": "読み込み中...",
+                "button": "",
+                "emptyState": "",
+                "episodeBadge": "",
+                "loadingError": "",
+                "unairedEpisodes": "",
+                "seasons": ""
+            },
+            "downloads": {
+                "title": "",
+                "disclaimer": "",
+                "copyHlsPlaylist": "",
+                "downloadSubtitle": "",
+                "downloadVideo": "",
+                "downloadHlsAsVideo": "",
+                "hlsDisclaimer": "",
+                "onAndroid": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "onIos": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "onPc": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                }
+            },
+            "sources": {
+                "title": "",
+                "noStream": {
+                    "text": "",
+                    "title": ""
+                },
+                "unknownOption": "",
+                "failed": {
+                    "text": "",
+                    "title": ""
+                },
+                "noEmbeds": {
+                    "text": "",
+                    "title": ""
+                }
+            },
+            "playback": {
+                "speedLabel": "",
+                "title": ""
+            },
+            "quality": {
+                "automaticLabel": "",
+                "hint": "",
+                "iosNoQuality": "",
+                "title": ""
+            },
+            "settings": {
+                "downloadItem": "",
+                "watchParty": "",
+                "enableSubtitles": "",
+                "experienceSection": "",
+                "playbackItem": "",
+                "audioItem": "",
+                "qualityItem": "",
+                "sourceItem": "",
+                "subtitleItem": "",
+                "videoSection": ""
+            },
+            "subtitles": {
+                "customChoice": "",
+                "customizeLabel": "",
+                "offChoice": "",
+                "OpenSubtitlesChoice": "",
+                "settings": {
+                    "backlink": "",
+                    "delay": "",
+                    "fixCapitals": ""
+                },
+                "title": "",
+                "unknownLanguage": "",
+                "dropSubtitleFile": ""
+            }
+        },
+        "back": {
+            "default": "",
+            "short": ""
+        },
+        "casting": {
+            "enabled": ""
+        },
+        "metadata": {
+            "api": {
+                "text": "",
+                "title": ""
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "failed": {
+                "badge": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "badge": "",
+                "button": "",
+                "text": "",
+                "title": ""
+            },
+            "notFound": {
+                "badge": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            }
+        },
+        "nextEpisode": {
+            "cancel": "",
+            "next": "",
+            "nextSeason": ""
+        },
+        "playbackError": {
+            "badge": "",
+            "errors": {
+                "errorAborted": "",
+                "errorDecode": "",
+                "errorGenericMedia": "",
+                "errorNetwork": "",
+                "errorNotSupported": ""
+            },
+            "homeButton": "",
+            "text": "",
+            "title": ""
+        },
+        "scraping": {
+            "items": {
+                "failure": "",
+                "notFound": "",
+                "pending": ""
+            },
+            "notFound": {
+                "badge": "",
+                "detailsButton": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
+            }
+        },
+        "time": {
+            "regular": "",
+            "remaining": "",
+            "shortRegular": "",
+            "shortRemaining": ""
+        },
+        "turnstile": {
+            "description": "",
+            "error": "",
+            "title": "",
+            "verifyingHumanity": ""
+        }
+    },
+    "screens": {
+        "loadingApp": "申込の読み込み",
+        "loadingUser": "プロフィールの読み込み",
+        "loadingUserError": {
+            "logout": "退出",
+            "text": "",
+            "reset": "",
+            "textWithReset": ""
+        },
+        "dmca": {
+            "text": "",
+            "title": ""
+        },
+        "migration": {
+            "failed": "",
+            "inProgress": ""
+        }
+    },
+    "settings": {
+        "account": {
+            "accountDetails": {
+                "logoutButton": "退室",
+                "deviceNameLabel": "",
+                "deviceNamePlaceholder": "",
+                "editProfile": ""
+            },
+            "register": {
+                "title": "クラウドに同期して",
+                "cta": "",
+                "text": ""
+            },
+            "actions": {
+                "delete": {
+                    "button": "",
+                    "confirmButton": "",
+                    "confirmDescription": "",
+                    "confirmTitle": "",
+                    "text": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "devices": {
+                "deviceNameLabel": "",
+                "failed": "",
+                "removeDevice": "",
+                "title": ""
+            },
+            "profile": {
+                "finish": "",
+                "firstColor": "",
+                "secondColor": "",
+                "title": "",
+                "userIcon": ""
+            },
+            "title": ""
+        },
+        "subtitles": {
+            "textBoldLabel": "",
+            "backgroundLabel": "",
+            "backgroundBlurLabel": "",
+            "colorLabel": "",
+            "title": "",
+            "previewQuote": "",
+            "textSizeLabel": ""
+        },
+        "unsaved": "",
+        "preferences": {
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "thumbnailDescription": "",
+            "thumbnailLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "title": "",
+            "language": "",
+            "languageDescription": "",
+            "thumbnail": ""
+        },
+        "reset": "",
+        "save": "",
+        "sidebar": {
+            "info": {
+                "appVersion": "",
+                "backendUrl": "",
+                "backendVersion": "",
+                "hostname": "",
+                "insecure": "",
+                "notLoggedIn": "",
+                "secure": "",
+                "title": "",
+                "unknownVersion": "",
+                "userId": ""
+            }
+        },
+        "connections": {
+            "setup": {
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "unsetStatus": {
+                    "description": "",
+                    "title": ""
+                }
+            },
+            "workers": {
+                "label": "",
+                "urlLabel": "",
+                "addButton": "",
+                "description": "",
+                "emptyState": "",
+                "urlPlaceholder": ""
+            },
+            "server": {
+                "description": "",
+                "label": "",
+                "urlLabel": ""
+            },
+            "title": ""
+        },
+        "appearance": {
+            "title": "",
+            "activeTheme": "",
+            "themes": {
+                "blue": "",
+                "default": "",
+                "gray": "",
+                "red": "",
+                "teal": "",
+                "blck": ""
+            }
+        }
+    },
+    "privacy": {
+        "p1": {
+            "title": "",
+            "body": ""
+        },
+        "description": "",
+        "lastUpdated": "",
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
+    },
+    "overlays": {
+        "close": ""
+    },
+    "errors": {
+        "badge": "",
+        "details": "",
+        "reloadPage": "",
+        "showError": "",
+        "title": ""
+    },
+    "notFound": {
+        "badge": "",
+        "goHome": "",
+        "message": "",
+        "title": ""
+    },
+    "onboarding": {
+        "defaultConfirm": {
+            "cancel": "",
+            "confirm": "",
+            "description": "",
+            "title": ""
+        },
+        "extension": {
+            "back": "",
+            "explainer": "",
+            "explainerIos": "",
+            "extensionHelp": "",
+            "linkChrome": "",
+            "linkFirefox": "",
+            "notDetecting": "",
+            "notDetectingAction": "",
+            "status": {
+                "disallowed": "",
+                "disallowedAction": "",
+                "failed": "",
+                "loading": "",
+                "outdated": "",
+                "success": ""
+            },
+            "submit": "",
+            "title": ""
+        },
+        "proxy": {
+            "back": "",
+            "explainer": "",
+            "input": {
+                "errorConnection": "",
+                "errorInvalidUrl": "",
+                "errorNotProxy": "",
+                "label": "",
+                "placeholder": ""
+            },
+            "link": "",
+            "submit": "",
+            "title": ""
+        },
+        "start": {
+            "explainer": "",
+            "options": {
+                "default": {
+                    "text": ""
+                },
+                "extension": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                },
+                "proxy": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                }
+            },
+            "title": ""
+        }
     }
-  },
-  "media": {
-    "types": {
-      "movie": "映画",
-      "show": "テレビ番組"
-    }
-  },
-  "navigation": {
-    "menu": {
-      "about": "会社概要",
-      "donation": "寄付",
-      "logout": "退室",
-      "register": "クラウドに同期して",
-      "settings": "設定"
-    }
-  },
-  "player": {
-    "menus": {
-      "episodes": {
-        "loadingList": "読み込み中...",
-        "loadingTitle": "読み込み中..."
-      }
-    }
-  },
-  "screens": {
-    "loadingApp": "申込の読み込み",
-    "loadingUser": "プロフィールの読み込み",
-    "loadingUserError": {
-      "logout": "退出"
-    }
-  },
-  "settings": {
-    "account": {
-      "accountDetails": {
-        "logoutButton": "退室"
-      },
-      "register": {
-        "title": "クラウドに同期して"
-      }
-    }
-  }
 }
