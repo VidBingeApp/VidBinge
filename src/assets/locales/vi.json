@@ -1,211 +1,645 @@
 {
-  "about": {
-    "description": "Vid Binge là một ứng dụng web tìm kiếm các nguồn truyền phát trực tuyến trên Internet. Nhóm phát triển ứng dụng này nhắm đến một cách dễ dàng hơn trong việc tiêu thụ nội dung.",
-    "faqTitle": "Các câu hỏi thường gặp",
-    "q1": {
-      "body": "Vid Binge không lưu trữ bất kì nội dung nào. Khi bạn chọn xem một nội dung nào đó, ứng dụng sẽ tìm kiếm nội dung đó trên Internet (Khi nội dung tải và trong tab 'nguồn video' bạn sẽ tìm thấy nguồn đang được dùng). Nội dung không bao giờ được tải lên trên Vid Binge, mọi thứ đều được tìm kiếm thông qua phương thức này.",
-      "title": "Nội dung đến từ đâu?"
+    "about": {
+        "description": "Vid Binge là một ứng dụng web tìm kiếm các nguồn truyền phát trực tuyến trên Internet. Nhóm phát triển ứng dụng này nhắm đến một cách dễ dàng hơn trong việc tiêu thụ nội dung.",
+        "faqTitle": "Các câu hỏi thường gặp",
+        "q1": {
+            "body": "Vid Binge không lưu trữ bất kì nội dung nào. Khi bạn chọn xem một nội dung nào đó, ứng dụng sẽ tìm kiếm nội dung đó trên Internet (Khi nội dung tải và trong tab 'nguồn video' bạn sẽ tìm thấy nguồn đang được dùng). Nội dung không bao giờ được tải lên trên Vid Binge, mọi thứ đều được tìm kiếm thông qua phương thức này.",
+            "title": "Nội dung đến từ đâu?"
+        },
+        "q2": {
+            "body": "Việc yêu cầu thêm một chương trình truyền hình hoặc phim là điều bất khả thi bởi vì Vid Binge không quản lý bất kỳ nội dung nào. Tất cả nội dung được truyền thông qua những nguồn trên internet.",
+            "title": "Tôi có thể yêu cầu thêm một chương trình truyền hình hoặc phim ở đâu?"
+        },
+        "q3": {
+            "body": "Các kết quả tìm kiếm được cung cấp bởi The Movie Database (TMDB) và hiện lên bất kể các nguồn của trang thực sự có lưu trữ nội dung đó hay không.",
+            "title": "Tại sao kết quả tìm kiếm hiển thị chương trình truyền hình hoặc phim nhưng tôi không thể xem nó?"
+        },
+        "title": "Về Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
-    "q2": {
-      "body": "Việc yêu cầu thêm một chương trình truyền hình hoặc phim là điều bất khả thi bởi vì Vid Binge không quản lý bất kỳ nội dung nào. Tất cả nội dung được truyền thông qua những nguồn trên internet.",
-      "title": "Tôi có thể yêu cầu thêm một chương trình truyền hình hoặc phim ở đâu?"
+    "actions": {
+        "copied": "Đã sao chép",
+        "copy": "Sao chép"
     },
-    "q3": {
-      "body": "Các kết quả tìm kiếm được cung cấp bởi The Movie Database (TMDB) và hiện lên bất kể các nguồn của trang thực sự có lưu trữ nội dung đó hay không.",
-      "title": "Tại sao kết quả tìm kiếm hiển thị chương trình truyền hình hoặc phim nhưng tôi không thể xem nó?"
+    "auth": {
+        "createAccount": "Chưa có tài khoản? <0>Hãy tạo tài khoản.</0>",
+        "deviceNameLabel": "Tên thiết bị",
+        "deviceNamePlaceholder": "Điện thoại cá nhân",
+        "generate": {
+            "description": "Mật ngữ của bạn đóng vai trò là tên người dùng và mật khẩu của bạn. Hãy giữ nó an toàn vì bạn sẽ cần nhập nó để đăng nhập vào tài khoản của bạn",
+            "next": "Tôi đã lưu giữ mật ngữ của mình",
+            "passphraseFrameLabel": "Mật ngữ",
+            "title": "Mật ngữ của bạn"
+        },
+        "hasAccount": "Đã có tài khoản? <0>Hãy đăng nhập.</0>",
+        "login": {
+            "description": "Hãy nhập mật ngữ của bạn để đăng nhập vào tài khoản",
+            "deviceLengthError": "Hãy nhập tên thiết bị",
+            "passphraseLabel": "Mật ngữ gồm 12 từ",
+            "passphrasePlaceholder": "Mật ngữ",
+            "submit": "Đăng nhập",
+            "title": "Đăng nhập vào tài khoản của bạn",
+            "validationError": "Mật ngữ không chính xác hoặc không đầy đủ"
+        },
+        "register": {
+            "information": {
+                "color1": "Màu hồ sơ số một",
+                "color2": "Màu hồ sơ số hai",
+                "header": "Hãy nhập tên cho thiết bị của bạn và chọn màu sắc và biểu tượng người dùng",
+                "icon": "Biểu tượng người dùng",
+                "next": "Tiếp theo",
+                "title": "Thông tin tài khoản"
+            }
+        },
+        "trust": {
+            "failed": {
+                "text": "Bạn đã cài đặt nó một cách chính xác chưa?",
+                "title": "Không thể truy vấn máy chủ"
+            },
+            "host": "Bạn đang kết nối đến máy chủ <0>{{hostname}}</0> - vui lòng chắc chắn rằng bạn tin tưởng máy chủ này trước khi tạo tài khoản",
+            "no": "Quay lại",
+            "title": "Bạn có tin tưởng máy chủ này không?",
+            "yes": "Tôi tin tưởng máy chủ này",
+            "noHostTitle": "",
+            "noHost": ""
+        },
+        "verify": {
+            "description": "Vui lòng nhập mật ngữ của bạn lúc nãy đễ chắc chắn rằng bạn đã lưu nó và để tạo tài khoản",
+            "invalidData": "Dữ liệu không hợp lệ",
+            "noMatch": "Mật ngữ không khớp",
+            "passphraseLabel": "Mật ngữ 12 ký tự của bạn",
+            "recaptchaFailed": "Xác minh bằng ReCaptcha không hợp lệ",
+            "register": "Tạo tài khoản",
+            "title": "Nhập lại mật ngữ của bạn"
+        }
     },
-    "title": "Về Vid Binge"
-  },
-  "actions": {
-    "copied": "Đã sao chép",
-    "copy": "Sao chép"
-  },
-  "auth": {
-    "createAccount": "Chưa có tài khoản? <0>Hãy tạo tài khoản.</0>",
-    "deviceNameLabel": "Tên thiết bị",
-    "deviceNamePlaceholder": "Điện thoại cá nhân",
-    "generate": {
-      "description": "Mật ngữ của bạn đóng vai trò là tên người dùng và mật khẩu của bạn. Hãy giữ nó an toàn vì bạn sẽ cần nhập nó để đăng nhập vào tài khoản của bạn",
-      "next": "Tôi đã lưu giữ mật ngữ của mình",
-      "passphraseFrameLabel": "Mật ngữ",
-      "title": "Mật ngữ của bạn"
+    "errors": {
+        "badge": "Lỗi",
+        "details": "Thông tin về lỗi",
+        "reloadPage": "Tải lại trang",
+        "showError": "Hiển thị thông tin về lỗi",
+        "title": "Đã xảy ra lỗi!"
     },
-    "hasAccount": "Đã có tài khoản? <0>Hãy đăng nhập.</0>",
-    "login": {
-      "description": "Hãy nhập mật ngữ của bạn để đăng nhập vào tài khoản",
-      "deviceLengthError": "Hãy nhập tên thiết bị",
-      "passphraseLabel": "Mật ngữ gồm 12 từ",
-      "passphrasePlaceholder": "Mật ngữ",
-      "submit": "Đăng nhập",
-      "title": "Đăng nhập vào tài khoản của bạn",
-      "validationError": "Mật ngữ không chính xác hoặc không đầy đủ"
+    "footer": {
+        "legal": {
+            "disclaimer": "Tuyên bố miễn trừ trách nhiệm",
+            "disclaimerText": "Vid Binge không lưu trữ bất kì file nào, nó chỉ đến những đường dẫn của các dịch vụ bên thứ ba. Bất kỳ vấn đề nào về pháp lý nên được đưa đến chủ sỡ hữu của file hoặc những nhà cung cấp đó. Vid Binge hoàn toàn không chịu trách nhiệm cho bất kỳ nội dung nào được chiếu từ các nhà cung cấp."
+        },
+        "links": {
+            "discord": "Discord",
+            "dmca": "DMCA",
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
+        },
+        "tagline": "Xem các chương trình và phim yêu thích của bạn với ứng dụng phát trực tuyến nguồn mở này."
     },
-    "register": {
-      "information": {
-        "color1": "Màu hồ sơ số một",
-        "color2": "Màu hồ sơ số hai",
-        "header": "Hãy nhập tên cho thiết bị của bạn và chọn màu sắc và biểu tượng người dùng",
-        "icon": "Biểu tượng người dùng",
-        "next": "Tiếp theo",
-        "title": "Thông tin tài khoản"
-      }
+    "global": {
+        "name": "Vid Binge",
+        "pages": {
+            "about": "Thông tin",
+            "dmca": "DMCA",
+            "login": "Đăng nhập",
+            "onboarding": "Cài đặt",
+            "pagetitle": "{{title}} - Vid Binge",
+            "register": "Đăng ký",
+            "settings": "Cài đặt",
+            "discover": "",
+            "privacy": ""
+        }
     },
-    "trust": {
-      "failed": {
-        "text": "Bạn đã cài đặt nó một cách chính xác chưa?",
-        "title": "Không thể truy vấn máy chủ"
-      },
-      "host": "Bạn đang kết nối đến máy chủ <0>{{hostname}}</0> - vui lòng chắc chắn rằng bạn tin tưởng máy chủ này trước khi tạo tài khoản",
-      "no": "Quay lại",
-      "title": "Bạn có tin tưởng máy chủ này không?",
-      "yes": "Tôi tin tưởng máy chủ này"
+    "home": {
+        "bookmarks": {
+            "sectionTitle": "Đánh dấu"
+        },
+        "continueWatching": {
+            "sectionTitle": "Tiếp tục xem"
+        },
+        "mediaList": {
+            "stopEditing": "Hoàn thành"
+        },
+        "search": {
+            "allResults": "Đó là tất cả chúng tôi có!",
+            "failed": "Không thể tìm thấy nội dung, hãy thử lại!",
+            "loading": "Đang tải...",
+            "noResults": "Chúng tôi không thể tìm thấy gì!",
+            "placeholder": {
+                "default": "Bạn muốn xem gì?",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "sectionTitle": "Kết quả tìm kiếm"
+        },
+        "titles": {
+            "day": {
+                "default": "Chiều nay bạn muốn coi gì?",
+                "extra": [
+                    "Cảm thấy muốn phiêu lưu? Phim Công viên kỷ Jura có thể là sự lựa chọn hoàn hảo cho bạn.",
+                    "",
+                    ""
+                ]
+            },
+            "morning": {
+                "default": "Sáng nay bạn muốn coi gì?",
+                "extra": [
+                    "Tôi nghe nói rằng bộ phim Before Sunrise hay đấy",
+                    "",
+                    ""
+                ]
+            },
+            "night": {
+                "default": "Đêm nay bạn muốn coi gì?",
+                "extra": [
+                    "Cảm thấy mệt? Tôi nghe nói phim The Exorcist hay đấy.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            }
+        }
     },
-    "verify": {
-      "description": "Vui lòng nhập mật ngữ của bạn lúc nãy đễ chắc chắn rằng bạn đã lưu nó và để tạo tài khoản",
-      "invalidData": "Dữ liệu không hợp lệ",
-      "noMatch": "Mật ngữ không khớp",
-      "passphraseLabel": "Mật ngữ 12 ký tự của bạn",
-      "recaptchaFailed": "Xác minh bằng ReCaptcha không hợp lệ",
-      "register": "Tạo tài khoản",
-      "title": "Nhập lại mật ngữ của bạn"
-    }
-  },
-  "errors": {
-    "badge": "Lỗi",
-    "details": "Thông tin về lỗi",
-    "reloadPage": "Tải lại trang",
-    "showError": "Hiển thị thông tin về lỗi",
-    "title": "Đã xảy ra lỗi!"
-  },
-  "footer": {
-    "legal": {
-      "disclaimer": "Tuyên bố miễn trừ trách nhiệm",
-      "disclaimerText": "Vid Binge không lưu trữ bất kì file nào, nó chỉ đến những đường dẫn của các dịch vụ bên thứ ba. Bất kỳ vấn đề nào về pháp lý nên được đưa đến chủ sỡ hữu của file hoặc những nhà cung cấp đó. Vid Binge hoàn toàn không chịu trách nhiệm cho bất kỳ nội dung nào được chiếu từ các nhà cung cấp."
+    "media": {
+        "episodeDisplay": "M{{season}} T{{episode}}",
+        "types": {
+            "movie": "Phim",
+            "show": "Chương trình truyền hình"
+        },
+        "unreleased": ""
     },
-    "links": {
-      "discord": "Discord",
-      "dmca": "DMCA",
-      "github": "GitHub"
+    "navigation": {
+        "banner": {
+            "offline": "Hãy kiểm tra kết nối Internet của bạn"
+        },
+        "menu": {
+            "about": "Về chúng tôi",
+            "donation": "Ủng hộ",
+            "logout": "Đăng xuất",
+            "register": "Đồng bộ hóa với đám mây",
+            "settings": "Cài đặt",
+            "support": "Hỗ trợ",
+            "discover": ""
+        }
     },
-    "tagline": "Xem các chương trình và phim yêu thích của bạn với ứng dụng phát trực tuyến nguồn mở này."
-  },
-  "global": {
-    "name": "Vid Binge",
-    "pages": {
-      "about": "Thông tin",
-      "dmca": "DMCA",
-      "login": "Đăng nhập",
-      "onboarding": "Cài đặt",
-      "pagetitle": "{{title}} - Vid Binge",
-      "register": "Đăng ký",
-      "settings": "Cài đặt"
-    }
-  },
-  "home": {
-    "bookmarks": {
-      "sectionTitle": "Đánh dấu"
-    },
-    "continueWatching": {
-      "sectionTitle": "Tiếp tục xem"
-    },
-    "mediaList": {
-      "stopEditing": "Hoàn thành"
-    },
-    "search": {
-      "allResults": "Đó là tất cả chúng tôi có!",
-      "failed": "Không thể tìm thấy nội dung, hãy thử lại!",
-      "loading": "Đang tải...",
-      "noResults": "Chúng tôi không thể tìm thấy gì!",
-      "placeholder": {
-        "default": "Bạn muốn xem gì?",
-        "extra": []
-      },
-      "sectionTitle": "Kết quả tìm kiếm"
-    },
-    "titles": {
-      "day": {
-        "default": "Chiều nay bạn muốn coi gì?",
-        "extra": [
-          "Cảm thấy muốn phiêu lưu? Phim Công viên kỷ Jura có thể là sự lựa chọn hoàn hảo cho bạn."
-        ]
-      },
-      "morning": {
-        "default": "Sáng nay bạn muốn coi gì?",
-        "extra": [
-          "Tôi nghe nói rằng bộ phim Before Sunrise hay đấy"
-        ]
-      },
-      "night": {
-        "default": "Đêm nay bạn muốn coi gì?",
-        "extra": [
-          "Cảm thấy mệt? Tôi nghe nói phim The Exorcist hay đấy."
-        ]
-      }
-    }
-  },
-  "media": {
-    "episodeDisplay": "M{{season}} T{{episode}}",
-    "types": {
-      "movie": "Phim",
-      "show": "Chương trình truyền hình"
-    }
-  },
-  "navigation": {
-    "banner": {
-      "offline": "Hãy kiểm tra kết nối Internet của bạn"
-    },
-    "menu": {
-      "about": "Về chúng tôi",
-      "donation": "Ủng hộ",
-      "logout": "Đăng xuất",
-      "register": "Đồng bộ hóa với đám mây",
-      "settings": "Cài đặt",
-      "support": "Hỗ trợ"
-    }
-  },
-  "notFound": {
-    "badge": "Không tìm thấy",
-    "goHome": "Quay lại trang chính",
-    "message": "Chúng tôi đã tìm kiếm khắp nơi: dưới thùng rác, trong tủ quần áo, đằng sau máy chủ proxy nhưng vẫn không thể tìm thấy trang bạn đang tìm kiếm.",
-    "title": "Không thể tìm thấy trang"
-  },
-  "onboarding": {
-    "defaultConfirm": {
-      "cancel": "Huỷ",
-      "confirm": "Chọn cài đặt mặc định",
-      "description": "Cài đặt mặc định có thể dẫn đến việc phát video chậm.",
-      "title": "Bạn có chắc không?"
-    },
-    "extension": {
-      "back": "Trở lại",
-      "explainer": "Bạn có thể sử dụng các nguồn tốt nhất mà chúng tôi cung cấp bằng cách sử dụng tiện ích mở rộng trình duyệt. Đơn giản chỉ cần cài đặt."
-    }
-  },
-  "player": {
-    "back": {
-      "default": "Quay lại trang chính",
-      "short": "Quay lại"
-    },
-    "menus": {
-      "episodes": {
-        "button": "Tập",
-        "loadingList": "Đang tải...",
-        "loadingTitle": "Đang tải..."
-      },
-      "sources": {
-        "title": "Nguồn"
-      }
-    },
-    "metadata": {
-      "notFound": {
+    "notFound": {
         "badge": "Không tìm thấy",
-        "homeButton": "Quay lại trang chính",
-        "text": "Chúng tôi không thể tìm thấy nội dung mà bạn yêu cầu. Hoặc là nó đã bị xóa, hoặc bạn đã xáo trộn URL.",
-        "title": "Không thể tìm thấy nội dung."
-      }
+        "goHome": "Quay lại trang chính",
+        "message": "Chúng tôi đã tìm kiếm khắp nơi: dưới thùng rác, trong tủ quần áo, đằng sau máy chủ proxy nhưng vẫn không thể tìm thấy trang bạn đang tìm kiếm.",
+        "title": "Không thể tìm thấy trang"
     },
-    "playbackError": {
-      "title": "Rất tiếc, đã hỏng!"
+    "onboarding": {
+        "defaultConfirm": {
+            "cancel": "Huỷ",
+            "confirm": "Chọn cài đặt mặc định",
+            "description": "Cài đặt mặc định có thể dẫn đến việc phát video chậm.",
+            "title": "Bạn có chắc không?"
+        },
+        "extension": {
+            "back": "Trở lại",
+            "explainer": "Bạn có thể sử dụng các nguồn tốt nhất mà chúng tôi cung cấp bằng cách sử dụng tiện ích mở rộng trình duyệt. Đơn giản chỉ cần cài đặt.",
+            "explainerIos": "",
+            "extensionHelp": "",
+            "linkChrome": "",
+            "linkFirefox": "",
+            "notDetecting": "",
+            "notDetectingAction": "",
+            "status": {
+                "disallowed": "",
+                "disallowedAction": "",
+                "failed": "",
+                "loading": "",
+                "outdated": "",
+                "success": ""
+            },
+            "submit": "",
+            "title": ""
+        },
+        "proxy": {
+            "back": "",
+            "explainer": "",
+            "input": {
+                "errorConnection": "",
+                "errorInvalidUrl": "",
+                "errorNotProxy": "",
+                "label": "",
+                "placeholder": ""
+            },
+            "link": "",
+            "submit": "",
+            "title": ""
+        },
+        "start": {
+            "explainer": "",
+            "options": {
+                "default": {
+                    "text": ""
+                },
+                "extension": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                },
+                "proxy": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                }
+            },
+            "title": ""
+        }
+    },
+    "player": {
+        "back": {
+            "default": "Quay lại trang chính",
+            "short": "Quay lại"
+        },
+        "menus": {
+            "episodes": {
+                "button": "Tập",
+                "loadingList": "Đang tải...",
+                "loadingTitle": "Đang tải...",
+                "emptyState": "",
+                "episodeBadge": "",
+                "loadingError": "",
+                "unairedEpisodes": "",
+                "seasons": ""
+            },
+            "sources": {
+                "title": "Nguồn",
+                "failed": {
+                    "text": "",
+                    "title": ""
+                },
+                "noEmbeds": {
+                    "text": "",
+                    "title": ""
+                },
+                "noStream": {
+                    "text": "",
+                    "title": ""
+                },
+                "unknownOption": ""
+            },
+            "downloads": {
+                "disclaimer": "",
+                "copyHlsPlaylist": "",
+                "downloadSubtitle": "",
+                "downloadVideo": "",
+                "downloadHlsAsVideo": "",
+                "hlsDisclaimer": "",
+                "onAndroid": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "onIos": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "onPc": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "playback": {
+                "speedLabel": "",
+                "title": ""
+            },
+            "quality": {
+                "automaticLabel": "",
+                "hint": "",
+                "iosNoQuality": "",
+                "title": ""
+            },
+            "settings": {
+                "downloadItem": "",
+                "qualityItem": "",
+                "sourceItem": "",
+                "subtitleItem": "",
+                "videoSection": "",
+                "watchParty": "",
+                "enableSubtitles": "",
+                "experienceSection": "",
+                "playbackItem": "",
+                "audioItem": ""
+            },
+            "subtitles": {
+                "customChoice": "",
+                "customizeLabel": "",
+                "offChoice": "",
+                "OpenSubtitlesChoice": "",
+                "settings": {
+                    "backlink": "",
+                    "delay": "",
+                    "fixCapitals": ""
+                },
+                "title": "",
+                "unknownLanguage": "",
+                "dropSubtitleFile": ""
+            }
+        },
+        "metadata": {
+            "notFound": {
+                "badge": "Không tìm thấy",
+                "homeButton": "Quay lại trang chính",
+                "text": "Chúng tôi không thể tìm thấy nội dung mà bạn yêu cầu. Hoặc là nó đã bị xóa, hoặc bạn đã xáo trộn URL.",
+                "title": "Không thể tìm thấy nội dung."
+            },
+            "api": {
+                "text": "",
+                "title": ""
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "badge": "",
+                "button": "",
+                "text": "",
+                "title": ""
+            },
+            "failed": {
+                "badge": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            }
+        },
+        "playbackError": {
+            "title": "Rất tiếc, đã hỏng!",
+            "badge": "",
+            "errors": {
+                "errorAborted": "",
+                "errorDecode": "",
+                "errorGenericMedia": "",
+                "errorNetwork": "",
+                "errorNotSupported": ""
+            },
+            "homeButton": "",
+            "text": ""
+        },
+        "casting": {
+            "enabled": ""
+        },
+        "nextEpisode": {
+            "cancel": "",
+            "next": "",
+            "nextSeason": ""
+        },
+        "scraping": {
+            "items": {
+                "failure": "",
+                "notFound": "",
+                "pending": ""
+            },
+            "notFound": {
+                "badge": "",
+                "detailsButton": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
+            }
+        },
+        "time": {
+            "regular": "",
+            "remaining": "",
+            "shortRegular": "",
+            "shortRemaining": ""
+        },
+        "turnstile": {
+            "description": "",
+            "error": "",
+            "title": "",
+            "verifyingHumanity": ""
+        }
+    },
+    "settings": {
+        "subtitles": {
+            "previewQuote": "",
+            "textBoldLabel": "",
+            "backgroundLabel": "",
+            "backgroundBlurLabel": "",
+            "colorLabel": "",
+            "textSizeLabel": "",
+            "title": ""
+        },
+        "unsaved": "",
+        "preferences": {
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "thumbnailDescription": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "title": "",
+            "language": "",
+            "languageDescription": "",
+            "thumbnail": "",
+            "thumbnailLabel": "",
+            "sourceOrderDescription": ""
+        },
+        "reset": "",
+        "save": "",
+        "sidebar": {
+            "info": {
+                "appVersion": "",
+                "backendUrl": "",
+                "backendVersion": "",
+                "hostname": "",
+                "insecure": "",
+                "notLoggedIn": "",
+                "secure": "",
+                "title": "",
+                "unknownVersion": "",
+                "userId": ""
+            }
+        },
+        "account": {
+            "profile": {
+                "title": "",
+                "finish": "",
+                "firstColor": "",
+                "secondColor": "",
+                "userIcon": ""
+            },
+            "title": "",
+            "register": {
+                "text": "",
+                "title": "",
+                "cta": ""
+            },
+            "accountDetails": {
+                "deviceNameLabel": "",
+                "deviceNamePlaceholder": "",
+                "editProfile": "",
+                "logoutButton": ""
+            },
+            "actions": {
+                "delete": {
+                    "button": "",
+                    "confirmButton": "",
+                    "confirmDescription": "",
+                    "confirmTitle": "",
+                    "text": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "devices": {
+                "deviceNameLabel": "",
+                "failed": "",
+                "removeDevice": "",
+                "title": ""
+            }
+        },
+        "appearance": {
+            "activeTheme": "",
+            "themes": {
+                "blue": "",
+                "default": "",
+                "gray": "",
+                "red": "",
+                "teal": "",
+                "blck": ""
+            },
+            "title": ""
+        },
+        "connections": {
+            "server": {
+                "description": "",
+                "label": "",
+                "urlLabel": ""
+            },
+            "setup": {
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "unsetStatus": {
+                    "description": "",
+                    "title": ""
+                }
+            },
+            "title": "",
+            "workers": {
+                "addButton": "",
+                "description": "",
+                "emptyState": "",
+                "label": "",
+                "urlLabel": "",
+                "urlPlaceholder": ""
+            }
+        }
+    },
+    "privacy": {
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
+    },
+    "overlays": {
+        "close": ""
+    },
+    "screens": {
+        "dmca": {
+            "text": "",
+            "title": ""
+        },
+        "loadingApp": "",
+        "loadingUser": "",
+        "loadingUserError": {
+            "logout": "",
+            "reset": "",
+            "text": "",
+            "textWithReset": ""
+        },
+        "migration": {
+            "failed": "",
+            "inProgress": ""
+        }
     }
-  }
 }
