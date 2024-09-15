@@ -14,7 +14,24 @@
             "body": "Os nossos resultados de pesquisa são alimentados pela The Movie Database (TMDB) e são exibidos independentemente de as nossas fontes realmente terem o conteúdo.",
             "title": "Os resultados da pesquisa mostram o programa ou filme, por que não consigo reproduzi-lo?"
         },
-        "title": "Sobre o Vid Binge"
+        "title": "Sobre o Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Copiado",
@@ -58,7 +75,9 @@
             "host": "Está a conectar-se a <0>{{hostname}}</0> - confirme se confia antes de criar uma conta",
             "no": "Voltar",
             "title": "Confia neste servidor?",
-            "yes": "Confio neste servidor"
+            "yes": "Confio neste servidor",
+            "noHostTitle": "",
+            "noHost": ""
         },
         "verify": {
             "description": "Por favor, introduza a sua frase-passe anterior para confirmar que a guardou e para criar a sua conta",
@@ -85,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Assista aos seus programas e filmes favoritos com esta aplicação de streaming de código aberto."
     },
@@ -97,7 +119,10 @@
             "login": "Entrar",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registrar",
-            "settings": "Configurações"
+            "settings": "Configurações",
+            "discover": "",
+            "privacy": "",
+            "onboarding": ""
         }
     },
     "home": {
@@ -116,7 +141,13 @@
             "loading": "A carregar...",
             "noResults": "Não conseguimos encontrar nada!",
             "placeholder": {
-                "default": "O que deseja assistir?"
+                "default": "O que deseja assistir?",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             "sectionTitle": "Resultados da pesquisa"
         },
@@ -124,19 +155,39 @@
             "day": {
                 "default": "O que gostaria de assistir esta tarde?",
                 "extra": [
-                    "Sentindo-se aventureiro? Jurassic Park pode ser a escolha perfeita."
+                    "Sentindo-se aventureiro? Jurassic Park pode ser a escolha perfeita.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "O que gostaria de assistir esta manhã?",
                 "extra": [
-                    "Dizem que Antes do Amanhecer é bom"
+                    "Dizem que Antes do Amanhecer é bom",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "O que gostaria de assistir esta noite?",
                 "extra": [
-                    "Cansado? Dizem que O Exorcista é bom."
+                    "Cansado? Dizem que O Exorcista é bom.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -146,7 +197,8 @@
         "types": {
             "movie": "Filme",
             "show": "Série"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -158,7 +210,8 @@
             "logout": "Sair",
             "register": "Sincronizar com a nuvem",
             "settings": "Configurações",
-            "support": "Suporte"
+            "support": "Suporte",
+            "discover": ""
         }
     },
     "notFound": {
@@ -199,7 +252,9 @@
                     "shortTitle": "Baixar / PC",
                     "title": "Baixando no PC"
                 },
-                "title": "Baixar"
+                "title": "Baixar",
+                "copyHlsPlaylist": "",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episódios",
@@ -208,7 +263,8 @@
                 "loadingError": "Erro ao carregar a temporada",
                 "loadingList": "A carregar...",
                 "loadingTitle": "A carregar...",
-                "unairedEpisodes": "Um ou mais episódios nesta temporada foram desativados porque ainda não foram transmitidos."
+                "unairedEpisodes": "Um ou mais episódios nesta temporada foram desativados porque ainda não foram transmitidos.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Velocidade de reprodução",
@@ -228,7 +284,9 @@
                 "qualityItem": "Qualidade",
                 "sourceItem": "Fontes de vídeo",
                 "subtitleItem": "Configurações de legendas",
-                "videoSection": "Configurações de vídeo"
+                "videoSection": "Configurações de vídeo",
+                "audioItem": "",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -256,7 +314,9 @@
                     "fixCapitals": "Corrigir maiúsculas"
                 },
                 "title": "Legendas",
-                "unknownLanguage": "Desconhecido"
+                "unknownLanguage": "Desconhecido",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -275,11 +335,23 @@
                 "homeButton": "Voltar para casa",
                 "text": "Não conseguimos encontrar o conteúdo que solicitou. Ou foi removido ou houve manipulação na URL.",
                 "title": "Não foi possível encontrar esse conteúdo."
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "button": "",
+                "badge": "",
+                "text": "",
+                "title": ""
             }
         },
         "nextEpisode": {
             "cancel": "Cancelar",
-            "next": "Próximo episódio"
+            "next": "Próximo episódio",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Erro de reprodução",
@@ -306,6 +378,13 @@
                 "homeButton": "Ir para casa",
                 "text": "Pesquisámos pelos nossos fornecedores e não conseguimos encontrar o conteúdo que procura! Não alojamos o conteúdo multimédia e não temos controlo sobre o que está disponível. Por favor, clique em 'Mostrar detalhes' abaixo para mais informações.",
                 "title": "Não conseguimos encontrar isso"
+            },
+            "extensionFailure": {
+                "homeButton": "",
+                "badge": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -385,7 +464,8 @@
                 "default": "Padrão",
                 "gray": "Cinzento",
                 "red": "Vermelho",
-                "teal": "Verde-azulado"
+                "teal": "Verde-azulado",
+                "blck": ""
             },
             "title": "Aparência"
         },
@@ -403,6 +483,28 @@
                 "label": "Utilizar trabalhadores de proxy personalizados",
                 "urlLabel": "URLs do trabalhador",
                 "urlPlaceholder": "https://"
+            },
+            "setup": {
+                "unsetStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
+                }
             }
         },
         "reset": "Repor",
@@ -426,8 +528,118 @@
             "colorLabel": "Cor",
             "previewQuote": "Não devo temer. O medo é o assassino da mente.",
             "textSizeLabel": "Tamanho do texto",
-            "title": "Legendas"
+            "title": "Legendas",
+            "textBoldLabel": "",
+            "backgroundBlurLabel": ""
         },
-        "unsaved": "Tem alterações não guardadas"
+        "unsaved": "Tem alterações não guardadas",
+        "preferences": {
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "thumbnailDescription": "",
+            "thumbnailLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "title": "",
+            "language": "",
+            "languageDescription": "",
+            "thumbnail": ""
+        }
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
+    },
+    "onboarding": {
+        "defaultConfirm": {
+            "cancel": "",
+            "confirm": "",
+            "description": "",
+            "title": ""
+        },
+        "extension": {
+            "back": "",
+            "explainer": "",
+            "explainerIos": "",
+            "extensionHelp": "",
+            "linkChrome": "",
+            "linkFirefox": "",
+            "notDetecting": "",
+            "notDetectingAction": "",
+            "status": {
+                "disallowed": "",
+                "disallowedAction": "",
+                "failed": "",
+                "loading": "",
+                "outdated": "",
+                "success": ""
+            },
+            "submit": "",
+            "title": ""
+        },
+        "proxy": {
+            "back": "",
+            "explainer": "",
+            "input": {
+                "errorConnection": "",
+                "errorInvalidUrl": "",
+                "errorNotProxy": "",
+                "label": "",
+                "placeholder": ""
+            },
+            "link": "",
+            "submit": "",
+            "title": ""
+        },
+        "start": {
+            "explainer": "",
+            "options": {
+                "default": {
+                    "text": ""
+                },
+                "extension": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                },
+                "proxy": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                }
+            },
+            "title": ""
+        }
     }
 }
