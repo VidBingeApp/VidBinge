@@ -36,7 +36,6 @@ import {
   extensionInfo,
   isExtensionActiveCached,
 } from "./backend/extension/messaging";
-import IframeMessage from "./components/utils/iframe";
 import { initializeChromecast } from "./setup/chromecast";
 // eslint-disable-next-line import/order
 import { initializeOldStores } from "./stores/__old/migrations";
@@ -195,7 +194,6 @@ root.render(
                 <MigrationRunner />
               </AdsWrapper>
             </TheRouter>
-            <IframeMessage />
           </ThemeProvider>
         </Suspense>
       </HelmetProvider>
