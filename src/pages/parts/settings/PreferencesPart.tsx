@@ -16,8 +16,6 @@ import { getLocaleInfo, sortLangCodes } from "@/utils/language";
 export function PreferencesPart(props: {
   language: string;
   setLanguage: (l: string) => void;
-  enableAds: boolean;
-  setEnableAds: (value: boolean) => void;
   enableThumbnails: boolean;
   setEnableThumbnails: (v: boolean) => void;
   enableAutoplay: boolean;
@@ -76,15 +74,6 @@ export function PreferencesPart(props: {
         <p className="max-w-[25rem] font-medium">
           {t("settings.preferences.adsDescription")}
         </p>
-        <div
-          onClick={() => props.setEnableAds(!props.enableAds)}
-          className="bg-dropdown-background hover:bg-dropdown-hoverBackground select-none my-4 cursor-pointer space-x-3 flex items-center max-w-[25rem] py-3 px-4 rounded-lg"
-        >
-          <Toggle enabled={props.enableAds} />
-          <p className="flex-1 text-white font-bold">
-            {t("settings.preferences.adsLabel")}
-          </p>
-        </div>
       </div>
       <div>
         <p className="text-white font-bold mb-3">

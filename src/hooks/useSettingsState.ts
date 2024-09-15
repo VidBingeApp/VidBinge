@@ -38,7 +38,6 @@ export function useDerived<T>(
 
 export function useSettingsState(
   theme: string | null,
-  enableAds: boolean,
   appLanguage: string,
   subtitleStyling: SubtitleStyling,
   deviceName: string,
@@ -99,8 +98,6 @@ export function useSettingsState(
     resetSourceOrder,
     sourceOrderChanged,
   ] = useDerived(sourceOrder);
-  const [enableAdsState, setEnableAdsState, resetEnableAds, enableAdsChanged] =
-    useDerived(enableAds);
 
   function reset() {
     resetTheme();
@@ -112,7 +109,6 @@ export function useSettingsState(
     resetDeviceName();
     resetProfile();
     resetEnableThumbnails();
-    resetEnableAds();
     resetEnableAutoplay();
     resetSourceOrder();
   }
@@ -127,8 +123,7 @@ export function useSettingsState(
     profileChanged ||
     enableThumbnailsChanged ||
     enableAutoplayChanged ||
-    sourceOrderChanged ||
-    enableAdsChanged;
+    sourceOrderChanged;
 
   return {
     reset,
@@ -172,11 +167,6 @@ export function useSettingsState(
       state: enableThumbnailsState,
       set: setEnableThumbnailsState,
       changed: enableThumbnailsChanged,
-    },
-    enableAds: {
-      state: enableAdsState,
-      set: setEnableAdsState,
-      changed: enableAdsChanged,
     },
     enableAutoplay: {
       state: enableAutoplayState,

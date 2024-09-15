@@ -31,7 +31,6 @@ import { SettingsSyncer } from "@/stores/subtitles/SettingsSyncer";
 import { ThemeProvider } from "@/stores/theme";
 import { TurnstileProvider } from "@/stores/turnstile";
 
-import { AdsWrapper } from "./AdsWrapper";
 import {
   extensionInfo,
   isExtensionActiveCached,
@@ -191,9 +190,7 @@ root.render(
             <BookmarkSyncer />
             <SettingsSyncer />
             <TheRouter>
-              <AdsWrapper>
-                <MigrationRunner />
-              </AdsWrapper>
+              <MigrationRunner />
             </TheRouter>
             <IframeMessage />
           </ThemeProvider>
