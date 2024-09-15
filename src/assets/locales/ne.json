@@ -14,7 +14,24 @@
             "body": "हाम्रा खोज परिणामहरू चलचित्र डाटाबेस (TMDB) द्वारा संचालित हुन्छन् र हाम्रा स्रोतहरूमा साँच्चै सामग्री छ कि छैन भनी प्रदर्शन गरिन्छ।",
             "title": "खोज परिणामहरूले कार्यक्रम वा चलचित्र प्रदर्शन गर्दछ, म यसलाई किन प्ले गर्न सक्दिन?"
         },
-        "title": "Vid Binge बारेमा"
+        "title": "Vid Binge बारेमा",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "कपी भयो",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "यो खुला स्रोत स्ट्रिमिङ एपको साथ आफ्नो मनपर्ने शो र चलचित्रहरू हेर्नुहोस्।"
     },
@@ -100,7 +120,9 @@
             "onboarding": "सेटअप",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "दर्ता",
-            "settings": "सेटिङ्स्"
+            "settings": "सेटिङ्स्",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "तपाईं आज दिउँसो के हेर्न चाहनुहुन्छ?",
                 "extra": [
-                    "साहसिक महसुस गर्दै हुनुहुन्छ? जुरासिक पार्क उत्तम विकल्प हुन सक्छ।"
+                    "साहसिक महसुस गर्दै हुनुहुन्छ? जुरासिक पार्क उत्तम विकल्प हुन सक्छ।",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "तपाई आज बिहान के हेर्न चाहनुहुन्छ?",
                 "extra": [
-                    "Before Sunrise राम्रो छ भन्ने सुन्छु"
+                    "Before Sunrise राम्रो छ भन्ने सुन्छु",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "तपाईं आज राती के हेर्न चाहनुहुन्छ?",
                 "extra": [
-                    "थकित? मैले सुनेको छु The Exorcist राम्रो छ।"
+                    "थकित? मैले सुनेको छु The Exorcist राम्रो छ।",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "बाहिर निस्कनु",
             "register": "क्लाउडमा सिंक गर्नुहोस्",
             "settings": "सेटिङ",
-            "support": "समर्थन गर्नुहोस्"
+            "support": "समर्थन गर्नुहोस्",
+            "discover": ""
         }
     },
     "notFound": {
@@ -273,7 +316,8 @@
                     "shortTitle": "डाउनलोड / कम्प्युटर",
                     "title": "कम्प्युटरमा डाउनलोड हुदैछ"
                 },
-                "title": "डाउनलोड"
+                "title": "डाउनलोड",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "एपिसोडहरू",
@@ -282,7 +326,8 @@
                 "loadingError": "सिजन लोड गर्दा त्रुटि भयो",
                 "loadingList": "लोड गर्दै...",
                 "loadingTitle": "लोड गर्दै...",
-                "unairedEpisodes": "यस सिजनका एक वा बढी एपिसोडहरू अझै प्रसारण नभएकाले असक्षम पारिएका छन्।"
+                "unairedEpisodes": "यस सिजनका एक वा बढी एपिसोडहरू अझै प्रसारण नभएकाले असक्षम पारिएका छन्।",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "प्लेब्याकको गति",
@@ -303,7 +348,8 @@
                 "qualityItem": "क्वालिटी",
                 "sourceItem": "भिडियो स्रोतहरू",
                 "subtitleItem": "उपशीर्षक सेटिङ",
-                "videoSection": "भिडियो सेत्तिन्ग्स"
+                "videoSection": "भिडियो सेत्तिन्ग्स",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -332,7 +378,8 @@
                     "fixCapitals": "पूंजीकरण ठीक गर्नुहोस्"
                 },
                 "title": "उपशीर्षक",
-                "unknownLanguage": "अज्ञात"
+                "unknownLanguage": "अज्ञात",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -366,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "रद्द गर्नुहोस्",
-            "next": "अर्को एपिसोड"
+            "next": "अर्को एपिसोड",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "प्लेब्याक त्रुटि",
@@ -479,7 +527,8 @@
                 "default": "साधारण",
                 "gray": "खैरो",
                 "red": "रातो",
-                "teal": "हरियो-नीलो"
+                "teal": "हरियो-नीलो",
+                "blck": ""
             },
             "title": "रूप-रंग"
         },
@@ -527,7 +576,15 @@
             "thumbnail": "थम्बनेलहरू बनाउनुहोस्",
             "thumbnailDescription": "अधिकांश समय, भिडियोहरूमा थम्बनेलहरू हुँदैनन्। तपाईंले वर्तमानमा नै तिनीहरूलाई उत्पन्न गर्न यो सेटिङ सक्षम गर्न सक्नुहुन्छ तर तिनीहरूले तपाईंको भिडियोलाई सुस्त बनाउन सक्छन्।",
             "thumbnailLabel": "थम्बनेलहरू बनाउनुहोस्",
-            "title": "प्राथमिकता"
+            "title": "प्राथमिकता",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "autoplay": ""
         },
         "reset": "रिसेट गर्नुहोस्",
         "save": "सेभ गर्नुहोस्",
@@ -551,8 +608,38 @@
             "colorLabel": "रङ",
             "previewQuote": "म डराउनु हुँदैन। डर दिमागको हत्यारा हो।",
             "textSizeLabel": "टेक्स्ट साइज",
-            "title": "उपशीर्षक"
+            "title": "उपशीर्षक",
+            "textBoldLabel": ""
         },
         "unsaved": "तपाईंसँग सुरक्षित नगरिएका परिवर्तनहरू छन्"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
