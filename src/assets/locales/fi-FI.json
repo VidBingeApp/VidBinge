@@ -14,7 +14,24 @@
             "body": "Hakutuloksemme perustuvat The Movie Database (TMDB) -tietokantaan, ja ne näkyvät riippumatta siitä, onko sisältöä oikeasti lähteissämme.",
             "title": "Hakutuloksissa näytetään ohjelma tai elokuva. Miksi en voi toistaa sitä?"
         },
-        "title": "Tietoja Vid Bingeistä"
+        "title": "Tietoja Vid Bingeistä",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Kopioitu",
@@ -58,7 +75,9 @@
             "host": "Olet muodostamassa yhteyttä <0>{{hostname}}</0> - vahvista, että luotat siihen ennen kuin luot tilin",
             "no": "Mene takaisin",
             "title": "Luotatko tähän palvelimeen?",
-            "yes": "Luotan tähän palvelimeen"
+            "yes": "Luotan tähän palvelimeen",
+            "noHostTitle": "",
+            "noHost": ""
         },
         "verify": {
             "description": "Anna aikaisemmin saamasi tunnuslause vahvistaaksesi, että olet tallentanut sen ja luodaksesi tilisi",
@@ -85,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Katso suosikkiohjelmiasi ja elokuviasi tällä avoimen lähdekoodin suoratoistosovelluksella."
     },
@@ -98,7 +120,9 @@
             "onboarding": "asetus",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Rekisteröidy",
-            "settings": "Asetukset"
+            "settings": "Asetukset",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -117,7 +141,13 @@
             "loading": "Ladataan...",
             "noResults": "Emme löytäneet mitään!",
             "placeholder": {
-                "default": "Mitä haluat katsoa?"
+                "default": "Mitä haluat katsoa?",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             "sectionTitle": "Hakutulokset"
         },
@@ -125,19 +155,39 @@
             "day": {
                 "default": "Mitä haluaisit katsoa tänä iltapäivänä?",
                 "extra": [
-                    "Onko seikkailunhaluinen olo? Jurassic Park saattaa olla täydellinen valinta."
+                    "Onko seikkailunhaluinen olo? Jurassic Park saattaa olla täydellinen valinta.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Mitä haluaisit katsoa tänä aamuna?",
                 "extra": [
-                    "Kuulen, että Rakkautta ennen aamua (Before Sunrise) on hyvä"
+                    "Kuulen, että Rakkautta ennen aamua (Before Sunrise) on hyvä",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Mitä haluaisit katsoa tänä iltana?",
                 "extra": [
-                    "Väsynyt? Kuulin, että Manaaja (The Exorcist) on hyvä."
+                    "Väsynyt? Kuulin, että Manaaja (The Exorcist) on hyvä.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -147,7 +197,8 @@
         "types": {
             "movie": "Elokuva",
             "show": "Sarja"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -159,7 +210,8 @@
             "logout": "Kirjaudu ulos",
             "register": "Synkronoi pilveen",
             "settings": "Asetukset",
-            "support": "Tuki"
+            "support": "Tuki",
+            "discover": ""
         }
     },
     "notFound": {
@@ -217,7 +269,15 @@
                 },
                 "extension": {
                     "action": "Asenna laajennus",
-                    "description": "Asenna selaimen laajennus ja saa pääsy parhaisiin lähteisiin."
+                    "description": "Asenna selaimen laajennus ja saa pääsy parhaisiin lähteisiin.",
+                    "quality": "",
+                    "title": ""
+                },
+                "proxy": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
                 }
             },
             "title": "Aloitetaan asennus elokuva-webin kanssa"
@@ -226,67 +286,360 @@
     "player": {
         "menus": {
             "episodes": {
-                "emptyState": "Tässä kaudessa ei ole jaksoja, tarkista myöhemmin!"
+                "emptyState": "Tässä kaudessa ei ole jaksoja, tarkista myöhemmin!",
+                "button": "",
+                "episodeBadge": "",
+                "loadingError": "",
+                "loadingList": "",
+                "loadingTitle": "",
+                "unairedEpisodes": "",
+                "seasons": ""
             },
             "quality": {
-                "hint": "Voit kokeilla <0>vaihtaa lähdettä</0> saadaksesi eri laatuasetuksia."
+                "hint": "Voit kokeilla <0>vaihtaa lähdettä</0> saadaksesi eri laatuasetuksia.",
+                "automaticLabel": "",
+                "iosNoQuality": "",
+                "title": ""
             },
             "sources": {
                 "noEmbeds": {
-                    "text": "Emme löytäneet upotuksia, kokeile toista lähdettä."
+                    "text": "Emme löytäneet upotuksia, kokeile toista lähdettä.",
+                    "title": ""
                 },
                 "noStream": {
-                    "text": "Tässä lähteessä ei ole suoratoistoja tälle elokuvalle tai ohjelmalle."
-                }
+                    "text": "Tässä lähteessä ei ole suoratoistoja tälle elokuvalle tai ohjelmalle.",
+                    "title": ""
+                },
+                "failed": {
+                    "text": "",
+                    "title": ""
+                },
+                "title": "",
+                "unknownOption": ""
+            },
+            "downloads": {
+                "disclaimer": "",
+                "copyHlsPlaylist": "",
+                "downloadSubtitle": "",
+                "downloadVideo": "",
+                "downloadHlsAsVideo": "",
+                "hlsDisclaimer": "",
+                "onAndroid": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "onIos": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "onPc": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "playback": {
+                "speedLabel": "",
+                "title": ""
+            },
+            "settings": {
+                "downloadItem": "",
+                "enableSubtitles": "",
+                "experienceSection": "",
+                "playbackItem": "",
+                "audioItem": "",
+                "qualityItem": "",
+                "sourceItem": "",
+                "subtitleItem": "",
+                "videoSection": "",
+                "watchParty": ""
+            },
+            "subtitles": {
+                "OpenSubtitlesChoice": "",
+                "settings": {
+                    "backlink": "",
+                    "delay": "",
+                    "fixCapitals": ""
+                },
+                "title": "",
+                "unknownLanguage": "",
+                "dropSubtitleFile": "",
+                "customChoice": "",
+                "customizeLabel": "",
+                "offChoice": ""
             }
         },
         "metadata": {
             "api": {
                 "text": "API-metatietoja ei voitu ladata, tarkista internet-yhteys.",
                 "title": "Ei voitu ladata API:n metatietoja."
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "badge": "",
+                "button": "",
+                "text": "",
+                "title": ""
+            },
+            "failed": {
+                "badge": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            },
+            "notFound": {
+                "badge": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
             }
         },
         "playbackError": {
             "errors": {
                 "errorAborted": "Mediatiedon haku keskeytettiin käyttäjän pyynnöstä.",
-                "errorNotSupported": "Mediaa tai mediantarjoajaa ei tueta."
+                "errorNotSupported": "Mediaa tai mediantarjoajaa ei tueta.",
+                "errorDecode": "",
+                "errorGenericMedia": "",
+                "errorNetwork": ""
             },
-            "text": "Tapahtui virhe yritettäessä toistaa mediaa. Yritä uudelleen."
+            "text": "Tapahtui virhe yritettäessä toistaa mediaa. Yritä uudelleen.",
+            "badge": "",
+            "homeButton": "",
+            "title": ""
         },
         "time": {
-            "remaining": "{{timeLeft}} jäljellä • Päättyy {{timeFinished, datetime}}"
+            "remaining": "{{timeLeft}} jäljellä • Päättyy {{timeFinished, datetime}}",
+            "regular": "",
+            "shortRegular": "",
+            "shortRemaining": ""
         },
         "turnstile": {
             "error": "Ei voitu varmistaa inhimillisyyttäsi. Yritä uudelleen.",
-            "title": "Meidän täytyy varmistaa, että olet ihminen."
+            "title": "Meidän täytyy varmistaa, että olet ihminen.",
+            "description": "",
+            "verifyingHumanity": ""
+        },
+        "back": {
+            "default": "",
+            "short": ""
+        },
+        "casting": {
+            "enabled": ""
+        },
+        "nextEpisode": {
+            "cancel": "",
+            "next": "",
+            "nextSeason": ""
+        },
+        "scraping": {
+            "items": {
+                "failure": "",
+                "notFound": "",
+                "pending": ""
+            },
+            "notFound": {
+                "badge": "",
+                "detailsButton": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
+            }
         }
     },
     "screens": {
         "migration": {
-            "inProgress": "Pysy hetkisen odotuksessa, siirrämme tietojasi. Tämä ei kestä kauan."
+            "inProgress": "Pysy hetkisen odotuksessa, siirrämme tietojasi. Tämä ei kestä kauan.",
+            "failed": ""
+        },
+        "dmca": {
+            "text": "",
+            "title": ""
+        },
+        "loadingApp": "",
+        "loadingUser": "",
+        "loadingUserError": {
+            "logout": "",
+            "reset": "",
+            "text": "",
+            "textWithReset": ""
         }
     },
     "settings": {
         "account": {
             "register": {
-                "text": "Jaa katseluetenemisesi laitteiden välillä ja pidä ne synkronoituina."
+                "text": "Jaa katseluetenemisesi laitteiden välillä ja pidä ne synkronoituina.",
+                "cta": "",
+                "title": ""
+            },
+            "title": "",
+            "accountDetails": {
+                "deviceNameLabel": "",
+                "deviceNamePlaceholder": "",
+                "editProfile": "",
+                "logoutButton": ""
+            },
+            "actions": {
+                "delete": {
+                    "button": "",
+                    "confirmButton": "",
+                    "confirmDescription": "",
+                    "confirmTitle": "",
+                    "text": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "devices": {
+                "deviceNameLabel": "",
+                "failed": "",
+                "removeDevice": "",
+                "title": ""
+            },
+            "profile": {
+                "finish": "",
+                "firstColor": "",
+                "secondColor": "",
+                "title": "",
+                "userIcon": ""
             }
         },
         "connections": {
             "setup": {
                 "unsetStatus": {
-                    "description": "Käynnistä asennusprosessi napsauttamalla oikealla olevaa painiketta."
+                    "description": "Käynnistä asennusprosessi napsauttamalla oikealla olevaa painiketta.",
+                    "title": ""
+                },
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
                 }
             },
             "workers": {
-                "emptyState": "Ei vielä työntekijöitä, lisää yksi alle"
-            }
+                "emptyState": "Ei vielä työntekijöitä, lisää yksi alle",
+                "addButton": "",
+                "description": "",
+                "label": "",
+                "urlLabel": "",
+                "urlPlaceholder": ""
+            },
+            "server": {
+                "description": "",
+                "label": "",
+                "urlLabel": ""
+            },
+            "title": ""
         },
         "preferences": {
-            "languageDescription": "Kieli sovellettu koko sovellukseen."
+            "languageDescription": "Kieli sovellettu koko sovellukseen.",
+            "title": "",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "language": "",
+            "thumbnail": "",
+            "thumbnailDescription": "",
+            "thumbnailLabel": ""
         },
         "subtitles": {
-            "previewQuote": "Minun ei pidä pelätä. Pelko on mielen tappaja."
+            "previewQuote": "Minun ei pidä pelätä. Pelko on mielen tappaja.",
+            "backgroundLabel": "",
+            "backgroundBlurLabel": "",
+            "colorLabel": "",
+            "textSizeLabel": "",
+            "title": "",
+            "textBoldLabel": ""
+        },
+        "unsaved": "",
+        "reset": "",
+        "save": "",
+        "sidebar": {
+            "info": {
+                "appVersion": "",
+                "backendUrl": "",
+                "backendVersion": "",
+                "hostname": "",
+                "insecure": "",
+                "notLoggedIn": "",
+                "secure": "",
+                "title": "",
+                "unknownVersion": "",
+                "userId": ""
+            }
+        },
+        "appearance": {
+            "activeTheme": "",
+            "themes": {
+                "blue": "",
+                "default": "",
+                "gray": "",
+                "red": "",
+                "teal": "",
+                "blck": ""
+            },
+            "title": ""
         }
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
+    },
+    "overlays": {
+        "close": ""
     }
 }
