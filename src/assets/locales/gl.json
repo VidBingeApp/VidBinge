@@ -14,7 +14,24 @@
             "body": "Os nosos resultados de busqueda proveñen de The Movie Database (TMDB) e se mostran independentemente de se as nosas fontes multimedia teñen realmente o contido.",
             "title": "Os resultados da busca mostran a serie ou película... Por qué non poido reproducila?"
         },
-        "title": "Acerca de Vid Binge"
+        "title": "Acerca de Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Copiado",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Disfruta das túas series e películas favoritas con esta aplicación de transmisión de código aberto."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Configuración",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Rexistrarse",
-            "settings": "Configuración"
+            "settings": "Configuración",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Que che gustaría ver esta tarde?",
                 "extra": [
-                    "Sínteste aventureiro? Jurassic Park podería ser a elección perfecta."
+                    "Sínteste aventureiro? Jurassic Park podería ser a elección perfecta.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Que che gustaría ver esta mañá?",
                 "extra": [
-                    "Escoitei que “Antes del amanecer” é boa"
+                    "Escoitei que “Antes del amanecer” é boa",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Que che gustaría ver esta noite?",
                 "extra": [
-                    "Canso? Escoitei que “El Exorcista” é boa."
+                    "Canso? Escoitei que “El Exorcista” é boa.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -155,7 +197,8 @@
         "types": {
             "movie": "Película",
             "show": "Serie"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -167,7 +210,8 @@
             "logout": "Cerrar sesión",
             "register": "Sincronizar coa nube",
             "settings": "Configuración",
-            "support": "Soporte"
+            "support": "Soporte",
+            "discover": ""
         }
     },
     "notFound": {
@@ -272,7 +316,8 @@
                     "shortTitle": "Descargar / PC",
                     "title": "Descargando en PC"
                 },
-                "title": "Descargar"
+                "title": "Descargar",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episodios",
@@ -281,7 +326,8 @@
                 "loadingError": "Error cargando a sesión",
                 "loadingList": "Cargando...",
                 "loadingTitle": "Cargando...",
-                "unairedEpisodes": "Un ou máis episodios nesta temporada foron desactivados porque non sairon aínda."
+                "unairedEpisodes": "Un ou máis episodios nesta temporada foron desactivados porque non sairon aínda.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Velocidade de reproducción",
@@ -302,7 +348,8 @@
                 "qualityItem": "Calidade",
                 "sourceItem": "Fonte do video",
                 "subtitleItem": "Configuración dos subtítulos",
-                "videoSection": "Configuración de video"
+                "videoSection": "Configuración de video",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -331,7 +378,8 @@
                     "fixCapitals": "Arreglar capitalización"
                 },
                 "title": "Subtítulos",
-                "unknownLanguage": "Descoñecido"
+                "unknownLanguage": "Descoñecido",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -365,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Cancelar",
-            "next": "Seguinte episodio"
+            "next": "Seguinte episodio",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Error de reproducción",
@@ -392,6 +441,13 @@
                 "homeButton": "Ir ao inicio",
                 "text": "Buscamos nos nosos proovedores e non puidemos atopar o contido que estás a buscar. Nós, non aloxamos o contido e non temos control sobre o que está dispoñible. Fai click en 'Mostrar detalles' a continuación para obter máis información.",
                 "title": "Non puidemos atopar eso"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -471,7 +527,8 @@
                 "default": "Por defecto",
                 "gray": "Gris",
                 "red": "Vermello",
-                "teal": "Turquesa"
+                "teal": "Turquesa",
+                "blck": ""
             },
             "title": "Apariencia"
         },
@@ -519,7 +576,15 @@
             "thumbnail": "Xerar miniaturas",
             "thumbnailDescription": "Na maioría das veces, os videos non teñen miniaturas. Podes activar esta configuración para xeralas ao momento, pero podes realentizar o video.",
             "thumbnailLabel": "Xerar miniaturas",
-            "title": "Preferencias"
+            "title": "Preferencias",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "Reinicio",
         "save": "Gardar",
@@ -543,8 +608,38 @@
             "colorLabel": "Cór",
             "previewQuote": "Non debo temer. O medo é o asasino da mente.",
             "textSizeLabel": "Tamaño da fonte",
-            "title": "Subtítulos"
+            "title": "Subtítulos",
+            "textBoldLabel": ""
         },
         "unsaved": "Tes cambios sen gardar"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
