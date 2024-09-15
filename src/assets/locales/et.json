@@ -14,7 +14,24 @@
             "body": "Meie otsingutulemusi toetab The Movie Database (TMDB) ja need kuvatakse sõltumata sellest, kas meie allikates on sisu tegelikult olemas.",
             "title": "Otsingutulemustes kuvatakse saade või film. Miks ma ei saa seda esitada?"
         },
-        "title": "Vid Binge'i kohta"
+        "title": "Vid Binge'i kohta",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Kopeeritud",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Vaadake selle avatud lähtekoodiga striimimis rakendusega oma lemmiksaateid ja -filme."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Seadistamine",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registreeri",
-            "settings": "Sätted"
+            "settings": "Sätted",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Mida te soovite täna pärastlõunal vaadata?",
                 "extra": [
-                    "Kas tunnete end seiklushimulisena? Jurassic Park võib olla ideaalne valik."
+                    "Kas tunnete end seiklushimulisena? Jurassic Park võib olla ideaalne valik.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Mida te soovite täna hommikul vaadata?",
                 "extra": [
-                    "Ma kuulsin, et Before Sunrise on hea"
+                    "Ma kuulsin, et Before Sunrise on hea",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Mida te soovite täna õhtul vaadata?",
                 "extra": [
-                    "Väsinud? Olen kuulnud, et The Exorcist on hea."
+                    "Väsinud? Olen kuulnud, et The Exorcist on hea.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "Logi välja",
             "register": "Sünkrooni pilvega",
             "settings": "Sätted",
-            "support": "Abi"
+            "support": "Abi",
+            "discover": ""
         }
     },
     "notFound": {
@@ -273,7 +316,8 @@
                     "shortTitle": "Allalaadimine / Arvutis",
                     "title": "Arvutis allalaadimine"
                 },
-                "title": "Lae alla"
+                "title": "Lae alla",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episoodid",
@@ -282,7 +326,8 @@
                 "loadingError": "Hooaja laadimine ebaōnnestus",
                 "loadingList": "Laadimine...",
                 "loadingTitle": "Laadimine...",
-                "unairedEpisodes": "Üks või mitu selle hooaja episoodi on välja lülitatud, sest neid ei ole veel eetris olnud."
+                "unairedEpisodes": "Üks või mitu selle hooaja episoodi on välja lülitatud, sest neid ei ole veel eetris olnud.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Taasesituse kiirus",
@@ -303,7 +348,8 @@
                 "qualityItem": "Kvaliteet",
                 "sourceItem": "Video allikad",
                 "subtitleItem": "Subtiitri sätted",
-                "videoSection": "Video sätted"
+                "videoSection": "Video sätted",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -332,7 +378,8 @@
                     "fixCapitals": "Parandage suurtähtede kasutamine"
                 },
                 "title": "Subtiitrid",
-                "unknownLanguage": "Tundmatu"
+                "unknownLanguage": "Tundmatu",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -366,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Tühista",
-            "next": "Järgmine episood"
+            "next": "Järgmine episood",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Taasesituse viga",
@@ -479,7 +527,8 @@
                 "default": "Vaikimisi",
                 "gray": "Hall",
                 "red": "Punane",
-                "teal": "Tumesinine"
+                "teal": "Tumesinine",
+                "blck": ""
             },
             "title": "Välimus"
         },
@@ -527,7 +576,15 @@
             "thumbnail": "Genereeri pisipilte",
             "thumbnailDescription": "Enamasti pole videodel pisipilte. Selle sätte lubamisega genereeritakse pispildid vaatamise ajal, kuid need võivad teie video aeglasemaks muuta.",
             "thumbnailLabel": "Genereeri pisipilte",
-            "title": "Eelistused"
+            "title": "Eelistused",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplayDescription": "",
+            "sourceOrderDescription": "",
+            "autoplay": "",
+            "autoplayLabel": "",
+            "sourceOrder": ""
         },
         "reset": "Lähtesta",
         "save": "Salvesta",
@@ -551,8 +608,38 @@
             "colorLabel": "Värv",
             "previewQuote": "Ma ei tohi karta. Hirm on meelemõrvar.",
             "textSizeLabel": "Teksti suurus",
-            "title": "Subtiitrid"
+            "title": "Subtiitrid",
+            "textBoldLabel": ""
         },
         "unsaved": "Teil on salvestamata muudatusi"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
