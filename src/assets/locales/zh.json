@@ -14,7 +14,24 @@
             "body": "我们的搜索结果由电影数据库（TMDB）驱动，无论视频源是否有对应内容，均会显示结果。",
             "title": "搜索结果中已显示了影视剧或其他节目，为何我无法播放？"
         },
-        "title": "关于 Vid Binge"
+        "title": "关于 Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "已复制",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "在这个开源流媒体应用上观看你最喜爱的影视剧或其他节目。"
     },
@@ -100,7 +120,9 @@
             "onboarding": "设定",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "注册",
-            "settings": "设置"
+            "settings": "设置",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "您今天下午想看什么？",
                 "extra": [
-                    "想要来场冒险？《侏罗纪公园》可能是最佳选项。"
+                    "想要来场冒险？《侏罗纪公园》可能是最佳选项。",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "您今早想看什么？",
                 "extra": [
-                    "我听说《爱在黎明破晓前》不错"
+                    "我听说《爱在黎明破晓前》不错",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "您今晚想看什么？",
                 "extra": [
-                    "累了？我听说《驱魔人》不错。"
+                    "累了？我听说《驱魔人》不错。",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "登出",
             "register": "同步到云端",
             "settings": "设置",
-            "support": "支持"
+            "support": "支持",
+            "discover": ""
         }
     },
     "notFound": {
@@ -273,7 +316,8 @@
                     "shortTitle": "下载 / PC",
                     "title": "正在 PC 上下载"
                 },
-                "title": "下载"
+                "title": "下载",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "分集",
@@ -282,7 +326,8 @@
                 "loadingError": "加载分季时发生错误",
                 "loadingList": "载入中……",
                 "loadingTitle": "载入中……",
-                "unairedEpisodes": "本季中的一集或多集已因尚未播出而被禁用。"
+                "unairedEpisodes": "本季中的一集或多集已因尚未播出而被禁用。",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "播放速度",
@@ -303,7 +348,8 @@
                 "qualityItem": "质量",
                 "sourceItem": "视频源",
                 "subtitleItem": "字幕设置",
-                "videoSection": "视频设置"
+                "videoSection": "视频设置",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -332,7 +378,8 @@
                     "fixCapitals": "修整大小写"
                 },
                 "title": "字幕",
-                "unknownLanguage": "未知"
+                "unknownLanguage": "未知",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -366,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "取消",
-            "next": "下一集"
+            "next": "下一集",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "播放错误",
@@ -479,7 +527,8 @@
                 "default": "默认",
                 "gray": "灰色",
                 "red": "红色",
-                "teal": "青色"
+                "teal": "青色",
+                "blck": ""
             },
             "title": "外观"
         },
@@ -527,7 +576,15 @@
             "thumbnail": "生成缩略图",
             "thumbnailDescription": "大多数时候，视频没有缩略图。您可以启用此设置以在视频播放时动态生成它们，但此选项可能会拖慢视频速度。",
             "thumbnailLabel": "生成缩略图",
-            "title": "偏好设置"
+            "title": "偏好设置",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "重设",
         "save": "保存",
@@ -551,8 +608,38 @@
             "colorLabel": "颜色",
             "previewQuote": "我不能害怕。恐惧是心灵的杀手。",
             "textSizeLabel": "字体大小",
-            "title": "字幕"
+            "title": "字幕",
+            "textBoldLabel": ""
         },
         "unsaved": "您有未保存的更改"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
