@@ -14,7 +14,24 @@
             "body": "Arrr, set yer sights on this, me matey! Our search results be fueled by The Movie Database (TMDB), showin' the way regardless of whether our sources in the vast digital seas actually bear the coveted content. It be a guide, not a promise of a sure find. Navigate the waters wisely, for the winds of the internet can be fickle!",
             "title": "Why be the search results unveilin' the show or movie, yet I can't set sail to watch it?"
         },
-        "title": "The tales of \"Vid Binge\""
+        "title": "The tales of \"Vid Binge\"",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Copied",
@@ -58,7 +75,9 @@
             "host": "Do ye trust <0>{{hostname}}</0>?",
             "no": "Abandon Ship",
             "title": "Do ye trust this ship?",
-            "yes": "Trust"
+            "yes": "Trust",
+            "noHostTitle": "",
+            "noHost": ""
         },
         "verify": {
             "description": "If ye already lost it, how will ye ever be able to take care of a wee buccaneer?",
@@ -101,7 +120,9 @@
             "onboarding": "Setup",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Forge yer account, matey!",
-            "settings": "Settings"
+            "settings": "Settings",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -120,7 +141,13 @@
             "loading": "Hold yer horses, me heartie!",
             "noResults": "We couldn't find anythin', arrr!",
             "placeholder": {
-                "default": "What do ye want to watch?"
+                "default": "What do ye want to watch?",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             "sectionTitle": "Searchin' results"
         },
@@ -128,19 +155,39 @@
             "day": {
                 "default": "What be yer fancy for this fine afternoon's viewing, me heartie?",
                 "extra": [
-                    "Feelin' adventurous? Pirates of the Caribbean might be the perfect choice."
+                    "Feelin' adventurous? Pirates of the Caribbean might be the perfect choice.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "What be yer fancy for this mornin's viewing, me heartie?",
                 "extra": [
-                    "I be hearin' that 'Before Sunrise' be a fine choice, me heartie"
+                    "I be hearin' that 'Before Sunrise' be a fine choice, me heartie",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "What be yer desire for the night's entertainment, me heartie?",
                 "extra": [
-                    "Feelin' weary, are ye? I be hearin' 'The Exorcist' be a good pick to stir the spirits, me heartie."
+                    "Feelin' weary, are ye? I be hearin' 'The Exorcist' be a good pick to stir the spirits, me heartie.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -150,7 +197,8 @@
         "types": {
             "movie": "Film",
             "show": "Show"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -162,7 +210,8 @@
             "logout": "Abandon ship",
             "register": "Sync to the cloud",
             "settings": "Settings",
-            "support": "Support"
+            "support": "Support",
+            "discover": ""
         }
     },
     "notFound": {
@@ -266,7 +315,9 @@
                     "shortTitle": "Download / PC",
                     "title": "Downloadin' on PC"
                 },
-                "title": "Buried Treasure"
+                "title": "Buried Treasure",
+                "copyHlsPlaylist": "",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episodes",
@@ -275,7 +326,8 @@
                 "loadingError": "Error loadin' season",
                 "loadingList": "Loading...",
                 "loadingTitle": "Loading...",
-                "unairedEpisodes": "One or more episodes in this season 'ave been disabled 'cause they haven't been shipped yet."
+                "unairedEpisodes": "One or more episodes in this season 'ave been disabled 'cause they haven't been shipped yet.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Playback speed",
@@ -295,7 +347,9 @@
                 "qualityItem": "Quality",
                 "sourceItem": "Video sources",
                 "subtitleItem": "Set yer subtitle course",
-                "videoSection": "Video settings"
+                "videoSection": "Video settings",
+                "watchParty": "",
+                "audioItem": ""
             },
             "sources": {
                 "failed": {
@@ -323,7 +377,9 @@
                     "fixCapitals": "Mend the capital letters"
                 },
                 "title": "Subtitles",
-                "unknownLanguage": "Unknown"
+                "unknownLanguage": "Unknown",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -357,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Cancel",
-            "next": "Next episode"
+            "next": "Next episode",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Not found",
@@ -384,6 +441,13 @@
                 "homeButton": "Go home port",
                 "text": "Oh, me apologies, sweetie! The itty-bitty Vid Binge did its utmost bestest, but alas, no wucky videos to be spotted anywhere (´⊙ω⊙`) Please don't be angwy, wittle Vid Binge ish twying so hard. Can ye find it in yer heart to forgive? UwU 💖",
                 "title": "Goo goo gaa gaa"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -463,7 +527,8 @@
                 "default": "Default",
                 "gray": "Gray",
                 "red": "Red",
-                "teal": "Teal"
+                "teal": "Teal",
+                "blck": ""
             },
             "title": "Appearance"
         },
@@ -511,7 +576,15 @@
             "thumbnail": "Generate thumbnails",
             "thumbnailDescription": "Most o' the time, videos don't 'ave thumbnails. Ye can enable this settin' t' generate 'em on the trip but they can make yer video slower.",
             "thumbnailLabel": "Generate thumbnails",
-            "title": "Preferences"
+            "title": "Preferences",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrderDescription": "",
+            "sourceOrder": ""
         },
         "reset": "Reset",
         "save": "Save",
@@ -534,8 +607,39 @@
             "colorLabel": "Color",
             "previewQuote": "I must not fear. Fear is the mind-killer.",
             "textSizeLabel": "Text size",
-            "title": "Subtitles"
+            "title": "Subtitles",
+            "textBoldLabel": "",
+            "backgroundBlurLabel": ""
         },
         "unsaved": "Ye have unsaved changes"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
