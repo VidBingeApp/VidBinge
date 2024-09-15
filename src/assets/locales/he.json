@@ -14,7 +14,24 @@
             "body": "תוצאות החיפוש שלנו מופעלות על ידי The Movie Database (TMDB) ומוצגות ללא קשר אם למקורות שלנו יש את התוכן.",
             "title": "תוצאות החיפוש מציגות את התוכנית או הסרט, למה אני לא יכול להפעיל אותם?"
         },
-        "title": "על Vid Binge"
+        "title": "על Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "הועתק",
@@ -58,7 +75,9 @@
             "host": "אתה מתחבר אל <0>{{hostname}}</0> - אנא אשר שאתה סומך עליו לפני יצירת חשבון",
             "no": "חזור",
             "title": "האם אתה סומך על שרת זה?",
-            "yes": "אני בוטח בשרת זה"
+            "yes": "אני בוטח בשרת זה",
+            "noHostTitle": "",
+            "noHost": ""
         },
         "verify": {
             "description": "אנא הזן את משפט הסיסמה שלך מקודם כדי לאשר ששמרת אותו וכדי ליצור את חשבונך",
@@ -85,7 +104,10 @@
         "links": {
             "discord": "דיסקורד",
             "dmca": "DMCA",
-            "github": "גיטהאב"
+            "github": "גיטהאב",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "צפה בתוכניות ובסרטים האהובים עליך עם אפליקציית סטרימינג זו בקוד פתוח."
     },
@@ -98,7 +120,9 @@
             "onboarding": "הכנה",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "הירשם",
-            "settings": "הגדרות"
+            "settings": "הגדרות",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -117,7 +141,13 @@
             "loading": "טוען...",
             "noResults": "לא יכולנו למצוא כלום!",
             "placeholder": {
-                "default": "במה תרצה לצפות?"
+                "default": "במה תרצה לצפות?",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
             },
             "sectionTitle": "תוצאות חיפוש"
         },
@@ -125,19 +155,39 @@
             "day": {
                 "default": "במה תרצה לצפות באחר צהריים זה?",
                 "extra": [
-                    "מרגיש הרפתקני? פארק היורה עשוי להיות הבחירה המושלמת."
+                    "מרגיש הרפתקני? פארק היורה עשוי להיות הבחירה המושלמת.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "במה תרצה לצפות הבוקר?",
                 "extra": [
-                    "שמעתי שלפני הזריחה זה סרט טוב"
+                    "שמעתי שלפני הזריחה זה סרט טוב",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "במה תרצה לצפות הלילה?",
                 "extra": [
-                    "רוצה לישון? הפיג'מות היא בחירה מצויינת."
+                    "רוצה לישון? הפיג'מות היא בחירה מצויינת.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -147,7 +197,8 @@
         "types": {
             "movie": "סרט",
             "show": "סדרה"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -159,7 +210,8 @@
             "logout": "להתנתק",
             "register": "סנכרון לענן",
             "settings": "הגדרות",
-            "support": "תמיכה"
+            "support": "תמיכה",
+            "discover": ""
         }
     },
     "notFound": {
@@ -263,7 +315,9 @@
                     "shortTitle": "הורדה / PC",
                     "title": "הורדה במחשב"
                 },
-                "title": "הורד"
+                "title": "הורד",
+                "copyHlsPlaylist": "",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "פרקים",
@@ -272,7 +326,8 @@
                 "loadingError": "ארע שגיאה בטעינת העונה",
                 "loadingList": "טוען...",
                 "loadingTitle": "טוען...",
-                "unairedEpisodes": "פרק אחד או יותר בעונה זו הושבת מכיוון שהם עדיין לא שודרו."
+                "unairedEpisodes": "פרק אחד או יותר בעונה זו הושבת מכיוון שהם עדיין לא שודרו.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "מהירות הניגון",
@@ -292,7 +347,9 @@
                 "qualityItem": "איכות",
                 "sourceItem": "מקורות וידאו",
                 "subtitleItem": "הגדרות כתוביות",
-                "videoSection": "הגדרות וידאו"
+                "videoSection": "הגדרות וידאו",
+                "audioItem": "",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -320,7 +377,9 @@
                     "fixCapitals": "תקן שימוש באותיות גדולות"
                 },
                 "title": "כתוביות",
-                "unknownLanguage": "לא ידוע"
+                "unknownLanguage": "לא ידוע",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -354,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "בטל",
-            "next": "פרק הבא"
+            "next": "פרק הבא",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "שגיאת ניגון",
@@ -381,6 +441,13 @@
                 "homeButton": "חזור לדף הבית",
                 "text": "חיפשנו בספקים שלנו ולא מצאנו את המדיה שאתה מחפש! אנו לא מארחים את המדיה ואין לנו שליטה על מה שזמין. אנא לחץ על 'הצג פרטים' למידע נוסף.",
                 "title": "לא יכולנו למצוא את זה"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -460,7 +527,8 @@
                 "default": "ברירת מחדל",
                 "gray": "אפור",
                 "red": "אדום",
-                "teal": "ירוק כחלחל"
+                "teal": "ירוק כחלחל",
+                "blck": ""
             },
             "title": "מראה"
         },
@@ -508,7 +576,15 @@
             "thumbnail": "צור טאמבניילים",
             "thumbnailDescription": "לרוב, לסרטונים אין טאמבניילים. אתה יכול להפעיל את ההגדרה הזו כדי ליצור אותם, אבל הם יכולים להפוך את הסרטון שלך לאיטי יותר.",
             "thumbnailLabel": "צור טאמבניילים",
-            "title": "העדפות"
+            "title": "העדפות",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "איפוס",
         "save": "לשמור",
@@ -531,8 +607,39 @@
             "colorLabel": "צבע",
             "previewQuote": "אין נחום, אני לא באמת קיים. אני למעשה, חישוק.",
             "textSizeLabel": "גודל הטקסט",
-            "title": "כתוביות"
+            "title": "כתוביות",
+            "textBoldLabel": "",
+            "backgroundBlurLabel": ""
         },
         "unsaved": "יש לך שינויים שלא נשמרו"
+    },
+    "privacy": {
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
