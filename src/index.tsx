@@ -31,12 +31,12 @@ import { SettingsSyncer } from "@/stores/subtitles/SettingsSyncer";
 import { ThemeProvider } from "@/stores/theme";
 import { TurnstileProvider } from "@/stores/turnstile";
 
+import { AdsWrapper } from "./AdsWrapper";
 import {
   extensionInfo,
   isExtensionActiveCached,
 } from "./backend/extension/messaging";
 import IframeMessage from "./components/utils/iframe";
-import { RedirectionWrapper } from "./RedirectionWrapper";
 import { initializeChromecast } from "./setup/chromecast";
 // eslint-disable-next-line import/order
 import { initializeOldStores } from "./stores/__old/migrations";
@@ -191,9 +191,9 @@ root.render(
             <BookmarkSyncer />
             <SettingsSyncer />
             <TheRouter>
-              <RedirectionWrapper>
+              <AdsWrapper>
                 <MigrationRunner />
-              </RedirectionWrapper>
+              </AdsWrapper>
             </TheRouter>
             <IframeMessage />
           </ThemeProvider>
