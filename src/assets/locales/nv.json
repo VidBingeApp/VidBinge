@@ -1,12 +1,645 @@
 {
-  "about": {
-    "description": "Vid Binge T'áá hwiił yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin. Bee ahéhí bitsííʼííł dóó sinas dziní asdzą́ą́.",
-    "faqTitle": "hastiin nahatʼá",
-    "q1": {
-      "body": "Bee hwiił bitsííʼííł hólǫ́, t'áá hwiił yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin. Hwiił yá at'ééh naat'áanii at'é, bitsííʼííł yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin. Bitsííʼííł yá at'ééh naat'áanii hólǫ́, t'áá hwiił yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin."
+    "about": {
+        "description": "Vid Binge T'áá hwiił yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin. Bee ahéhí bitsííʼííł dóó sinas dziní asdzą́ą́.",
+        "faqTitle": "hastiin nahatʼá",
+        "q1": {
+            "body": "Bee hwiił bitsííʼííł hólǫ́, t'áá hwiił yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin. Hwiił yá at'ééh naat'áanii at'é, bitsííʼííł yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin. Bitsííʼííł yá at'ééh naat'áanii hólǫ́, t'áá hwiił yá at'ééh naat'áanii t'áá hwiił yá at'ééh bitsiin.",
+            "title": ""
+        },
+        "q3": {
+            "body": "Hałáágo áłtsééh hózhǫǫgiisiił Nílchʼi Datasoii (TMDB) yá’át’ééhí dooleeł dįįʼgo doo dįįʼgií nihisin dóó tązhii yisdzohazlą́ą́ʼ.",
+            "title": ""
+        },
+        "contact": "",
+        "q2": {
+            "body": "",
+            "title": ""
+        },
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     },
-    "q3": {
-      "body": "Hałáágo áłtsééh hózhǫǫgiisiił Nílchʼi Datasoii (TMDB) yá’át’ééhí dooleeł dįįʼgo doo dįįʼgií nihisin dóó tązhii yisdzohazlą́ą́ʼ."
+    "settings": {
+        "preferences": {
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "thumbnailDescription": "",
+            "thumbnailLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "title": "",
+            "languageDescription": "",
+            "language": "",
+            "thumbnail": ""
+        },
+        "reset": "",
+        "save": "",
+        "sidebar": {
+            "info": {
+                "appVersion": "",
+                "backendUrl": "",
+                "backendVersion": "",
+                "insecure": "",
+                "notLoggedIn": "",
+                "secure": "",
+                "title": "",
+                "unknownVersion": "",
+                "hostname": "",
+                "userId": ""
+            }
+        },
+        "subtitles": {
+            "backgroundBlurLabel": "",
+            "colorLabel": "",
+            "previewQuote": "",
+            "textSizeLabel": "",
+            "title": "",
+            "textBoldLabel": "",
+            "backgroundLabel": ""
+        },
+        "unsaved": "",
+        "appearance": {
+            "themes": {
+                "red": "",
+                "blue": "",
+                "default": "",
+                "gray": "",
+                "teal": "",
+                "blck": ""
+            },
+            "activeTheme": "",
+            "title": ""
+        },
+        "account": {
+            "accountDetails": {
+                "deviceNameLabel": "",
+                "deviceNamePlaceholder": "",
+                "editProfile": "",
+                "logoutButton": ""
+            },
+            "actions": {
+                "delete": {
+                    "button": "",
+                    "confirmButton": "",
+                    "confirmDescription": "",
+                    "confirmTitle": "",
+                    "text": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "devices": {
+                "deviceNameLabel": "",
+                "failed": "",
+                "removeDevice": "",
+                "title": ""
+            },
+            "profile": {
+                "finish": "",
+                "firstColor": "",
+                "secondColor": "",
+                "title": "",
+                "userIcon": ""
+            },
+            "register": {
+                "cta": "",
+                "text": "",
+                "title": ""
+            },
+            "title": ""
+        },
+        "connections": {
+            "server": {
+                "description": "",
+                "label": "",
+                "urlLabel": ""
+            },
+            "setup": {
+                "doSetup": "",
+                "errorStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "itemError": "",
+                "items": {
+                    "default": "",
+                    "extension": "",
+                    "proxy": ""
+                },
+                "redoSetup": "",
+                "successStatus": {
+                    "description": "",
+                    "title": ""
+                },
+                "unsetStatus": {
+                    "description": "",
+                    "title": ""
+                }
+            },
+            "title": "",
+            "workers": {
+                "addButton": "",
+                "description": "",
+                "emptyState": "",
+                "label": "",
+                "urlLabel": "",
+                "urlPlaceholder": ""
+            }
+        }
+    },
+    "player": {
+        "menus": {
+            "downloads": {
+                "onPc": {
+                    "title": "",
+                    "1": "",
+                    "shortTitle": ""
+                },
+                "disclaimer": "",
+                "copyHlsPlaylist": "",
+                "downloadSubtitle": "",
+                "downloadVideo": "",
+                "downloadHlsAsVideo": "",
+                "hlsDisclaimer": "",
+                "onAndroid": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "onIos": {
+                    "1": "",
+                    "shortTitle": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "episodes": {
+                "button": "",
+                "emptyState": "",
+                "episodeBadge": "",
+                "loadingError": "",
+                "loadingList": "",
+                "loadingTitle": "",
+                "unairedEpisodes": "",
+                "seasons": ""
+            },
+            "playback": {
+                "speedLabel": "",
+                "title": ""
+            },
+            "quality": {
+                "automaticLabel": "",
+                "hint": "",
+                "iosNoQuality": "",
+                "title": ""
+            },
+            "settings": {
+                "downloadItem": "",
+                "enableSubtitles": "",
+                "experienceSection": "",
+                "playbackItem": "",
+                "audioItem": "",
+                "qualityItem": "",
+                "sourceItem": "",
+                "subtitleItem": "",
+                "videoSection": "",
+                "watchParty": ""
+            },
+            "sources": {
+                "failed": {
+                    "text": "",
+                    "title": ""
+                },
+                "noEmbeds": {
+                    "text": "",
+                    "title": ""
+                },
+                "noStream": {
+                    "text": "",
+                    "title": ""
+                },
+                "title": "",
+                "unknownOption": ""
+            },
+            "subtitles": {
+                "settings": {
+                    "delay": "",
+                    "backlink": "",
+                    "fixCapitals": ""
+                },
+                "OpenSubtitlesChoice": "",
+                "title": "",
+                "unknownLanguage": "",
+                "dropSubtitleFile": "",
+                "customChoice": "",
+                "customizeLabel": "",
+                "offChoice": ""
+            }
+        },
+        "back": {
+            "default": "",
+            "short": ""
+        },
+        "casting": {
+            "enabled": ""
+        },
+        "metadata": {
+            "api": {
+                "text": "",
+                "title": ""
+            },
+            "dmca": {
+                "badge": "",
+                "text": "",
+                "title": ""
+            },
+            "failed": {
+                "badge": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionPermission": {
+                "badge": "",
+                "button": "",
+                "text": "",
+                "title": ""
+            },
+            "notFound": {
+                "badge": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            }
+        },
+        "scraping": {
+            "items": {
+                "notFound": "",
+                "pending": "",
+                "failure": ""
+            },
+            "notFound": {
+                "badge": "",
+                "detailsButton": "",
+                "homeButton": "",
+                "text": "",
+                "title": ""
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
+            }
+        },
+        "nextEpisode": {
+            "cancel": "",
+            "next": "",
+            "nextSeason": ""
+        },
+        "playbackError": {
+            "badge": "",
+            "errors": {
+                "errorAborted": "",
+                "errorDecode": "",
+                "errorGenericMedia": "",
+                "errorNetwork": "",
+                "errorNotSupported": ""
+            },
+            "homeButton": "",
+            "text": "",
+            "title": ""
+        },
+        "time": {
+            "regular": "",
+            "remaining": "",
+            "shortRegular": "",
+            "shortRemaining": ""
+        },
+        "turnstile": {
+            "description": "",
+            "error": "",
+            "title": "",
+            "verifyingHumanity": ""
+        }
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
+    },
+    "actions": {
+        "copied": "",
+        "copy": ""
+    },
+    "auth": {
+        "createAccount": "",
+        "deviceNameLabel": "",
+        "deviceNamePlaceholder": "",
+        "generate": {
+            "description": "",
+            "next": "",
+            "passphraseFrameLabel": "",
+            "title": ""
+        },
+        "hasAccount": "",
+        "login": {
+            "description": "",
+            "deviceLengthError": "",
+            "passphraseLabel": "",
+            "passphrasePlaceholder": "",
+            "submit": "",
+            "title": "",
+            "validationError": ""
+        },
+        "register": {
+            "information": {
+                "color1": "",
+                "color2": "",
+                "header": "",
+                "icon": "",
+                "next": "",
+                "title": ""
+            }
+        },
+        "trust": {
+            "failed": {
+                "text": "",
+                "title": ""
+            },
+            "noHostTitle": "",
+            "noHost": "",
+            "host": "",
+            "no": "",
+            "title": "",
+            "yes": ""
+        },
+        "verify": {
+            "description": "",
+            "invalidData": "",
+            "noMatch": "",
+            "passphraseLabel": "",
+            "recaptchaFailed": "",
+            "register": "",
+            "title": ""
+        }
+    },
+    "errors": {
+        "badge": "",
+        "details": "",
+        "reloadPage": "",
+        "showError": "",
+        "title": ""
+    },
+    "footer": {
+        "legal": {
+            "disclaimer": "",
+            "disclaimerText": ""
+        },
+        "links": {
+            "discord": "",
+            "telegram": "",
+            "facebook": "",
+            "instagram": "",
+            "dmca": "",
+            "github": ""
+        },
+        "tagline": ""
+    },
+    "global": {
+        "name": "",
+        "pages": {
+            "about": "",
+            "dmca": "",
+            "discover": "",
+            "login": "",
+            "privacy": "",
+            "onboarding": "",
+            "pagetitle": "",
+            "register": "",
+            "settings": ""
+        }
+    },
+    "home": {
+        "bookmarks": {
+            "sectionTitle": ""
+        },
+        "continueWatching": {
+            "sectionTitle": ""
+        },
+        "mediaList": {
+            "stopEditing": ""
+        },
+        "search": {
+            "allResults": "",
+            "failed": "",
+            "loading": "",
+            "noResults": "",
+            "placeholder": {
+                "default": "",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "sectionTitle": ""
+        },
+        "titles": {
+            "day": {
+                "default": "",
+                "extra": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "morning": {
+                "default": "",
+                "extra": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "night": {
+                "default": "",
+                "extra": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            }
+        }
+    },
+    "media": {
+        "episodeDisplay": "",
+        "unreleased": "",
+        "types": {
+            "movie": "",
+            "show": ""
+        }
+    },
+    "navigation": {
+        "banner": {
+            "offline": ""
+        },
+        "menu": {
+            "about": "",
+            "donation": "",
+            "discover": "",
+            "logout": "",
+            "register": "",
+            "settings": "",
+            "support": ""
+        }
+    },
+    "notFound": {
+        "badge": "",
+        "goHome": "",
+        "message": "",
+        "title": ""
+    },
+    "onboarding": {
+        "defaultConfirm": {
+            "cancel": "",
+            "confirm": "",
+            "description": "",
+            "title": ""
+        },
+        "extension": {
+            "back": "",
+            "explainer": "",
+            "explainerIos": "",
+            "extensionHelp": "",
+            "linkChrome": "",
+            "linkFirefox": "",
+            "notDetecting": "",
+            "notDetectingAction": "",
+            "status": {
+                "disallowed": "",
+                "disallowedAction": "",
+                "failed": "",
+                "loading": "",
+                "outdated": "",
+                "success": ""
+            },
+            "submit": "",
+            "title": ""
+        },
+        "proxy": {
+            "back": "",
+            "explainer": "",
+            "input": {
+                "errorConnection": "",
+                "errorInvalidUrl": "",
+                "errorNotProxy": "",
+                "label": "",
+                "placeholder": ""
+            },
+            "link": "",
+            "submit": "",
+            "title": ""
+        },
+        "start": {
+            "explainer": "",
+            "options": {
+                "default": {
+                    "text": ""
+                },
+                "extension": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                },
+                "proxy": {
+                    "action": "",
+                    "description": "",
+                    "quality": "",
+                    "title": ""
+                }
+            },
+            "title": ""
+        }
+    },
+    "overlays": {
+        "close": ""
+    },
+    "screens": {
+        "dmca": {
+            "title": "",
+            "text": ""
+        },
+        "loadingApp": "",
+        "loadingUser": "",
+        "loadingUserError": {
+            "logout": "",
+            "reset": "",
+            "text": "",
+            "textWithReset": ""
+        },
+        "migration": {
+            "failed": "",
+            "inProgress": ""
+        }
     }
-  }
 }
