@@ -14,7 +14,24 @@
             "body": "Rezultati iskanja so privzeti iz podatkovne baze \"The Movie Database\" (TMDB) in se prikazujejo ne glede na to, ali je vsebina dejansko na voljo.",
             "title": "Rezultati iskanja prikazujejo serijo oz. film, zakaj ga potem ne morem predvajati?"
         },
-        "title": "O Vid Bingebu"
+        "title": "O Vid Bingebu",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Kopirano",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Z odprtokodno aplikacijo Vid Binge si oglejte najljubše oddaje in filme."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Nastavitev",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registriraj se",
-            "settings": "Nastavitve"
+            "settings": "Nastavitve",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "Kateri film ali serijo bi si želeli ogledati ob tem popoldnevu?",
                 "extra": [
-                    "Se počutite pustolovsko? Jurski park je morda odlična izbira."
+                    "Se počutite pustolovsko? Jurski park je morda odlična izbira.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Kateri film ali serijo bi si želeli ogledati ob tem jutru?",
                 "extra": [
-                    "Slišala sem, da je film \"Pred sončnim vzhodom\" odličen"
+                    "Slišala sem, da je film \"Pred sončnim vzhodom\" odličen",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Kateri film ali serijo bi si želeli ogledati nocoj?",
                 "extra": [
-                    "Utrujeni? Slišal sem, da je \"Izganjalec mrtvih\" odličen film."
+                    "Utrujeni? Slišal sem, da je \"Izganjalec mrtvih\" odličen film.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -168,7 +210,8 @@
             "logout": "Odjava",
             "register": "Sinhronizacija z oblakom",
             "settings": "Nastavitve",
-            "support": "Podpora"
+            "support": "Podpora",
+            "discover": ""
         }
     },
     "notFound": {
@@ -273,7 +316,8 @@
                     "shortTitle": "Prenesi / Računalnik",
                     "title": "Prenos na računalnik"
                 },
-                "title": "Prenos"
+                "title": "Prenos",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Epizode",
@@ -282,7 +326,8 @@
                 "loadingError": "Napaka pri nalaganju sezone",
                 "loadingList": "Nalaganje...",
                 "loadingTitle": "Nalaganje...",
-                "unairedEpisodes": "Ena ali več epizod v tej sezoni so onemogočene, ker še niso bile predvajane."
+                "unairedEpisodes": "Ena ali več epizod v tej sezoni so onemogočene, ker še niso bile predvajane.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Hitrost predvajanja",
@@ -303,7 +348,8 @@
                 "qualityItem": "Kvaliteta",
                 "sourceItem": "Viri vsebin",
                 "subtitleItem": "Nastavitve podnapisov",
-                "videoSection": "Nastavitve ogleda"
+                "videoSection": "Nastavitve ogleda",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -332,7 +378,8 @@
                     "fixCapitals": "Popravi velike začetnice"
                 },
                 "title": "Podnapisi",
-                "unknownLanguage": "Neznano"
+                "unknownLanguage": "Neznano",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -366,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Prekliči",
-            "next": "Naslednja epizoda"
+            "next": "Naslednja epizoda",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Napaka v predvajanju",
@@ -479,7 +527,8 @@
                 "default": "Privzeto",
                 "gray": "Siva",
                 "red": "Rdeča",
-                "teal": "Turkizna"
+                "teal": "Turkizna",
+                "blck": ""
             },
             "title": "Izgled"
         },
@@ -527,7 +576,15 @@
             "thumbnail": "Naloži predoglede",
             "thumbnailDescription": "Videoposnetki večinoma nimajo predogledov. To nastavitev lahko omogočite in jih ustvarite sproti, vendar lahko zaradi tega videoposnetek postane počasnejši.",
             "thumbnailLabel": "Naloži predoglede",
-            "title": "Nastavitve"
+            "title": "Nastavitve",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "Ponastavi",
         "save": "Shrani",
@@ -551,8 +608,38 @@
             "colorLabel": "Barva",
             "previewQuote": "Ne smem se bati. Strah je ubijalec misli.",
             "textSizeLabel": "Velikost pisave",
-            "title": "Podnapisi"
+            "title": "Podnapisi",
+            "textBoldLabel": ""
         },
         "unsaved": "Imate neshranjene spremembe"
+    },
+    "privacy": {
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
