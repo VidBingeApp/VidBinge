@@ -104,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Guardate i vostri preferiti programmi televisivi e film con questo app di streaming open source."
     },
@@ -117,7 +120,9 @@
             "onboarding": "Setup",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Registrarsi",
-            "settings": "Impostazioni"
+            "settings": "Impostazioni",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -150,19 +155,39 @@
             "day": {
                 "default": "Cosa vorresti guardare questo pomeriggio?",
                 "extra": [
-                    "Senti avventuroso? Jurassic Park potrebbe essere la scelta perfetta."
+                    "Senti avventuroso? Jurassic Park potrebbe essere la scelta perfetta.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "Cosa vorresti guardare questa mattina?",
                 "extra": [
-                    "Ho sentito che «Prima Dell'alba» è buono"
+                    "Ho sentito che «Prima Dell'alba» è buono",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "Cosa vorresti guardare questa sera?",
                 "extra": [
-                    "Stanco? Ho sentito che L'esorciccio è buono."
+                    "Stanco? Ho sentito che L'esorciccio è buono.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -185,7 +210,8 @@
             "logout": "Esci",
             "register": "Sincronizzare con il cloud",
             "settings": "Impostazioni",
-            "support": "Impostazioni"
+            "support": "Impostazioni",
+            "discover": ""
         }
     },
     "notFound": {
@@ -290,7 +316,8 @@
                     "shortTitle": "Scarica / PC",
                     "title": "Scaricare su PC"
                 },
-                "title": "Scarica"
+                "title": "Scarica",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episodi",
@@ -299,7 +326,8 @@
                 "loadingError": "Errore nel caricare la stagione",
                 "loadingList": "Caricamento...",
                 "loadingTitle": "Caricamento...",
-                "unairedEpisodes": "Uno o più episodi di questa stagione sono stati disabilitati perché non sono ancora andati in onda."
+                "unairedEpisodes": "Uno o più episodi di questa stagione sono stati disabilitati perché non sono ancora andati in onda.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Velocità di riproduzione",
@@ -320,7 +348,8 @@
                 "qualityItem": "Qualità",
                 "sourceItem": "Sorgenti video",
                 "subtitleItem": "Impostazioni sottotitoli",
-                "videoSection": "Impostazioni video"
+                "videoSection": "Impostazioni video",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -349,7 +378,8 @@
                     "fixCapitals": "Correggere la capitalizzazione"
                 },
                 "title": "Sottotitoli",
-                "unknownLanguage": "Sconosciuto"
+                "unknownLanguage": "Sconosciuto",
+                "OpenSubtitlesChoice": ""
             }
         },
         "metadata": {
@@ -383,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Cancella",
-            "next": "Prossimo episodio"
+            "next": "Prossimo episodio",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Errore di riproduzione",
@@ -496,7 +527,8 @@
                 "default": "Predefinito",
                 "gray": "Grigio",
                 "red": "Rosso",
-                "teal": "Verde acqua"
+                "teal": "Verde acqua",
+                "blck": ""
             },
             "title": "Aspetto"
         },
@@ -544,7 +576,15 @@
             "thumbnail": "Generare miniature",
             "thumbnailDescription": "Nella maggior parte dei casi, i video non hanno miniature. È possibile attivare questa impostazione per generarle quando è necessario, ma possono rendere il video più lento.",
             "thumbnailLabel": "Generare miniature",
-            "title": "Preferenze"
+            "title": "Preferenze",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplay": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": ""
         },
         "reset": "Reset",
         "save": "Salva",
@@ -568,11 +608,38 @@
             "colorLabel": "Colore",
             "previewQuote": "Cantami o Diva del pelide Achille l'ira funesta.",
             "textSizeLabel": "Dimensione testo",
-            "title": "Sottotitoli"
+            "title": "Sottotitoli",
+            "textBoldLabel": ""
         },
         "unsaved": "Le modifiche non sono state salvate"
     },
     "privacy": {
-        "description": "Benvenut* su VidBinge! La tua privacy è importante per noi. VidBinge (vidbinge.com) si impegna a proteggere la tua privacy mentre ti godi i tuoi film e le tue serie preferite sulla nostra piattaforma. Questa Privacy Policy spiega come gestiamo e proteggiamo i tuoi dati."
+        "description": "Benvenut* su VidBinge! La tua privacy è importante per noi. VidBinge (vidbinge.com) si impegna a proteggere la tua privacy mentre ti godi i tuoi film e le tue serie preferite sulla nostra piattaforma. Questa Privacy Policy spiega come gestiamo e proteggiamo i tuoi dati.",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p4": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
