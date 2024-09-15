@@ -14,7 +14,24 @@
             "body": "Rezultatele căutării noastre sunt furnizate de The Movie Database (TMDB) și afișați indiferent dacă sursele noastre au de fapt conținutul.",
             "title": "Rezultatele căutării afișează emisiunea sau filmul, de ce nu îl pot reda?"
         },
-        "title": "Despre Vid Binge"
+        "title": "Despre Vid Binge",
+        "contact": "",
+        "q4": {
+            "body": "",
+            "title": ""
+        },
+        "q5": {
+            "title": "",
+            "body": ""
+        },
+        "q6": {
+            "title": "",
+            "body": ""
+        },
+        "q7": {
+            "title": "",
+            "body": ""
+        }
     },
     "actions": {
         "copied": "Copiat",
@@ -87,7 +104,10 @@
         "links": {
             "discord": "Discord",
             "dmca": "DMCA",
-            "github": "GitHub"
+            "github": "GitHub",
+            "telegram": "",
+            "facebook": "",
+            "instagram": ""
         },
         "tagline": "Urmăriți emisiunile și filmele preferate cu această aplicație de streaming open source."
     },
@@ -100,7 +120,9 @@
             "onboarding": "Configurație",
             "pagetitle": "{{title}} - Vid Binge",
             "register": "Inregistreaza-te",
-            "settings": "Setări"
+            "settings": "Setări",
+            "discover": "",
+            "privacy": ""
         }
     },
     "home": {
@@ -133,19 +155,39 @@
             "day": {
                 "default": "La ce vrei să te uiți după-amiaza asta?",
                 "extra": [
-                    "Te simți aventuros? Jurassic Park ar putea fi o alegere perfectă."
+                    "Te simți aventuros? Jurassic Park ar putea fi o alegere perfectă.",
+                    "",
+                    ""
                 ]
             },
             "morning": {
                 "default": "La ce dorești să te in uiți dimineață aceasta?",
                 "extra": [
-                    "Aud că Before Sunrise este bun"
+                    "Aud că Before Sunrise este bun",
+                    "",
+                    ""
                 ]
             },
             "night": {
                 "default": "La ce dorești să te uiți în astă seară?",
                 "extra": [
-                    "Obosit? Aud că The Exorcist is good."
+                    "Obosit? Aud că The Exorcist is good.",
+                    "",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "420": {
+                "default": "",
+                "extra": [
+                    ""
+                ]
+            },
+            "halloween": {
+                "default": "",
+                "extra": [
+                    ""
                 ]
             }
         }
@@ -155,7 +197,8 @@
         "types": {
             "movie": "Film",
             "show": "Spectacol"
-        }
+        },
+        "unreleased": ""
     },
     "navigation": {
         "banner": {
@@ -167,7 +210,8 @@
             "logout": "Deconectați-vă",
             "register": "Sincronizare în cloud",
             "settings": "Setări",
-            "support": "Ajutor"
+            "support": "Ajutor",
+            "discover": ""
         }
     },
     "notFound": {
@@ -272,7 +316,8 @@
                     "shortTitle": "Descarcă / Calculator",
                     "title": "Descărcare pe calculator"
                 },
-                "title": "Descarcă"
+                "title": "Descarcă",
+                "downloadHlsAsVideo": ""
             },
             "episodes": {
                 "button": "Episoade",
@@ -281,7 +326,8 @@
                 "loadingError": "Eroare la încărcarea sezonul",
                 "loadingList": "Se încarcă...",
                 "loadingTitle": "Se încarcă...",
-                "unairedEpisodes": "Unul sau mai multe episoade din sezonul acesta sunt indisponibile deoarece incă nu au venit încă."
+                "unairedEpisodes": "Unul sau mai multe episoade din sezonul acesta sunt indisponibile deoarece incă nu au venit încă.",
+                "seasons": ""
             },
             "playback": {
                 "speedLabel": "Viteză de redare",
@@ -301,7 +347,9 @@
                 "qualityItem": "Calitate",
                 "sourceItem": "Surse video",
                 "subtitleItem": "Setările subtitlului",
-                "videoSection": "Setări video"
+                "videoSection": "Setări video",
+                "audioItem": "",
+                "watchParty": ""
             },
             "sources": {
                 "failed": {
@@ -329,7 +377,9 @@
                     "fixCapitals": "Fixați capitalizația"
                 },
                 "title": "Subtitluri",
-                "unknownLanguage": "Necunoscut"
+                "unknownLanguage": "Necunoscut",
+                "OpenSubtitlesChoice": "",
+                "dropSubtitleFile": ""
             }
         },
         "metadata": {
@@ -363,7 +413,8 @@
         },
         "nextEpisode": {
             "cancel": "Anulare",
-            "next": "Episodul următor"
+            "next": "Episodul următor",
+            "nextSeason": ""
         },
         "playbackError": {
             "badge": "Eroare la redare",
@@ -390,6 +441,13 @@
                 "homeButton": "Du-te acasă",
                 "text": "Am căutat prin furnizorii noștri și nu putem găsi media pe care o căutați! Nu găzduim mass-media și nu avem control asupra a ceea ce este disponibil. Vă rugăm să faceți clic pe „Afișați detalii” de mai jos pentru mai multe detalii.",
                 "title": "Nu am putut găsi aia"
+            },
+            "extensionFailure": {
+                "badge": "",
+                "homeButton": "",
+                "enableExtension": "",
+                "title": "",
+                "text": ""
             }
         },
         "time": {
@@ -469,7 +527,8 @@
                 "default": "Implicit",
                 "gray": "Gri",
                 "red": "Roșu",
-                "teal": "Albastru verziu"
+                "teal": "Albastru verziu",
+                "blck": ""
             },
             "title": "Aparență"
         },
@@ -517,7 +576,15 @@
             "thumbnail": "Generați pictograme",
             "thumbnailDescription": "De cele mai multe ori videoclipurile nu au pictograme. Puteți activa această setare pentru a le genera din mers, dar vă pot încetini videoclipul.",
             "thumbnailLabel": "Generați pictograme",
-            "title": "Preferințe"
+            "title": "Preferințe",
+            "ads": "",
+            "adsDescription": "",
+            "adsLabel": "",
+            "autoplayDescription": "",
+            "autoplayLabel": "",
+            "sourceOrder": "",
+            "sourceOrderDescription": "",
+            "autoplay": ""
         },
         "reset": "Resetare",
         "save": "Salvează",
@@ -541,8 +608,38 @@
             "colorLabel": "Culoare",
             "previewQuote": "nu trebuie să mă tem. Frica este ucigașul minții.",
             "textSizeLabel": "Dimensiunea textului",
-            "title": "Subtitluri"
+            "title": "Subtitluri",
+            "textBoldLabel": ""
         },
         "unsaved": "Aveți modificări nesalvate"
+    },
+    "privacy": {
+        "p4": {
+            "title": "",
+            "body": ""
+        },
+        "description": "",
+        "lastUpdated": "",
+        "p1": {
+            "body": "",
+            "title": ""
+        },
+        "p2": {
+            "body": "",
+            "title": ""
+        },
+        "p3": {
+            "body": "",
+            "title": ""
+        },
+        "p5": {
+            "title": "",
+            "body": ""
+        },
+        "p6": {
+            "title": "",
+            "body": ""
+        },
+        "title": ""
     }
 }
