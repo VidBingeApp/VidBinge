@@ -38,6 +38,7 @@ export function RealPlayerView() {
   const [startAtParam] = useQueryParam("t");
   const {
     status,
+    meta,
     playMedia,
     reset,
     setScrapeNotFound,
@@ -57,15 +58,22 @@ export function RealPlayerView() {
   }, [paramsData, reset]);
 
   const metaChange = useCallback(
-    (meta: PlayerMeta) => {
-      if (meta?.type === "show")
+    (newMeta: PlayerMeta) => {
+      // Renamed parameter to avoid shadowing
+      if (newMeta?.type === "show")
         navigate(
-          `/media/${params.media}/${meta.season?.tmdbId}/${meta.episode?.tmdbId}`,
+          `/media/${params.media}/${newMeta.season?.tmdbId}/${newMeta.episode?.tmdbId}`,
         );
       else navigate(`/media/${params.media}`);
     },
     [navigate, params],
   );
+
+  const trackMediaEvent = (title: string, type: string) => {
+    if (typeof window !== "undefined" && window.umami) {
+      window.umami.track("watch media", { title, type });
+    }
+  };
 
   const playAfterScrape = useCallback(
     (out: RunOutput | null) => {
@@ -73,6 +81,13 @@ export function RealPlayerView() {
 
       let startAt: number | undefined;
       if (startAtParam) startAt = parseTimestamp(startAtParam) ?? undefined;
+
+      // Access the meta information from the usePlayer hook
+      // Ensure meta is available before tracking
+      if (meta) {
+        // Track the media event with title and type from meta
+        trackMediaEvent(meta.title, meta.type);
+      }
 
       playMedia(
         convertRunoutputToSource(out),
@@ -87,6 +102,7 @@ export function RealPlayerView() {
       startAtParam,
       shouldStartFromBeginning,
       setShouldStartFromBeginning,
+      meta,
     ],
   );
 
