@@ -44,7 +44,22 @@ export function DownloadView({ id }: { id: string }) {
   const router = useOverlayRouter(id);
   const { t } = useTranslation();
   const downloadUrl = useDownloadLink();
-  const hlsDownload = `https://hlsdownload.vidbinge.com/?url=${encodeURIComponent(downloadUrl || "")}`;
+
+  // Custom function to process the download URL
+  const processDownloadUrl = useCallback(() => {
+    if (!downloadUrl) return "";
+
+    // Check if the URL contains the m3u8-proxy and the ?url= parameter
+    const match = downloadUrl.match(/m3u8-proxy\?url=(.*)$/);
+    if (match && match[1]) {
+      // Decode the URL component
+      return decodeURIComponent(match[1]);
+    }
+
+    return downloadUrl; // Return original if no specific pattern is found
+  }, [downloadUrl]);
+
+  const hlsDownload = `https://hlsdownload.vidbinge.com/?url=${encodeURIComponent(processDownloadUrl())}`;
   const [, copyToClipboard] = useCopyToClipboard();
 
   const sourceType = usePlayerStore((s) => s.source?.type);
