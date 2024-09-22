@@ -36,7 +36,7 @@ export function Discover() {
           {t("global.pages.discover")} Movies & TV
         </h1>
         <p className="relative text-lg mt-4 text-gray-400 z-10">
-          Explore the latest hits and timeless classics.
+          Browse the latest hits and timeless classics.
         </p>
       </div>
       <DiscoverContent />
