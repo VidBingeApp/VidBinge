@@ -679,7 +679,7 @@ export function DiscoverContent() {
                 </div>
               ) : (
                 <div className="flex items-center inline-block">
-                  <span>Watch Something New</span>
+                  <span>Watch Something Random</span>
                   <img
                     src="/lightbar-images/dice.svg"
                     alt="Small Image"
