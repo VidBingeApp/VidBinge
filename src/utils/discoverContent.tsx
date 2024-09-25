@@ -139,6 +139,16 @@ export function DiscoverContent() {
     useState<NodeJS.Timeout | null>(null);
   const { isMobile } = useIsMobile();
 
+  // State to track selected category (movies or TV shows)
+  const [selectedCategory, setSelectedCategory] = useState("movies");
+
+  // Handle category change
+  const handleCategoryChange = (
+    event: React.ChangeEvent<HTMLSelectElement>,
+  ) => {
+    setSelectedCategory(event.target.value);
+  };
+
   useEffect(() => {
     const fetchMoviesForCategory = async (category: Category) => {
       try {
@@ -817,49 +827,64 @@ export function DiscoverContent() {
         </div>
       )}
       <div className="mt-8 p-4 w-full max-w-screen-xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4 text-center">Movies:</h2>
-        <div className="flex mb-4 overflow-x-auto">
-          {!isMobile && <div>{renderScrollButton("movies", "left")}</div>}
-          <div
-            id="button-carousel-movies"
-            className="flex mb-4 overflow-x-auto scroll-smooth"
-            style={{
-              scrollbarWidth: "thin",
-              scrollbarColor: "transparent transparent",
-            }}
+        {/* Dropdown for selecting the category */}
+        <div className="flex justify-center mb-4">
+          <select
+            className="text-2xl font-bold p-2 bg-transparent text-center cursor-pointer"
+            value={selectedCategory}
+            onChange={handleCategoryChange}
           >
-            <div className="flex space-x-2 py-1">
-              {renderTopMovieButtons()}
-              {renderMovieButtons()}
-            </div>
-          </div>
-          {!isMobile && (
-            <div className="">{renderScrollButton("movies", "right")}</div>
-          )}
+            <option value="movies">Movies</option>
+            <option value="tvshows">TV Shows</option>
+          </select>
         </div>
 
-        <h2 className="text-2xl font-bold mb-4 text-center">TV Shows:</h2>
-        <div className="flex mb-4 overflow-x-auto">
-          {!isMobile && (
-            <div className="">{renderScrollButton("tvshows", "left")}</div>
-          )}
-          <div
-            id="button-carousel-tvshows"
-            className="flex mb-4 overflow-x-auto scroll-smooth"
-            style={{
-              scrollbarWidth: "thin",
-              scrollbarColor: "transparent transparent",
-            }}
-          >
-            <div className="flex space-x-2 py-1">
-              {renderTopTvButtons()}
-              {renderTvButtons()}
+        {/* Conditionally render Movies or TV Shows based on selectedCategory */}
+        {selectedCategory === "movies" && (
+          <div className="flex mb-4 overflow-x-auto">
+            {!isMobile && <div>{renderScrollButton("movies", "left")}</div>}
+            <div
+              id="button-carousel-movies"
+              className="flex mb-4 overflow-x-auto scroll-smooth"
+              style={{
+                scrollbarWidth: "thin",
+                scrollbarColor: "transparent transparent",
+              }}
+            >
+              <div className="flex space-x-2 py-1">
+                {renderTopMovieButtons()}
+                {renderMovieButtons()}
+              </div>
             </div>
+            {!isMobile && (
+              <div className="">{renderScrollButton("movies", "right")}</div>
+            )}
           </div>
-          {!isMobile && (
-            <div className="">{renderScrollButton("tvshows", "right")}</div>
-          )}
-        </div>
+        )}
+
+        {selectedCategory === "tvshows" && (
+          <div className="flex mb-4 overflow-x-auto">
+            {!isMobile && (
+              <div className="">{renderScrollButton("tvshows", "left")}</div>
+            )}
+            <div
+              id="button-carousel-tvshows"
+              className="flex mb-4 overflow-x-auto scroll-smooth"
+              style={{
+                scrollbarWidth: "thin",
+                scrollbarColor: "transparent transparent",
+              }}
+            >
+              <div className="flex space-x-2 py-1">
+                {renderTopTvButtons()}
+                {renderTvButtons()}
+              </div>
+            </div>
+            {!isMobile && (
+              <div className="">{renderScrollButton("tvshows", "right")}</div>
+            )}
+          </div>
+        )}
       </div>
       <div className="">
         <div className="flex items-center mt-5">
