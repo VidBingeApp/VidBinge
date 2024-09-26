@@ -496,7 +496,7 @@ export function DiscoverContent() {
     // https://tailwindcss.com/docs/border-style
     return (
       <div className="relative overflow-hidden">
-        <h2 className="mt-2 text-2xl cursor-default font-bold text-white sm:text-3xl md:text-2xl mx-auto pl-5">
+        <h2 className="mt-2 text-2xl cursor-default font-bold text-white sm:text-3xl md:text-2xl mx-auto pl-5 text-balance">
           {displayCategory}
         </h2>
         <div
@@ -892,7 +892,7 @@ export function DiscoverContent() {
                 </div>
               ) : (
                 <div className="flex items-center inline-block">
-                  <span>Watch Something New</span>
+                  <span>Watch Something Random</span>
                   <img
                     src="/lightbar-images/dice.svg"
                     alt="Small Image"
@@ -959,7 +959,7 @@ export function DiscoverContent() {
               )}
               <div
                 id="button-carousel-providers"
-                className="flex mb-4 overflow-x-auto scroll-smooth z-40"
+                className="flex lg:px-4 mb-4 overflow-x-auto scroll-smooth z-40"
                 style={{
                   scrollbarWidth: "thin",
                   scrollbarColor: "transparent transparent",
@@ -979,7 +979,7 @@ export function DiscoverContent() {
               <div className="">{renderScrollButton("movies", "left")}</div>
               <div
                 id="button-carousel-movies"
-                className="flex mb-4 overflow-x-auto scroll-smooth"
+                className="flex lg:px-4 mb-4 overflow-x-auto scroll-smooth"
                 style={{
                   scrollbarWidth: "thin",
                   scrollbarColor: "transparent transparent",
@@ -1006,7 +1006,7 @@ export function DiscoverContent() {
               )}
               <div
                 id="button-carousel-tv-providers"
-                className="flex mb-4 overflow-x-auto scroll-smooth"
+                className="flex lg:px-4 mb-4 overflow-x-auto scroll-smooth z-40"
                 style={{
                   scrollbarWidth: "thin",
                   scrollbarColor: "transparent transparent",
@@ -1026,7 +1026,7 @@ export function DiscoverContent() {
               <div className="">{renderScrollButton("tvshows", "left")}</div>
               <div
                 id="button-carousel-tvshows"
-                className="flex mb-4 overflow-x-auto scroll-smooth"
+                className="flex lg:px-4 mb-4 overflow-x-auto scroll-smooth"
                 style={{
                   scrollbarWidth: "thin",
                   scrollbarColor: "transparent transparent",
