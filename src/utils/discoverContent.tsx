@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { get } from "@/backend/metadata/tmdb";
+import { Spinner } from "@/components/layout/Spinner";
 import { Divider } from "@/components/utils/Divider";
 import { Flare } from "@/components/utils/Flare";
 import { useIsMobile } from "@/hooks/useIsMobile";
