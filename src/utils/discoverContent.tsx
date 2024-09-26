@@ -49,9 +49,12 @@ function ScrollToTopButton() {
     <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50">
       {/* Glow Effect (Behind the Button) */}
       <div
-        className="absolute inset-0 mx-auto h-[50px] w-[200px] rounded-full blur-[50px] opacity-50 pointer-events-none z-0"
+        className={`absolute inset-0 mx-auto h-[50px] w-[200px] rounded-full blur-[50px] opacity-50 pointer-events-none z-0 ${
+          isVisible ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(var(--colors-global-accentA)), rgba(var(--colors-buttons-toggle)))`,
+          backgroundImage: `linear-gradient(to right, rgba(var(--colors-buttons-purpleHover)), rgba(var(--colors-progress-filled)))`,
+          transition: "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
         }}
       />
 
@@ -80,6 +83,43 @@ export function DiscoverContent() {
   const [genreMovies, setGenreMovies] = useState<{
     [genreId: number]: Movie[];
   }>({});
+
+  const [providerMovies, setProviderMovies] = useState<{
+    [providerId: string]: Movie[];
+  }>({});
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [selectedProvider, setSelectedProvider] = useState({
+    name: "",
+    id: "",
+  });
+  const [providerTVShows, setProviderTVShows] = useState<{
+    [providerId: string]: Movie[];
+  }>({});
+  const [selectedTVProvider, setSelectedTVProvider] = useState({
+    name: "",
+    id: "",
+  });
+  const movieProviders = [
+    { name: "Netflix", id: "8" },
+    { name: "Apple TV+", id: "2" },
+    { name: "Amazon Prime Video", id: "10" },
+    { name: "Hulu", id: "15" },
+    { name: "Max", id: "1899" },
+    { name: "Paramount Plus", id: "531" },
+    { name: "Disney Plus", id: "337" },
+    { name: "Shudder", id: "99" },
+  ];
+
+  const tvProviders = [
+    { name: "Netflix", id: "8" },
+    { name: "Apple TV+", id: "350" },
+    { name: "Paramount Plus", id: "531" },
+    { name: "Hulu", id: "15" },
+    { name: "Max", id: "1899" },
+    { name: "Disney Plus", id: "337" },
+    { name: "fubuTV", id: "257" },
+  ];
+
   const [countdown, setCountdown] = useState<number | null>(null);
   const navigate = useNavigate();
   const [categoryShows, setCategoryShows] = useState<{
@@ -98,6 +138,24 @@ export function DiscoverContent() {
   const [countdownTimeout, setCountdownTimeout] =
     useState<NodeJS.Timeout | null>(null);
   const { isMobile } = useIsMobile();
+
+  // State to track selected category (movies or TV shows)
+  const [selectedCategory, setSelectedCategory] = useState("movies");
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  // Handle category change for both event (from <select>) and string (from custom dropdown)
+  const handleCategoryChange = (
+    eventOrValue: React.ChangeEvent<HTMLSelectElement> | string,
+  ) => {
+    if (typeof eventOrValue === "string") {
+      // Handle case where a string value is passed (from custom dropdown)
+      setSelectedCategory(eventOrValue);
+    } else {
+      // Handle the <select> change event
+      setSelectedCategory(eventOrValue.target.value);
+    }
+    setDropdownOpen(false); // Close dropdown after selection
+  };
 
   useEffect(() => {
     const fetchMoviesForCategory = async (category: Category) => {
@@ -277,6 +335,77 @@ export function DiscoverContent() {
     genres.forEach((genre) => fetchMoviesForGenre(genre.id));
   }, [genres]);
 
+  // Fetch Movies By Provider
+  const fetchMoviesByProvider = async (providerId: string) => {
+    try {
+      const movies: any[] = [];
+      // eslint-disable-next-line no-plusplus
+      for (let page = 1; page <= 3; page++) {
+        const data = await get<any>("/discover/movie", {
+          api_key: conf().TMDB_READ_API_KEY,
+          language: "en-US",
+          page: page.toString(),
+          with_watch_providers: providerId,
+          watch_region: "US", // You can set a specific region if required
+        });
+
+        movies.push(...data.results);
+      }
+      setProviderMovies((prev) => ({
+        ...prev,
+        [providerId]: movies,
+      }));
+    } catch (error) {
+      console.error(`Error fetching movies for provider ${providerId}:`, error);
+    }
+  };
+
+  useEffect(() => {
+    const randomMovieProvider =
+      movieProviders[Math.floor(Math.random() * movieProviders.length)];
+    setSelectedProvider(randomMovieProvider); // Store the selected provider
+
+    fetchMoviesByProvider(randomMovieProvider.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Fetch TV Shows By Provider
+  const fetchTVByProvider = async (providerId: string) => {
+    try {
+      const series: any[] = [];
+      // eslint-disable-next-line no-plusplus
+      for (let page = 1; page <= 3; page++) {
+        const data = await get<any>("/discover/tv", {
+          api_key: conf().TMDB_READ_API_KEY,
+          language: "en-US",
+          page: page.toString(),
+          with_watch_providers: providerId,
+          watch_region: "US", // You can set a specific region if required
+        });
+
+        series.push(...data.results);
+      }
+      setProviderTVShows((prev) => ({
+        ...prev,
+        [providerId]: series,
+      }));
+    } catch (error) {
+      console.error(
+        `Error fetching tv shows for provider ${providerId}:`,
+        error,
+      );
+    }
+  };
+
+  useEffect(() => {
+    const randomTVProvider =
+      tvProviders[Math.floor(Math.random() * tvProviders.length)];
+    setSelectedTVProvider(randomTVProvider); // Store the selected provider
+
+    fetchTVByProvider(randomTVProvider.id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   function scrollCarousel(categorySlug: string, direction: string) {
     const carousel = carouselRefs.current[categorySlug];
     if (carousel) {
@@ -354,11 +483,15 @@ export function DiscoverContent() {
     const displayCategory =
       category === "Now Playing"
         ? "In Cinemas"
-        : category.includes("Movie")
-          ? `${category}s`
-          : isTVShow
-            ? `${category} Shows`
-            : `${category} Movies`;
+        : category === `Popular Movies on ${selectedProvider.name}`
+          ? `Popular Movies on ${selectedProvider.name}`
+          : category === `Popular Shows on ${selectedTVProvider.name}`
+            ? `Popular Shows on ${selectedTVProvider.name}`
+            : category.includes("Movie")
+              ? `${category}s`
+              : isTVShow
+                ? `${category} Shows`
+                : `${category} Movies`;
 
     // https://tailwindcss.com/docs/border-style
     return (
@@ -570,6 +703,46 @@ export function DiscoverContent() {
     return buttons;
   };
 
+  const renderMovieProviderButtons = () => {
+    const buttons = [];
+    // Movie Providers
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    for (const [index, provider] of movieProviders.entries()) {
+      buttons.push(
+        <button
+          type="button"
+          key={provider.id}
+          className="whitespace-nowrap flex items-center space-x-2 rounded-full px-4 text-white py-2 bg-pill-background bg-opacity-50 hover:bg-pill-backgroundHover transition-[background,transform] duration-100 hover:scale-105"
+          onClick={() => {
+            // Update the selected provider
+            setSelectedProvider({
+              name: provider.name,
+              id: provider.id,
+            });
+
+            // Fetch new data based on selected provider
+            fetchMoviesByProvider(provider.id); // Fetch data using provider ID
+
+            // Delay scroll until the selectedProvider state is updated
+            setTimeout(() => {
+              const element = document.getElementById("carousel-providers");
+              if (element) {
+                element.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                  inline: "center",
+                });
+              }
+            }, 300); // Delay to ensure state is updated
+          }}
+        >
+          {provider.name}
+        </button>,
+      );
+    }
+    return buttons;
+  };
+
   const renderTopTvButtons = () => {
     const buttons = [];
     // TV Categories
@@ -628,6 +801,46 @@ export function DiscoverContent() {
     return buttons;
   };
 
+  const renderTvProviderButtons = () => {
+    const buttons = [];
+    // Movie Providers
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    for (const [index, provider] of tvProviders.entries()) {
+      buttons.push(
+        <button
+          type="button"
+          key={provider.id}
+          className="whitespace-nowrap flex items-center space-x-2 rounded-full px-4 text-white py-2 bg-pill-background bg-opacity-50 hover:bg-pill-backgroundHover transition-[background,transform] duration-100 hover:scale-105"
+          onClick={() => {
+            // Update the selected provider
+            setSelectedTVProvider({
+              name: provider.name,
+              id: provider.id,
+            });
+
+            // Fetch new data based on selected provider
+            fetchTVByProvider(provider.id); // Fetch data using provider ID
+
+            // Delay scroll until the selectedProvider state is updated
+            setTimeout(() => {
+              const element = document.getElementById("carousel-tv-providers");
+              if (element) {
+                element.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                  inline: "center",
+                });
+              }
+            }, 300); // Delay to ensure state is updated
+          }}
+        >
+          {provider.name}
+        </button>,
+      );
+    }
+    return buttons;
+  };
+
   const renderScrollButton = (
     categorySlug: string,
     direction: "left" | "right",
@@ -679,7 +892,7 @@ export function DiscoverContent() {
                 </div>
               ) : (
                 <div className="flex items-center inline-block">
-                  <span>Watch Something Random</span>
+                  <span>Watch Something New</span>
                   <img
                     src="/lightbar-images/dice.svg"
                     alt="Small Image"
@@ -702,102 +915,246 @@ export function DiscoverContent() {
         </div>
       )}
       <div className="mt-8 p-4 w-full max-w-screen-xl mx-auto">
-        <h2 className="text-2xl font-bold mb-4 text-center">Movies:</h2>
-        <div className="flex mb-4 overflow-x-auto">
-          <div>{renderScrollButton("movies", "left")}</div>
-          <div
-            id="button-carousel-movies"
-            className="flex mb-4 overflow-x-auto scroll-smooth"
-            style={{
-              scrollbarWidth: "thin",
-              scrollbarColor: "transparent transparent",
-            }}
+        <div className="relative flex justify-center mb-4">
+          {/* Custom dropdown button */}
+          <button
+            type="button"
+            className="text-2xl font-bold p-2 bg-transparent text-center rounded-full cursor-pointer flex items-center"
+            onClick={() => setDropdownOpen(!isDropdownOpen)}
           >
-            <div className="flex space-x-2 py-1">
-              {renderTopMovieButtons()}
-              {renderMovieButtons()}
-            </div>
-          </div>
-          <div className="">{renderScrollButton("movies", "right")}</div>
+            {selectedCategory === "movies" ? "Movies" : "TV Shows"}
+            <Icon
+              icon={isDropdownOpen ? Icons.CHEVRON_UP : Icons.CHEVRON_DOWN}
+              className="ml-2 text-2xl pt-1"
+            />
+          </button>
+
+          {/* Dropdown options */}
+          {isDropdownOpen && (
+            <ul className="absolute top-full mb-1 rounded-lg bg-dropdown-background py-3 px-5 text-left text-white shadow-md border-2 border-gray-800 focus:outline-none tabbable cursor-pointer z-50">
+              <li
+                className={`cursor-pointer p-2 hover:text-gray-300 ${selectedCategory === "movies" ? "font-bold" : ""}`}
+                onClick={() => handleCategoryChange("movies")}
+              >
+                Movies
+              </li>
+              <li
+                className={`cursor-pointer p-2 hover:text-gray-300 ${selectedCategory === "tvshows" ? "font-bold" : ""}`}
+                onClick={() => handleCategoryChange("tvshows")}
+              >
+                TV Shows
+              </li>
+            </ul>
+          )}
         </div>
 
-        <h2 className="text-2xl font-bold mb-4 text-center">TV Shows:</h2>
-        <div className="flex mb-4 overflow-x-auto">
-          <div className="">{renderScrollButton("tvshows", "left")}</div>
-
-          <div
-            id="button-carousel-tvshows"
-            className="flex mb-4 overflow-x-auto scroll-smooth"
-            style={{
-              scrollbarWidth: "thin",
-              scrollbarColor: "transparent transparent",
-            }}
-          >
-            <div className="flex space-x-2 py-1">
-              {renderTopTvButtons()}
-              {renderTvButtons()}
-            </div>
-          </div>
-          <div className="">{renderScrollButton("tvshows", "right")}</div>
-        </div>
-      </div>
-      <div className="">
-        <div className="flex items-center mt-5">
-          <Divider marginClass="mr-5" />
-          <h1 className="text-4xl font-bold text-white mx-auto">Movies</h1>
-          <Divider marginClass="ml-5" />
-        </div>
-        <div className="grid grid-cols-1 gap-0 mt-4">
-          {" "}
-          {categories.map((category) => (
-            <div
-              key={category.name}
-              id={`carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
-            >
-              {renderMovies(categoryMovies[category.name] || [], category.name)}
-            </div>
-          ))}
-          {genres.map((genre) => (
-            <div
-              key={`${genre.id}|${genre.name}`}
-              id={`carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
-            >
-              {renderMovies(genreMovies[genre.id] || [], genre.name)}
-            </div>
-          ))}
-        </div>
-        <div className="flex items-center mt-10">
-          <Divider marginClass="mr-5" />
-          <h1 className="text-4xl font-bold text-white mx-auto">Shows</h1>
-          <Divider marginClass="ml-5" />
-        </div>
-        <div className="grid grid-cols-1 gap-0 mt-4">
-          {" "}
-          {tvCategories.map((category) => (
-            <div
-              key={category.name}
-              id={`tv-carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
-            >
-              {renderMovies(
-                categoryShows[category.name] || [],
-                category.name,
-                true,
+        {/* Render Movies */}
+        {selectedCategory === "movies" && (
+          <>
+            <div className="flex justify-center overflow-x-auto">
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("providers", "left")}
+                </div>
+              )}
+              <div
+                id="button-carousel-providers"
+                className="flex mb-4 overflow-x-auto scroll-smooth z-40"
+                style={{
+                  scrollbarWidth: "thin",
+                  scrollbarColor: "transparent transparent",
+                }}
+              >
+                <div className="flex space-x-2 py-1">
+                  {renderMovieProviderButtons()}
+                </div>
+              </div>
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("providers", "right")}
+                </div>
               )}
             </div>
-          ))}
-          {tvGenres.map((genre) => (
-            <div
-              key={`${genre.id}|${genre.name}`}
-              id={`tv-carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
-            >
-              {renderMovies(tvShowGenres[genre.id] || [], genre.name, true)}
+            <div className="flex mb-4 overflow-x-auto">
+              <div className="">{renderScrollButton("movies", "left")}</div>
+              <div
+                id="button-carousel-movies"
+                className="flex mb-4 overflow-x-auto scroll-smooth"
+                style={{
+                  scrollbarWidth: "thin",
+                  scrollbarColor: "transparent transparent",
+                }}
+              >
+                <div className="flex space-x-2 py-1">
+                  {renderTopMovieButtons()}
+                  {renderMovieButtons()}
+                </div>
+              </div>
+              <div className="">{renderScrollButton("movies", "right")}</div>
             </div>
-          ))}
-        </div>
+          </>
+        )}
+
+        {/* Render Shows */}
+        {selectedCategory === "tvshows" && (
+          <>
+            <div className="flex justify-center overflow-x-auto">
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("tv-providers", "left")}
+                </div>
+              )}
+              <div
+                id="button-carousel-tv-providers"
+                className="flex mb-4 overflow-x-auto scroll-smooth"
+                style={{
+                  scrollbarWidth: "thin",
+                  scrollbarColor: "transparent transparent",
+                }}
+              >
+                <div className="flex space-x-2 py-1">
+                  {renderTvProviderButtons()}
+                </div>
+              </div>
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("tv-providers", "right")}
+                </div>
+              )}
+            </div>
+            <div className="flex mb-4 overflow-x-auto">
+              <div className="">{renderScrollButton("tvshows", "left")}</div>
+              <div
+                id="button-carousel-tvshows"
+                className="flex mb-4 overflow-x-auto scroll-smooth"
+                style={{
+                  scrollbarWidth: "thin",
+                  scrollbarColor: "transparent transparent",
+                }}
+              >
+                <div className="flex space-x-2 py-1">
+                  {renderTopTvButtons()}
+                  {renderTvButtons()}
+                </div>
+              </div>
+              <div className="">{renderScrollButton("tvshows", "right")}</div>
+            </div>
+          </>
+        )}
+      </div>
+      <div className="">
+        {selectedCategory === "movies" && (
+          <>
+            <div className="flex items-center mt-5 mb-4">
+              <Divider marginClass="mr-5" />
+              <h1 className="text-4xl font-bold text-white mx-auto">Movies</h1>
+              <Divider marginClass="ml-5" />
+            </div>
+            <div
+              key={`carousel-providers-${selectedProvider.id}`}
+              id="carousel-providers"
+            >
+              {selectedProvider.id ? (
+                providerMovies[selectedProvider.id] &&
+                providerMovies[selectedProvider.id].length > 0 ? (
+                  renderMovies(
+                    providerMovies[selectedProvider.id],
+                    `Popular Movies on ${selectedProvider.name}`,
+                  )
+                ) : (
+                  <p className="text-center text-gray-600">
+                    No movies available for {selectedProvider.name}.
+                  </p>
+                )
+              ) : (
+                <p className="text-center text-gray-600">
+                  Please select a provider to view movies.
+                </p>
+              )}
+            </div>
+            <div className="grid grid-cols-1 gap-0 mt-4">
+              {" "}
+              {categories.map((category) => (
+                <div
+                  key={category.name}
+                  id={`carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(
+                    categoryMovies[category.name] || [],
+                    category.name,
+                  )}
+                </div>
+              ))}
+              {genres.map((genre) => (
+                <div
+                  key={`${genre.id}|${genre.name}`}
+                  id={`carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(genreMovies[genre.id] || [], genre.name)}
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+
+        {selectedCategory === "tvshows" && (
+          <>
+            <div className="flex items-center mt-10 mb-4">
+              <Divider marginClass="mr-5" />
+              <h1 className="text-4xl font-bold text-white mx-auto">Shows</h1>
+              <Divider marginClass="ml-5" />
+            </div>
+            <div
+              key={`carousel-tv-providers-${selectedProvider.id}`}
+              id="carousel-tv-providers"
+            >
+              {selectedTVProvider.id ? (
+                providerTVShows[selectedTVProvider.id] &&
+                providerTVShows[selectedTVProvider.id].length > 0 ? (
+                  renderMovies(
+                    providerTVShows[selectedTVProvider.id],
+                    `Popular Shows on ${selectedTVProvider.name}`,
+                  )
+                ) : (
+                  <p className="text-center text-gray-600">
+                    No shows available for {selectedTVProvider.name}.
+                  </p>
+                )
+              ) : (
+                <p className="text-center text-gray-600">
+                  Please select a provider to view shows.
+                </p>
+              )}
+            </div>
+            <div className="grid grid-cols-1 gap-0 mt-4">
+              {" "}
+              {tvCategories.map((category) => (
+                <div
+                  key={category.name}
+                  id={`tv-carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(
+                    categoryShows[category.name] || [],
+                    category.name,
+                    true,
+                  )}
+                </div>
+              ))}
+              {tvGenres.map((genre) => (
+                <div
+                  key={`${genre.id}|${genre.name}`}
+                  id={`tv-carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(tvShowGenres[genre.id] || [], genre.name, true)}
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
       <ScrollToTopButton />
     </div>
