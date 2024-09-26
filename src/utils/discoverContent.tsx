@@ -138,12 +138,20 @@ export function DiscoverContent() {
 
   // State to track selected category (movies or TV shows)
   const [selectedCategory, setSelectedCategory] = useState("movies");
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  // Handle category change
+  // Handle category change for both event (from <select>) and string (from custom dropdown)
   const handleCategoryChange = (
-    event: React.ChangeEvent<HTMLSelectElement>,
+    eventOrValue: React.ChangeEvent<HTMLSelectElement> | string,
   ) => {
-    setSelectedCategory(event.target.value);
+    if (typeof eventOrValue === "string") {
+      // Handle case where a string value is passed (from custom dropdown)
+      setSelectedCategory(eventOrValue);
+    } else {
+      // Handle the <select> change event
+      setSelectedCategory(eventOrValue.target.value);
+    }
+    setDropdownOpen(false); // Close dropdown after selection
   };
 
   useEffect(() => {
@@ -904,27 +912,50 @@ export function DiscoverContent() {
         </div>
       )}
       <div className="mt-8 p-4 w-full max-w-screen-xl mx-auto">
-        {/* Dropdown for selecting the category */}
-        <div className="flex justify-center mb-4">
-          <select
-            className="text-2xl font-bold p-2 bg-transparent text-center cursor-pointer"
-            value={selectedCategory}
-            onChange={handleCategoryChange}
+        <div className="relative flex justify-center mb-4">
+          {/* Custom dropdown button */}
+          <button
+            type="button"
+            className="text-2xl font-bold p-2 bg-transparent text-center rounded-full cursor-pointer flex items-center"
+            onClick={() => setDropdownOpen(!isDropdownOpen)}
           >
-            <option value="movies">Movies</option>
-            <option value="tvshows">TV Shows</option>
-          </select>
+            {selectedCategory === "movies" ? "Movies" : "TV Shows"}
+            <Icon
+              icon={isDropdownOpen ? Icons.CHEVRON_UP : Icons.CHEVRON_DOWN}
+              className="ml-2 text-2xl"
+            />
+          </button>
+
+          {/* Dropdown options */}
+          {isDropdownOpen && (
+            <ul className="absolute top-full mb-1 rounded-lg bg-dropdown-background py-3 px-5 text-left text-white shadow-md border-2 border-gray-800 focus:outline-none tabbable cursor-pointer">
+              <li
+                className={`cursor-pointer p-2 hover:text-gray-300 ${selectedCategory === "movies" ? "font-bold" : ""}`}
+                onClick={() => handleCategoryChange("movies")}
+              >
+                Movies
+              </li>
+              <li
+                className={`cursor-pointer p-2 hover:text-gray-300 ${selectedCategory === "tvshows" ? "font-bold" : ""}`}
+                onClick={() => handleCategoryChange("tvshows")}
+              >
+                TV Shows
+              </li>
+            </ul>
+          )}
         </div>
 
         {/* Render Movies */}
         {selectedCategory === "movies" && (
           <>
             <div className="flex justify-center overflow-x-auto">
-              <div className="">
-                {renderScrollButton("tv-providers", "left")}
-              </div>
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("providers", "left")}
+                </div>
+              )}
               <div
-                id="button-carousel-tv-providers"
+                id="button-carousel-providers"
                 className="flex mb-4 overflow-x-auto scroll-smooth"
                 style={{
                   scrollbarWidth: "thin",
@@ -935,9 +966,11 @@ export function DiscoverContent() {
                   {renderMovieProviderButtons()}
                 </div>
               </div>
-              <div className="">
-                {renderScrollButton("tv-providers", "right")}
-              </div>
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("providers", "right")}
+                </div>
+              )}
             </div>
             <div className="flex mb-4 overflow-x-auto">
               <div className="">{renderScrollButton("movies", "left")}</div>
@@ -963,9 +996,11 @@ export function DiscoverContent() {
         {selectedCategory === "tvshows" && (
           <>
             <div className="flex justify-center overflow-x-auto">
-              <div className="">
-                {renderScrollButton("tv-providers", "left")}
-              </div>
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("tv-providers", "left")}
+                </div>
+              )}
               <div
                 id="button-carousel-tv-providers"
                 className="flex mb-4 overflow-x-auto scroll-smooth"
@@ -978,9 +1013,11 @@ export function DiscoverContent() {
                   {renderTvProviderButtons()}
                 </div>
               </div>
-              <div className="">
-                {renderScrollButton("tv-providers", "right")}
-              </div>
+              {isMobile && (
+                <div className="">
+                  {renderScrollButton("tv-providers", "right")}
+                </div>
+              )}
             </div>
             <div className="flex mb-4 overflow-x-auto">
               <div className="">{renderScrollButton("tvshows", "left")}</div>
@@ -1003,134 +1040,118 @@ export function DiscoverContent() {
         )}
       </div>
       <div className="">
-        <div className="flex items-center mt-5">
-          <Divider marginClass="mr-5" />
-          <h1 className="text-4xl font-bold text-white mx-auto">Movies</h1>
-          <Divider marginClass="ml-5" />
-        </div>
-        <div className="grid grid-cols-1 gap-0 mt-4">
-          {" "}
-          {categories.map((category) => (
-            <div
-              key={category.name}
-              id={`carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
-            >
-              {renderMovies(categoryMovies[category.name] || [], category.name)}
+        {selectedCategory === "movies" && (
+          <>
+            <div className="flex items-center mt-5 mb-4">
+              <Divider marginClass="mr-5" />
+              <h1 className="text-4xl font-bold text-white mx-auto">Movies</h1>
+              <Divider marginClass="ml-5" />
             </div>
-          ))}
-          {genres.map((genre) => (
             <div
-              key={`${genre.id}|${genre.name}`}
-              id={`carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
+              key={`carousel-providers-${selectedProvider.id}`}
+              id="carousel-providers"
             >
-              {renderMovies(genreMovies[genre.id] || [], genre.name)}
-            </div>
-          ))}
-        </div>
-        <div
-          key={`carousel-providers-${selectedProvider.id}`}
-          id="carousel-providers"
-        >
-          <div className="flex justify-center overflow-x-auto">
-            <div
-              id="button-carousel-providers"
-              className="flex mt-0 overflow-x-auto scroll-smooth"
-              style={{
-                scrollbarWidth: "thin",
-                scrollbarColor: "transparent transparent",
-              }}
-            >
-              <div className="flex space-x-2 py-1">
-                {renderMovieProviderButtons()}
-              </div>
-            </div>
-          </div>
-          {selectedProvider.id ? (
-            providerMovies[selectedProvider.id] &&
-            providerMovies[selectedProvider.id].length > 0 ? (
-              renderMovies(
-                providerMovies[selectedProvider.id],
-                `Popular Movies on ${selectedProvider.name}`,
-              )
-            ) : (
-              <p className="text-center text-gray-600">
-                No movies available for {selectedProvider.name}.
-              </p>
-            )
-          ) : (
-            <p className="text-center text-gray-600">
-              Please select a provider to view movies.
-            </p>
-          )}
-        </div>
-        <div className="flex items-center mt-10">
-          <Divider marginClass="mr-5" />
-          <h1 className="text-4xl font-bold text-white mx-auto">Shows</h1>
-          <Divider marginClass="ml-5" />
-        </div>
-        <div className="grid grid-cols-1 gap-0 mt-4">
-          {" "}
-          {tvCategories.map((category) => (
-            <div
-              key={category.name}
-              id={`tv-carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
-            >
-              {renderMovies(
-                categoryShows[category.name] || [],
-                category.name,
-                true,
+              {selectedProvider.id ? (
+                providerMovies[selectedProvider.id] &&
+                providerMovies[selectedProvider.id].length > 0 ? (
+                  renderMovies(
+                    providerMovies[selectedProvider.id],
+                    `Popular Movies on ${selectedProvider.name}`,
+                  )
+                ) : (
+                  <p className="text-center text-gray-600">
+                    No movies available for {selectedProvider.name}.
+                  </p>
+                )
+              ) : (
+                <p className="text-center text-gray-600">
+                  Please select a provider to view movies.
+                </p>
               )}
             </div>
-          ))}
-          {tvGenres.map((genre) => (
-            <div
-              key={`${genre.id}|${genre.name}`}
-              id={`tv-carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
-              className=""
-            >
-              {renderMovies(tvShowGenres[genre.id] || [], genre.name, true)}
+            <div className="grid grid-cols-1 gap-0 mt-4">
+              {" "}
+              {categories.map((category) => (
+                <div
+                  key={category.name}
+                  id={`carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(
+                    categoryMovies[category.name] || [],
+                    category.name,
+                  )}
+                </div>
+              ))}
+              {genres.map((genre) => (
+                <div
+                  key={`${genre.id}|${genre.name}`}
+                  id={`carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(genreMovies[genre.id] || [], genre.name)}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-        <div
-          key={`carousel-tv-providers-${selectedProvider.id}`}
-          id="carousel-tv-providers"
-        >
-          <div className="flex justify-center overflow-x-auto">
-            <div
-              id="button-carousel-tv-providers"
-              className="flex mt-0 overflow-x-auto scroll-smooth"
-              style={{
-                scrollbarWidth: "thin",
-                scrollbarColor: "transparent transparent",
-              }}
-            >
-              <div className="flex space-x-2 py-1">
-                {renderTvProviderButtons()}
-              </div>
+          </>
+        )}
+
+        {selectedCategory === "tvshows" && (
+          <>
+            <div className="flex items-center mt-10 mb-4">
+              <Divider marginClass="mr-5" />
+              <h1 className="text-4xl font-bold text-white mx-auto">Shows</h1>
+              <Divider marginClass="ml-5" />
             </div>
-          </div>
-          {selectedTVProvider.id ? (
-            providerTVShows[selectedTVProvider.id] &&
-            providerTVShows[selectedTVProvider.id].length > 0 ? (
-              renderMovies(
-                providerTVShows[selectedTVProvider.id],
-                `Popular Shows on ${selectedTVProvider.name}`,
-              )
-            ) : (
-              <p className="text-center text-gray-600">
-                No shows available for {selectedTVProvider.name}.
-              </p>
-            )
-          ) : (
-            <p className="text-center text-gray-600">
-              Please select a provider to view shows.
-            </p>
-          )}
-        </div>
+            <div
+              key={`carousel-tv-providers-${selectedProvider.id}`}
+              id="carousel-tv-providers"
+            >
+              {selectedTVProvider.id ? (
+                providerTVShows[selectedTVProvider.id] &&
+                providerTVShows[selectedTVProvider.id].length > 0 ? (
+                  renderMovies(
+                    providerTVShows[selectedTVProvider.id],
+                    `Popular Shows on ${selectedTVProvider.name}`,
+                  )
+                ) : (
+                  <p className="text-center text-gray-600">
+                    No shows available for {selectedTVProvider.name}.
+                  </p>
+                )
+              ) : (
+                <p className="text-center text-gray-600">
+                  Please select a provider to view shows.
+                </p>
+              )}
+            </div>
+            <div className="grid grid-cols-1 gap-0 mt-4">
+              {" "}
+              {tvCategories.map((category) => (
+                <div
+                  key={category.name}
+                  id={`tv-carousel-${category.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(
+                    categoryShows[category.name] || [],
+                    category.name,
+                    true,
+                  )}
+                </div>
+              ))}
+              {tvGenres.map((genre) => (
+                <div
+                  key={`${genre.id}|${genre.name}`}
+                  id={`tv-carousel-${genre.name.toLowerCase().replace(/ /g, "-")}`}
+                  className=""
+                >
+                  {renderMovies(tvShowGenres[genre.id] || [], genre.name, true)}
+                </div>
+              ))}
+            </div>
+          </>
+        )}
       </div>
       <ScrollToTopButton />
     </div>
