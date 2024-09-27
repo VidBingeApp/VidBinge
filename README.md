@@ -62,6 +62,12 @@ The `vidbingedotcom` branch is specifically tailored for the official VidBinge w
 
 [Email](mailto:josh@vidbinge.com)
 
+
+# ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=VidBingeApp/vidbinge&type=Date)](https://star-history.com/#VidBingeApp/vidbinge&Date)
+
+
 ## 🤝 Thanks to all Contributors
 
 This project would not be possible without our amazing contributors and the community. Thanks a lot! Keep rocking 🍻!
