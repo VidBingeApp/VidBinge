@@ -951,7 +951,7 @@ export function DiscoverContent() {
         {/* Render Movies */}
         {selectedCategory === "movies" && (
           <>
-            <div className="flex justify-center overflow-x-auto">
+            <div className="flex justify-center overflow-x-auto -mx-6">
               {isMobile && (
                 <div className="">
                   {renderScrollButton("providers", "left")}
@@ -975,7 +975,7 @@ export function DiscoverContent() {
                 </div>
               )}
             </div>
-            <div className="flex mb-4 overflow-x-auto">
+            <div className="flex mb-4 overflow-x-auto -mx-6">
               <div className="">{renderScrollButton("movies", "left")}</div>
               <div
                 id="button-carousel-movies"
@@ -998,7 +998,7 @@ export function DiscoverContent() {
         {/* Render Shows */}
         {selectedCategory === "tvshows" && (
           <>
-            <div className="flex justify-center overflow-x-auto">
+            <div className="flex justify-center overflow-x-auto -mx-6">
               {isMobile && (
                 <div className="">
                   {renderScrollButton("tv-providers", "left")}
@@ -1022,7 +1022,7 @@ export function DiscoverContent() {
                 </div>
               )}
             </div>
-            <div className="flex mb-4 overflow-x-auto">
+            <div className="flex mb-4 overflow-x-auto -mx-6">
               <div className="">{renderScrollButton("tvshows", "left")}</div>
               <div
                 id="button-carousel-tvshows"
