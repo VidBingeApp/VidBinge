@@ -101,8 +101,8 @@ export function DiscoverContent() {
   });
   const movieProviders = [
     { name: "Netflix", id: "8" },
-    { name: "Apple TV+", id: "2" },
-    { name: "Amazon Prime Video", id: "10" },
+    { name: "Apple TV+", id: "350" },
+    { name: "Amazon Prime Video", id: "9" },
     { name: "Hulu", id: "15" },
     { name: "Max", id: "1899" },
     { name: "Paramount Plus", id: "531" },
@@ -117,7 +117,8 @@ export function DiscoverContent() {
     { name: "Hulu", id: "15" },
     { name: "Max", id: "1899" },
     { name: "Disney Plus", id: "337" },
-    { name: "fubuTV", id: "257" },
+    { name: "Peacock Premium", id: "387" },
+    { name: "Discovery +", id: "520" },
   ];
 
   const [countdown, setCountdown] = useState<number | null>(null);
