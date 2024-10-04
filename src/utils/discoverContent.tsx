@@ -931,7 +931,7 @@ export function DiscoverContent() {
 
           {/* Dropdown options */}
           {isDropdownOpen && (
-            <ul className="absolute top-full mb-1 rounded-lg bg-dropdown-background py-3 px-5 text-left text-white shadow-md border-2 border-gray-800 focus:outline-none tabbable cursor-pointer">
+            <ul className="absolute top-full z-50 mb-1 rounded-lg bg-dropdown-background py-3 px-5 text-left text-white shadow-md border-2 border-gray-800 focus:outline-none tabbable cursor-pointer">
               <li
                 className={`cursor-pointer p-2 hover:text-gray-300 ${selectedCategory === "movies" ? "font-bold" : ""}`}
                 onClick={() => handleCategoryChange("movies")}
@@ -951,7 +951,7 @@ export function DiscoverContent() {
         {/* Render Movies */}
         {selectedCategory === "movies" && (
           <>
-            <div className="flex justify-center overflow-x-auto">
+            <div className="flex justify-center overflow-x-auto -mx-6">
               {isMobile && (
                 <div className="">
                   {renderScrollButton("providers", "left")}
@@ -975,7 +975,7 @@ export function DiscoverContent() {
                 </div>
               )}
             </div>
-            <div className="flex mb-4 overflow-x-auto">
+            <div className="flex mb-4 overflow-x-auto -mx-6">
               <div className="">{renderScrollButton("movies", "left")}</div>
               <div
                 id="button-carousel-movies"
@@ -998,7 +998,7 @@ export function DiscoverContent() {
         {/* Render Shows */}
         {selectedCategory === "tvshows" && (
           <>
-            <div className="flex justify-center overflow-x-auto">
+            <div className="flex justify-center overflow-x-auto -mx-6">
               {isMobile && (
                 <div className="">
                   {renderScrollButton("tv-providers", "left")}
@@ -1022,7 +1022,7 @@ export function DiscoverContent() {
                 </div>
               )}
             </div>
-            <div className="flex mb-4 overflow-x-auto">
+            <div className="flex mb-4 overflow-x-auto -mx-6">
               <div className="">{renderScrollButton("tvshows", "left")}</div>
               <div
                 id="button-carousel-tvshows"
