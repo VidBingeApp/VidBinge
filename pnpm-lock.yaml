@@ -33,7 +33,7 @@ dependencies:
     version: 1.0.3
   '@movie-web/providers':
     specifier: github:VidBingeApp/providers
-    version: github.com/VidBingeApp/providers/368faa118b6049fdd13ccdfc1a373b2cbe8f3a4a
+    version: github.com/VidBingeApp/providers/ea17414e8d37dc73fa20270c98dc6e8f3aaf8c85
   '@noble/hashes':
     specifier: ^1.4.0
     version: 1.5.0
@@ -4502,7 +4502,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001666
+      caniuse-lite: 1.0.30001667
       electron-to-chromium: 1.5.32
       node-releases: 2.0.18
       update-browserslist-db: 1.1.1(browserslist@4.24.0)
@@ -4546,8 +4546,8 @@ packages:
   /caniuse-lite@1.0.30001660:
     resolution: {integrity: sha512-GacvNTTuATm26qC74pt+ad1fW15mlQ/zuTzzY1ZoIzECTP8HURDfF43kNxPgf7H1jmelCBQTTbBNxdSXOA7Bqg==}
 
-  /caniuse-lite@1.0.30001666:
-    resolution: {integrity: sha512-gD14ICmoV5ZZM1OdzPWmpx+q4GyefaK06zi8hmfHV5xe4/2nOQX3+Dw5o+fSqOws2xVwL9j+anOPFwHzdEdV4g==}
+  /caniuse-lite@1.0.30001667:
+    resolution: {integrity: sha512-7LTwJjcRkzKFmtqGsibMeuXmvFDfZq/nzIjnmgCGzKKRVzjD72selLDK1oPF/Oxzmt4fNcPvTDvGqSDG4tCALw==}
     dev: true
 
   /chai@4.5.0:
@@ -9195,7 +9195,7 @@ packages:
       '@formkit/auto-animate': 0.8.2
       '@headlessui/react': 1.7.19(react-dom@18.3.1)(react@18.3.1)
       '@ladjs/country-language': 1.0.3
-      '@movie-web/providers': github.com/VidBingeApp/providers/368faa118b6049fdd13ccdfc1a373b2cbe8f3a4a
+      '@movie-web/providers': github.com/VidBingeApp/providers/ea17414e8d37dc73fa20270c98dc6e8f3aaf8c85
       '@noble/hashes': 1.5.0
       '@plasmohq/messaging': 0.6.2(react@18.3.1)
       '@react-spring/web': 9.7.4(react-dom@18.3.1)(react@18.3.1)
@@ -9244,8 +9244,8 @@ packages:
       - webpack-sources
     dev: false
 
-  github.com/VidBingeApp/providers/368faa118b6049fdd13ccdfc1a373b2cbe8f3a4a:
-    resolution: {tarball: https://codeload.github.com/VidBingeApp/providers/tar.gz/368faa118b6049fdd13ccdfc1a373b2cbe8f3a4a}
+  github.com/VidBingeApp/providers/ea17414e8d37dc73fa20270c98dc6e8f3aaf8c85:
+    resolution: {tarball: https://codeload.github.com/VidBingeApp/providers/tar.gz/ea17414e8d37dc73fa20270c98dc6e8f3aaf8c85}
     name: '@movie-web/providers'
     version: 2.3.0
     requiresBuild: true
