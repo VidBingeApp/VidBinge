@@ -101,7 +101,7 @@ export function PlayerPart(props: PlayerPartProps) {
           </div>
           <div className="hidden sm:flex items-center justify-end">
             <div className="hidden sm:flex items-center justify-end">
-              {!isPremiumSite ? (
+              {isReferrerChecked && !isPremiumSite ? (
                 isInIframe ? (
                   <div
                     onClick={() =>
