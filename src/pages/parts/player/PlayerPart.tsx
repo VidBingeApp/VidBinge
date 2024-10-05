@@ -6,6 +6,7 @@ import { Player } from "@/components/player";
 import { Widescreen } from "@/components/player/atoms/Widescreen";
 import { useShouldShowControls } from "@/components/player/hooks/useShouldShowControls";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import usePremiumStore from "@/stores/player/premiumSite";
 import { PlayerMeta, playerStatus } from "@/stores/player/slices/source";
 import { usePlayerStore } from "@/stores/player/store";
 
@@ -22,6 +23,7 @@ export function PlayerPart(props: PlayerPartProps) {
   const status = usePlayerStore((s) => s.status);
   const { isMobile } = useIsMobile();
   const isLoading = usePlayerStore((s) => s.mediaPlaying.isLoading);
+  const { isPremiumSite, isReferrerChecked } = usePremiumStore();
 
   useEffect(() => {
     setIsInIframe(window.parent !== window);
@@ -99,18 +101,20 @@ export function PlayerPart(props: PlayerPartProps) {
           </div>
           <div className="hidden sm:flex items-center justify-end">
             <div className="hidden sm:flex items-center justify-end">
-              {isInIframe ? (
-                <div
-                  onClick={() => {
-                    window.open("https://www.vidbinge.com", "_blank");
-                  }}
-                  style={{ cursor: "pointer" }} // Make the cursor a pointer if in iframe
-                >
-                  <BrandPill clickable />
-                </div>
-              ) : (
-                <BrandPill />
-              )}
+              {!isPremiumSite ? (
+                isInIframe ? (
+                  <div
+                    onClick={() =>
+                      window.open("https://www.vidbinge.com", "_blank")
+                    }
+                    style={{ cursor: "pointer" }} // Make the cursor a pointer if in iframe
+                  >
+                    <BrandPill clickable />
+                  </div>
+                ) : (
+                  <BrandPill />
+                )
+              ) : null}
             </div>
           </div>
           <div className="flex sm:hidden items-center justify-end">
