@@ -115,24 +115,27 @@ export function ScrapeErrorPart(props: ScrapeErrorPartProps) {
         </IconPill>
         <Title>{t("player.scraping.notFound.title")}</Title>
         <Paragraph>{t("player.scraping.notFound.text")}</Paragraph>
-        <div className="flex gap-3">
-          <Button
-            href="/"
-            theme="secondary"
-            padding="md:px-12 p-2.5"
-            className="mt-6"
-          >
-            {t("player.scraping.notFound.homeButton")}
-          </Button>
-          <Button
-            onClick={() => modal.show()}
-            theme="purple"
-            padding="md:px-12 p-2.5"
-            className="mt-6"
-          >
-            {t("player.scraping.notFound.detailsButton")}
-          </Button>
-        </div>
+        {/* Conditionally render both "Home" and "Details" buttons if not inside an iframe */}
+        {!isIframe && (
+          <div className="flex gap-3">
+            <Button
+              href="/"
+              theme="secondary"
+              padding="md:px-12 p-2.5"
+              className="mt-6"
+            >
+              {t("player.scraping.notFound.homeButton")}
+            </Button>
+            <Button
+              onClick={() => modal.show()}
+              theme="purple"
+              padding="md:px-12 p-2.5"
+              className="mt-6"
+            >
+              {t("player.scraping.notFound.detailsButton")}
+            </Button>
+          </div>
+        )}
       </ErrorContainer>
       {error ? (
         <ErrorCardInModal
