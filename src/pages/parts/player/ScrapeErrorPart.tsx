@@ -31,6 +31,12 @@ export function ScrapeErrorPart(props: ScrapeErrorPartProps) {
   const [extensionState, setExtensionState] =
     useState<ExtensionStatus>("unknown");
 
+  const [isIframe, setIsIframe] = useState(false);
+
+  useEffect(() => {
+    setIsIframe(window.self !== window.top);
+  }, []);
+
   const error = useMemo(() => {
     const data = props.data;
     let str = "";
@@ -72,14 +78,16 @@ export function ScrapeErrorPart(props: ScrapeErrorPartProps) {
             />
           </Paragraph>
           <div className="flex gap-3">
-            <Button
-              href="/"
-              theme="secondary"
-              padding="md:px-12 p-2.5"
-              className="mt-6"
-            >
-              {t("player.scraping.extensionFailure.homeButton")}
-            </Button>
+            {!isIframe && ( // Conditionally render the "Home" button
+              <Button
+                href="/"
+                theme="secondary"
+                padding="md:px-12 p-2.5"
+                className="mt-6"
+              >
+                {t("player.scraping.extensionFailure.homeButton")}
+              </Button>
+            )}
             <Button
               onClick={() => {
                 sendPage({
