@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Button } from "@/components/buttons/Button";
@@ -15,6 +16,11 @@ export function PlaybackErrorPart() {
   const { t } = useTranslation();
   const playbackError = usePlayerStore((s) => s.interface.error);
   const modal = useModal("error");
+  const [isInIframe, setIsInIframe] = useState(false);
+
+  useEffect(() => {
+    setIsInIframe(window.parent !== window);
+  }, []);
 
   return (
     <ErrorLayout>
@@ -22,24 +28,27 @@ export function PlaybackErrorPart() {
         <IconPill icon={Icons.WAND}>{t("player.playbackError.badge")}</IconPill>
         <Title>{t("player.playbackError.title")}</Title>
         <Paragraph>{t("player.playbackError.text")}</Paragraph>
-        <div className="flex gap-3">
-          <Button
-            href="/"
-            theme="secondary"
-            padding="md:px-12 p-2.5"
-            className="mt-6"
-          >
-            {t("player.playbackError.homeButton")}
-          </Button>
-          <Button
-            onClick={() => modal.show()}
-            theme="purple"
-            padding="md:px-12 p-2.5"
-            className="mt-6"
-          >
-            {t("errors.showError")}
-          </Button>
-        </div>
+        {/* Conditionally render the div based on iframe status */}
+        {!isInIframe && (
+          <div className="flex gap-3">
+            <Button
+              href="/"
+              theme="secondary"
+              padding="md:px-12 p-2.5"
+              className="mt-6"
+            >
+              {t("player.playbackError.homeButton")}
+            </Button>
+            <Button
+              onClick={() => modal.show()}
+              theme="purple"
+              padding="md:px-12 p-2.5"
+              className="mt-6"
+            >
+              {t("errors.showError")}
+            </Button>
+          </div>
+        )}
       </ErrorContainer>
       {/* Error */}
       <ErrorCardInModal
