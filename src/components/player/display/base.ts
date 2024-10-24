@@ -156,7 +156,7 @@ export function makeVideoElementDisplayInterface(): DisplayInterface {
               maxTimeToFirstByteMs: 30 * 1000,
               errorRetry: {
                 maxNumRetry: 6,
-                retryDelayMs: 1000,
+                retryDelayMs: 3000,
                 maxRetryDelayMs: 8000,
               },
               timeoutRetry: {
