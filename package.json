@@ -116,7 +116,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
-    "glob": "^10.4.5",
+    "glob": "^10.5.0",
     "handlebars": "^4.7.8",
     "jsdom": "^23.2.0",
     "postcss": "^8.4.40",
