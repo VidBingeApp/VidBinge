@@ -56,7 +56,7 @@
     "million": "^2.6.4",
     "movie-web": "file:",
     "nanoid": "^5.0.7",
-    "node-forge": "^1.3.1",
+    "node-forge": "^1.3.2",
     "ofetch": "^1.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
