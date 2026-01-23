@@ -36,7 +36,7 @@ importers:
         version: 1.0.3
       '@movie-web/providers':
         specifier: github:VidBingeApp/providers
-        version: git+https://git@github.com:VidBingeApp/providers.git#f2b5f5d987cffbfe788cc85af8303be867d89ed9
+        version: https://codeload.github.com/VidBingeApp/providers/tar.gz/3d59469e67f5e66fe1ac3f09fae06f9cdfaf47bc
       '@noble/hashes':
         specifier: ^1.4.0
         version: 1.4.0
@@ -147,7 +147,7 @@ importers:
         version: 17.5.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       rollup:
         specifier: npm:@rollup/wasm-node
-        version: '@rollup/wasm-node@4.19.1'
+        version: '@rollup/wasm-node@4.56.0'
       semver:
         specifier: ^7.6.3
         version: 7.6.3
@@ -172,16 +172,16 @@ importers:
         version: 7.24.7(@babel/core@7.24.9)
       '@rollup/plugin-babel':
         specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.24.9)(@rollup/wasm-node@4.19.1)(@types/babel__core@7.20.5)
+        version: 5.3.1(@babel/core@7.24.9)(@rollup/wasm-node@4.56.0)(@types/babel__core@7.20.5)
       '@rollup/plugin-node-resolve':
         specifier: 15.2.3
-        version: 15.2.3(@rollup/wasm-node@4.19.1)
+        version: 15.2.3(@rollup/wasm-node@4.56.0)
       '@rollup/plugin-replace':
         specifier: 2.4.2
-        version: 2.4.2(@rollup/wasm-node@4.19.1)
+        version: 2.4.2(@rollup/wasm-node@4.56.0)
       '@rollup/plugin-terser':
         specifier: 0.4.4
-        version: 0.4.4(@rollup/wasm-node@4.19.1)
+        version: 0.4.4(@rollup/wasm-node@4.56.0)
       '@rollup/wasm-node':
         specifier: ^4.19.0
         version: 4.19.1
@@ -259,7 +259,7 @@ importers:
         version: 8.57.0
       eslint-config-airbnb:
         specifier: 19.0.4
-        version: 19.0.4(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint-plugin-jsx-a11y@6.9.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.57.0))(eslint-plugin-react@7.33.2(eslint@8.57.0))(eslint@8.57.0)
+        version: 19.0.4(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.9.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.57.0))(eslint-plugin-react@7.33.2(eslint@8.57.0))(eslint@8.57.0)
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.0)
@@ -307,7 +307,7 @@ importers:
         version: 0.5.14(prettier@3.3.3)
       rollup-plugin-visualizer:
         specifier: ^5.12.0
-        version: 5.12.0(@rollup/wasm-node@4.19.1)
+        version: 5.12.0(@rollup/wasm-node@4.56.0)
       tailwind-scrollbar:
         specifier: ^3.1.0
         version: 3.1.0(tailwindcss@3.4.7)
@@ -1360,8 +1360,8 @@ packages:
     resolution: {integrity: sha512-FJROu9/hh4eqVAGDyfL8vpv6Vb0qKHX1ozYLRZ+beUzD5xFf+3r0J+SVIWKviEa7W524Qvqou+ta1WrsRgzxGw==}
     engines: {node: '>= 14'}
 
-  '@movie-web/providers@git+https://git@github.com:VidBingeApp/providers.git#f2b5f5d987cffbfe788cc85af8303be867d89ed9':
-    resolution: {commit: f2b5f5d987cffbfe788cc85af8303be867d89ed9, repo: git@github.com:VidBingeApp/providers.git, type: git}
+  '@movie-web/providers@https://codeload.github.com/VidBingeApp/providers/tar.gz/3d59469e67f5e66fe1ac3f09fae06f9cdfaf47bc':
+    resolution: {tarball: https://codeload.github.com/VidBingeApp/providers/tar.gz/3d59469e67f5e66fe1ac3f09fae06f9cdfaf47bc}
     version: 2.3.0
 
   '@noble/hashes@1.4.0':
@@ -1433,7 +1433,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0
       '@types/babel__core': ^7.1.9
-      rollup: npm:@rollup/wasm-node
+      rollup: ^1.20.0||^2.0.0
     peerDependenciesMeta:
       '@types/babel__core':
         optional: true
@@ -1442,7 +1442,7 @@ packages:
     resolution: {integrity: sha512-j/lym8nf5E21LwBT4Df1VD6hRO2L2iwUeUmP7litikRsVp1H6NWx20NEp0Y7su+7XGc476GnXXc4kFeZNGmaSQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: npm:@rollup/wasm-node
+      rollup: ^2.78.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -1450,13 +1450,13 @@ packages:
   '@rollup/plugin-replace@2.4.2':
     resolution: {integrity: sha512-IGcu+cydlUMZ5En85jxHH4qj2hta/11BHq95iHEyb2sbgiN0eCdzvUcHw5gt9pBL5lTi4JDYJ1acCoMGpTvEZg==}
     peerDependencies:
-      rollup: npm:@rollup/wasm-node
+      rollup: ^1.20.0 || ^2.0.0
 
   '@rollup/plugin-terser@0.4.4':
     resolution: {integrity: sha512-XHeJC5Bgvs8LfukDwWZp7yeqin6ns8RTl2B9avbejt6tZqsqvVoWI7ZTQrcNsfKEDWBTnTxM8nMDkO2IFFbd0A==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: npm:@rollup/wasm-node
+      rollup: ^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -1465,13 +1465,13 @@ packages:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
-      rollup: npm:@rollup/wasm-node
+      rollup: ^1.20.0||^2.0.0
 
   '@rollup/pluginutils@5.1.0':
     resolution: {integrity: sha512-XTIWOPPcpvyKI6L1NHo0lFlCyznUEyPmPY1mc3KpPVDYulHSTvyeLNVW00QTLIAFNhR3kYnJTQHeGqU4M3n09g==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: npm:@rollup/wasm-node
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -1483,6 +1483,11 @@ packages:
 
   '@rollup/wasm-node@4.21.3':
     resolution: {integrity: sha512-uZFl4GXMgyllfuKjY/zlXxTxDs+G/LB7snVENskpJt7IIXw6cD1yqi3eBeGM8NxE9kuxrNB0Qr1QLNtDYTlqeQ==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
+
+  '@rollup/wasm-node@4.56.0':
+    resolution: {integrity: sha512-ecaoyItGmpj4hnabpa2D+oI6ME7t7hrqosQ2SA+qBGihoL0DuuoaXIfY8Oa1o7lWGtPpRZmt9EYe7oyivypsJg==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -1604,6 +1609,9 @@ packages:
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
+
+  '@types/estree@1.0.8':
+    resolution: {integrity: sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==}
 
   '@types/filesystem@0.0.36':
     resolution: {integrity: sha512-vPDXOZuannb9FZdxgHnqSwAG/jvdGM8Wq+6N4D/d80z+D4HWH+bItqsZaVRQykAn6WEVeEkLm2oQigyHtgb0RA==}
@@ -2473,6 +2481,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -3108,6 +3117,7 @@ packages:
 
   lodash.isequal@4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -3241,6 +3251,7 @@ packages:
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
     engines: {node: '>=10.5.0'}
+    deprecated: Use your platform's native DOMException instead
 
   node-fetch-native@1.6.4:
     resolution: {integrity: sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ==}
@@ -3739,7 +3750,7 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
-      rollup: npm:@rollup/wasm-node
+      rollup: 2.x || 3.x || 4.x
     peerDependenciesMeta:
       rollup:
         optional: true
@@ -3873,6 +3884,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   sourcemap-codec@1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
@@ -4388,6 +4400,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -6307,7 +6320,7 @@ snapshots:
 
   '@ladjs/country-language@1.0.3': {}
 
-  '@movie-web/providers@git+https://git@github.com:VidBingeApp/providers.git#f2b5f5d987cffbfe788cc85af8303be867d89ed9':
+  '@movie-web/providers@https://codeload.github.com/VidBingeApp/providers/tar.gz/3d59469e67f5e66fe1ac3f09fae06f9cdfaf47bc':
     dependencies:
       cheerio: 1.0.0-rc.12
       cookie: 0.6.0
@@ -6379,107 +6392,67 @@ snapshots:
 
   '@remix-run/router@1.18.0': {}
 
-  '@rollup/plugin-babel@5.3.1(@babel/core@7.24.9)(@rollup/wasm-node@4.19.1)(@types/babel__core@7.20.5)':
+  '@rollup/plugin-babel@5.3.1(@babel/core@7.24.9)(@rollup/wasm-node@4.56.0)(@types/babel__core@7.20.5)':
     dependencies:
       '@babel/core': 7.24.9
       '@babel/helper-module-imports': 7.24.7
-      '@rollup/pluginutils': 3.1.0(@rollup/wasm-node@4.19.1)
-      rollup: '@rollup/wasm-node@4.19.1'
+      '@rollup/pluginutils': 3.1.0(@rollup/wasm-node@4.56.0)
+      rollup: '@rollup/wasm-node@4.56.0'
     optionalDependencies:
       '@types/babel__core': 7.20.5
     transitivePeerDependencies:
       - supports-color
 
-  '@rollup/plugin-babel@5.3.1(@babel/core@7.25.2)(@rollup/wasm-node@4.21.3)(@types/babel__core@7.20.5)':
+  '@rollup/plugin-babel@5.3.1(@babel/core@7.25.2)(@rollup/wasm-node@4.56.0)(@types/babel__core@7.20.5)':
     dependencies:
       '@babel/core': 7.25.2
       '@babel/helper-module-imports': 7.24.7
-      '@rollup/pluginutils': 3.1.0(@rollup/wasm-node@4.21.3)
-      rollup: '@rollup/wasm-node@4.21.3'
+      '@rollup/pluginutils': 3.1.0(@rollup/wasm-node@4.56.0)
+      rollup: '@rollup/wasm-node@4.56.0'
     optionalDependencies:
       '@types/babel__core': 7.20.5
     transitivePeerDependencies:
       - supports-color
 
-  '@rollup/plugin-node-resolve@15.2.3(@rollup/wasm-node@4.19.1)':
+  '@rollup/plugin-node-resolve@15.2.3(@rollup/wasm-node@4.56.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.0(@rollup/wasm-node@4.19.1)
+      '@rollup/pluginutils': 5.1.0(@rollup/wasm-node@4.56.0)
       '@types/resolve': 1.20.2
       deepmerge: 4.3.1
       is-builtin-module: 3.2.1
       is-module: 1.0.0
       resolve: 1.22.8
     optionalDependencies:
-      rollup: '@rollup/wasm-node@4.19.1'
+      rollup: '@rollup/wasm-node@4.56.0'
 
-  '@rollup/plugin-node-resolve@15.2.3(@rollup/wasm-node@4.21.3)':
+  '@rollup/plugin-replace@2.4.2(@rollup/wasm-node@4.56.0)':
     dependencies:
-      '@rollup/pluginutils': 5.1.0(@rollup/wasm-node@4.21.3)
-      '@types/resolve': 1.20.2
-      deepmerge: 4.3.1
-      is-builtin-module: 3.2.1
-      is-module: 1.0.0
-      resolve: 1.22.8
-    optionalDependencies:
-      rollup: '@rollup/wasm-node@4.21.3'
-
-  '@rollup/plugin-replace@2.4.2(@rollup/wasm-node@4.19.1)':
-    dependencies:
-      '@rollup/pluginutils': 3.1.0(@rollup/wasm-node@4.19.1)
+      '@rollup/pluginutils': 3.1.0(@rollup/wasm-node@4.56.0)
       magic-string: 0.25.9
-      rollup: '@rollup/wasm-node@4.19.1'
+      rollup: '@rollup/wasm-node@4.56.0'
 
-  '@rollup/plugin-replace@2.4.2(@rollup/wasm-node@4.21.3)':
-    dependencies:
-      '@rollup/pluginutils': 3.1.0(@rollup/wasm-node@4.21.3)
-      magic-string: 0.25.9
-      rollup: '@rollup/wasm-node@4.21.3'
-
-  '@rollup/plugin-terser@0.4.4(@rollup/wasm-node@4.19.1)':
+  '@rollup/plugin-terser@0.4.4(@rollup/wasm-node@4.56.0)':
     dependencies:
       serialize-javascript: 6.0.2
       smob: 1.5.0
       terser: 5.31.3
     optionalDependencies:
-      rollup: '@rollup/wasm-node@4.19.1'
+      rollup: '@rollup/wasm-node@4.56.0'
 
-  '@rollup/plugin-terser@0.4.4(@rollup/wasm-node@4.21.3)':
-    dependencies:
-      serialize-javascript: 6.0.2
-      smob: 1.5.0
-      terser: 5.31.3
-    optionalDependencies:
-      rollup: '@rollup/wasm-node@4.21.3'
-
-  '@rollup/pluginutils@3.1.0(@rollup/wasm-node@4.19.1)':
+  '@rollup/pluginutils@3.1.0(@rollup/wasm-node@4.56.0)':
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.1
-      rollup: '@rollup/wasm-node@4.19.1'
+      rollup: '@rollup/wasm-node@4.56.0'
 
-  '@rollup/pluginutils@3.1.0(@rollup/wasm-node@4.21.3)':
-    dependencies:
-      '@types/estree': 0.0.39
-      estree-walker: 1.0.1
-      picomatch: 2.3.1
-      rollup: '@rollup/wasm-node@4.21.3'
-
-  '@rollup/pluginutils@5.1.0(@rollup/wasm-node@4.19.1)':
+  '@rollup/pluginutils@5.1.0(@rollup/wasm-node@4.56.0)':
     dependencies:
       '@types/estree': 1.0.5
       estree-walker: 2.0.2
       picomatch: 2.3.1
     optionalDependencies:
-      rollup: '@rollup/wasm-node@4.19.1'
-
-  '@rollup/pluginutils@5.1.0(@rollup/wasm-node@4.21.3)':
-    dependencies:
-      '@types/estree': 1.0.5
-      estree-walker: 2.0.2
-      picomatch: 2.3.1
-    optionalDependencies:
-      rollup: '@rollup/wasm-node@4.21.3'
+      rollup: '@rollup/wasm-node@4.56.0'
 
   '@rollup/wasm-node@4.19.1':
     dependencies:
@@ -6490,6 +6463,12 @@ snapshots:
   '@rollup/wasm-node@4.21.3':
     dependencies:
       '@types/estree': 1.0.5
+    optionalDependencies:
+      fsevents: 2.3.3
+
+  '@rollup/wasm-node@4.56.0':
+    dependencies:
+      '@types/estree': 1.0.8
     optionalDependencies:
       fsevents: 2.3.3
 
@@ -6604,6 +6583,8 @@ snapshots:
   '@types/estree@0.0.39': {}
 
   '@types/estree@1.0.5': {}
+
+  '@types/estree@1.0.8': {}
 
   '@types/filesystem@0.0.36':
     dependencies:
@@ -7551,7 +7532,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint@8.57.0):
+  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0):
     dependencies:
       confusing-browser-globals: 1.0.11
       eslint: 8.57.0
@@ -7560,10 +7541,10 @@ snapshots:
       object.entries: 1.1.8
       semver: 6.3.1
 
-  eslint-config-airbnb@19.0.4(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint-plugin-jsx-a11y@6.9.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.57.0))(eslint-plugin-react@7.33.2(eslint@8.57.0))(eslint@8.57.0):
+  eslint-config-airbnb@19.0.4(eslint-plugin-import@2.29.1)(eslint-plugin-jsx-a11y@6.9.0(eslint@8.57.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.57.0))(eslint-plugin-react@7.33.2(eslint@8.57.0))(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
-      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.29.1)(eslint@8.57.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@8.57.0)
       eslint-plugin-react: 7.33.2(eslint@8.57.0)
@@ -7588,7 +7569,7 @@ snapshots:
       debug: 4.3.4
       enhanced-resolve: 5.16.1
       eslint: 8.57.0
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-import: 2.29.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.5
@@ -7600,7 +7581,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0):
+  eslint-module-utils@2.8.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -7621,7 +7602,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-plugin-import@2.29.1)(eslint@8.57.0))(eslint@8.57.0)
+      eslint-module-utils: 2.8.1(@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       hasown: 2.0.2
       is-core-module: 2.13.1
       is-glob: 4.0.3
@@ -8940,14 +8921,14 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup-plugin-visualizer@5.12.0(@rollup/wasm-node@4.19.1):
+  rollup-plugin-visualizer@5.12.0(@rollup/wasm-node@4.56.0):
     dependencies:
       open: 8.4.2
       picomatch: 2.3.1
       source-map: 0.7.4
       yargs: 17.7.2
     optionalDependencies:
-      rollup: '@rollup/wasm-node@4.19.1'
+      rollup: '@rollup/wasm-node@4.56.0'
 
   rrweb-cssom@0.6.0: {}
 
@@ -9465,7 +9446,7 @@ snapshots:
       '@formkit/auto-animate': 0.8.2
       '@headlessui/react': 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ladjs/country-language': 1.0.3
-      '@movie-web/providers': git+https://git@github.com:VidBingeApp/providers.git#f2b5f5d987cffbfe788cc85af8303be867d89ed9
+      '@movie-web/providers': https://codeload.github.com/VidBingeApp/providers/tar.gz/3d59469e67f5e66fe1ac3f09fae06f9cdfaf47bc
       '@noble/hashes': 1.4.0
       '@plasmohq/messaging': 0.6.2(react@18.3.1)
       '@react-spring/web': 9.7.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -9741,10 +9722,10 @@ snapshots:
       '@babel/core': 7.25.2
       '@babel/preset-env': 7.25.4(@babel/core@7.25.2)
       '@babel/runtime': 7.25.6
-      '@rollup/plugin-babel': 5.3.1(@babel/core@7.25.2)(@rollup/wasm-node@4.21.3)(@types/babel__core@7.20.5)
-      '@rollup/plugin-node-resolve': 15.2.3(@rollup/wasm-node@4.21.3)
-      '@rollup/plugin-replace': 2.4.2(@rollup/wasm-node@4.21.3)
-      '@rollup/plugin-terser': 0.4.4(@rollup/wasm-node@4.21.3)
+      '@rollup/plugin-babel': 5.3.1(@babel/core@7.25.2)(@rollup/wasm-node@4.56.0)(@types/babel__core@7.20.5)
+      '@rollup/plugin-node-resolve': 15.2.3(@rollup/wasm-node@4.56.0)
+      '@rollup/plugin-replace': 2.4.2(@rollup/wasm-node@4.56.0)
+      '@rollup/plugin-terser': 0.4.4(@rollup/wasm-node@4.56.0)
       '@surma/rollup-plugin-off-main-thread': 2.2.3
       ajv: 8.17.1
       common-tags: 1.8.2
@@ -9753,7 +9734,7 @@ snapshots:
       glob: 7.2.3
       lodash: 4.17.21
       pretty-bytes: 5.6.0
-      rollup: '@rollup/wasm-node@4.21.3'
+      rollup: '@rollup/wasm-node@4.56.0'
       source-map: 0.8.0-beta.0
       stringify-object: 3.3.0
       strip-comments: 2.0.1
